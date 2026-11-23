@@ -193,14 +193,18 @@ def main():
         model.save_pretrained(out / "last"); tok.save_pretrained(out / "last")
         if best is not None:  # evaluate the best checkpoint
             model, tok = load(out / "best"); model.to(device)
-    for nb in args.beams:
-        tag = f"finetuned_beam{nb}"
-        metrics[f"test_{tag}"], preds[f"ft beam{nb}"] = evaluate(model, tok, test, args, device, tag, beams=nb)
-        (out / "metrics.json").write_text(json.dumps(metrics, indent=2))
-    if args.final_full_valid:
-        fv = MathWritingParquet(files(d, "valid", "val-"))
-        metrics["valid_full_beam1"], _ = evaluate(model, tok, fv, args, device, "valid_full", save=False)
-    save_samples(test, preds, out / "samples")
+    try:  # final evals: never lose the trained checkpoints because of an eval error
+        for nb in args.beams:
+            tag = f"finetuned_beam{nb}"
+            metrics[f"test_{tag}"], preds[f"ft beam{nb}"] = evaluate(model, tok, test, args, device, tag, beams=nb)
+            (out / "metrics.json").write_text(json.dumps(metrics, indent=2))
+        if args.final_full_valid:
+            fv = MathWritingParquet(files(d, "valid", "val-"))
+            metrics["valid_full_beam1"], _ = evaluate(model, tok, fv, args, device, "valid_full", save=False)
+        save_samples(test, preds, out / "samples")
+    except Exception as e:  # noqa: BLE001
+        import traceback; traceback.print_exc()
+        metrics["final_eval_error"] = repr(e)
     (out / "metrics.json").write_text(json.dumps(metrics, indent=2))
     print(json.dumps({k: v for k, v in metrics.items() if k != "args"}, indent=2))
 

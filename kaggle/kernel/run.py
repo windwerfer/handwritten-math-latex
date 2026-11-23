@@ -1,7 +1,7 @@
 # handwriter v2: Texo fine-tune on full MathWriting (human) — Kaggle GPU kernel.
 import glob, os, shutil, subprocess, sys, tarfile
 
-SMOKE = True  # True: short pipeline check (~10 min); False: full run
+SMOKE = False  # True: short pipeline check (~10 min); False: full run
 
 def sh(c):
     print("+", c, flush=True); return subprocess.call(c, shell=True)
@@ -15,7 +15,14 @@ src = os.path.dirname(cands[0]); print("dataset dir", src)
 work = "/kaggle/working/handwriter"; os.makedirs(work + "/models/texo", exist_ok=True)
 for f in glob.glob(src + "/texo__*"):
     shutil.copy(f, work + "/models/texo/" + os.path.basename(f).split("__", 1)[1])
-tarfile.open(glob.glob(src + "/code.tar.gz")[0]).extractall(work)
+code = [p for p in glob.glob(src + "/**/code.tar.gz", recursive=True) if os.path.isfile(p)]
+if code:
+    tarfile.open(code[0]).extractall(work)
+else:  # Kaggle auto-extracted the archive
+    root = os.path.dirname(os.path.dirname(glob.glob(src + "/**/hw/model.py", recursive=True)[0]))
+    for d in ("hw", "scripts"):
+        shutil.copytree(f"{root}/{d}", f"{work}/{d}", dirs_exist_ok=True)
+sh(f"ls -R {work} | head -40; grep -c normalize {work}/hw/latex_tok.py")
 os.chdir(work)
 
 # MathWriting-2024 human inks, official splits, pre-rendered: HF deepcopy/MathWriting-human
