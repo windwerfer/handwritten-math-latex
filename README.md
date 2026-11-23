@@ -51,3 +51,20 @@ kaggle kernels output windwerfer/handwriter-texo-mathwriting-finetune -p kaggle/
   and compute the loss ourselves (transformers' VisionEncoderDecoder label shifting differs by version).
 - BatchNorm running stats are kept frozen during fine-tuning (small batches wrecked them in the
   smoke test: CER 0.26 → 2.18 after 12 steps with BN in train mode).
+
+## Results — Kaggle v1 (2026-11-23, Tesla T4, 5 epochs, 5000 train imgs, bs 32, lr 5e-5, ~5 min train)
+Official MathWriting **test, all 7644 human inks**, greedy decoding:
+
+| | CER | token error rate | exact match |
+|---|---|---|---|
+| Texo zero-shot | 39.1 % | 29.9 % | 10.0 % |
+| Texo fine-tuned (5k train) | **17.8 %** | 13.3 % | **32.5 %** |
+
+Valid (500) CER per epoch: 25.7 → 19.7 → 17.5 → 16.6 → 16.0 %. Final train loss 0.054 → overfitting
+on 5k images; more data is the obvious next lever. Zero-shot is partly penalised by label
+conventions (e.g. Texo writes `\lim`, `\sin`; MathWriting labels are `lim`, `sin`).
+For reference, tjoab/latex_finetuned (TrOCR, 334M, trained on all of MathWriting) reports 14.9 % CER.
+Outputs: `results/kaggle_v1/` (metrics.json, predictions_*.csv, samples/*.png, kernel.log);
+fine-tuned weights: `kaggle/output/v1/run/model/` (not in git).
+Note: pinning transformers==4.40.0 failed on Kaggle (tokenizers wheel build); the run used Kaggle's
+preinstalled transformers, which worked since we compute the loss ourselves.

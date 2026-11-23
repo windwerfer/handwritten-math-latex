@@ -1,0 +1,501 @@
+idx,sample_id,gt,pred,pred_tokens
+0,7df898f340051f4a,|\psi_{0}\rangle=|a\rangle|f_{k}\rangle|f_{k}^{\prime}\rangle,|\psi_{0}\rangle=|u\rangle_{-}|p\rangle_{-}|f_{k}^{\prime}\rangle,| \psi _ { 0 } \rangle = | u \rangle _ { - } | p \rangle _ { - } | f _ { k } ^ { \prime } \rangle
+1,a98fd2653ae0afea,"u>|\dot{x}+a(t,x,\dot{x})|","u>|\dot{x}+a(t,x,x)|","u > | \dot { x } + a ( t, x, x ) |"
+2,43ed20f9e748fa3b,(1|1),(\begin{matrix}1&1&1\end{matrix}),( \begin{array} 1 & 1 & 1 \end{array} )
+3,96789e539ba3fa86,U(r_{j}-r_{l}/\sqrt{n}),u(r_{j}-r_{1}/\sqrt{n}),u ( r _ { j } - r _ { 1 } / \sqrt { n } )
+4,8da7fd4e05b73cb3,R_{ji}=N_{j}B_{ji}\rho(\nu),R_{ji}=N_{j}B_{ji}P(v),R _ { j i } = N _ { j } B _ { j i } P ( v )
+5,d57a9a4381ed46d9,\tilde{f}(s)=\frac{a_{N}}{s-N}+\cdot\cdot\cdot,\tilde{f}(s)=\frac{d_{N}}{s-N}+\cdot\cdot,\tilde { f } ( s ) = \frac { d _ { N } } { s - N } + \cdot \cdot
+6,550c650adfa60e9c,-\frac{d^{2}}{dx^{2}},-\frac{d^{2}}{dx^{2}},- \frac { d ^ { 2 } } { d x ^ { 2 } }
+7,ca89568e06e4d736,\sigma=\sqrt{\sigma_{i}^{2}+\sigma_{j}^{2}},G=\sqrt{G_{i}^{2}}+G_{j}^{2},G = \sqrt { G _ { i } ^ { 2 } } + G _ { j } ^ { 2 }
+8,4baac95656ab0720,\int_{a}^{b}f(x)dx,\int_{0}^{6}f(x)dx,\int _ { 0 } ^ { 6 } f ( x ) d x
+9,02f5ace6fe0e5182,"L,\overline{k}","L,k","L, k"
+10,d3a59bd005109a77,\frac{dE_{r}}{dx},\frac{dE_{r}}{dx},\frac { d E _ { r } } { d x }
+11,b2d1722a2113843f,\lambda\frac{1}{k_{1}^{2}}\frac{1}{k_{2}^{2}}\frac{1}{k_{3}^{2}}\frac{1}{k_{4}^{2}},\times\frac{1}{k_{1}^{2}}\frac{1}{k_{3}^{2}}\frac{1}{k_{4}^{2}},\times \frac { 1 } { k _ { 1 } ^ { 2 } } \frac { 1 } { k _ { 3 } ^ { 2 } } \frac { 1 } { k _ { 4 } ^ { 2 } }
+12,cdd27abbd45f41ce,S_{0}\subseteq S_{1}\subseteq...\subseteq X,S_{0}\subseteq S_{1}\subseteq\cdot\subseteq X,S _ { 0 } \subseteq S _ { 1 } \subseteq \cdot \subseteq X
+13,b78a405ed485ed4b,-\sqrt{\frac{4}{15}},-\sqrt{\frac{4}{15}},- \sqrt { \frac { 4 } { 1 5 } }
+14,7d07d7dedfc41178,\int x^{2}d(cosx),\int x^{2}d(\omega x),\int x ^ { 2 } d ( \omega x )
+15,c3055e398a1876c3,d\overline{\mu}=\frac{d\mu}{\sqrt{g_{00}}},d^{\mu}=\frac{d\mu}{\sqrt{g_{00}}},d ^ { \mu } = \frac { d \mu } { \sqrt { g _ { 0 0 } } }
+16,d65dc59daaf1265c,4.\overline{f*g}=\overline{g}*\overline{f},4\cdot\overline{f\otimes g}=\overline{g}\otimes\overline{p},4 \cdot \overline { f \otimes g } = \overline { g } \otimes \overline { p }
+17,0e28e32dc135bda0,xa^{m}b^{n}yc^{m}d^{n}z,xa^{n}b^{n}yc^{n}d^{n}z,x a ^ { n } b ^ { n } y c ^ { n } d ^ { n } z
+18,0bb18fe5c120ecfa,Q>\sqrt{\frac{1-k^{2}}{2}},Q>\sqrt{\frac{1-Q^{2}}{2}},Q > \sqrt { \frac { 1 - Q ^ { 2 } } { 2 } }
+19,0ae3a7cdfa730993,"\tilde{T}_{H,K}:H/H^{\prime}\rightarrow K/K^{\prime}",T_{H}k^{\prime}:T_{H}^{\prime}:T_{H}^{\prime}:T_{H}^{\prime},T _ { H } k ^ { \prime } : T _ { H } ^ { \prime } : T _ { H } ^ { \prime } : T _ { H } ^ { \prime }
+20,4bde54a075bab1e4,1+\sqrt{2(2+\sqrt{2})},1+\sqrt{2(2+\sqrt{2})},1 + \sqrt { 2 ( 2 + \sqrt { 2 } ) }
+21,86fab94965182ff8,\frac{d^{2}u}{dt^{2}}=\frac{\Omega^{2}}{4}\frac{d^{2}u}{d\xi^{2}}(2),\frac{d^{2}u}{dt^{2}}=\frac{\Omega^{2}}{4}\frac{d^{2}u}{dt^{2}}(\Omega),\frac { d ^ { 2 } u } { d t ^ { 2 } } = \frac { \Omega ^ { 2 } } { 4 } \frac { d ^ { 2 } u } { d t ^ { 2 } } ( \Omega )
+22,e51b64adf0c4222c,\Omega=\beta A_{m}^{fp},Q=\beta A_{m}^{fp},Q = \beta A _ { m } ^ { f p }
+23,3f2429c6b6ffb885,u,\overline{u},\overline { u }
+24,25360255bb3cc549,"t=t_{0},r=r_{0},\theta=0","t=t_{0},T=r_{0},\theta=0","t = t _ { 0 }, T = r _ { 0 }, \theta = 0"
+25,a1909940921ed91e,t\{\begin{matrix}5\\ 3\end{matrix}\},+\{\begin{matrix}5\\3\end{matrix}\},+ \{ \begin{array} 5 \\ 3 \end{array} \}
+26,d79bdba3edf0a429,\hat{X}|_{F_{SO}(M)},\hat{x}|_{F_{SO}(M)},\hat { x } | _ { F _ { S O } ( M ) }
+27,9d7057d2ddff7dfe,u=\int u^{\prime}dx,u=\int u^{\prime}dx,u = \int u ^ { \prime } d x
+28,22e5506673b7f67c,((\lambda V.E)E^{\prime}),((\lambda V.E)E^{\prime}),( ( \lambda V. E ) E ^ { \prime } )
+29,af4924873bfad15e,(\begin{matrix}\alpha&\beta\\ \overline{\beta}&\overline{\alpha}\end{matrix}),"(\frac{\alpha}{\beta},\frac{\beta}{\alpha})","( \frac { \alpha } { \beta }, \frac { \beta } { \alpha } )"
+30,30c38f2ef67410f4,10^{-12}W/\sqrt{Hz},10^{-12}W/\sqrt{HL_{z}},1 0 ^ { - 1 2 } W / \sqrt { H L _ { z } }
+31,c64798fabbc9ba20,lim_{h\rightarrow0}\frac{h}{h}=1,im_{n\rightarrow0}\frac{n}{n}=1,i m _ { n \rarr 0 } \frac { n } { n } = 1
+32,3d804e60eca519ff,G=6.7\times10^{-11},G=6.7\times10^{-1},G = 6. 7 \times 1 0 ^ { - 1 }
+33,f8d18c86934edc04,log_{2}(26^{n^{2}}),log_{2}(26^{n^{2}}),l o g _ { 2 } ( 2 6 ^ { n ^ { 2 } } )
+34,b77a6e618f7b04f4,G:L\rightarrow R-Mod,G:L\rightarrow R-M_{od},G : L \rarr R - M _ { o d }
+35,59732f5deaeb8ecd,\varphi_{m}(x)=E_{-m}(x),\varphi_{n}(x)=E_{n}(x),\varphi _ { n } ( x ) = E _ { n } ( x )
+36,56b4e50360ced759,(\begin{matrix}2n\\ n\end{matrix}),(\begin{matrix}2n\\n\end{matrix}),( \begin{array} 2 n \\ n \end{array} )
+37,a257c7328ed56080,a\in A_{0}\bigcap A_{1},a\in A_{0}\cap A_{1},a \in A _ { 0 } \cap A _ { 1 }
+38,2d4f1be24d01f831,(\begin{matrix}1&d\\ 0&1\end{matrix}),(\begin{matrix}1&d\\0&1\end{matrix}),( \begin{array} 1 & d \\ 0 & 1 \end{array} )
+39,4eed59994a7703f4,m(A)=\int_{A}Xdn,m(A)=\int_{A}xdn,m ( A ) = \int _ { A } x d n
+40,f08358ed31421424,\tilde{O_{P}}/O_{P},\tilde{O}_{p}/Q_{p},\tilde { O } _ { p } / Q _ { p }
+41,04e0c52aa8da96ae,s_{k}=\prod_{i=1}^{m}x_{i},s_{k}=\frac{m}{j\equiv1}x_{i},s _ { k } = \frac { m } { j \equiv 1 } x _ { i }
+42,f2a8f74187e72ce2,[\hbar]=M^{1}L^{2}T^{-1},[n]=m^{2}L^{2}T^{-1},[ n ] = m ^ { 2 } L ^ { 2 } T ^ { - 1 }
+43,04127c114679458c,{(\begin{matrix}41\end{matrix})}^{3},(\begin{matrix}4\\1\end{matrix})^{3},( \begin{array} 4 \\ 1 \end{array} ) ^ { 3 }
+44,7e8b5d787230ec5a,\overline{p+q},p+q,p + q
+45,63c1a627af802f97,\overline{L}^{\dot{\alpha}\dot{\beta}}=T^{\dot{\alpha}\dot{\beta}},I^{\dot{\alpha}\beta}=T\dot{\alpha}\dot{\beta},I ^ { \dot { \alpha } \beta } = T \dot { \alpha } \dot { \beta }
+46,07d51e74fe9fd34f,"P(e^{\prime})=\{a_{1},b_{4}\}","P(e^{\prime})=\{a_{1},b_{4}\}","P ( e ^ { \prime } ) = \{ a _ { 1 }, b _ { 4 } \}"
+47,fcf4ae2a13ce6f9b,\int_{A}P_{A}dA=1,\int_{A}P_{A}dA=1,\int _ { A } P _ { A } d A = 1
+48,410538d2979615ad,h_{n}=-\frac{f(x_{n})}{f^{\prime}(x_{n})},h_{n}=-\frac{f(x_{n})}{f^{1}(x_{n})},h _ { n } = - \frac { f ( x _ { n } ) } { f ^ { 1 } ( x _ { n } ) }
+49,eede5179b9d2cdaa,(\begin{matrix}1&0\\ 0&1\end{matrix}),(\begin{matrix}1&0\\0&1\end{matrix}),( \begin{array} 1 & 0 \\ 0 & 1 \end{array} )
+50,786e40a25ae086b5,\overline{P}(Cl_{2}^{\le})=Cl_{2}^{\le},\overline{P}(CL_{2}^{\le})=CL_{2}^{\le},\overline { P } ( C L _ { 2 } ^ { \le } ) = C L _ { 2 } ^ { \le }
+51,df660eb8ac02c748,\tilde{x}_{i},\hat{x}_{i},\hat { x } _ { i }
+52,226e5a3fd5fd6d5d,\overline{AC},\overline{1A}(,\overline { 1 A } (
+53,cb6ad60df45b9fa8,\tilde{s}_{N},\tilde{S}_{N},\tilde { S } _ { N }
+54,bf0f2370863968e1,\nabla v=(\begin{matrix}0&0&0\\ \dot{\gamma}&0&0\\ 0&0&0\end{matrix}),\nabla_{v}=(\begin{matrix}0&0\\\dot{\gamma}&0&0\\0&0\end{matrix}),\nabla _ { v } = ( \begin{array} 0 & 0 \\ \dot { \gamma } & 0 & 0 \\ 0 & 0 \end{array} )
+55,c823fb02a6567989,\theta=\omega_{0}t+\frac{1}{2}\alpha t^{2},\theta=\omega_{0}t+\frac{1}{2}\alpha t^{2},\theta = \omega _ { 0 } t + \frac { 1 } { 2 } \alpha t ^ { 2 }
+56,d6070e6ed49ea8a6,\hat{y}-y,\hat{y}=y,\hat { y } = y
+57,277d01faef356dca,\frac{dB}{dz},\frac{\partial B}{\partial z},\frac { \partial B } { \partial z }
+58,fd58ea70432bb0d7,\frac{7}{9}\le\frac{A_{1}}{A_{2}}\le\frac{9}{7},\frac{7}{9}<\frac{A!}{A!2}\le\frac{9}{7},\frac { 7 } { 9 } < \frac { A! } { A! 2 } \le \frac { 9 } { 7 }
+59,ee7c42a5aa6808b8,\lambda_{1}\ge\frac{n}{n-1}\kappa,\lambda_{1}=\frac{n}{n-n}k,\lambda _ { 1 } = \frac { n } { n - n } k
+60,8c869dd9e511b2ad,[\begin{matrix}-1&1\\ 0&0\end{matrix}],[\begin{matrix}-1&1\\0&0\end{matrix}],[ \begin{array} - 1 & 1 \\ 0 & 0 \end{array} ]
+61,b3b9aa878b85cfa2,u,\mathbb{U},\mathbb { U }
+62,691a21279994ac8c,[\begin{matrix}1&2\\ 1&1\end{matrix}],[\begin{matrix}1&2\\1&1\end{matrix}],[ \begin{array} 1 & 2 \\ 1 & 1 \end{array} ]
+63,a0b5d133448a2084,\frac{df}{f}=\frac{dn}{(n-1)}=\frac{1}{n},\frac{df}{f}=\frac{dn}{(n-1)}=\frac{1}{n},\frac { d f } { f } = \frac { d n } { ( n - 1 ) } = \frac { 1 } { n }
+64,d24391aee6e56442,A=(\begin{matrix}1&1\\ 0&1\end{matrix}),A=(\begin{matrix}1&1\\0&1\end{matrix}),A = ( \begin{array} 1 & 1 \\ 0 & 1 \end{array} )
+65,e5408c345f8cc69a,(\begin{matrix}n\\ k\end{matrix}),(\begin{matrix}n\\k\end{matrix}),( \begin{array} n \\ k \end{array} )
+66,ff81817f534a78b1,b(t)=b1\times e^{\frac{-t}{\tau}},b(t)=bI\times e^{-t},b ( t ) = b I \times e ^ { - t }
+67,24c5e7c43e5d75f7,\int_{\gamma}D\gamma,\int_{p}P_{p},\int _ { p } P _ { p }
+68,dc7a70a45833a504,\frac{MX}{MY}=\frac{XX^{\prime\prime}}{YY^{\prime\prime}},\frac{Mx}{My}=\frac{xx^{\prime\prime}}{yy^{\prime\prime}},\frac { M x } { M y } = \frac { x x ^ { \prime \prime } } { y y ^ { \prime \prime } }
+69,10645c5e41c70790,\overline{CD},\overline{CD},\overline { C D }
+70,b194bd59ed7a8de8,t_{r}^{\prime}=t-\frac{1}{c}|r-r^{\prime}|,t_{r}^{\prime}=t-\frac{1}{c}|r-r^{\prime}\rangle,t _ { r } ^ { \prime } = t - \frac { 1 } { c } | r - r ^ { \prime } \rangle
+71,c34ae7d802a10af8,|T_{r}f|\le f^{*}.,|T_{r}f|\le f^{*},| T _ { r } f | \le f ^ { * }
+72,28508428bc39706a,U_{j}=(1+t_{j}^{\prime})\alpha,U_{j}=(1+t_{j}^{\prime})d\alpha,U _ { j } = ( 1 + t _ { j } ^ { \prime } ) d \alpha
+73,304fde49e2e3b479,h(z)=h_{1}(z)(z-c),h(z)=h_{1}(z)(z-c),h ( z ) = h _ { 1 } ( z ) ( z - c )
+74,58a3583ed6fe3dea,R,\mathbb{R},\mathbb { R }
+75,9937e44f1d2da859,q=\frac{\partial\psi}{\partial n},q=\frac{\partial\psi}{\partial h},q = \frac { \partial \psi } { \partial h }
+76,4fe11c7d329f8afa,D=\prod_{i=1}^{K}d_{i},P=\prod_{i=1}^{m}\alpha_{i}^{m},P = \prod _ { i = 1 } ^ { m } \alpha _ { i } ^ { m }
+77,0d797984827576b1,\lambda(s)=f_{s}^{\prime}(0),\lambda(S)=f_{S}^{\prime}(0),\lambda ( S ) = f _ { S } ^ { \prime } ( 0 )
+78,0fda1eaa64211066,(\begin{matrix}n+x-1\\ n\end{matrix}),(\begin{matrix}n+x-1\\n\end{matrix}),( \begin{array} n + x - 1 \\ n \end{array} )
+79,8412f5cf238929da,Q=\frac{X_{L}}{R}=\frac{\omega L}{R},Q=\frac{X_{L}}{R}=\frac{\omega L}{R},Q = \frac { X _ { L } } { R } = \frac { \omega L } { R }
+80,7c5f49554f8cb7ba,\hat{g}(f),\hat{g}(\mathbb{A}),\hat { g } ( \mathbb { A } )
+81,0f2f41a490477675,P_{e}^{(n)}\rightarrow0,P^{(h)}\rightarrow0,P ^ { ( h ) } \rarr 0
+82,d2c9d52cbc9cd0a2,\dot{\partial}_{\mu}=\partial_{\mu},\hat{\sigma}_{\nu}=\partial_{\nu},\hat { \sigma } _ { \nu } = \partial _ { \nu }
+83,876d3b2568454496,\hat{6},\hat{\theta},\hat { \theta }
+84,75e9534d8c8dec67,x=y=\frac{-i}{\sqrt{2}},x=y=\frac{-i^{2}}{\sqrt{2}},x = y = \frac { - i ^ { 2 } } { \sqrt { 2 } }
+85,0d3e82782292a458,dn-(\begin{matrix}d+1\\ 2\end{matrix}),d_{n}-(\begin{matrix}n+1\\2\end{matrix}),d _ { n } - ( \begin{array} n + 1 \\ 2 \end{array} )
+86,82b4958517af3784,\hat{w}_{i}^{\prime},\hat{u}_{i}^{\prime},\hat { u } _ { i } ^ { \prime }
+87,a8ed9ddf457fc450,QTcB=\frac{QT}{\sqrt{RR}},\partial T_{C}B=\frac{\partial T}{\sqrt{RR}R},\partial T _ { C } B = \frac { \partial T } { \sqrt { R R } R }
+88,3071b8fc7636c822,\frac{F}{\epsilon^{D}}\cdot\epsilon,\frac{F}{\epsilon^{D}}\cdot\epsilon,\frac { F } { \epsilon ^ { D } } \cdot \epsilon
+89,63f8f25dce249bdc,(cos(\theta)),(cos(\theta)),( c o s ( \theta ) )
+90,9f488e82ae508443,\hat{3},\hat{3},\hat { 3 }
+91,bfba62fb57f87a03,(\begin{matrix}n\\ k\end{matrix}),(\begin{matrix}n\\k\end{matrix}),( \begin{array} n \\ k \end{array} )
+92,b7c038fb50ef3659,"min\{e(u),c_{f}(u,v)\}","min\{e(u),c(u,v)\}","m i n \{ e ( u ), c ( u, v ) \}"
+93,5c8e3cc74c1f0341,\int_{S}\vec{B}\cdot d\vec{S}=const,\int_{S}\overline{B}\cdot dS=cart,\int _ { S } \overline { B } \cdot d S = c a r t
+94,1cafc43eff302e6b,\hat{C}_{1},\hat{C}_{A},\hat { C } _ { A }
+95,b5c0b05a8717b258,"\hat{\Gamma},\Gamma",\tilde{T}_{1},\tilde { T } _ { 1 }
+96,8a5cf81b1099015e,x=[A]y,x=[A]y,x = [ A ] y
+97,a2f25fe424526a64,x^{*}\in X^{*}\\ \{0\},x^{*}\in X^{*}\{0\},x ^ { * } \in X ^ { * } \{ 0 \}
+98,825799b9cf498f36,"L(\phi,\partial_{\mu}\phi)","L(\phi,\partial_{x}\phi)","L ( \phi, \partial _ { x } \phi )"
+99,d5355c76845da905,A=B=P(N),A=B=P(N),A = B = P ( N )
+100,d20b8d3efec7c00a,\hat{u}[n],\hat{u}[n],\hat { u } [ n ]
+101,47ba88b22952b904,\frac{v_{m}}{v_{r}}=\frac{p_{b}}{p_{b}-p_{r}},\frac{\mu_{m}}{\nu_{r}}=\frac{p_{b}}{p_{b}-p_{c}},\frac { \mu _ { m } } { \nu _ { r } } = \frac { p _ { b } } { p _ { b } - p _ { c } }
+102,3464b8925250824a,n=\prod_{i}p_{i},n=\prod_{i}p_{i},n = \prod _ { i } p _ { i }
+103,b1b9b2c714f8967e,\infty k\delta(s)\hat{z},oskS(s)\hat{z},o s k S ( s ) \hat { z }
+104,d4d997464ff6b4cd,(\lambda x)^{*}=\overline{\lambda}x^{*},(xx)^{*}=\overline{\lambda}x^{*},( x x ) ^ { * } = \overline { \lambda } x ^ { * }
+105,ed3d294c45d4ee09,\int dy=y,\int dy=y,\int d y = y
+106,6ba32594d281a5db,N,\mathbb{N},\mathbb { N }
+107,10cf9b4bf9f0d299,\sum_{n=0}^{225}(\begin{matrix}225\\ n\end{matrix})=2^{225},\sum_{n=0}^{225}(\begin{matrix}225\\n\end{matrix})=2^{225},\sum _ { n = 0 } ^ { 2 2 5 } ( \begin{array} 2 2 5 \\ n \end{array} ) = 2 ^ { 2 2 5 }
+108,0ed59fba73a3fb4e,"P(Hom(G,Z/p))","P(H_{om}(G,Z_{p}))","P ( H _ { o m } ( G, Z _ { p } ) )"
+109,73d8210ce590177f,G(y)=\int_{0}^{y}g(z)dz,G(y)=\int_{0}^{y}J(z)dz,G ( y ) = \int _ { 0 } ^ { y } J ( z ) d z
+110,090d85bdcf4ed51e,\frac{dv}{dr}=0,\frac{dv}{dr}=0,\frac { d v } { d r } = 0
+111,96bae0699f2a7d62,\nu_{e},V_{e},V _ { e }
+112,2857c92e2d677e10,P(M>a),P(M>a),P ( M > a )
+113,59535102c8a41ed2,0=x-12,0=x-12,0 = x - 1 2
+114,37c77760758711f1,\alpha^{\prime}(0):=v,\alpha^{\prime}(0)=\tilde{\gamma},\alpha ^ { \prime } ( 0 ) = \tilde { \gamma }
+115,2696f7848adf178e,lim_{x\rightarrow0}f^{-1}(x)=-\infty,lim_{x\rightarrow\delta}f^{-1}(x)=-\infty,l i m _ { x \rarr \delta } f ^ { - 1 } ( x ) = - \infin
+116,14504feee419546b,u|v^{2}+vh-f,u|v^{2}+vh-f,u | v ^ { 2 } + v h - f
+117,0755c9f3fd804e92,"P=\int I(x,y)dxdy","P=\int I(x,y)dxdy","P = \int I ( x, y ) d x d y"
+118,595cb17d624ce941,D=\prod_{i=1}^{n}D_{i},D=\prod_{i=1}^{N}D_{i},D = \prod _ { i = 1 } ^ { N } D _ { i }
+119,809c3a50410fd976,A=(\begin{matrix}1&2\\ 3&4\end{matrix}),A=(\begin{matrix}1&1\\3&4\end{matrix}),A = ( \begin{array} 1 & 1 \\ 3 & 4 \end{array} )
+120,533b4d864bf9742a,i\notin x,i\notin x,i \notin x
+121,51190a3a76c8c4d0,(\begin{matrix}m+n\\ m\end{matrix}),(\begin{matrix}m+n\\m\end{matrix}),( \begin{array} m + n \\ m \end{array} )
+122,8204f6854b4acb6c,P(A>O_{j}),P(A)=0_{j},P ( A ) = 0 _ { j }
+123,ff8d694a4ce69527,\dot{Y}=\alpha(v-s)Y,\dot{y}=\alpha(v-3)^{\prime}f,\dot { y } = \alpha ( v - 3 ) ^ { \prime } f
+124,dd142240f6e16272,Y=X\tilde{B}+\tilde{B}_{0},\tilde{F}=X\tilde{B}+\tilde{B}_{0},\tilde { F } = X \tilde { B } + \tilde { B } _ { 0 }
+125,fec6f0c58488e6ee,\hat{f_{j}},\hat{f}_{j},\hat { f } _ { j }
+126,bf29626a048822ce,w_{i}=\frac{\partial u}{\partial a_{i}},u:=\frac{\partial u}{\partial a:},u : = \frac { \partial u } { \partial a : }
+127,6c92addff844a89f,C_{i}=N_{i}/V,C_{i}=N_{i}/V,C _ { i } = N _ { i } / V
+128,56334fafa2c502cf,\alpha>-1,x>-1,x > - 1
+129,37faee3eaf49daf0,f_{S^{i}}^{\lambda},f_{s^{i}},f _ { s ^ { i } }
+130,06dbda33dee71d6e,"c_{1},c_{2},...\in k","C_{1},C_{2},..\in k","C _ { 1 }, C _ { 2 },.. \in k"
+131,220bf56059567b4d,4^{-N}(\begin{matrix}2N\\ N\end{matrix})\approx\frac{1}{\sqrt{\pi N}},4^{-W/2N}\approx\frac{1}{\sqrt{\pi N}},4 ^ { - W / 2 N } \approx \frac { 1 } { \sqrt { \pi N } }
+132,41dc135c47c94069,(\begin{matrix}a&b\\ c&d\end{matrix}),(\begin{matrix}a&6\\c&d\end{matrix}),( \begin{array} a & 6 \\ c & d \end{array} )
+133,663b2a21acb5be30,\frac{ds}{dt}=0,\frac{ds}{dt}=0,\frac { d s } { d t } = 0
+134,2ea81225a5016f41,\frac{d}{dx},\frac{d}{dx},\frac { d } { d x }
+135,7a131bfea3837a82,p_{i}|\phi_{i}\rangle,\rho_{i}=|\Phi_{i},\rho _ { i } = | \Phi _ { i }
+136,b580e8725bf5fd05,\partial_{t}L=\frac{1}{2}\nabla^{2}L,\partial_{t}L=\frac{1}{2}\nabla^{2}L,\partial _ { t } L = \frac { 1 } { 2 } \nabla ^ { 2 } L
+137,87fec9dff2dd7ec4,\int x^{2}d(cosx),\int x^{2}d(cosx),\int x ^ { 2 } d ( c o s x )
+138,be6f1689f92381da,\alpha_{mk}R^{k}y^{k}(1-y)^{m},\alpha_{nk}R^{k}y^{k}(1-y)^{m},\alpha _ { n k } R ^ { k } y ^ { k } ( 1 - y ) ^ { m }
+139,32d51e9d1b2e5516,n=(\begin{matrix}2k-1\\ k\end{matrix}),n=(\begin{matrix}2k-1\\k\end{matrix}),n = ( \begin{array} 2 k - 1 \\ k \end{array} )
+140,99bea285c8ff5f73,x_{n+1}=x_{n}^{2}modM,x_{n+1}=x_{n}^{2}modM,x _ { n + 1 } = x _ { n } ^ { 2 } m o d M
+141,d3db58be98be396a,\frac{dM}{dx}=V,\frac{\partial W}{\partial x}=V,\frac { \partial W } { \partial x } = V
+142,daa0e1ec035a2b7a,\sqrt{A},\sqrt{A},\sqrt { A }
+143,6707e5e965fd26b9,r(u):=0.2,r(u):=0.2,r ( u ) : = 0. 2
+144,08b58b9194fa3742,2^{n-4}+2^{\lfloor(n-4)/2\rfloor},2^{n-4}+2^{(n-4)/2},2 ^ { n - 4 } + 2 ^ { ( n - 4 ) / 2 }
+145,53d2cae08b86c47c,\Omega=N!/N_{1}!N_{2}!,n\equiv N_{i}^{\prime}/N_{i}N_{i},n \equiv N _ { i } ^ { \prime } / N _ { i } N _ { i }
+146,a447ac46b9297573,\hat{\beta}\pm2.5se_{\beta},\hat{\beta}\pm2.5se_{\beta},\hat { \beta } \pm 2. 5 s e _ { \beta }
+147,f252e71254457413,\frac{d\kappa}{dt}=\frac{d^{2}\theta}{dt^{2}}=2,\frac{dk}{dt}=\frac{d^{2}\theta}{dt^{2}}=2,\frac { d k } { d t } = \frac { d ^ { 2 } \theta } { d t ^ { 2 } } = 2
+148,d5a33c19d0243e8a,"\hat{I}_{S},\hat{I}_{B}","\hat{L}_{S,I}^{n}","\hat { L } _ { S, I } ^ { n }"
+149,6028cdfa7160c46a,"(1-x,1-y)","(1-x,1-y)","( 1 - x, 1 - y )"
+150,557bd24f43676c61,-j\frac{\sqrt{2}}{2},-j\frac{\sqrt{2}}{2},- j \frac { \sqrt { 2 } } { 2 }
+151,e5cc85d0c773801f,s_{3}^{2l}H_{i}^{\prime}=H_{i}^{\prime},S_{3}^{21}H_{j}^{\prime}=H_{j}^{\prime},S _ { 3 } ^ { 2 1 } H _ { j } ^ { \prime } = H _ { j } ^ { \prime }
+152,c8eed91fabda0b63,\int_{0}^{T}e^{-st}dg(t),\int_{0}^{T}e^{-st}dg(T),\int _ { 0 } ^ { T } e ^ { - s t } d g ( T )
+153,c2af0b306d94a084,\sqrt{(}t),v(t),v ( t )
+154,4020af6d064ddbb7,v_{2}=(\begin{matrix}a\\ 1\end{matrix}),V_{2}=(\begin{matrix}a\\1\end{matrix}),V _ { 2 } = ( \begin{array} a \\ 1 \end{array} )
+155,ab0b5ad21ef1b2ea,(\begin{matrix}n\\ n\end{matrix}),(\begin{matrix}n\\n\end{matrix}),( \begin{array} n \\ n \end{array} )
+156,1a341b8eb5520e81,h^{t}\equiv e+\frac{p}{\rho}+\frac{1}{2}u^{2},d^{*}\Xi_{e}+\frac{\pi}{\rho}+\frac{1}{2}u^{2},d ^ { * } \Xi _ { e } + \frac { \pi } { \rho } + \frac { 1 } { 2 } u ^ { 2 }
+157,a9a90337c844fe85,k^{2}=\omega^{2}(\mu\epsilon),k^{2}=\omega^{2}(\mu t),k ^ { 2 } = \omega ^ { 2 } ( \mu t )
+158,0392f8a3ba83db99,\int pdq,\int pdq,\int p d q
+159,fdd890922195692c,P^{(\phi_{\sigma})},p(\phi_{\sigma}),p ( \phi _ { \sigma } )
+160,cd43f0fa8fcfabe0,a=0.3+i0.3,a=\partial.3+j\partial.3,a = \partial. 3 + j \partial. 3
+161,afcf82d6b595e1ac,K(G)\ge(\begin{matrix}n\\ 2\end{matrix}),K(G)\ge(\begin{matrix}n\\2\end{matrix}),K ( G ) \ge ( \begin{array} n \\ 2 \end{array} )
+162,1cf94d7fcfee66e8,\frac{df}{dz}=g,\frac{dF}{dz}=g,\frac { d F } { d z } = g
+163,38160be30e36f34c,"1,\frac{1}{2},\frac{1}{3},\frac{1}{4}","1,\frac{1}{2},\frac{1}{3},\frac{1}{4}","1, \frac { 1 } { 2 }, \frac { 1 } { 3 }, \frac { 1 } { 4 }"
+164,3bb89fda45f9be9a,\partial_{y}=\frac{\partial}{\partial y},\phi_{y}=\frac{\partial}{\partial y},\phi _ { y } = \frac { \partial } { \partial y }
+165,eef15061969213da,M=[\begin{matrix}a&b-a\\ 0&b\end{matrix}],M=[\begin{matrix}a&b-a\\0&b\end{matrix}],M = [ \begin{array} a & b - a \\ 0 & b \end{array} ]
+166,6aa4e59366a83065,Y_{0}\approx1/\sqrt{S},y_{0}\approx1/\sqrt{s},y _ { 0 } \approx 1 / \sqrt { s }
+167,2fade6590cdb2c5c,\frac{db}{dt}=\frac{1}{3},\frac{db}{dt}=\frac{1}{3},\frac { d b } { d t } = \frac { 1 } { 3 }
+168,bab7d2184bb27ba6,-\hat{y},-\hat{y},- \hat { y }
+169,76af87476b3029e1,\Psi(r)=\sqrt{\frac{N}{V}}e^{ik\cdot r},\psi(r)=\sqrt{\frac{N}{v}}e^{ik\cdot r},\psi ( r ) = \sqrt { \frac { N } { v } } e ^ { i k \cdot r }
+170,95d0ae1c86f5f116,"\forall x\in V,(x,x)\notin E","\forall x\in V_{r}(x,x)\notin E","\forall x \in V _ { r } ( x, x ) \notin E"
+171,cebc6964323771a5,\int_{\mu^{\circ}}^{\mu}d\mu=\int_{P^{\circ}}^{P}\overline{V}dP,\int_{M}^{M}dM=\int_{P^{0}}^{P}VdP,\int _ { M } ^ { M } d M = \int _ { P ^ { 0 } } ^ { P } V d P
+172,e3acbfab562159db,x\notin U,x\notin M,x \notin M
+173,5a2113f929488c86,\hat{\pi},\tilde{\Pi},\tilde { \Pi }
+174,fe7d567ac33eb28a,\hbar^{2}l(l+1)/2mr^{2},\hbar^{2}p(p+1)/2mc^{2},\hbar ^ { 2 } p ( p + 1 ) / 2 m c ^ { 2 }
+175,a4601eed9efe146d,t\equiv\sqrt{1-1/\xi^{2}},d\ge\sqrt{n-1}/\xi^{n},d \ge \sqrt { n - 1 } / \xi ^ { n }
+176,83c6ff3f549fd817,A=(\begin{matrix}a&b\\ c&d\\ \end{matrix}),A=(\begin{matrix}a&G\\c&d\end{matrix}),A = ( \begin{array} a & G \\ c & d \end{array} )
+177,936547aaed50b2f0,\sqrt{\frac{1}{126}},\sqrt{\frac{n}{126}},\sqrt { \frac { n } { 1 2 6 } }
+178,38f029dd9bfba97b,Eq.2\frac{d\theta}{dx}=\frac{M}{EI},Eq:\frac{2d\theta}{dx}=\frac{M}{ET},E q : \frac { 2 d \theta } { d x } = \frac { M } { E T }
+179,ba8ce4bf760fae61,S_{12}=\frac{2Z_{0}Z_{12}}{\Delta},S_{12}=\frac{\partial Z_{0}\partial_{12}}{\Delta},S _ { 1 2 } = \frac { \partial Z _ { 0 } \partial _ { 1 2 } } { \Delta }
+180,7e9b880f70fe62dd,2x^{i+r}b(x),\partial x^{i+r}b(x),\partial x ^ { i + r } b ( x )
+181,0ba1f26f5efa2d00,\tilde{x}_{0},\overline{X}_{0},\overline { X } _ { 0 }
+182,a08415262bfeb8b2,\tilde{L}_{i},\tilde{L}_{i},\tilde { L } _ { i }
+183,11a458d89027f194,Im\{x[n]\},Im\{x[n]\},I m \{ x [ n ] \}
+184,da98ba94dc81ac24,P=(\begin{matrix}a+1\\ 1\\ \end{matrix}),p=(\begin{matrix}a+1\\1\end{matrix}),p = ( \begin{array} a + 1 \\ 1 \end{array} )
+185,a7ab891cc37738fd,(\begin{matrix}12\\ 5\end{matrix}),(\begin{matrix}1\\5\end{matrix}),( \begin{array} 1 \\ 5 \end{array} )
+186,75268c994a32b25b,\pi_{w}^{\eta},\mathbb{f}_{\omega}^{n},\mathbb { f } _ { \omega } ^ { n }
+187,b52a1c61c846e8cf,"f_{1}=(x,y,0)/norm","f_{1}=(x,y,0)/morn","f _ { 1 } = ( x, y, 0 ) / m o r n"
+188,7417406fbd836e93,\sqrt{z},\sqrt{z},\sqrt { z }
+189,2553d804cb3d407e,|E(\theta-\hat{\theta})|<\delta,|E(\theta-\hat{\theta})|<\partial,| E ( \theta - \hat { \theta } ) | < \partial
+190,4d01bc39b1fb4863,0\le f(\vec{R})\le1,O\subseteq f(\vec{R})\le1,O \subseteq f ( \vec { R } ) \le 1
+191,13c7e544b1791a4c,P=-(\frac{\partial F}{\partial V})_{T},p=-(\frac{dF}{d^{v}})T,p = - ( \frac { d F } { d ^ { v } } ) T
+192,28b180d4404dd335,W=\int pdV,v=\int p^{dV},v = \int p ^ { d V }
+193,9dcf92b14ff15408,\hat{p}=1,\hat{p}_{0}=1,\hat { p } _ { 0 } = 1
+194,7ad6feaab0ff72a3,\prod_{1\le i<j\le n}(X_{i}-X_{j})^{2},\sum_{j\le n}\sum_{j\le n}(X_{j})^{2},\sum _ { j \le n } \sum _ { j \le n } ( X _ { j } ) ^ { 2 }
+195,3b2bc086d61ecc11,b=\sqrt{c^{2}-a^{2}},b=\sqrt{c^{2}-a^{2}},b = \sqrt { c ^ { 2 } - a ^ { 2 } }
+196,15bfbb8aa3a419e6,A=[\begin{matrix}1&1&0&2\\ -1&-1&0&-2\end{matrix}],x=[\begin{matrix}1&1&0\\-1&0&-2\end{matrix}],x = [ \begin{array} 1 & 1 & 0 \\ - 1 & 0 & - 2 \end{array} ]
+197,415985dbba83fb11,(\begin{matrix}0&1\\ -1&0\\ \end{matrix}),(\begin{matrix}0\\-1\end{matrix}),( \begin{array} 0 \\ - 1 \end{array} )
+198,e029a1c632bfbea7,-\int dx^{\mu}dx^{\nu}B_{\mu\nu},-\int dx^{n}dx^{n}B_{\mu\nu},- \int d x ^ { n } d x ^ { n } B _ { \mu \nu }
+199,a492223d5cc6444f,F[y]=\prod y,F[y]=\Pi y,F [ y ] = \Pi y
+200,752c710311ffc053,\oint dS=\oint\frac{dQ}{T}=0,\int dS=\int\frac{dQ}{T}=0,\int d S = \int \frac { d Q } { T } = 0
+201,b1f5c2391e5477de,\omega_{n}=\frac{\pi^{2}\hbar n^{2}}{8L^{2}m},\omega_{n}=\frac{\pi^{2}H_{n}^{2}}{8L^{2}n},\omega _ { n } = \frac { \pi ^ { 2 } H _ { n } ^ { 2 } } { 8 L ^ { 2 } n }
+202,65cd62a543695e01,\int_{Z}i^{*}\alpha,\overline{S_{z^{\prime}}}^{x}\alpha,\overline { S _ { z ^ { \prime } } } ^ { x } \alpha
+203,c70fe4d8c9eaa18d,"x\in\overline{B}(x_{n},r_{n})","x\in\widetilde{B}(x_{n},n_{n})","x \in \widetilde { B } ( x _ { n }, n _ { n } )"
+204,e17a1e5823ff6446,N_{i}=(\begin{matrix}8\\ i\end{matrix})i^{12},N_{i}=(\begin{matrix}8\\i\end{matrix})i^{12},N _ { i } = ( \begin{array} 8 \\ i \end{array} ) i ^ { 1 2 }
+205,febe4bd94e1ae123,\frac{d}{2},\frac{\partial^{l}}{\partial z},\frac { \partial ^ { l } } { \partial z }
+206,8a4ae5c440349aa5,\dot{y}=\frac{dy}{dt},j=\frac{dy}{dt},j = \frac { d y } { d t }
+207,85315095661ee5e2,\tilde{\kappa}_{o+}=0.7\pm1\times10^{-14},\tilde{K}_{0t}=0.7\pm1\times10^{-14},\tilde { K } _ { 0 t } = 0. 7 \pm 1 \times 1 0 ^ { - 1 4 }
+208,056bb92e362c0350,\frac{d^{2}u}{dy^{2}}=\frac{1}{\mu}\frac{dp}{dx},\frac{d^{2}u}{dy^{2}}=\frac{1}{u}\frac{dp}{dx},\frac { d ^ { 2 } u } { d y ^ { 2 } } = \frac { 1 } { u } \frac { d p } { d x }
+209,2f33581d689e404d,\frac{d^{2}y}{d^{2}t},\frac{d^{2}y}{c^{2}\varphi},\frac { d ^ { 2 } y } { c ^ { 2 } \varphi }
+210,6043227f1bbb0960,v\propto\sqrt{E/\rho},u\propto\sqrt{\frac{E}{p}},u \propto \sqrt { \frac { E } { p } }
+211,9fa442d8fb3e6595,\prod_{i\in I}M_{i}/U,\prod_{i=I}M_{i}/u,\prod _ { i = I } M _ { i } / u
+212,9611a972d30a1671,\frac{df}{dx},\frac{df}{dx},\frac { d f } { d x }
+213,987a471912e044d9,(\begin{matrix}u&&-v\\ v&&u\end{matrix}),(\begin{matrix}u&-v\\v&u\end{matrix}),( \begin{array} u & - v \\ v & u \end{array} )
+214,92252b1b3ac2d87d,\int x(t)dt|_{t=z},\int[x(1)dt]_{1:z},\int [ x ( 1 ) d t ] _ { 1 : z }
+215,27bb4c32f899a7df,T\ne\overline{U},\overline{I}\ne\overline{U},\overline { I } \ne \overline { U }
+216,c9284bda1c841aad,c(1-\frac{r_{S}}{r}),c(1-\frac{G}{r}),c ( 1 - \frac { G } { r } )
+217,e317efbaafde6ca0,"\prod_{i=1}^{n}a_{i,\sigma_{i}}","\prod_{i=1}^{n}a_{i,0_{i}}","\prod _ { i = 1 } ^ { n } a _ { i, 0 _ { i } }"
+218,935ae9e3708d95e5,\int x^{2}e^{x^{2}}dx,\int x^{2}e^{x^{2}}dx,\int x ^ { 2 } e ^ { x ^ { 2 } } d x
+219,336b5abfbff9f03d,A||_{+}B,A||_{+}B,A | | _ { + } B
+220,98150acbbe13d7c5,"\langle a_{i}^{\prime},b_{j}^{\prime}\rangle","\langle a_{i}^{\prime},b_{j}^{\prime}\rangle","\langle a _ { i } ^ { \prime }, b _ { j } ^ { \prime } \rangle"
+221,d40110d28a418811,\int_{L}f(z)dz,\int_{L}f(z)dz,\int _ { L } f ( z ) d z
+222,32f2a7873a503251,\sqrt{\pi}=\pm\sqrt{\pi},\sqrt{\pi}=\frac{7}{\sqrt{\pi}},\sqrt { \pi } = \frac { 7 } { \sqrt { \pi } }
+223,7ba7027aca8fe65e,V\underline{x}=\underline{0},\underline{V}\underline{X}=\underline{D},\underline { V } \underline { X } = \underline { D }
+224,3aa31cb54d24f875,\tilde{x}(t),\overline{x}(t),\overline { x } ( t )
+225,87be5be467554ca5,v_{1}=(\begin{matrix}1\\ 0\end{matrix}),v_{1}=(\begin{matrix}1\\0\end{matrix}),v _ { 1 } = ( \begin{array} 1 \\ 0 \end{array} )
+226,c5460a007970c6e9,F_{1}=[\begin{matrix}0&1\end{matrix}],\hat{r}_{1}=[\begin{matrix}0&1\end{matrix}],\hat { r } _ { 1 } = [ \begin{array} 0 & 1 \end{array} ]
+227,2d8a7ba7253a4fc3,T_{n}n!=n^{n-2}n!,T_{n}n!=n^{n-2}n!,T _ { n } n! = n ^ { n - 2 } n!
+228,b641c1bbc1615def,P=Clocktick,P=a_{oc}kt_{i}ck,P = a _ { o c } k t _ { i } c k
+229,8a5b887df7ca3315,"\{|g,n\rangle,|e,n\rangle\}","\{|g_{1}n\rangle,|e,n\rangle","\{ | g _ { 1 } n \rangle, | e, n \rangle"
+230,974e02e4c75ecd02,\sqrt{-1},\sqrt{-1},\sqrt { - 1 }
+231,8dd01e76a28fce47,(\hat{b}),(\hat{b}),( \hat { b } )
+232,5a1fe42fe086f620,\frac{dS}{dT},\frac{dS}{dT},\frac { d S } { d T }
+233,cbc88cdd3f99ff31,(\begin{matrix}u&v\\ v^{*}&u^{*}\end{matrix}),(\begin{matrix}u&v\\v^{*}&u^{*}\end{matrix}),( \begin{array} u & v \\ v ^ { * } & u ^ { * } \end{array} )
+234,e2847cde010fac69,q(x)=\frac{p(x)-y_{1}}{y_{2}-y_{1}},g(x)=\frac{p(x)-y_{1}}{y_{2}-y_{1}},g ( x ) = \frac { p ( x ) - y _ { 1 } } { y _ { 2 } - y _ { 1 } }
+235,439e8442c50e4382,z=a_{x}x+a_{y}y+d,z=G\times X\backslash G\backslash G,z = G \times X \backslash G \backslash G
+236,8f39fd04e904437e,A_{eff}=\frac{P_{o}}{PFD},A_{eff}=\frac{P_{0}}{PFD},A _ { e f f } = \frac { P _ { 0 } } { P F D }
+237,97551ea9ec7b2493,"\{\frac{\partial}{\partial x^{1}},...,\frac{\partial}{\partial x^{n}}\}","\{g_{x},...,\frac{\partial}{\partial x^{n}}\}","\{ g _ { x },..., \frac { \partial } { \partial x ^ { n } } \}"
+238,163e432f1f18aa87,2^{bh(v^{\prime})-1}-1,2^{bh(v^{\prime})-1},2 ^ { b h ( v ^ { \prime } ) - 1 }
+239,6e0c263f03a75973,|z|=\sqrt{a^{2}+b^{2}},|z|=\sqrt{a^{2}+b^{2}},| z | = \sqrt { a ^ { 2 } + b ^ { 2 } }
+240,15f025c984b32b28,(\begin{matrix}5\\ 1\end{matrix})=1\times\frac{5}{1}=5,(\begin{matrix}5\\1\end{matrix})=1\times\frac{5}{1}=5,( \begin{array} 5 \\ 1 \end{array} ) = 1 \times \frac { 5 } { 1 } = 5
+241,1871635af970741d,M_{ij}=\int v_{i}v_{j}dx,M_{ij}=\int v_{i}v_{j}dx,M _ { i j } = \int v _ { i } v _ { j } d x
+242,fcf73ea0adc387d5,a=c^{\phi/r}modn,a=c\varphi/rmdn,a = c \varphi / r m d n
+243,a944e2feffb630ca,MPM=\frac{dI}{dY},MPy=\frac{dT}{dt},M P y = \frac { d T } { d t }
+244,e89d5d49db66e709,g:=k\oplus m,g:=k\phi m,g : = k \phi m
+245,203be7ad080ba6f5,S=\int ds,S=\int ds,S = \int d s
+246,4147a2bf3609cbb2,\frac{5\pi}{12}(75^{\circ}),\frac{\partial\pi}{12}(7s^{\circ}),\frac { \partial \pi } { 1 2 } ( 7 s ^ { \circ } )
+247,31af108f231a2121,\int_{\gamma}f(z)dz=0,\int f(z)dz=0,\int f ( z ) d z = 0
+248,df8efe8b93c49b97,\int v_{i}dm,\int v:dm,\int v : d m
+249,74cd4566e78cbfec,C_{R}=\sqrt{\frac{h}{H}},C_{k}=\sqrt{\frac{n}{t}},C _ { k } = \sqrt { \frac { n } { t } }
+250,13cad6acea40b294,m\ge(\begin{matrix}k\\ 2\end{matrix}),m\ge(\begin{matrix}k\\2\end{matrix}),m \ge ( \begin{array} k \\ 2 \end{array} )
+251,88da484cff80696b,(8d,(\delta_{\alpha}),( \delta _ { \alpha } )
+252,b3fe8f9a59c3f6b9,\overline{p(t)}=\frac{p(t)}{m},\overline{p(t)}=\frac{p(t)}{m},\overline { p ( t ) } = \frac { p ( t ) } { m }
+253,dc60a00ac0f7bd6e,cot(\frac{\alpha}{2})=\frac{s-a}{r},cot(\frac{\alpha}{2})=\frac{s-a}{r},c o t ( \frac { \alpha } { 2 } ) = \frac { s - a } { r }
+254,12bd240cef6aaf9e,\mathbb{B},\mathbb{D},\mathbb { D }
+255,8d5a154a7cf0125d,\{1/n\}_{n\in N},\{/n\}_{n\in N},\{ / n \} _ { n \in N }
+256,79f8b55322382454,2.4(log_{2}n+m),2.4(log_{2}n+n),2. 4 ( l o g _ { 2 } n + n )
+257,08c7a9b315a96e7b,\sqrt{\frac{5}{126}},\sqrt{\frac{\delta}{106}},\sqrt { \frac { \delta } { 1 0 6 } }
+258,dbba7aab267317cd,\int_{0}^{x}cos(1/t)dt,\int_{0}^{x}cos(1/t)dt,\int _ { 0 } ^ { x } c o s ( 1 / t ) d t
+259,d82b1ff5048f8d16,-W(-Q)/Q,-W(-Q)/Q,- W ( - Q ) / Q
+260,ff9eebb45f414fcd,8\sqrt{3},8\sqrt{3},8 \sqrt { 3 }
+261,d003acd16c84b386,\int_{0}^{T}y_{2}dt,\int_{0}^{7}j_{2}dt,\int _ { 0 } ^ { 7 } j _ { 2 } d t
+262,8244c25242c105a7,\frac{dX}{dt},\frac{dx}{dt},\frac { d x } { d t }
+263,1b32a1c4a1378a89,\sum_{m}|u_{m}|^{2}<\infty,\sum_{m}|u_{m}|^{2}<\infty,\sum _ { m } | u _ { m } | ^ { 2 } < \infin
+264,e6dcf9269488ba44,G=H-TS_{int},G=FI-TS_{in+},G = F I - T S _ { i n + }
+265,eed1a3ef109fadbe,\hat{K}_{G},\hat{K}_{6},\hat { K } _ { 6 }
+266,b8d698a51c1b1f24,(Pf)^{\wedge}=Q\hat{f},(\beta\beta)^{n}=Q\hat{\beta},( \beta \beta ) ^ { n } = Q \hat { \beta }
+267,3466540475a8fe77,\hat{h},\hat{n},\hat { n }
+268,c524febb2a4e784c,-\sqrt{2},-\sqrt{2},- \sqrt { 2 }
+269,d671c4188f89a156,H_{0}:m(\theta_{0})=0,H_{0}:m(O_{0})=0,H _ { 0 } : m ( O _ { 0 } ) = 0
+270,dc18912067d941c8,\sqrt{K},\sqrt{K},\sqrt { K }
+271,8b72bded61eaecb9,U((n+1)\Delta t),U((n+1)\Delta t),U ( ( n + 1 ) \Delta t )
+272,2418d12cc65773d2,\overline{huv},\overline{huv},\overline { h u v }
+273,422099720f841957,\frac{\partial f}{\partial n},\frac{\partial f}{\partial n},\frac { \partial f } { \partial n }
+274,09f3fc690f2a063a,\int_{S}F\overline{F},\int_{S}F\overline{F},\int _ { S } F \overline { F }
+275,9be64f5324360aed,\int_{0}^{T}f(t)dt,\int_{0}^{T}f(t)dt,\int _ { 0 } ^ { T } f ( t ) d t
+276,f2ee505863e87ec2,\langle\lambda_{\alpha}^{a}\lambda_{\beta}^{b}\rangle\sim\delta^{ab}\epsilon_{\alpha\beta}\Lambda^{3},(\lambda_{x}^{a}\lambda_{\beta}^{b})\sim\delta_{x\in S}^{ab}\beta^{a},( \lambda _ { x } ^ { a } \lambda _ { \beta } ^ { b } ) \sim \delta _ { x \in S } ^ { a b } \beta ^ { a }
+277,f3d83b3423828fa3,"[0,\frac{3}{8}]\cup[\frac{5}{8},1]","[0,\frac{3}{8}]\cup[\frac{5}{8},1]","[ 0, \frac { 3 } { 8 } ] \cup [ \frac { 5 } { 8 }, 1 ]"
+278,f67f05feb5aa64cc,R(x)=2x^{2}+x-1,P(x)=DC^{2}+x-1,P ( x ) = D C ^ { 2 } + x - 1
+279,65af697fa7f66ba6,n=p_{1}^{k_{1}}p_{2}^{k_{2}}...p_{l}^{k_{l}},n=p_{1}^{k_{1}}p_{2}^{k_{2}}\cdot p_{k}^{k_{1}},n = p _ { 1 } ^ { k _ { 1 } } p _ { 2 } ^ { k _ { 2 } } \cdot p _ { k } ^ { k _ { 1 } }
+280,2bee1557637d6ff9,\overline{S_{1}},S_{\beta},S _ { \beta }
+281,85f07e945785dd14,\tilde{\rho},\tilde{p},\tilde { p }
+282,eebef09fbd91b272,A[x]A[y],\beta U_{X}A_{Y},\beta U _ { X } A _ { Y }
+283,471ea01f0f6d36ce,(A-B)\sqrt{g}=1.,(A-B)\sqrt{g}=1.,( A - B ) \sqrt { g } = 1.
+284,97829861b1240105,1(2^{1}/1!!)\pi^{0},1(2^{1}/211)T0,1 ( 2 ^ { 1 } / 2 1 1 ) T 0
+285,ca1829a6f829fa71,\tilde{x}\in F,\tilde{x}\in F,\tilde { x } \in F
+286,967e309fe834a446,C_{R}=\sqrt{\frac{h}{H}},C_{R}=\sqrt{\frac{1}{H}},C _ { R } = \sqrt { \frac { 1 } { H } }
+287,e5311ded7ddd6f00,(\begin{matrix}0&1\\ 0&0\end{matrix}),(\begin{matrix}0&1\\0&0\end{matrix}),( \begin{array} 0 & 1 \\ 0 & 0 \end{array} )
+288,df775c763c7fbd3c,\frac{2-a}{\sqrt{2-2a}},\frac{2-2}{\sqrt{2-2}},\frac { 2 - 2 } { \sqrt { 2 - 2 } }
+289,63b57c480e039114,\kappa^{+}\rightarrow(\alpha)^{2},k^{+}\rightarrow(\alpha)^{k},k ^ { + } \rarr ( \alpha ) ^ { k }
+290,11545553c39fce28,(L_{X}g_{ab})_{;c}=0,(\underline{L}_{X}g_{ab})_{i}=0,( \underline { L } _ { X } g _ { a b } ) _ { i } = 0
+291,9f493d834df32d31,\frac{dS}{dT},\frac{dS}{dT},\frac { d S } { d T }
+292,1435c25d1288d06f,\frac{dy}{ds}=1,\frac{dy}{ds}=1,\frac { d y } { d s } = 1
+293,cc70c0587f0caeca,"\langle x,0\rangle=\langle0,x\rangle=0","\langle x,0\rangle=\langle0,x\rightarrow0","\langle x, 0 \rangle = \langle 0, x \rarr 0"
+294,40dc80b2a28e6a03,\frac{a}{a+b}+\frac{b}{a+b}=1,\frac{a}{a+b}+\frac{b}{a+b}=1,\frac { a } { a + b } + \frac { b } { a + b } = 1
+295,1c45bd337ebd7f03,\int dqE(q)=I,\int dqE(q)=I,\int d q E ( q ) = I
+296,e3f3faa4b826cab1,z=\pm\sqrt{R^{2}-r^{2}};,z=\pm\sqrt{R^{2}-r^{2}}:,z = \pm \sqrt { R ^ { 2 } - r ^ { 2 } } :
+297,aa8358481f84cabf,\sqrt{L},\sqrt{L},\sqrt { L }
+298,2589680d0174f734,\Pi_{f}=1-e^{-BR},\prod_{p}=1-e^{-BR},\prod _ { p } = 1 - e ^ { - B R }
+299,1461007b533eeefe,\frac{\partial^{2}u^{2}}{\partial x^{2}},\frac{\partial^{2}u^{2}}{\partial x^{2}},\frac { \partial ^ { 2 } u ^ { 2 } } { \partial x ^ { 2 } }
+300,45487ef6dfdd61e1,(\begin{matrix}I&0\\ 0&F\end{matrix}),(\begin{matrix}I&0\\0&F\end{matrix}),( \begin{array} I & 0 \\ 0 & F \end{array} )
+301,747ce17014ba6157,(\begin{matrix}m\\ n\end{matrix}),(\begin{matrix}n\\n\end{matrix}),( \begin{array} n \\ n \end{array} )
+302,5f859dfa2eb73103,\{\begin{matrix}4\\ 4\end{matrix}\},\{\begin{matrix}4\\4\end{matrix}\},\{ \begin{array} 4 \\ 4 \end{array} \}
+303,e6cb3292b10c9d45,(\begin{matrix}14\\ 5\end{matrix})=2002,(\begin{matrix}14\\5\end{matrix})=2002,( \begin{array} 1 4 \\ 5 \end{array} ) = 2 0 0 2
+304,a173c2721924efd0,\int_{-r}^{r}|y-s|dx,\int_{-z}^{z}|y-s|dx,\int _ { - z } ^ { z } | y - s | d x
+305,8731edada640c4e9,\sum|f(b_{k}^{\prime})-f(a_{k}^{\prime})|<\epsilon,\sum|f(b_{k}^{\prime})-f(a_{k}^{\prime})|<\epsilon,\sum | f ( b _ { k } ^ { \prime } ) - f ( a _ { k } ^ { \prime } ) | < \epsilon
+306,444c1e6377da6511,A=n\sqrt{\frac{m}{2\pi kT}},A=n\sqrt{\frac{m}{2\pi kT}},A = n \sqrt { \frac { m } { 2 \pi k T } }
+307,c125824833a68223,u_{2}=[\begin{matrix}0\\ 1\end{matrix}],W_{2}=[\begin{matrix}0\\1\end{matrix}],W _ { 2 } = [ \begin{array} 0 \\ 1 \end{array} ]
+308,98538ee3b83e0707,\frac{df}{dx},\frac{dF}{dx},\frac { d F } { d x }
+309,eae3331055c64dcf,\frac{dv}{dr},\frac{dv}{dT},\frac { d v } { d T }
+310,28a3fca7a1019c57,"[h_{i},f_{j}]=-c_{ij}f_{j}","[n_{i},f_{j}]=-c_{ij}f_{j}","[ n _ { i }, f _ { j } ] = - c _ { i j } f _ { j }"
+311,7c7d7abad8115905,(\frac{\partial E}{\partial v})_{k},(\frac{\partial E}{\partial D})_{k},( \frac { \partial E } { \partial D } ) _ { k }
+312,97cb2b875972b06b,K_{+}\subset K_{+0},K_{+}\subset K_{+0},K _ { + } \subset K _ { + 0 }
+313,bf77d0642ac75692,(1-o(1))\cdot lnn,(1-O(1))\cdot lnn,( 1 - O ( 1 ) ) \cdot l n n
+314,fb0fc3c93dca2e52,\hat{T}(x)^{-1}\hat{H}\hat{T}(x)=\hat{H},\hat{J}(x)^{-1}\hat{J}(x):\hat{J},\hat { J } ( x ) ^ { - 1 } \hat { J } ( x ) : \hat { J }
+315,da8caf7fc7f9b03d,x^{\prime\top}Fx=0,x^{\prime T}F_{x=0},x ^ { \prime T } F _ { x = 0 }
+316,a4e65b3a19ce70ef,\hat{X}^{n},\hat{x}^{n},\hat { x } ^ { n }
+317,728a7b865669bd01,=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\nu},=\partial_{x}A_{v}\cdot\partial_{u}A_{x},= \partial _ { x } A _ { v } \cdot \partial _ { u } A _ { x }
+318,7aefd7916167cfdc,\Gamma(n)=(n-1)!,\Pi(n)=(n-1)^{1},\Pi ( n ) = ( n - 1 ) ^ { 1 }
+319,b85c98e7cc11969d,P(Y>n)\le\frac{E(Y)}{n},r(y>u)\le\frac{E(y)}{n},r ( y > u ) \le \frac { E ( y ) } { n }
+320,455cf6c469259e80,"\overline{X}_{n}=(X_{n1},...,X_{nk})","\overline{x}_{n}=(x_{n1},..,x_{nk})","\overline { x } _ { n } = ( x _ { n 1 },.., x _ { n k } )"
+321,43e0a6102267f361,f_{xx}=-\frac{3}{8}<0,f_{xx}=-\frac{3}{8}<0,f _ { x x } = - \frac { 3 } { 8 } < 0
+322,96266a45028b6bd1,y^{\prime}(t)=\alpha+\frac{vy(t)}{c+vt},y^{\prime}+1=\alpha+\frac{vy^{\prime}y^{\prime}}{c^{\prime}+v^{\prime}t},y ^ { \prime } + 1 = \alpha + \frac { v y ^ { \prime } y ^ { \prime } } { c ^ { \prime } + v ^ { \prime } t }
+323,9b675c143476c5e9,J(x)\in(X_{\beta}^{\prime})_{\beta}^{\prime},J_{\alpha}\in(X_{p}^{\prime})^{\prime},J _ { \alpha } \in ( X _ { p } ^ { \prime } ) ^ { \prime }
+324,0ff28d9ed68264e3,(\forall x\in V^{P})p\Vdash_{P}f,(\forall x\in V^{p})_{p}()=0,( \forall x \in V ^ { p } ) _ { p } ( ) = 0
+325,cec2fbaa4e74c58c,[\Lambda]=[\begin{matrix}I_{1}&0&0\\ 0&I_{2}&0\\ 0&0&I_{3}\end{matrix}],[1]=[\begin{matrix}I_{1}&0&0\\0&0&I_{0}\end{matrix}],[ 1 ] = [ \begin{array} I _ { 1 } & 0 & 0 \\ 0 & 0 & I _ { 0 } \end{array} ]
+326,9a2f8edea4dc946a,\int_{E}f(t)d\mu(t),\int_{A^{2}}f(A)d\mu(A),\int _ { A ^ { 2 } } f ( A ) d \mu ( A )
+327,177a593fd5aab6f6,ss\{\begin{matrix}2\\ 3\end{matrix}\},ss\{\begin{matrix}2\\3\end{matrix}\},s s \{ \begin{array} 2 \\ 3 \end{array} \}
+328,3380a2d493974727,F(\nu)=\frac{8\pi h\nu^{3}}{c^{3}},F(v)=\frac{8\pi dv^{3}}{c^{3}},F ( v ) = \frac { 8 \pi d v ^ { 3 } } { c ^ { 3 } }
+329,15fc58a621a3f8d2,\hat{e}_{j},\hat{e}_{j},\hat { e } _ { j }
+330,6c2ca8ef677dfc35,"r(K_{m}+\overline{K_{n}},K_{p}+\overline{K_{q}})","\gamma(K_{m}+\widetilde{K}_{n},K_{p}+\widetilde{K}_{q})","\gamma ( K _ { m } + \widetilde { K } _ { n }, K _ { p } + \widetilde { K } _ { q } )"
+331,7570bb53cc001aee,G(R)=\sigma^{+}-\sigma,G(\mathbb{R})=6^{\dagger}-6,G ( \mathbb { R } ) = 6 ^ { \dag } - 6
+332,0709b1451d9132a0,S=-mc^{2}\int_{C}d\tau,s=-mr^{2}\int dr,s = - m r ^ { 2 } \int d r
+333,79ff45409739cf99,\partial_{x}=\frac{\partial}{\partial x},\partial_{x}=\frac{\partial}{\partial x},\partial _ { x } = \frac { \partial } { \partial x }
+334,98345946a81d2432,"(x,v=u\cdot Mg(x))","(x,v=u\cdot M_{g}(x))","( x, v = u \cdot M _ { g } ( x ) )"
+335,eb129c9baa32e1e8,(\begin{matrix}n\\ k\end{matrix})=\frac{n^{\underline{k}}}{k!},(\begin{matrix}n\\k\end{matrix})=\frac{n^{k}}{k!},( \begin{array} n \\ k \end{array} ) = \frac { n ^ { k } } { k! }
+336,9b20b5420fbe3173,\frac{dB}{dz},\frac{\partial B}{\partial z},\frac { \partial B } { \partial z }
+337,35703831b2c56357,x^{\prime\top}Fx=0,x^{\prime T}F_{x}=0,x ^ { \prime T } F _ { x } = 0
+338,c967c4db2ec54866,k\notin S,k\notin S,k \notin S
+339,9f8b97998f93646c,M=\prod_{i\in I}M_{i}/U,M=\prod_{i\in I}M_{i}/M,M = \prod _ { i \in I } M _ { i } / M
+340,864ce7ef47dc1839,\frac{\partial f}{\partial\phi},\frac{\partial f}{\partial\theta},\frac { \partial f } { \partial \theta }
+341,4b407c466d7193ce,"X=(X(t),t\ge0)","x=(x(t),t\ge0)","x = ( x ( t ), t \ge 0 )"
+342,bc9aa779a6d31578,\frac{\partial\omega}{\partial t}=\nu\frac{\partial^{2}\omega}{\partial z^{2}},\frac{\partial w}{\partial t}=V\frac{\partial^{2}w}{\partial z^{2}},\frac { \partial w } { \partial t } = V \frac { \partial ^ { 2 } w } { \partial z ^ { 2 } }
+343,447c2b93ef2a1e2e,P(A_{1})\le P(A_{1}),P(A_{1})\le P(A_{1}),P ( A _ { 1 } ) \le P ( A _ { 1 } )
+344,ff75876c9ac8f3b4,\frac{dC}{dt},\frac{dC}{dt},\frac { d C } { d t }
+345,a4d1200de2992de3,\overline{12}_{24}+\overline{21}_{24}=\overline{9}_{24},\overline{124}+\overline{24}_{24}=\overline{q}_{24},\overline { 1 2 4 } + \overline { 2 4 } _ { 2 4 } = \overline { q } _ { 2 4 }
+346,86d9924b3f673de0,f^{*}(x)=e^{\frac{xf^{\prime}(x)}{f(x)}},s^{*}(x)=e\frac{\pi f^{\prime}(x)}{f(x)},s ^ { * } ( x ) = e \frac { \pi f ^ { \prime } ( x ) } { f ( x ) }
+347,d36a8b79c5ad95af,D=N-K+1,0=N-K+1,0 = N - K + 1
+348,ae71ddba8cac2e9a,n=p_{1}^{a_{1}}p_{2}^{a_{2}}p_{3}^{a_{3}}\cdot\cdot\cdot,n=p_{1}^{a}p_{2}^{a}p_{3}^{a}..,n = p _ { 1 } ^ { a } p _ { 2 } ^ { a } p _ { 3 } ^ { a }..
+349,827f68f123933374,"\Gamma^{i}=\partial_{t}q^{i}(t,\overline{q}^{j})","\prod^{i}=\partial_{t}q^{i}(t,\overline{q}^{j})","\prod ^ { i } = \partial _ { t } q ^ { i } ( t, \overline { q } ^ { j } )"
+350,d99ebf45252988d2,S\notin W,s\notin w,s \notin w
+351,31744598baea6e22,W=\int_{1}^{2}Fdx,w=\int_{1}^{2}fdx,w = \int _ { 1 } ^ { 2 } f d x
+352,45c9d1521910b8d9,k^{\theta_{\eta}},k^{\theta_{n}},k ^ { \theta _ { n } }
+353,33d422ec0a626de1,(\begin{matrix}13\\ 4\end{matrix}),(\begin{matrix}13\\4\end{matrix}),( \begin{array} 1 3 \\ 4 \end{array} )
+354,81e9c756ed21d8c3,A_{max}=\frac{\sigma f_{s}}{\omega},A_{max}=\frac{\partial f_{s}}{w},A _ { m a x } = \frac { \partial f _ { s } } { w }
+355,2d6938a5362dbeb4,Y=P_{x}\cdot x+P_{y}\cdot y,y=p_{x}:x+p_{y}:y,y = p _ { x } : x + p _ { y } : y
+356,953724bd73fbb113,\hat{H}=\hat{H}(\hat{P}),\hat{H}=H^{\prime}(\hat{P}),\hat { H } = H ^ { \prime } ( \hat { P } )
+357,49b254e13824aaeb,\hat{d},\hat{d},\hat { d }
+358,a99b296ce5820fe4,\frac{\partial z}{\partial x}=f^{\prime}(yz)y\frac{\partial z}{\partial x},\frac{\partial z}{\partial x}=f^{\prime}(yz)y\frac{\partial z}{\partial x},\frac { \partial z } { \partial x } = f ^ { \prime } ( y z ) y \frac { \partial z } { \partial x }
+359,e80d80a171f3dd2d,[\begin{matrix}1&1\\ 0&1\end{matrix}],[\begin{matrix}1&1\\0&1\end{matrix}],[ \begin{array} 1 & 1 \\ 0 & 1 \end{array} ]
+360,d047f5f1a3457a0c,\frac{dx}{x},\frac{dx}{x},\frac { d x } { x }
+361,222205de27b9ed50,\alpha_{mk}R^{k}y^{k}(1-y)^{m},\alpha_{mk}R^{k}y^{k}u-y^{m},\alpha _ { m k } R ^ { k } y ^ { k } u - y ^ { m }
+362,da2765d312dd6310,r(0)=r_{0}\in R^{2N},r(p)=rotR^{2N},r ( p ) = r o t R ^ { 2 N }
+363,8c3054f0a6fd0d8d,"(Z_{1}/X_{1},Z_{1}/Y_{1})","(Z_{1}/X_{1},Z_{1},Y_{1})","( Z _ { 1 } / X _ { 1 }, Z _ { 1 }, Y _ { 1 } )"
+364,47ba68f8951605d3,p\in Z(g^{*}),p\in Z(g^{*}),p \in Z ( g ^ { * } )
+365,f32bda371f393d9f,\phi_{x}(m_{x}|\Theta),\phi_{x}(m_{x}|\theta),\phi _ { x } ( m _ { x } | \theta )
+366,5e35a1ec78cdec9b,\Psi=e^{i(k\cdot r-\omega t)},\psi=e^{i(k\cdot r-\omega t)},\psi = e ^ { i ( k \cdot r - \omega t ) }
+367,10955fb7c2690503,"(id_{\alpha},id_{\beta})","(id_{\alpha},id_{\beta})","( i d _ { \alpha }, i d _ { \beta } )"
+368,631bf713f85b721d,\int e^{x}dx=e^{x}+C,\int e^{x}dx=e^{x}+C,\int e ^ { x } d x = e ^ { x } + C
+369,eb05c50d9755c263,x^{\prime}=\gamma(x-vt),x^{\prime}=\gamma(x-vt),x ^ { \prime } = \gamma ( x - v t )
+370,ae19fb6ee79a4b0c,C_{0}^{\infty}(U)\subseteq L^{2}(U),C_{0}^{\infty}(v)\in L^{2}(v),C _ { 0 } ^ { \infin } ( v ) \in L ^ { 2 } ( v )
+371,d610624cee2c2667,N,\mathbb{N},\mathbb { N }
+372,d8853b4437af67d2,"P_{i,i-1}=P_{i,i+1}=q_{i}","P_{i,i-1}=P_{i,i+1}=\delta_{i}","P _ { i, i - 1 } = P _ { i, i + 1 } = \delta _ { i }"
+373,5fb7456c72d3c643,d=(1/2)b_{2},d=(\sqrt{2})b_{2},d = ( \sqrt { 2 } ) b _ { 2 }
+374,7c76515103751722,+j1.14,+j^{1.14},+ j ^ { 1. 1 4 }
+375,621d92889f603a4a,p:\dot{\phi}\mapsto(p|\dot{\phi}),p:\phi\rightarrow(\rho/\theta),p : \phi \rarr ( \rho / \theta )
+376,58754116741e3ba7,[\begin{matrix}1&0\\ 0&1\end{matrix}],[\begin{matrix}1&0\\0&1\end{matrix}],[ \begin{array} 1 & 0 \\ 0 & 1 \end{array} ]
+377,2b36dd0467ee5d2a,A=(a_{ij}),A=(a_{j}),A = ( a _ { j } )
+378,402dd5e86d877461,\int_{\gamma}D\gamma,\int_{\gamma}Dy,\int _ { \gamma } D y
+379,ced3e0d13c371bf8,\frac{\partial u}{\partial\nu}(x_{0})>0,\frac{\partial u}{\partial v}(x_{o})>0,\frac { \partial u } { \partial v } ( x _ { o } ) > 0
+380,8e634743f9e323d9,\frac{3}{5}(N_{p}+N_{n})^{2/3},\frac{3}{5}(N_{p}+N_{n})^{2/3},\frac { 3 } { 5 } ( N _ { p } + N _ { n } ) ^ { 2 / 3 }
+381,e99701a22e5f2fc7,\tilde{M},\tilde{M},\tilde { M }
+382,118a2ccc1e584daa,\frac{9(e^{10}-1)}{10}\approx19823,\frac{9(e^{10}-1)}{10}\simeq19833,\frac { 9 ( e ^ { 1 0 } - 1 ) } { 1 0 } \simeq 1 9 8 3 3
+383,f9e2ee6039d21575,\sqrt{\nu},\sqrt{v},\sqrt { v }
+384,ced23d86fae09547,\overline{W},\overline{W},\overline { W }
+385,174fe9c91d26eade,\delta[\rho-\hat{\rho}],S[P-\hat{P}],S [ P - \hat { P } ]
+386,1fd8b71739a2d934,"minmax_{i,j}c_{ij}x_{ij}",minmax:jC_{j}X_{j},m i n m a x : j C _ { j } X _ { j }
+387,a18b6b31e03b24ac,\underline{S},\overline{S},\overline { S }
+388,f47578b8c45bf53e,"A^{0}(\overline{x},G)=G\overline{x}","A^{0}(\overline{x},G)=G\overline{x}","A ^ { 0 } ( \overline { x }, G ) = G \overline { x }"
+389,6d2b7fc2e0be4fc6,\frac{a}{b+\frac{c}{n}}\rightarrow\frac{a}{b},\frac{a}{b+\frac{a}{n}}\rightarrow\frac{a}{b},\frac { a } { b + \frac { a } { n } } \rarr \frac { a } { b }
+390,47b79f2efdaf3acd,\{\begin{matrix}4\\ 3\end{matrix}\},\{\begin{matrix}u\\3\end{matrix}\},\{ \begin{array} u \\ 3 \end{array} \}
+391,ffc9d37d827a406d,C_{E_{2}}^{J}=-\epsilon_{1}^{1}\epsilon_{2}^{3}/D,C_{E_{2}}^{S}=-\epsilon_{1}^{1}\varepsilon_{2}^{3}/P,C _ { E _ { 2 } } ^ { S } = - \epsilon _ { 1 } ^ { 1 } \varepsilon _ { 2 } ^ { 3 } / P
+392,dfa8b29e2e2fd3d9,\int_{0}^{5}xdx,\int_{0}^{s}x\partial x,\int _ { 0 } ^ { s } x \partial x
+393,d9bc94974a56f7b6,\sum_{j=1}^{j=N}P_{ijkl}Q_{mnj},\sum_{j=1}^{j+\infty}P_{j}kolQ_{n=j},\sum _ { j = 1 } ^ { j + \infin } P _ { j } k o l Q _ { n = j }
+394,ffe341c05fa5de66,[\begin{matrix}1\\ 0\end{matrix}],[\begin{matrix}1\\0\end{matrix}],[ \begin{array} 1 \\ 0 \end{array} ]
+395,da70cb7477c6e629,f=-\frac{4\pi G}{3c^{2}}\rho(r)r,f=-\frac{4\pi G}{3\epsilon^{2}}\rho(r)r,f = - \frac { 4 \pi G } { 3 \epsilon ^ { 2 } } \rho ( r ) r
+396,66fc1b878e8e105d,\tilde{t}_{i},\tilde{E}_{i},\tilde { E } _ { i }
+397,3ada03b6e163405a,2\cdot(\begin{matrix}12\\ 4\end{matrix})=990,2\cdot(\begin{matrix}12\\4\end{matrix})=990,2 \cdot ( \begin{array} 1 2 \\ 4 \end{array} ) = 9 9 0
+398,13338c208c474a85,P-AP>0,P-AP>0,P - A P > 0
+399,065d242017df1b81,c=1/\sqrt{\mu_{0}\epsilon_{0}},c=1/\sqrt{N_{0}\in D_{0}},c = 1 / \sqrt { N _ { 0 } \in D _ { 0 } }
+400,39fb2032619976d6,\frac{1}{2}\sqrt{r-r^{2}},\frac{1}{2}\sqrt{r\cdot r^{2}},\frac { 1 } { 2 } \sqrt { r \cdot r ^ { 2 } }
+401,a949f03c945a7337,\{\begin{matrix}3\\ 5\end{matrix}\},\{\begin{matrix}3\\5\end{matrix}\},\{ \begin{array} 3 \\ 5 \end{array} \}
+402,89280a64ac0d99d6,[\begin{matrix}1\\ 0\end{matrix}],[\begin{matrix}2\\0\end{matrix}],[ \begin{array} 2 \\ 0 \end{array} ]
+403,e901e09bb930ec3c,(\begin{matrix}0\\ 1\end{matrix}),(\begin{matrix}0\\1\end{matrix}),( \begin{array} 0 \\ 1 \end{array} )
+404,3d200827f703ea88,0+0=1+1=0,D+D=D+C=0,D + D = D + C = 0
+405,8947aceee3e2f48b,k_{x^{b}},k_{x^{b}},k _ { x ^ { b } }
+406,a14bb5c3464001cf,\int x^{k}d\mu(x)=m_{k},\int x^{k}d\mu(x)=m_{k},\int x ^ { k } d \mu ( x ) = m _ { k }
+407,ce3d9a6bde1a9945,r=1+\frac{a_{c}}{100},r=1+\frac{m}{100},r = 1 + \frac { m } { 1 0 0 }
+408,1574b9d1bf2f7ac5,(\begin{matrix}n-1\\ n-x\end{matrix}),(\begin{matrix}n-x\\k-x\end{matrix}),( \begin{array} n - x \\ k - x \end{array} )
+409,a7376392beedae87,S=\int_{0}^{T}E[s(t)^{2}]dt,S=\int_{0}^{T}E[S(t)^{2}]dt,S = \int _ { 0 } ^ { T } E [ S ( t ) ^ { 2 } ] d t
+410,cb16018cc48d056b,\frac{d}{d\tau},\frac{\partial}{\partial r},\frac { \partial } { \partial r }
+411,3380cc87292a393c,\hat{v}_{i},\hat{V}_{i},\hat { V } _ { i }
+412,3c6523dfdfaac528,x(a+b)+c,x(a+b)+c,x ( a + b ) + c
+413,57edb349d9b52688,F:M_{n}(K)\rightarrow K,F:M_{n}(K)\rightarrow K,F : M _ { n } ( K ) \rarr K
+414,dab3bc6c8fd88973,lim_{n\rightarrow\pm\infty}x^{2}f(x)=0,lim_{n\rightarrow\infty}^{2}f(x)=0,l i m _ { n \rarr \infin } ^ { 2 } f ( x ) = 0
+415,91d98ee7d58856a7,U=(\begin{matrix}0&1\\ 1&0\end{matrix}),U=(\begin{matrix}0&1\\1&0\end{matrix}),U = ( \begin{array} 0 & 1 \\ 1 & 0 \end{array} )
+416,67d5d7f7c1ecb4bb,s\{\begin{matrix}3\\ 4\end{matrix}\},s\in3,s \in 3
+417,0dc4e90870751f43,\omega_{\mu}^{1},\omega_{\mu},\omega _ { \mu }
+418,10fa699d6aa84dd0,\frac{A}{RC}=\frac{V_{out}}{RC},\frac{A}{R_{c}}=\frac{V_{out}}{R_{c}},\frac { A } { R _ { c } } = \frac { V _ { o u t } } { R _ { c } }
+419,113a6230f26580c0,\int_{0}^{t}Y(r)dr,\int_{0}^{+}Y(r)dr,\int _ { 0 } ^ { + } Y ( r ) d r
+420,c09d51f67ea61cfb,=>T^{2}=4\pi^{2}\frac{l}{mB_{H}},\Rightarrow T^{2}=4m^{2}\frac{l}{m^{2}p_{H}},\Rarr T ^ { 2 } = 4 m ^ { 2 } \frac { l } { m ^ { 2 } p _ { H } }
+421,eea12e448aebba94,(X_{1}+\cdot\cdot\cdot+X_{n})/\sqrt{n},(X_{1}+\cdot\cdot+X_{n})/\sqrt{n},( X _ { 1 } + \cdot \cdot + X _ { n } ) / \sqrt { n }
+422,1c0ded184596da76,t\{\begin{matrix}p\\ 2\end{matrix}\},z\{\begin{matrix}r\\q\end{matrix}\},z \{ \begin{array} r \\ q \end{array} \}
+423,17d2dad8a91ff96f,\Phi=e^{B+i\omega}\Omega,\Phi=e^{B+iw}\Omega,\Phi = e ^ { B + i w } \Omega
+424,78e0770092d34329,\|\lambda_{\hat{\theta}}-\lambda_{\theta}^{*}\|_{T},(|\lambda_{\theta}-\lambda_{\theta}^{*})|_{T},( | \lambda _ { \theta } - \lambda _ { \theta } ^ { * } ) | _ { T }
+425,a53cdf53f07cd4c2,n=\int fd^{3}v,n=\int fd^{3}v,n = \int f d ^ { 3 } v
+426,36492e70279da0ee,"=(r_{1},...r_{|D|})","=(r_{1},..,r_{1D1})","= ( r _ { 1 },.., r _ { 1 D 1 } )"
+427,9f2ab14a3d3eb6db,\hat{f}(k),\hat{f}(k),\hat { f } ( k )
+428,a9643625c858ee4a,(\begin{matrix}2n\\ n+1\end{matrix})=\frac{n}{n+1}(\begin{matrix}2n\\ n\end{matrix}),(\begin{matrix}2n\\n+1\end{matrix})=\frac{n}{n+1}(\begin{matrix}2n\\n\end{matrix}),( \begin{array} 2 n \\ n + 1 \end{array} ) = \frac { n } { n + 1 } ( \begin{array} 2 n \\ n \end{array} )
+429,043270c362331308,(B_{E}u)(v),(B_{\epsilon}u)(v),( B _ { \epsilon } u ) ( v )
+430,c4a650d2644f811f,A_{f}=\langle f|P\rangle,A_{f}=\langle S|P\rangle,A _ { f } = \langle S | P \rangle
+431,ad82dd7813106fe7,\sum_{I=1}^{L}I=L(L+1)/2,\sum_{l=1}^{k}I=L(L+1)/2,\sum _ { l = 1 } ^ { k } I = L ( L + 1 ) / 2
+432,1e9079ee0eacf9f3,K_{i}\varphi\Rightarrow K_{i}K_{i}\varphi,K;\varphi\Rightarrow K_{i}/\varphi,K ; \varphi \Rarr K _ { i } / \varphi
+433,4ac0e42496746a8c,f(x)=x+\sqrt{|x|},f(x)=x^{+}\sqrt{|x|},f ( x ) = x ^ { + } \sqrt { | x | }
+434,44efb63dee42b866,K=\frac{V}{A_{p}L},k=\frac{v}{Ad},k = \frac { v } { A d }
+435,bccd5287bd026767,\hat{P},\hat{\rho},\hat { \rho }
+436,8c6f7731ce5a408e,\int_{a}^{b},\int_{a}^{b},\int _ { a } ^ { b }
+437,d3a29760569e261d,\frac{\nu\tau^{2}}{\nu+2},\frac{\partial uT}{\partial+\partial},\frac { \partial u T } { \partial + \partial }
+438,a746df851f01b3b2,\int_{a}^{b}(f(x))^{2}dx,\int_{a}^{b}(f(x))^{2}dx,\int _ { a } ^ { b } ( f ( x ) ) ^ { 2 } d x
+439,9e5faa862970fd3a,1+\frac{1}{300\%}=\frac{4}{3},1+\frac{1}{300/4}=\frac{4}{3},1 + \frac { 1 } { 3 0 0 / 4 } = \frac { 4 } { 3 }
+440,173dfcd394b2d782,sup_{n}|\sum_{i=1}^{n}x_{i}|,sup_{1}\prod_{i=1}^{n}x_{i}|,s u p _ { 1 } \prod _ { i = 1 } ^ { n } x _ { i } |
+441,6c34879d245a95d3,\hat{c}_{V},\hat{C}_{V},\hat { C } _ { V }
+442,c22b150a4fcff741,v=\frac{dr}{dt},v=\frac{\partial_{r}}{\partial t},v = \frac { \partial _ { r } } { \partial t }
+443,2e903886ac8a6b97,H_{3}\longrightarrow H_{3}^{+}+e^{-},H_{3}\rightarrow H_{3}^{+}+e^{-},H _ { 3 } \rarr H _ { 3 } ^ { + } + e ^ { - }
+444,f7dc253729c96e66,\tilde{\chi}(t)=\tilde{\rho}(t)R_{0},"\tilde{x}(t)=\tilde{p}(t),R_{0}","\tilde { x } ( t ) = \tilde { p } ( t ), R _ { 0 }"
+445,e57628d5dd8d1c2c,f(r_{1})=3^{2}-2=7,f(r)=3^{2}-2=7,f ( r ) = 3 ^ { 2 } - 2 = 7
+446,a8c4eec3ca31fcc8,\gamma(0)=(\begin{matrix}0\\ 0\end{matrix}),\gamma_{(0)}=(\begin{matrix}0\\0\end{matrix}),\gamma _ { ( 0 ) } = ( \begin{array} 0 \\ 0 \end{array} )
+447,a81c7078cedf21e0,4log_{2}n-4,"4/og_{2},1-4","4 / o g _ { 2 }, 1 - 4"
+448,0f26102129f072fe,\xi=log(\sqrt{x^{2}+y^{2}}),\xi=10g(\sqrt{x+y^{2}}),\xi = 1 0 g ( \sqrt { x + y ^ { 2 } } )
+449,222599c928b8a8a3,f_{s}\sim\int f_{s+1},f_{s}\sim\int f_{s}+1,f _ { s } \sim \int f _ { s } + 1
+450,a9396d70303f3e46,\tilde{f}(k),\overline{f}(k),\overline { f } ( k )
+451,d5152f9e89ae2212,C_{n}=\int_{0}^{4}x^{n}\rho(x)dx,c_{n}=\int_{0}^{n}x^{n}f(x)dx,c _ { n } = \int _ { 0 } ^ { n } x ^ { n } f ( x ) d x
+452,5e54119e4ecd5b00,\sqrt{2n},\sqrt{2m},\sqrt { 2 m }
+453,a43d7ea2c1435ba8,"(S,\pi,K_{1},...,K_{n})","(S,\pi,K_{1},..,K_{n})","( S, \pi, K _ { 1 },.., K _ { n } )"
+454,038d81cbc3fee8a4,I=\int xcos(x)dx,I=\int xcos(x)dx,I = \int x c o s ( x ) d x
+455,04c608f3e63de162,\hat{d}(n),\hat{d}(n),\hat { d } ( n )
+456,56e1aa0d657b7809,\int1=1,\int J=J,\int J = J
+457,409335794528db9c,D_{j}=\frac{\partial}{\partial x_{j}},D_{j}=\frac{\partial}{\partial x_{j}},D _ { j } = \frac { \partial } { \partial x _ { j } }
+458,22301557dd291a25,\tau_{ij}=\overline{u_{i}u_{j}}-\overline{u_{i}u_{j}},T_{j}=\overline{u_{i}u_{j}}-\overline{u_{i}u_{j}},T _ { j } = \overline { u _ { i } u _ { j } } - \overline { u _ { i } u _ { j } }
+459,591cf42c8f2aafcd,\tilde{\psi}(t),\varphi(+),\varphi ( + )
+460,0a103087154c2d2f,\mu(\tilde{X}\cap\tilde{Y})=0,\mu(\tilde{x}n\tilde{y})=0,\mu ( \tilde { x } n \tilde { y } ) = 0
+461,06e2bc9fea45f47a,(x+y)^{n}=\sum_{k=0}^{n}(\begin{matrix}n\\ k\end{matrix})x^{n-k}y^{k},(x+y)^{n}=\sum_{k=0}^{n}(\begin{matrix}n\\k\end{matrix})x^{n-k}y^{k},( x + y ) ^ { n } = \sum _ { k = 0 } ^ { n } ( \begin{array} n \\ k \end{array} ) x ^ { n - k } y ^ { k }
+462,b82af69b8107934c,\frac{\partial F}{\partial x}=I,\frac{\partial F}{\partial x}=I,\frac { \partial F } { \partial x } = I
+463,c811f57c69eb91ed,\sum_{i=0}^{4}(\begin{matrix}8\\ 2i\end{matrix})(\begin{matrix}28\\ 16-i\end{matrix}),\sum_{i=0}^{n}(\begin{matrix}8\\i\end{matrix})(\begin{matrix}28\\1\end{matrix}),\sum _ { i = 0 } ^ { n } ( \begin{array} 8 \\ i \end{array} ) ( \begin{array} 2 8 \\ 1 \end{array} )
+464,afc236662e5618df,\sum_{i=0}^{n}p_{i}(z)f^{(i)}(z)=0,\sum_{i=0}^{n}p_{i}(Z)f^{(i)}(Z)=O,\sum _ { i = 0 } ^ { n } p _ { i } ( Z ) f ^ { ( i ) } ( Z ) = O
+465,c98f5b80ca467a77,I\frac{d^{2}\theta}{dt^{2}}=N,I^{\frac{d^{2}\theta}{dt^{2}}}=N,I ^ { \frac { d ^ { 2 } \theta } { d t ^ { 2 } } } = N
+466,6ad968ea974264d2,\{\begin{matrix}8\\ 8\end{matrix}\},5^{8},5 ^ { 8 }
+467,ceee16a9c7b986a7,\underline{\varphi\vdash\psi},\varphi\vdash\psi,\varphi \vdash \psi
+468,ce9fc765a37168cd,r^{-l_{1}}+r^{-l_{2}},r^{-1}+r^{-1},r ^ { - 1 } + r ^ { - 1 }
+469,8eeb0bb044f76b7c,\theta^{\prime}=2arctan\frac{y}{x+r},\theta^{\prime}=2krcrn\frac{y}{x+r},\theta ^ { \prime } = 2 k r c r n \frac { y } { x + r }
+470,e38a76510ca0f82a,G\in T^{1}(R),G\subset T^{\prime}(R),G \subset T ^ { \prime } ( R )
+471,abdd4f867ca2c16a,"1,\frac{1}{2},\frac{1}{3},\frac{1}{4}","1,\frac{1}{7}),\frac{1}{3},\frac{1}{4}","1, \frac { 1 } { 7 } ), \frac { 1 } { 3 }, \frac { 1 } { 4 }"
+472,d2c2a11cc54ef225,\int udu,\int vdv,\int v d v
+473,44386b11ff2f8dcb,\hat{e}_{j},\hat{\rho}_{s},\hat { \rho } _ { s }
+474,f47a192ecaedbf5c,X=s_{X}\phi(x)^{r_{X}},X=s_{x}f(x)^{r_{x}},X = s _ { x } f ( x ) ^ { r _ { x } }
+475,7c9e86f23a5cb98a,\frac{dt}{dx}=C_{1}e^{-\int f(x)dx},\frac{dt}{dx}=c_{1}e^{-\int f(x)dx},\frac { d t } { d x } = c _ { 1 } e ^ { - \int f ( x ) d x }
+476,2e910d9d610e5712,O(kn+1.274^{k}),O(kn)+1.274^{k},O ( k n ) + 1. 2 7 4 ^ { k }
+477,b7c75382ff52249f,\sqrt{1+[f^{\prime}(x)]^{2}},\sqrt{1+[f^{\prime}(x)]^{2}},\sqrt { 1 + [ f ^ { \prime } ( x ) ] ^ { 2 } }
+478,4972676c3484952a,"u=\frac{c(x,y)}{n^{2}-n}","u=\frac{c(x,y)}{n^{2}-n}","u = \frac { c ( x, y ) } { n ^ { 2 } - n }"
+479,921b65723c6eb1e5,[\begin{matrix}A&0\\ 0&B\end{matrix}],[\begin{matrix}A&0\\0&B\end{matrix}],[ \begin{array} A & 0 \\ 0 & B \end{array} ]
+480,b542c50719ca6f5f,=\int u+(-v)dx,=\int u+(-v)dx,= \int u + ( - v ) d x
+481,36ffc949a67fdfcd,"\dot{\varphi}_{i}=\omega_{i}(I_{1},...,I_{n})","\dot{\varphi}_{i}=\omega_{i}(I_{1},..,I_{n})","\dot { \varphi } _ { i } = \omega _ { i } ( I _ { 1 },.., I _ { n } )"
+482,53bb5a0ba3e94a3b,ss\{\begin{matrix}2\\ 4\end{matrix}\},ss\{\begin{matrix}2\\4\end{matrix}\},s s \{ \begin{array} 2 \\ 4 \end{array} \}
+483,d1e8add50656b8a9,m_{H}=\sigma_{0}\sqrt{2\lambda},m_{H}=\sigma_{0}\sqrt{2\lambda},m _ { H } = \sigma _ { 0 } \sqrt { 2 \lambda }
+484,c0a465e750e9d025,u\notin C,\mu\notin C,\mu \notin C
+485,8644e408a79f1e81,t=\frac{d}{v},z=\frac{d}{v},z = \frac { d } { v }
+486,c4ae968216e5f3f9,\frac{1}{2}-\epsilon,\frac{1}{2}-\epsilon,\frac { 1 } { 2 } - \epsilon
+487,72bfbd626974d28e,2x=O(x),2x=O(x),2 x = O ( x )
+488,dc51f10bdf72692f,1+\frac{1}{n-2},1+\frac{1}{n-2},1 + \frac { 1 } { n - 2 }
+489,d62c3bc126e0b3a6,\int_{0}^{t}p^{\prime}(s)p(t-s)ds,\int_{0}^{t}p^{\prime}(t)p(t-s)ds,\int _ { 0 } ^ { t } p ^ { \prime } ( t ) p ( t - s ) d s
+490,b063e424fc3d0e20,(1+\lambda_{2}),(1+\lambda_{2}),( 1 + \lambda _ { 2 } )
+491,b6f654ab4575d24c,f(x|t)=Tr(x),f(x)=Tr(x),f ( x ) = T r ( x )
+492,ebe2a7effbc3ae7e,(\hat{x}\hat{y})^{2}=\hat{x}\hat{y}\hat{x}\hat{y},(\hat{x}\hat{y})^{2}=\hat{x}\hat{y}\hat{x}^{1}\hat{y},( \hat { x } \hat { y } ) ^ { 2 } = \hat { x } \hat { y } \hat { x } ^ { 1 } \hat { y }
+493,23a683960af7deac,L^{2}\ge4\pi A-A^{2}/R^{2},L^{2}\ge4\pi A-A^{2}/g,L ^ { 2 } \ge 4 \pi A - A ^ { 2 } / g
+494,c5b7399555d240c5,x_{1}=\sqrt{\frac{L^{2}-a^{2}}{3}},x=\sqrt{\frac{L^{2}-a^{2}}{3}},x = \sqrt { \frac { L ^ { 2 } - a ^ { 2 } } { 3 } }
+495,04dcbde3ebfeaba5,S,\mathbb{S},\mathbb { S }
+496,3efc07abcda923cf,\frac{dP}{dw},\frac{dp}{dz},\frac { d p } { d z }
+497,74b1379fd50d13a8,(\begin{matrix}x&-y\\ y&x\end{matrix}),(\begin{matrix}x&-y\\y&-y\end{matrix}),( \begin{array} x & - y \\ y & - y \end{array} )
+498,1f27c7c8b8a9cbea,\sum_{k=1}^{\infty}\frac{F_{n}}{5^{n}},\sum_{k=1}^{\infty}\frac{F_{n}}{S_{n}},\sum _ { k = 1 } ^ { \infin } \frac { F _ { n } } { S _ { n } }
+499,693b245d72d6c4d0,"a,b\in\hat{R}","a,b\in\hat{p}","a, b \in \hat { p }"

@@ -1,0 +1,86 @@
+{
+  "args": {
+    "data": "data/full_test",
+    "model": "models/texo",
+    "out": "/kaggle/working/run",
+    "train_limit": null,
+    "valid_limit": null,
+    "test_limit": null,
+    "epochs": 5,
+    "max_steps": 0,
+    "batch_size": 32,
+    "eval_batch_size": 64,
+    "lr": 5e-05,
+    "warmup": 100,
+    "max_len": 256,
+    "beams": 1,
+    "workers": 2,
+    "skip_zeroshot": false,
+    "no_save": false,
+    "seed": 0,
+    "bn_train": false,
+    "freeze_encoder": false
+  },
+  "test_zeroshot": {
+    "n": 7644,
+    "cer": 0.39095532783804776,
+    "token_error_rate": 0.29900877769152684,
+    "exact_match": 0.09981684981684982,
+    "seconds": 58.6
+  },
+  "valid": [
+    {
+      "epoch": 0,
+      "step": 156,
+      "n": 500,
+      "cer": 0.2569674067076051,
+      "token_error_rate": 0.24231805929919137,
+      "exact_match": 0.25,
+      "seconds": 5.4
+    },
+    {
+      "epoch": 1,
+      "step": 312,
+      "n": 500,
+      "cer": 0.19697685403873405,
+      "token_error_rate": 0.16159029649595688,
+      "exact_match": 0.318,
+      "seconds": 4.2
+    },
+    {
+      "epoch": 2,
+      "step": 468,
+      "n": 500,
+      "cer": 0.1752479924421351,
+      "token_error_rate": 0.15148247978436657,
+      "exact_match": 0.344,
+      "seconds": 4.3
+    },
+    {
+      "epoch": 3,
+      "step": 624,
+      "n": 500,
+      "cer": 0.16643048338844277,
+      "token_error_rate": 0.13948787061994608,
+      "exact_match": 0.374,
+      "seconds": 4.2
+    },
+    {
+      "epoch": 4,
+      "step": 780,
+      "n": 500,
+      "cer": 0.16005353487639742,
+      "token_error_rate": 0.13274932614555257,
+      "exact_match": 0.384,
+      "seconds": 4.3
+    }
+  ],
+  "train_seconds": 305.7,
+  "test_finetuned": {
+    "n": 7644,
+    "cer": 0.1781224162553554,
+    "token_error_rate": 0.13255359168806352,
+    "exact_match": 0.32456828885400313,
+    "seconds": 53.5
+  }
+}

@@ -1,0 +1,205 @@
+[{"stream_name":"stdout","time":1.238436363,"data":"+ nvidia-smi\n"}
+,{"stream_name":"stdout","time":1.27108865,"data":"Mon Nov 23 20:39:38 2026       \n"}
+,{"stream_name":"stdout","time":1.27114009,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":1.271145288,"data":"| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\n"}
+,{"stream_name":"stdout","time":1.271148432,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":1.271151399,"data":"| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n"}
+,{"stream_name":"stdout","time":1.271154243,"data":"| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n"}
+,{"stream_name":"stdout","time":1.271157033,"data":"|                                         |                        |               MIG M. |\n"}
+,{"stream_name":"stdout","time":1.271159892,"data":"|=========================================+========================+======================|\n"}
+,{"stream_name":"stdout","time":1.3272987330000001,"data":"|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |\n"}
+,{"stream_name":"stdout","time":1.32733169,"data":"| N/A   52C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |\n"}
+,{"stream_name":"stdout","time":1.327335873,"data":"|                                         |                        |                  N/A |\n"}
+,{"stream_name":"stdout","time":1.327339261,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":1.327355313,"data":"|   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |\n"}
+,{"stream_name":"stdout","time":1.327360076,"data":"| N/A   57C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |\n"}
+,{"stream_name":"stdout","time":1.327364925,"data":"|                                         |                        |                  N/A |\n"}
+,{"stream_name":"stdout","time":1.32736926,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":1.328005257,"data":"\n"}
+,{"stream_name":"stdout","time":1.328017764,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":1.328022121,"data":"| Processes:                                                                              |\n"}
+,{"stream_name":"stdout","time":1.32802609,"data":"|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n"}
+,{"stream_name":"stdout","time":1.328030208,"data":"|        ID   ID                                                               Usage      |\n"}
+,{"stream_name":"stdout","time":1.328034242,"data":"|=========================================================================================|\n"}
+,{"stream_name":"stdout","time":1.32972529,"data":"|  No running processes found                                                             |\n"}
+,{"stream_name":"stdout","time":1.3297474519999999,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":1.6461197140000001,"data":"+ pip install -q 'transformers==4.40.0' 'tokenizers\u003c0.20' rapidfuzz\n"}
+,{"stream_name":"stderr","time":43.933786673,"data":"  error: subprocess-exited-with-error\n"}
+,{"stream_name":"stderr","time":43.933833832,"data":"  \n"}
+,{"stream_name":"stderr","time":43.933849285,"data":"  × Building wheel for tokenizers (pyproject.toml) did not run successfully.\n"}
+,{"stream_name":"stderr","time":43.93385461,"data":"  │ exit code: 1\n"}
+,{"stream_name":"stderr","time":43.933858517,"data":"  ╰─\u003e No available output.\n"}
+,{"stream_name":"stderr","time":43.933862786,"data":"  \n"}
+,{"stream_name":"stderr","time":43.933866633,"data":"  note: This error originates from a subprocess, and is likely not a problem with pip.\n"}
+,{"stream_name":"stderr","time":43.934672601,"data":"  ERROR: Failed building wheel for tokenizers\n"}
+,{"stream_name":"stderr","time":43.936215403,"data":"error: failed-wheel-build-for-install\n"}
+,{"stream_name":"stderr","time":43.936231193,"data":"\n"}
+,{"stream_name":"stderr","time":43.93623594,"data":"× Failed to build installable wheels for some pyproject.toml based projects\n"}
+,{"stream_name":"stderr","time":43.936240911,"data":"╰─\u003e tokenizers\n"}
+,{"stream_name":"stdout","time":44.113324431,"data":"+ pip install -q rapidfuzz\n"}
+,{"stream_name":"stdout","time":48.400266262,"data":"dataset dir /kaggle/input/datasets/windwerfer/handwriter-mathwriting-subset-texo\n"}
+,{"stream_name":"stdout","time":52.649394438,"data":"+ /usr/bin/python3 scripts/train.py --data data/full_test --model models/texo --out /kaggle/working/run --epochs 5 --batch-size 32 --eval-batch-size 64 --lr 5e-5 --warmup 100 --workers 2 --max-len 256\n"}
+,{"stream_name":"stdout","time":86.685239028,"data":"device cuda Tesla T4\n"}
+,{"stream_name":"stderr","time":87.395590726,"data":"\rLoading weights:   0%|          | 0/541 [00:00\u003c?, ?it/s]\rLoading weights:  52%|█████▏    | 279/541 [00:00\u003c00:00, 2789.19it/s]\rLoading weights: 100%|██████████| 541/541 [00:00\u003c00:00, 2753.17it/s]\n"}
+,{"stream_name":"stdout","time":87.724873247,"data":"params (M) 19.997664\n"}
+,{"stream_name":"stdout","time":90.941660992,"data":"sizes 5000 500 7644\n"}
+,{"stream_name":"stdout","time":149.585794483,"data":"[zeroshot] {'n': 7644, 'cer': 0.39095532783804776, 'token_error_rate': 0.29900877769152684, 'exact_match': 0.09981684981684982, 'seconds': 58.6}\n"}
+,{"stream_name":"stderr","time":152.276593876,"data":"/kaggle/working/handwriter/scripts/train.py:133: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":152.276637988,"data":"  scaler.step(opt); scaler.update(); sched.step(); step += 1\n"}
+,{"stream_name":"stdout","time":152.276831521,"data":"{'step': 1, 'epoch': 0, 'loss': 1.6170164346694946, 'lr': 9.999959444481186e-07, 'elapsed_s': 2.7}\n"}
+,{"stream_name":"stdout","time":155.433832015,"data":"{'step': 10, 'epoch': 0, 'loss': 0.8352032899856567, 'lr': 5.497769744971817e-06, 'elapsed_s': 5.8}\n"}
+,{"stream_name":"stdout","time":158.83507802,"data":"{'step': 20, 'epoch': 0, 'loss': 0.660201907157898, 'lr': 1.0482975867704603e-05, 'elapsed_s': 9.2}\n"}
+,{"stream_name":"stdout","time":162.265189512,"data":"{'step': 30, 'epoch': 0, 'loss': 0.4606587886810303, 'lr': 1.5443493774259918e-05, 'elapsed_s': 12.7}\n"}
+,{"stream_name":"stdout","time":165.683423301,"data":"{'step': 40, 'epoch': 0, 'loss': 0.4090690016746521, 'lr': 2.0367265192038607e-05, 'elapsed_s': 16.1}\n"}
+,{"stream_name":"stdout","time":169.129607883,"data":"{'step': 50, 'epoch': 0, 'loss': 0.37031859159469604, 'lr': 2.5242330813538916e-05, 'elapsed_s': 19.5}\n"}
+,{"stream_name":"stdout","time":172.579815481,"data":"{'step': 60, 'epoch': 0, 'loss': 0.358330100774765, 'lr': 3.0056862715747292e-05, 'elapsed_s': 23.0}\n"}
+,{"stream_name":"stdout","time":176.040050717,"data":"{'step': 70, 'epoch': 0, 'loss': 0.364652544260025, 'lr': 3.479919648145686e-05, 'elapsed_s': 26.4}\n"}
+,{"stream_name":"stdout","time":179.524532766,"data":"{'step': 80, 'epoch': 0, 'loss': 0.34686920046806335, 'lr': 3.94578629494297e-05, 'elapsed_s': 29.9}\n"}
+,{"stream_name":"stdout","time":183.025995458,"data":"{'step': 90, 'epoch': 0, 'loss': 0.45491331815719604, 'lr': 4.4021619521093196e-05, 'elapsed_s': 33.4}\n"}
+,{"stream_name":"stdout","time":186.487341694,"data":"{'step': 100, 'epoch': 0, 'loss': 0.3786363899707794, 'lr': 4.799948609147061e-05, 'elapsed_s': 36.9}\n"}
+,{"stream_name":"stdout","time":189.995936794,"data":"{'step': 110, 'epoch': 0, 'loss': 0.3679429888725281, 'lr': 4.758626086525956e-05, 'elapsed_s': 40.4}\n"}
+,{"stream_name":"stdout","time":193.591106879,"data":"{'step': 120, 'epoch': 0, 'loss': 0.4372551739215851, 'lr': 4.713640064133025e-05, 'elapsed_s': 44.0}\n"}
+,{"stream_name":"stdout","time":197.18324006,"data":"{'step': 130, 'epoch': 0, 'loss': 0.5885270833969116, 'lr': 4.665063509461097e-05, 'elapsed_s': 47.6}\n"}
+,{"stream_name":"stdout","time":200.772546063,"data":"{'step': 140, 'epoch': 0, 'loss': 0.3679297864437103, 'lr': 4.6129752138594874e-05, 'elapsed_s': 51.2}\n"}
+,{"stream_name":"stdout","time":204.379638575,"data":"{'step': 150, 'epoch': 0, 'loss': 0.5627227425575256, 'lr': 4.557459664734141e-05, 'elapsed_s': 54.8}\n"}
+,{"stream_name":"stdout","time":211.96307748,"data":"[valid_ep0] {'n': 500, 'cer': 0.2569674067076051, 'token_error_rate': 0.24231805929919137, 'exact_match': 0.25, 'seconds': 5.4}\n"}
+,{"stream_name":"stdout","time":213.970397785,"data":"{'step': 160, 'epoch': 1, 'loss': 0.3486630916595459, 'lr': 4.498606908508754e-05, 'elapsed_s': 64.4}\n"}
+,{"stream_name":"stdout","time":217.691712263,"data":"{'step': 170, 'epoch': 1, 'loss': 0.35803839564323425, 'lr': 4.436512404569136e-05, 'elapsed_s': 68.1}\n"}
+,{"stream_name":"stdout","time":221.422610481,"data":"{'step': 180, 'epoch': 1, 'loss': 0.2659790515899658, 'lr': 4.371276870427753e-05, 'elapsed_s': 71.8}\n"}
+,{"stream_name":"stdout","time":225.158618186,"data":"{'step': 190, 'epoch': 1, 'loss': 0.2902020514011383, 'lr': 4.303006118359537e-05, 'elapsed_s': 75.6}\n"}
+,{"stream_name":"stdout","time":228.819955321,"data":"{'step': 200, 'epoch': 1, 'loss': 0.2815876603126526, 'lr': 4.231810883773999e-05, 'elapsed_s': 79.2}\n"}
+,{"stream_name":"stdout","time":232.47059805,"data":"{'step': 210, 'epoch': 1, 'loss': 0.3347296714782715, 'lr': 4.157806645601988e-05, 'elapsed_s': 82.9}\n"}
+,{"stream_name":"stdout","time":236.027627785,"data":"{'step': 220, 'epoch': 1, 'loss': 0.30814844369888306, 'lr': 4.0811134389884433e-05, 'elapsed_s': 86.4}\n"}
+,{"stream_name":"stdout","time":239.630758012,"data":"{'step': 230, 'epoch': 1, 'loss': 0.30168360471725464, 'lr': 4.001855660594948e-05, 'elapsed_s': 90.0}\n"}
+,{"stream_name":"stdout","time":243.226166329,"data":"{'step': 240, 'epoch': 1, 'loss': 0.3045191466808319, 'lr': 3.92016186682789e-05, 'elapsed_s': 93.6}\n"}
+,{"stream_name":"stdout","time":246.793788989,"data":"{'step': 250, 'epoch': 1, 'loss': 0.2362176477909088, 'lr': 3.836164565319503e-05, 'elapsed_s': 97.2}\n"}
+,{"stream_name":"stdout","time":250.397173971,"data":"{'step': 260, 'epoch': 1, 'loss': 0.2915930449962616, 'lr': 3.7500000000000003e-05, 'elapsed_s': 100.8}\n"}
+,{"stream_name":"stdout","time":253.971232568,"data":"{'step': 270, 'epoch': 1, 'loss': 0.25582048296928406, 'lr': 3.6618079301094216e-05, 'elapsed_s': 104.4}\n"}
+,{"stream_name":"stdout","time":257.491211014,"data":"{'step': 280, 'epoch': 1, 'loss': 0.26135340332984924, 'lr': 3.5717314035076355e-05, 'elapsed_s': 107.9}\n"}
+,{"stream_name":"stdout","time":261.00651093,"data":"{'step': 290, 'epoch': 1, 'loss': 0.17875632643699646, 'lr': 3.479916524650188e-05, 'elapsed_s': 111.4}\n"}
+,{"stream_name":"stdout","time":264.5361712,"data":"{'step': 300, 'epoch': 1, 'loss': 0.24123594164848328, 'lr': 3.386512217606339e-05, 'elapsed_s': 114.9}\n"}
+,{"stream_name":"stdout","time":268.11140492,"data":"{'step': 310, 'epoch': 1, 'loss': 0.18232160806655884, 'lr': 3.2916699845036816e-05, 'elapsed_s': 118.5}\n"}
+,{"stream_name":"stdout","time":273.069007657,"data":"[valid_ep1] {'n': 500, 'cer': 0.19697685403873405, 'token_error_rate': 0.16159029649595688, 'exact_match': 0.318, 'seconds': 4.2}\n"}
+,{"stream_name":"stdout","time":276.447859012,"data":"{'step': 320, 'epoch': 2, 'loss': 0.1929599791765213, 'lr': 3.195543659791132e-05, 'elapsed_s': 126.8}\n"}
+,{"stream_name":"stdout","time":280.020167007,"data":"{'step': 330, 'epoch': 2, 'loss': 0.20658445358276367, 'lr': 3.0982891607188954e-05, 'elapsed_s': 130.4}\n"}
+,{"stream_name":"stdout","time":283.596461764,"data":"{'step': 340, 'epoch': 2, 'loss': 0.16485080122947693, 'lr': 3.0000642344401113e-05, 'elapsed_s': 134.0}\n"}
+,{"stream_name":"stdout","time":287.164959186,"data":"{'step': 350, 'epoch': 2, 'loss': 0.22718480229377747, 'lr': 2.9010282021444014e-05, 'elapsed_s': 137.6}\n"}
+,{"stream_name":"stdout","time":290.771607917,"data":"{'step': 360, 'epoch': 2, 'loss': 0.19219422340393066, 'lr': 2.8013417006383076e-05, 'elapsed_s': 141.2}\n"}
+,{"stream_name":"stdout","time":294.387425806,"data":"{'step': 370, 'epoch': 2, 'loss': 0.22672976553440094, 'lr': 2.7011664217918154e-05, 'elapsed_s': 144.8}\n"}
+,{"stream_name":"stdout","time":298.025295366,"data":"{'step': 380, 'epoch': 2, 'loss': 0.1871226727962494, 'lr': 2.600664850273538e-05, 'elapsed_s': 148.4}\n"}
+,{"stream_name":"stdout","time":301.61971199,"data":"{'step': 390, 'epoch': 2, 'loss': 0.17153386771678925, 'lr': 2.5e-05, 'elapsed_s': 152.0}\n"}
+,{"stream_name":"stdout","time":305.233754599,"data":"{'step': 400, 'epoch': 2, 'loss': 0.18603266775608063, 'lr': 2.3993351497264623e-05, 'elapsed_s': 155.6}\n"}
+,{"stream_name":"stdout","time":308.88580312,"data":"{'step': 410, 'epoch': 2, 'loss': 0.14689934253692627, 'lr': 2.298833578208186e-05, 'elapsed_s': 159.3}\n"}
+,{"stream_name":"stdout","time":312.51418751,"data":"{'step': 420, 'epoch': 2, 'loss': 0.16414935886859894, 'lr': 2.1986582993616923e-05, 'elapsed_s': 162.9}\n"}
+,{"stream_name":"stdout","time":316.08188646,"data":"{'step': 430, 'epoch': 2, 'loss': 0.15885117650032043, 'lr': 2.0989717978555998e-05, 'elapsed_s': 166.5}\n"}
+,{"stream_name":"stdout","time":319.673312965,"data":"{'step': 440, 'epoch': 2, 'loss': 0.1463337391614914, 'lr': 1.999935765559889e-05, 'elapsed_s': 170.1}\n"}
+,{"stream_name":"stdout","time":323.291723488,"data":"{'step': 450, 'epoch': 2, 'loss': 0.13155676424503326, 'lr': 1.9017108392811058e-05, 'elapsed_s': 173.7}\n"}
+,{"stream_name":"stdout","time":326.860278486,"data":"{'step': 460, 'epoch': 2, 'loss': 0.1928023099899292, 'lr': 1.8044563402088684e-05, 'elapsed_s': 177.3}\n"}
+,{"stream_name":"stdout","time":334.069419684,"data":"[valid_ep2] {'n': 500, 'cer': 0.1752479924421351, 'token_error_rate': 0.15148247978436657, 'exact_match': 0.344, 'seconds': 4.3}\n"}
+,{"stream_name":"stdout","time":335.254901033,"data":"{'step': 470, 'epoch': 3, 'loss': 0.12449515610933304, 'lr': 1.708330015496319e-05, 'elapsed_s': 185.7}\n"}
+,{"stream_name":"stdout","time":338.836437463,"data":"{'step': 480, 'epoch': 3, 'loss': 0.1134585440158844, 'lr': 1.6134877823936616e-05, 'elapsed_s': 189.2}\n"}
+,{"stream_name":"stdout","time":342.387873423,"data":"{'step': 490, 'epoch': 3, 'loss': 0.13027599453926086, 'lr': 1.5200834753498128e-05, 'elapsed_s': 192.8}\n"}
+,{"stream_name":"stdout","time":345.933650498,"data":"{'step': 500, 'epoch': 3, 'loss': 0.08504068106412888, 'lr': 1.4282685964923654e-05, 'elapsed_s': 196.3}\n"}
+,{"stream_name":"stdout","time":349.484104185,"data":"{'step': 510, 'epoch': 3, 'loss': 0.13630563020706177, 'lr': 1.3381920698905787e-05, 'elapsed_s': 199.9}\n"}
+,{"stream_name":"stdout","time":353.036960523,"data":"{'step': 520, 'epoch': 3, 'loss': 0.13403461873531342, 'lr': 1.2500000000000006e-05, 'elapsed_s': 203.4}\n"}
+,{"stream_name":"stdout","time":356.555228278,"data":"{'step': 530, 'epoch': 3, 'loss': 0.07135842740535736, 'lr': 1.1638354346804971e-05, 'elapsed_s': 207.0}\n"}
+,{"stream_name":"stdout","time":360.090590539,"data":"{'step': 540, 'epoch': 3, 'loss': 0.11741144955158234, 'lr': 1.0798381331721109e-05, 'elapsed_s': 210.5}\n"}
+,{"stream_name":"stdout","time":363.698960053,"data":"{'step': 550, 'epoch': 3, 'loss': 0.1480271965265274, 'lr': 9.981443394050525e-06, 'elapsed_s': 214.1}\n"}
+,{"stream_name":"stdout","time":367.26489444,"data":"{'step': 560, 'epoch': 3, 'loss': 0.06652192771434784, 'lr': 9.18886561011557e-06, 'elapsed_s': 217.7}\n"}
+,{"stream_name":"stdout","time":370.80379763,"data":"{'step': 570, 'epoch': 3, 'loss': 0.12154213339090347, 'lr': 8.421933543980117e-06, 'elapsed_s': 221.2}\n"}
+,{"stream_name":"stdout","time":374.360723728,"data":"{'step': 580, 'epoch': 3, 'loss': 0.07595833390951157, 'lr': 7.681891162260015e-06, 'elapsed_s': 224.8}\n"}
+,{"stream_name":"stdout","time":377.949135782,"data":"{'step': 590, 'epoch': 3, 'loss': 0.07930503040552139, 'lr': 6.969938816404639e-06, 'elapsed_s': 228.4}\n"}
+,{"stream_name":"stdout","time":381.55949181,"data":"{'step': 600, 'epoch': 3, 'loss': 0.06736970692873001, 'lr': 6.28723129572247e-06, 'elapsed_s': 232.0}\n"}
+,{"stream_name":"stdout","time":385.157834154,"data":"{'step': 610, 'epoch': 3, 'loss': 0.062498509883880615, 'lr': 5.634875954308638e-06, 'elapsed_s': 235.6}\n"}
+,{"stream_name":"stdout","time":388.718403157,"data":"{'step': 620, 'epoch': 3, 'loss': 0.09573611617088318, 'lr': 5.013930914912476e-06, 'elapsed_s': 239.1}\n"}
+,{"stream_name":"stdout","time":394.390529762,"data":"[valid_ep3] {'n': 500, 'cer': 0.16643048338844277, 'token_error_rate': 0.13948787061994608, 'exact_match': 0.374, 'seconds': 4.2}\n"}
+,{"stream_name":"stdout","time":397.133879999,"data":"{'step': 630, 'epoch': 4, 'loss': 0.05495217442512512, 'lr': 4.425403352658591e-06, 'elapsed_s': 247.5}\n"}
+,{"stream_name":"stdout","time":400.724011765,"data":"{'step': 640, 'epoch': 4, 'loss': 0.08859610557556152, 'lr': 3.8702478614051355e-06, 'elapsed_s': 251.1}\n"}
+,{"stream_name":"stdout","time":404.305333977,"data":"{'step': 650, 'epoch': 4, 'loss': 0.041678134351968765, 'lr': 3.349364905389038e-06, 'elapsed_s': 254.7}\n"}
+,{"stream_name":"stdout","time":407.931063578,"data":"{'step': 660, 'epoch': 4, 'loss': 0.09820976853370667, 'lr': 2.863599358669761e-06, 'elapsed_s': 258.3}\n"}
+,{"stream_name":"stdout","time":411.554664973,"data":"{'step': 670, 'epoch': 4, 'loss': 0.058809664100408554, 'lr': 2.4137391347404476e-06, 'elapsed_s': 262.0}\n"}
+,{"stream_name":"stdout","time":415.168084996,"data":"{'step': 680, 'epoch': 4, 'loss': 0.06443111598491669, 'lr': 2.0005139085293945e-06, 'elapsed_s': 265.6}\n"}
+,{"stream_name":"stdout","time":418.763285233,"data":"{'step': 690, 'epoch': 4, 'loss': 0.10113321989774704, 'lr': 1.6245939328646265e-06, 'elapsed_s': 269.2}\n"}
+,{"stream_name":"stdout","time":422.320085211,"data":"{'step': 700, 'epoch': 4, 'loss': 0.1308634877204895, 'lr': 1.2865889513213657e-06, 'elapsed_s': 272.7}\n"}
+,{"stream_name":"stdout","time":425.897365778,"data":"{'step': 710, 'epoch': 4, 'loss': 0.049031976610422134, 'lr': 9.87047209215694e-07, 'elapsed_s': 276.3}\n"}
+,{"stream_name":"stdout","time":429.445957006,"data":"{'step': 720, 'epoch': 4, 'loss': 0.05936334654688835, 'lr': 7.264545643486997e-07, 'elapsed_s': 279.8}\n"}
+,{"stream_name":"stdout","time":433.009583029,"data":"{'step': 730, 'epoch': 4, 'loss': 0.08096382021903992, 'lr': 5.052336989433082e-07, 'elapsed_s': 283.4}\n"}
+,{"stream_name":"stdout","time":436.618279666,"data":"{'step': 740, 'epoch': 4, 'loss': 0.04207122325897217, 'lr': 3.237434340521789e-07, 'elapsed_s': 287.0}\n"}
+,{"stream_name":"stdout","time":440.21570615,"data":"{'step': 750, 'epoch': 4, 'loss': 0.06273622065782547, 'lr': 1.8227814754865068e-07, 'elapsed_s': 290.6}\n"}
+,{"stream_name":"stdout","time":443.810503087,"data":"{'step': 760, 'epoch': 4, 'loss': 0.08333273977041245, 'lr': 8.106729664475176e-08, 'elapsed_s': 294.2}\n"}
+,{"stream_name":"stdout","time":447.400523238,"data":"{'step': 770, 'epoch': 4, 'loss': 0.05899154022336006, 'lr': 2.0275045710760334e-08, 'elapsed_s': 297.8}\n"}
+,{"stream_name":"stdout","time":450.978695491,"data":"{'step': 780, 'epoch': 4, 'loss': 0.05408545583486557, 'lr': 0.0, 'elapsed_s': 301.4}\n"}
+,{"stream_name":"stdout","time":455.308641213,"data":"[valid_ep4] {'n': 500, 'cer': 0.16005353487639742, 'token_error_rate': 0.13274932614555257, 'exact_match': 0.384, 'seconds': 4.3}\n"}
+,{"stream_name":"stdout","time":508.852886102,"data":"[finetuned] {'n': 7644, 'cer': 0.1781224162553554, 'token_error_rate': 0.13255359168806352, 'exact_match': 0.32456828885400313, 'seconds': 53.5}\n"}
+,{"stream_name":"stderr","time":510.017925081,"data":"\rWriting model shards:   0%|          | 0/1 [00:00\u003c?, ?it/s]\rWriting model shards: 100%|██████████| 1/1 [00:00\u003c00:00,  7.11it/s]\rWriting model shards: 100%|██████████| 1/1 [00:00\u003c00:00,  7.09it/s]\n"}
+,{"stream_name":"stdout","time":510.060051629,"data":"{\n"}
+,{"stream_name":"stdout","time":510.060088222,"data":"  \"test_zeroshot\": {\n"}
+,{"stream_name":"stdout","time":510.060099817,"data":"    \"n\": 7644,\n"}
+,{"stream_name":"stdout","time":510.060105101,"data":"    \"cer\": 0.39095532783804776,\n"}
+,{"stream_name":"stdout","time":510.060110065,"data":"    \"token_error_rate\": 0.29900877769152684,\n"}
+,{"stream_name":"stdout","time":510.060114883,"data":"    \"exact_match\": 0.09981684981684982,\n"}
+,{"stream_name":"stdout","time":510.060119272,"data":"    \"seconds\": 58.6\n"}
+,{"stream_name":"stdout","time":510.060123463,"data":"  },\n"}
+,{"stream_name":"stdout","time":510.060127517,"data":"  \"valid\": [\n"}
+,{"stream_name":"stdout","time":510.06013313,"data":"    {\n"}
+,{"stream_name":"stdout","time":510.06014016,"data":"      \"epoch\": 0,\n"}
+,{"stream_name":"stdout","time":510.060143103,"data":"      \"step\": 156,\n"}
+,{"stream_name":"stdout","time":510.060145969,"data":"      \"n\": 500,\n"}
+,{"stream_name":"stdout","time":510.060148755,"data":"      \"cer\": 0.2569674067076051,\n"}
+,{"stream_name":"stdout","time":510.060151643,"data":"      \"token_error_rate\": 0.24231805929919137,\n"}
+,{"stream_name":"stdout","time":510.060154463,"data":"      \"exact_match\": 0.25,\n"}
+,{"stream_name":"stdout","time":510.060157285,"data":"      \"seconds\": 5.4\n"}
+,{"stream_name":"stdout","time":510.060160063,"data":"    },\n"}
+,{"stream_name":"stdout","time":510.060162828,"data":"    {\n"}
+,{"stream_name":"stdout","time":510.060165508,"data":"      \"epoch\": 1,\n"}
+,{"stream_name":"stdout","time":510.060168297,"data":"      \"step\": 312,\n"}
+,{"stream_name":"stdout","time":510.060171082,"data":"      \"n\": 500,\n"}
+,{"stream_name":"stdout","time":510.060173912,"data":"      \"cer\": 0.19697685403873405,\n"}
+,{"stream_name":"stdout","time":510.060176726,"data":"      \"token_error_rate\": 0.16159029649595688,\n"}
+,{"stream_name":"stdout","time":510.060205605,"data":"      \"exact_match\": 0.318,\n"}
+,{"stream_name":"stdout","time":510.060210537,"data":"      \"seconds\": 4.2\n"}
+,{"stream_name":"stdout","time":510.060214229,"data":"    },\n"}
+,{"stream_name":"stdout","time":510.060217388,"data":"    {\n"}
+,{"stream_name":"stdout","time":510.0602206,"data":"      \"epoch\": 2,\n"}
+,{"stream_name":"stdout","time":510.060223897,"data":"      \"step\": 468,\n"}
+,{"stream_name":"stdout","time":510.060227113,"data":"      \"n\": 500,\n"}
+,{"stream_name":"stdout","time":510.060230356,"data":"      \"cer\": 0.1752479924421351,\n"}
+,{"stream_name":"stdout","time":510.060233757,"data":"      \"token_error_rate\": 0.15148247978436657,\n"}
+,{"stream_name":"stdout","time":510.060238797,"data":"      \"exact_match\": 0.344,\n"}
+,{"stream_name":"stdout","time":510.060245316,"data":"      \"seconds\": 4.3\n"}
+,{"stream_name":"stdout","time":510.060247673,"data":"    },\n"}
+,{"stream_name":"stdout","time":510.060249851,"data":"    {\n"}
+,{"stream_name":"stdout","time":510.060252007,"data":"      \"epoch\": 3,\n"}
+,{"stream_name":"stdout","time":510.060254274,"data":"      \"step\": 624,\n"}
+,{"stream_name":"stdout","time":510.060256487,"data":"      \"n\": 500,\n"}
+,{"stream_name":"stdout","time":510.060258688,"data":"      \"cer\": 0.16643048338844277,\n"}
+,{"stream_name":"stdout","time":510.06026096,"data":"      \"token_error_rate\": 0.13948787061994608,\n"}
+,{"stream_name":"stdout","time":510.060263293,"data":"      \"exact_match\": 0.374,\n"}
+,{"stream_name":"stdout","time":510.060265515,"data":"      \"seconds\": 4.2\n"}
+,{"stream_name":"stdout","time":510.060267723,"data":"    },\n"}
+,{"stream_name":"stdout","time":510.060269862,"data":"    {\n"}
+,{"stream_name":"stdout","time":510.060271992,"data":"      \"epoch\": 4,\n"}
+,{"stream_name":"stdout","time":510.060274195,"data":"      \"step\": 780,\n"}
+,{"stream_name":"stdout","time":510.060276389,"data":"      \"n\": 500,\n"}
+,{"stream_name":"stdout","time":510.060279377,"data":"      \"cer\": 0.16005353487639742,\n"}
+,{"stream_name":"stdout","time":510.060293784,"data":"      \"token_error_rate\": 0.13274932614555257,\n"}
+,{"stream_name":"stdout","time":510.060297863,"data":"      \"exact_match\": 0.384,\n"}
+,{"stream_name":"stdout","time":510.060301869,"data":"      \"seconds\": 4.3\n"}
+,{"stream_name":"stdout","time":510.060305803,"data":"    }\n"}
+,{"stream_name":"stdout","time":510.06030943,"data":"  ],\n"}
+,{"stream_name":"stdout","time":510.060312618,"data":"  \"train_seconds\": 305.7,\n"}
+,{"stream_name":"stdout","time":510.060315975,"data":"  \"test_finetuned\": {\n"}
+,{"stream_name":"stdout","time":510.060319262,"data":"    \"n\": 7644,\n"}
+,{"stream_name":"stdout","time":510.060322507,"data":"    \"cer\": 0.1781224162553554,\n"}
+,{"stream_name":"stdout","time":510.060325792,"data":"    \"token_error_rate\": 0.13255359168806352,\n"}
+,{"stream_name":"stdout","time":510.060329181,"data":"    \"exact_match\": 0.32456828885400313,\n"}
+,{"stream_name":"stdout","time":510.060332553,"data":"    \"seconds\": 53.5\n"}
+,{"stream_name":"stdout","time":510.060335852,"data":"  }\n"}
+,{"stream_name":"stdout","time":510.060339026,"data":"}\n"}
+,{"stream_name":"stderr","time":518.352167079,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":518.352209097,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":518.622300318,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":518.622334094,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":519.452118544,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":520.507052395,"data":"[NbConvertApp] Writing 282902 bytes to __results__.html\n"}
+]
