@@ -1,23 +1,18 @@
 from rapidfuzz.distance import Levenshtein
 
-from .latex_tok import canon, tokenize
-
-
-def _norm(s: str) -> str:
-    # spaces carry no meaning in math mode; compare without them
-    return canon(s)
+from .normalize import tokens
 
 
 def scores(preds: list[str], refs: list[str]) -> dict:
-    """preds/refs: compact LaTeX in MathWriting spelling.
-    cer: char-level edit distance / ref chars (corpus level).
-    token_error_rate: same on LaTeX tokens. exact_match: whitespace-insensitive equality."""
+    """Both sides are canonicalised with hw.normalize before scoring.
+    cer: char edit distance / ref chars over the canonical strings (corpus level);
+    token_error_rate: same over canonical tokens; exact_match: canonical strings equal."""
     ce = cn = te = tn = em = 0
     for p, r in zip(preds, refs):
-        pn, rn = _norm(p), _norm(r)
-        ce += Levenshtein.distance(pn, rn); cn += len(rn)
-        pt, rt = tokenize(p), tokenize(r)
+        pt, rt = tokens(p), tokens(r)
+        ps, rs = "".join(pt), "".join(rt)
+        ce += Levenshtein.distance(ps, rs); cn += len(rs)
         te += Levenshtein.distance(pt, rt); tn += len(rt)
-        em += pn == rn
+        em += ps == rs
     return {"n": len(refs), "cer": ce / max(cn, 1), "token_error_rate": te / max(tn, 1),
             "exact_match": em / max(len(refs), 1)}

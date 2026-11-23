@@ -9,3 +9,5 @@ kaggle/dataset/code.tar.gz
 kaggle/output/*/run/model/
 __pycache__/
 *.pyc
+onnx/
+runs/

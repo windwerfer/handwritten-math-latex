@@ -1,5 +1,6 @@
 import io
 import math
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -40,12 +41,23 @@ def preprocess(img: Image.Image, size: int = 384, train: bool = False) -> torch.
 
 
 class MathWritingParquet(torch.utils.data.Dataset):
-    """Rows: image (bytes), latex (MathWriting normalized label), sample_id."""
+    """MathWriting rows from one or more parquet files.
+    Accepts either our subset format (image_bytes column) or the HF
+    deepcopy/MathWriting-human format (image struct column). limit -> seeded random sample."""
 
-    def __init__(self, path, train=False, size=384, limit=None):
-        df = pd.read_parquet(path)
-        if limit:
-            df = df.iloc[:limit]
+    def __init__(self, paths, train=False, size=384, limit=None, seed=0):
+        if isinstance(paths, (str, Path)):
+            paths = [paths]
+        parts = []
+        for p in paths:
+            df = pd.read_parquet(p)
+            if "image_bytes" not in df.columns:
+                df["image_bytes"] = df["image"].map(lambda d: d["bytes"])
+                df = df.drop(columns=["image"])
+            parts.append(df[["image_bytes", "latex", "sample_id"]])
+        df = pd.concat(parts, ignore_index=True)
+        if limit and limit < len(df):
+            df = df.sample(n=limit, random_state=seed)
         self.df = df.reset_index(drop=True)
         self.train, self.size = train, size
 

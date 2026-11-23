@@ -1,13 +1,18 @@
 import torch
 import torch.nn.functional as F
-from transformers import AutoTokenizer, VisionEncoderDecoderModel
+from pathlib import Path
+
+from transformers import PreTrainedTokenizerFast, VisionEncoderDecoderModel
 
 from . import texo_vendor  # noqa: F401  registers the HGNetv2 encoder
 
 
 def load(path):
     model = VisionEncoderDecoderModel.from_pretrained(path)
-    tok = AutoTokenizer.from_pretrained(path)
+    # tokenizer.json is version-independent (tokenizer_config.json written by transformers 5.x
+    # cannot be read by 4.x), so build the fast tokenizer from it directly.
+    tok = PreTrainedTokenizerFast(tokenizer_file=str(Path(path) / "tokenizer.json"), bos_token="<s>",
+                                  eos_token="</s>", pad_token="<pad>", unk_token="<unk>")
     model.config.decoder_start_token_id = tok.bos_token_id
     model.config.pad_token_id = tok.pad_token_id
     model.config.eos_token_id = tok.eos_token_id
