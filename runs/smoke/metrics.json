@@ -1,0 +1,50 @@
+{
+  "args": {
+    "data": "data/subset",
+    "model": "models/texo",
+    "out": "runs/smoke",
+    "train_limit": 48,
+    "valid_limit": 8,
+    "test_limit": 20,
+    "epochs": 1,
+    "max_steps": 12,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "lr": 2e-05,
+    "warmup": 2,
+    "max_len": 256,
+    "beams": 1,
+    "workers": 0,
+    "skip_zeroshot": false,
+    "no_save": true,
+    "seed": 0,
+    "bn_train": false,
+    "freeze_encoder": false
+  },
+  "test_zeroshot": {
+    "n": 20,
+    "cer": 0.26480836236933797,
+    "token_error_rate": 0.17585301837270342,
+    "exact_match": 0.2,
+    "seconds": 1.9
+  },
+  "valid": [
+    {
+      "epoch": 0,
+      "step": 12,
+      "n": 8,
+      "cer": 0.4880952380952381,
+      "token_error_rate": 0.484472049689441,
+      "exact_match": 0.0,
+      "seconds": 0.4
+    }
+  ],
+  "train_seconds": 6.6,
+  "test_finetuned": {
+    "n": 20,
+    "cer": 0.3083623693379791,
+    "token_error_rate": 0.2047244094488189,
+    "exact_match": 0.25,
+    "seconds": 1.0
+  }
+}

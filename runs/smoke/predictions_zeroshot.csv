@@ -1,0 +1,21 @@
+idx,sample_id,gt,pred,pred_tokens
+0,a60e5a8e94331813,s(t)=\int_{0}^{t}dt^{\prime}v(t^{\prime}),S(t)=\int_{0}^{t}dt^{i}(t^{i}),S ( t ) = \int _ { 0 } ^ { t } d t ^ { i } ( t ^ { i } )
+1,75a2e83591d8d820,q=\lfloor\frac{n_{1}}{n_{0}}\rfloor,q=\frac{n_{1}}{n_{0}},q = \frac { n _ { 1 } } { n _ { 0 } }
+2,ade60f4d379b8b1b,X^{2}+Y^{2}-Z^{2}=0,X^{2}+Y^{2}-2^{2}=0,X ^ { 2 } + Y ^ { 2 } - 2 ^ { 2 } = 0
+3,b505ab7ec8b0581e,f(n)=x^{(n+1)}-1,f(n)=x^{(n+1)}-1,f ( n ) = x ^ { ( n + 1 ) } - 1
+4,03762d643e1dbb50,\nabla\cdot P=-\rho_{b},\therefore p=-p_{2},\therefore p = - p _ { 2 }
+5,dcf5fac0037e7f26,d=\frac{\pi}{4}\times b^{2}\times s\times n,d=\frac{\pi}{4}\times6^{2}\times3\times n,d = \frac { \pi } { 4 } \times 6 ^ { 2 } \times 3 \times n
+6,86b1d977157442ef,v_{1}(\frac{1}{2})=v_{2}(\frac{1}{2}),v_{1}(\frac{1}{2})=v_{2}(\frac{1}{2}),v _ { 1 } ( \frac { 1 } { 2 } ) = v _ { 2 } ( \frac { 1 } { 2 } )
+7,1ef9cddc0958c8ec,\sigma_{y}^{2}(\tau)=\frac{2\pi^{2}\tau}{3}h_{-2},\sigma_{y}^{2}(T)=\frac{2\pi^{2}\pi}{3}h-2,\sigma _ { y } ^ { 2 } ( T ) = \frac { 2 \pi ^ { 2 } \pi } { 3 } h - 2
+8,d3fb37d823e552de,\dot{Q}/T,\dot{Q}IT,\dot { Q } I T
+9,920bf9cf3c44e130,\pi:\Sigma^{*}\rightarrow P(A),\pi:2^{x}\rightarrow P(A),\pi : 2 ^ { x } \rarr P ( A )
+10,c69869a4ce453d94,B_{x}:=\pi^{-1}(x),B_{x}:=\pi^{-1}(x),B _ { x } : = \pi ^ { - 1 } ( x )
+11,87aa38fdc9d3be37,H_{n}^{(r)}=\sum_{k=1}^{n}H_{k}^{(r-1)},f_{n}^{(t)}=\sum_{k=1}^{n}f_{k}^{(t-1)},f _ { n } ^ { ( t ) } = \sum _ { k = 1 } ^ { n } f _ { k } ^ { ( t - 1 ) }
+12,9061609183d17b5e,(\frac{3}{F_{n}})=-1,(\frac{3}{F_{n}})=-1,( \frac { 3 } { F _ { n } } ) = - 1
+13,28fb39b73cc59587,p(x_{k+1}|\hat{\xi}_{k}^{i}),p(x_{k+1})\sum_{k}^{C},p ( x _ { k + 1 } ) \sum _ { k } ^ { C }
+14,b167bc4e1c7e27e6,"\delta(q_{s},q_{c})\rightarrow q_{t}","S(f,f,f)\rightarrow f=","S ( f, f, f ) \rarr f ="
+15,9bb1ab47399aee59,\frac{d}{dx}y=t(x)y,\frac{d}{\Delta x}y=t(X)y,\frac { d } { \Delta x } y = t ( X ) y
+16,fbf6504c1b5adae9,\Delta x\Delta p>h/2,\Delta\times\Delta p>h/z,\Delta \times \Delta p > h / z
+17,7f6bd3735a9b0469,\sqrt{S}=S\cdot(1/\sqrt{S}),\sqrt{5}=S\cdot(1|\sqrt{S}),\sqrt { 5 } = S \cdot ( 1 | \sqrt { S } )
+18,888d0ad09c71e949,"\Psi_{A}(1,2,...,N_{A})","4_{A}(1,2,\dots,N_{A})","4 _ { A } ( 1, 2, \dots, N _ { A } )"
+19,340bb67f39d12e11,\sum k^{3}={(\begin{matrix}n+1\\ 2\end{matrix})}^{2},\sum h^{3}=(\frac{n+1}{2})^{2},\sum h ^ { 3 } = ( \frac { n + 1 } { 2 } ) ^ { 2 }

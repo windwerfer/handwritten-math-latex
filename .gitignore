@@ -1,0 +1,11 @@
+.venv/
+data/
+models/
+texo-src/
+runs/*/model/
+kaggle/dataset/*.parquet
+kaggle/dataset/texo__*
+kaggle/dataset/code.tar.gz
+kaggle/output/*/run/model/
+__pycache__/
+*.pyc

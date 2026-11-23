@@ -1,0 +1,6 @@
+{
+  "title": "handwriter mathwriting subset texo",
+  "id": "windwerfer/handwriter-mathwriting-subset-texo",
+  "licenses": [{"name": "CC-BY-NC-SA-4.0"}],
+  "description": "Private test subset of Google MathWriting-2024 (human; official splits, via HF deepcopy/MathWriting-human, CC BY-NC-SA 4.0): train 5000 / valid 500 / test 500 + full test 7644, plus Texo (alephpi/FormulaNet, AGPL-3.0) weights and handwriter training code."
+}

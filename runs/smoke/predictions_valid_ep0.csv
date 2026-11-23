@@ -1,0 +1,9 @@
+idx,sample_id,gt,pred,pred_tokens
+0,7df898f340051f4a,|\psi_{0}\rangle=|a\rangle|f_{k}\rangle|f_{k}^{\prime}\rangle,|\psi_{0}\rangle=|a|b|b\rangle|f\rangle|b\rangle,| \psi _ { 0 } \rangle = | a | b | b \rangle | f \rangle | b \rangle
+1,a98fd2653ae0afea,"u>|\dot{x}+a(t,x,\dot{x})|","u>|x+a(t,x,x)|","u > | x + a ( t, x, x ) |"
+2,43ed20f9e748fa3b,(1|1),(111),( 1 1 1 )
+3,96789e539ba3fa86,U(r_{j}-r_{l}/\sqrt{n}),Q(r_{j}-r_{j}/\sqrt{11}),Q ( r _ { j } - r _ { j } / \sqrt { 1 1 } )
+4,8da7fd4e05b73cb3,R_{ji}=N_{j}B_{ji}\rho(\nu),R_{j_{i}}=N_{j_{i}}B_{j_{i}}P_{i}V_{i},R _ { j _ { i } } = N _ { j _ { i } } B _ { j _ { i } } P _ { i } V _ { i }
+5,d57a9a4381ed46d9,\tilde{f}(s)=\frac{a_{N}}{s-N}+\cdot\cdot\cdot,f(s)=\frac{a(s)}{s-s+s},f ( s ) = \frac { a ( s ) } { s - s + s }
+6,550c650adfa60e9c,-\frac{d^{2}}{dx^{2}},-~\frac{d^{2}}{dx^{2}},- ~ \frac { d ^ { 2 } } { d x ^ { 2 } }
+7,ca89568e06e4d736,\sigma=\sqrt{\sigma_{i}^{2}+\sigma_{j}^{2}},\textcircled{1}=\sqrt{1},\textcircled { 1 } = \sqrt { 1 }

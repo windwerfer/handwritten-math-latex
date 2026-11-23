@@ -1,0 +1,62 @@
+{
+  "train": {
+    "source_rows": 76622,
+    "subset_rows": 5000,
+    "source_frac_with_oov": 0.12106183602620657,
+    "subset_frac_with_oov": 0.1228,
+    "top_oov_tokens": {
+      "\\begin": 7331,
+      "\\end": 7331,
+      "\\infty": 1500,
+      "\\rightarrow": 1092,
+      "\\dagger": 95,
+      "\\Rightarrow": 63,
+      "\\emptyset": 61,
+      "\\leftarrow": 43,
+      "\\Leftrightarrow": 11,
+      "\\leftrightarrow": 8,
+      "\\delta*": 3,
+      "\\alpha*": 2,
+      "\\pi*": 2,
+      "\\prime*": 1,
+      "\\tau*": 1
+    }
+  },
+  "valid": {
+    "source_rows": 15674,
+    "subset_rows": 500,
+    "source_frac_with_oov": 0.1500574199310961,
+    "subset_frac_with_oov": 0.16,
+    "top_oov_tokens": {
+      "\\begin": 1867,
+      "\\end": 1867,
+      "\\infty": 325,
+      "\\rightarrow": 274,
+      "\\dagger": 22,
+      "\\Rightarrow": 20,
+      "\\emptyset": 19,
+      "\\leftarrow": 11,
+      "\\leftrightarrow": 4,
+      "\\Leftrightarrow": 3,
+      "\\wedge*": 1
+    }
+  },
+  "test": {
+    "source_rows": 7644,
+    "subset_rows": 500,
+    "source_frac_with_oov": 0.09026687598116169,
+    "subset_frac_with_oov": 0.096,
+    "top_oov_tokens": {
+      "\\rightarrow": 288,
+      "\\begin": 232,
+      "\\end": 232,
+      "\\infty": 201,
+      "\\dagger": 50,
+      "\\Rightarrow": 27,
+      "\\leftarrow": 10,
+      "\\emptyset": 7,
+      "\\Leftrightarrow": 3,
+      "\\prime*": 1
+    }
+  }
+}
