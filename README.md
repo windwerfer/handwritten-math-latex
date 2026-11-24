@@ -15,13 +15,16 @@ All figures below are on the official MathWriting **test set, all 7,644 human in
 | Texo zero-shot | greedy | 38.4% | 28.9% | 10.9% |
 | v1 (5k-image subset, 5 epochs) | greedy | 17.8% | 13.5% | 32.5% |
 | v2 best (full human train, epoch 2) | greedy | 9.03% | 6.91% | 56.9% |
-| v2 best | beam 4 | **8.73%** | **6.66%** | **57.7%** |
+| v2 best | beam 4, length_penalty=1.0 (HF default) | 8.73% | 6.66% | 57.7% |
+| v2 best | beam 4, length_penalty=0.0 | **8.60%** | **6.58%** | **57.8%** |
 
 v2 was trained on all 229,864 official human training inks (Kaggle, 2× Tesla T4). The run hit a host-RAM out-of-memory error in epoch 3; the best checkpoint is epoch 2 (valid CER 6.51% on a 2,000-sample valid subset). That OOM is fixed in the current dataloader (one contiguous image buffer, at most two short-lived eval workers).
 
+Beam search with `length_penalty=0.0` (raw log-prob sum, now the default in `hw.model.predict`) beat HuggingFace's default of 1.0 by 10 extra exact formulas on the official test set (4,419 / 7,644 vs 4,409). The length penalty had been rewarding over-structuring (`Hz` → `H_{z}`, `Mg` → `M_{g}`). Brace/grammar-constrained decoding did not change any v2 beam-4 output. Checkpoint averaging was not possible: only v2-best was saved. Details: `results/decode_v2/SUMMARY.md`.
+
 Typical remaining errors: letter case (`x`/`X`, `p`/`P`, …), `.` versus `\cdot`, look-alike symbols (`\omega`/`w`, `\nu`/`v`, `d`/`\partial`), and brace or subscript structure.
 
-Predictions, metrics and sample images: `results/kaggle_v2_eval/`.
+Predictions, metrics and sample images: `results/kaggle_v2_eval/` (length_penalty=1.0) and `results/decode_v2/` (decode tuning, including length_penalty=0.0).
 
 For reference, a much larger TrOCR model trained on MathWriting (`tjoab/latex_finetuned`, 334M) reports 14.9% CER, under a different normalisation, so the number is not strictly comparable.
 
@@ -109,7 +112,17 @@ python scripts/eval.py --test data/raw/test-*.parquet --out runs/eval \
     --model zeroshot=models/texo:1 --model v2=path/to/v2best:1,4
 ```
 
-Each `--model` is `NAME=PATH:BEAMS`. The script writes `metrics.json`, `predictions_*.csv`, and comparison sample PNGs. Metrics are character error rate (whitespace-insensitive), token error rate, and exact match, all after canonical normalisation.
+Each `--model` is `NAME=PATH:BEAMS`. The script writes `metrics.json`, `predictions_*.csv`, and comparison sample PNGs. Metrics are character error rate (whitespace-insensitive), token error rate, and exact match, all after canonical normalisation. Beam search uses `--length-penalty 0.0` by default (recommended; see `results/decode_v2/`).
+
+To compare length penalties, grammar-constrained decoding, or averaged checkpoints:
+
+```bash
+python scripts/eval_decode.py --model path/to/best \
+    --valid 'data/raw/val-*.parquet' --test 'data/raw/test-*.parquet' \
+    --out results/decode_v2 --valid-limit 1000 --seed 0 \
+    --length-penalties 0.0 0.6 0.8 1.0 --brace both
+python scripts/average_checkpoints.py --out models/swa --discover runs/v3
+```
 
 ## Export ONNX
 
@@ -130,10 +143,10 @@ Examples: `lim` becomes `\lim`, `\infin` becomes `\infty`, `\left` and `\quad` a
 
 - `hw/` — model loading, data, metrics, label normalisation, ink packing and augmentation
 - `hw/texo_vendor/` — HGNetv2 encoder vendored from Texo (AGPL-3.0)
-- `scripts/prep_data.py`, `prep_inks.py`, `train.py`, `eval.py`, `export_onnx.py`
+- `scripts/prep_data.py`, `prep_inks.py`, `train.py`, `eval.py`, `eval_decode.py`, `average_checkpoints.py`, `export_onnx.py`
 - `kaggle/` — private Kaggle dataset and kernel definitions
 - `results/` — published metrics, predictions and sample images (no weights)
-- `tests/` — `pytest` (64 tests at the time of this writing)
+- `tests/` — `pytest` (75 tests at the time of this writing)
 
 ## Credits
 

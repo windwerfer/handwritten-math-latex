@@ -47,7 +47,7 @@ def evaluate(model, tok, ds, args, device, tag, beams=1, save=True):
     for b in dl:
         with torch.autocast(device.type, dtype=torch.float16, enabled=device.type == "cuda"):
             raw = predict(model, tok, b["pixel_values"], device, max_length=args.max_len,
-                          num_beams=beams)
+                          num_beams=beams, length_penalty=getattr(args, "length_penalty", 0.0))
         for i, r, gt in zip(b["idx"], raw, b["latex"]):
             rows.append({"idx": i, "sample_id": str(ds.sample_id[i]), "gt": gt,
                          "pred": from_texo(r), "pred_tokens": r})
@@ -100,6 +100,8 @@ def main():
     ap.add_argument("--warmup", type=int, default=100)
     ap.add_argument("--max-len", type=int, default=256)
     ap.add_argument("--beams", type=int, nargs="*", default=[1], help="beam sizes for final test eval")
+    ap.add_argument("--length-penalty", type=float, default=0.0,
+                    help="HF beam length_penalty (alpha). 0.0 beat the default 1.0 on v2; see results/decode_v2/")
     ap.add_argument("--final-full-valid", action="store_true")
     ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--skip-zeroshot", action="store_true")

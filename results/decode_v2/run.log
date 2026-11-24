@@ -1,0 +1,348 @@
+device cpu valid 1000 model results/kaggle_v2/run/best
+no run with 2+ checkpoints (v2 only saved best; last was never written)
+loaded encoder cache results/decode_v2/cache/valid_encoder.pt n=1000
+skip beam4_lp0, already in metrics.json
+skip beam4_lp0_brace, already in metrics.json
+skip beam4_lp0.6, already in metrics.json
+skip beam4_lp0.6_brace, already in metrics.json
+skip beam4_lp0.8, already in metrics.json
+skip beam4_lp0.8_brace, already in metrics.json
+skip beam4_lp1, already in metrics.json
+skip beam4_lp1_brace, already in metrics.json
+winner on valid: beam4_lp0 {'n': 1000, 'cer': 0.06894894894894894, 'token_error_rate': 0.05874718218457545, 'exact_match': 0.675, 'beams': 4, 'length_penalty': 0.0, 'constrain': False, 'seconds': 43.0, 'tag': 'beam4_lp0', 'ckpt': 'best'}
+test 7644
+  [test_beam4_lp0] 8/7644 in 1.8s
+  [test_beam4_lp0] 48/7644 in 8.2s
+  [test_beam4_lp0] 88/7644 in 14.2s
+  [test_beam4_lp0] 128/7644 in 21.2s
+  [test_beam4_lp0] 168/7644 in 26.3s
+  [test_beam4_lp0] 208/7644 in 33.7s
+  [test_beam4_lp0] 248/7644 in 41.3s
+  [test_beam4_lp0] 288/7644 in 47.2s
+  [test_beam4_lp0] 328/7644 in 53.9s
+  [test_beam4_lp0] 368/7644 in 59.2s
+  [test_beam4_lp0] 408/7644 in 62.4s
+  [test_beam4_lp0] 448/7644 in 66.5s
+  [test_beam4_lp0] 488/7644 in 70.2s
+  [test_beam4_lp0] 528/7644 in 73.5s
+  [test_beam4_lp0] 568/7644 in 77.1s
+  [test_beam4_lp0] 608/7644 in 80.6s
+  [test_beam4_lp0] 648/7644 in 84.2s
+  [test_beam4_lp0] 688/7644 in 87.9s
+  [test_beam4_lp0] 728/7644 in 91.3s
+  [test_beam4_lp0] 768/7644 in 94.9s
+  [test_beam4_lp0] 808/7644 in 98.1s
+  [test_beam4_lp0] 848/7644 in 101.2s
+  [test_beam4_lp0] 888/7644 in 104.8s
+  [test_beam4_lp0] 928/7644 in 108.2s
+  [test_beam4_lp0] 968/7644 in 111.6s
+  [test_beam4_lp0] 1008/7644 in 115.1s
+  [test_beam4_lp0] 1048/7644 in 118.7s
+  [test_beam4_lp0] 1088/7644 in 121.9s
+  [test_beam4_lp0] 1128/7644 in 125.4s
+  [test_beam4_lp0] 1168/7644 in 128.8s
+  [test_beam4_lp0] 1208/7644 in 132.2s
+  [test_beam4_lp0] 1248/7644 in 135.7s
+  [test_beam4_lp0] 1288/7644 in 138.9s
+  [test_beam4_lp0] 1328/7644 in 142.2s
+  [test_beam4_lp0] 1368/7644 in 145.6s
+  [test_beam4_lp0] 1408/7644 in 149.7s
+  [test_beam4_lp0] 1448/7644 in 153.8s
+  [test_beam4_lp0] 1488/7644 in 157.5s
+  [test_beam4_lp0] 1528/7644 in 161.0s
+  [test_beam4_lp0] 1568/7644 in 164.5s
+  [test_beam4_lp0] 1608/7644 in 168.2s
+  [test_beam4_lp0] 1648/7644 in 172.0s
+  [test_beam4_lp0] 1688/7644 in 175.6s
+  [test_beam4_lp0] 1728/7644 in 180.7s
+  [test_beam4_lp0] 1768/7644 in 185.7s
+  [test_beam4_lp0] 1808/7644 in 192.8s
+  [test_beam4_lp0] 1848/7644 in 198.0s
+  [test_beam4_lp0] 1888/7644 in 205.9s
+  [test_beam4_lp0] 1928/7644 in 209.8s
+  [test_beam4_lp0] 1968/7644 in 213.5s
+  [test_beam4_lp0] 2008/7644 in 216.9s
+  [test_beam4_lp0] 2048/7644 in 220.5s
+  [test_beam4_lp0] 2088/7644 in 224.0s
+  [test_beam4_lp0] 2128/7644 in 227.7s
+  [test_beam4_lp0] 2168/7644 in 231.3s
+  [test_beam4_lp0] 2208/7644 in 234.7s
+  [test_beam4_lp0] 2248/7644 in 238.5s
+  [test_beam4_lp0] 2288/7644 in 241.8s
+  [test_beam4_lp0] 2328/7644 in 245.2s
+  [test_beam4_lp0] 2368/7644 in 248.8s
+  [test_beam4_lp0] 2408/7644 in 252.1s
+  [test_beam4_lp0] 2448/7644 in 255.3s
+  [test_beam4_lp0] 2488/7644 in 259.0s
+  [test_beam4_lp0] 2528/7644 in 262.4s
+  [test_beam4_lp0] 2568/7644 in 265.9s
+  [test_beam4_lp0] 2608/7644 in 269.5s
+  [test_beam4_lp0] 2648/7644 in 273.1s
+  [test_beam4_lp0] 2688/7644 in 276.6s
+  [test_beam4_lp0] 2728/7644 in 280.2s
+  [test_beam4_lp0] 2768/7644 in 283.5s
+  [test_beam4_lp0] 2808/7644 in 287.4s
+  [test_beam4_lp0] 2848/7644 in 291.0s
+  [test_beam4_lp0] 2888/7644 in 294.5s
+  [test_beam4_lp0] 2928/7644 in 298.2s
+  [test_beam4_lp0] 2968/7644 in 301.8s
+  [test_beam4_lp0] 3008/7644 in 305.4s
+  [test_beam4_lp0] 3048/7644 in 309.2s
+  [test_beam4_lp0] 3088/7644 in 312.6s
+  [test_beam4_lp0] 3128/7644 in 316.1s
+  [test_beam4_lp0] 3168/7644 in 319.8s
+  [test_beam4_lp0] 3208/7644 in 323.6s
+  [test_beam4_lp0] 3248/7644 in 328.3s
+  [test_beam4_lp0] 3288/7644 in 334.3s
+  [test_beam4_lp0] 3328/7644 in 341.5s
+  [test_beam4_lp0] 3368/7644 in 348.3s
+  [test_beam4_lp0] 3408/7644 in 355.5s
+  [test_beam4_lp0] 3448/7644 in 359.0s
+  [test_beam4_lp0] 3488/7644 in 362.7s
+  [test_beam4_lp0] 3528/7644 in 365.9s
+  [test_beam4_lp0] 3568/7644 in 369.6s
+  [test_beam4_lp0] 3608/7644 in 373.2s
+  [test_beam4_lp0] 3648/7644 in 376.4s
+  [test_beam4_lp0] 3688/7644 in 379.8s
+  [test_beam4_lp0] 3728/7644 in 383.3s
+  [test_beam4_lp0] 3768/7644 in 387.2s
+  [test_beam4_lp0] 3808/7644 in 390.9s
+  [test_beam4_lp0] 3848/7644 in 394.3s
+  [test_beam4_lp0] 3888/7644 in 397.7s
+  [test_beam4_lp0] 3928/7644 in 401.2s
+  [test_beam4_lp0] 3968/7644 in 404.5s
+  [test_beam4_lp0] 4008/7644 in 407.9s
+  [test_beam4_lp0] 4048/7644 in 411.5s
+  [test_beam4_lp0] 4088/7644 in 415.0s
+  [test_beam4_lp0] 4128/7644 in 418.9s
+  [test_beam4_lp0] 4168/7644 in 422.3s
+  [test_beam4_lp0] 4208/7644 in 425.8s
+  [test_beam4_lp0] 4248/7644 in 429.3s
+  [test_beam4_lp0] 4288/7644 in 432.9s
+  [test_beam4_lp0] 4328/7644 in 436.4s
+  [test_beam4_lp0] 4368/7644 in 439.9s
+  [test_beam4_lp0] 4408/7644 in 444.1s
+  [test_beam4_lp0] 4448/7644 in 447.6s
+  [test_beam4_lp0] 4488/7644 in 451.6s
+  [test_beam4_lp0] 4528/7644 in 455.0s
+  [test_beam4_lp0] 4568/7644 in 458.8s
+  [test_beam4_lp0] 4608/7644 in 461.9s
+  [test_beam4_lp0] 4648/7644 in 465.3s
+  [test_beam4_lp0] 4688/7644 in 468.6s
+  [test_beam4_lp0] 4728/7644 in 472.0s
+  [test_beam4_lp0] 4768/7644 in 477.8s
+  [test_beam4_lp0] 4808/7644 in 484.7s
+  [test_beam4_lp0] 4848/7644 in 490.5s
+  [test_beam4_lp0] 4888/7644 in 499.6s
+  [test_beam4_lp0] 4928/7644 in 504.6s
+  [test_beam4_lp0] 4968/7644 in 515.4s
+  [test_beam4_lp0] 5008/7644 in 522.4s
+  [test_beam4_lp0] 5048/7644 in 529.2s
+  [test_beam4_lp0] 5088/7644 in 538.9s
+  [test_beam4_lp0] 5128/7644 in 548.5s
+  [test_beam4_lp0] 5168/7644 in 555.5s
+  [test_beam4_lp0] 5208/7644 in 561.3s
+  [test_beam4_lp0] 5248/7644 in 571.3s
+  [test_beam4_lp0] 5288/7644 in 581.1s
+  [test_beam4_lp0] 5328/7644 in 589.8s
+  [test_beam4_lp0] 5368/7644 in 595.9s
+  [test_beam4_lp0] 5408/7644 in 605.3s
+  [test_beam4_lp0] 5448/7644 in 613.2s
+  [test_beam4_lp0] 5488/7644 in 618.4s
+  [test_beam4_lp0] 5528/7644 in 627.5s
+  [test_beam4_lp0] 5568/7644 in 633.0s
+  [test_beam4_lp0] 5608/7644 in 640.4s
+  [test_beam4_lp0] 5648/7644 in 648.5s
+  [test_beam4_lp0] 5688/7644 in 654.9s
+  [test_beam4_lp0] 5728/7644 in 662.9s
+  [test_beam4_lp0] 5768/7644 in 671.3s
+  [test_beam4_lp0] 5808/7644 in 678.5s
+  [test_beam4_lp0] 5848/7644 in 685.5s
+  [test_beam4_lp0] 5888/7644 in 692.4s
+  [test_beam4_lp0] 5928/7644 in 698.3s
+  [test_beam4_lp0] 5968/7644 in 706.5s
+  [test_beam4_lp0] 6008/7644 in 711.8s
+  [test_beam4_lp0] 6048/7644 in 721.1s
+  [test_beam4_lp0] 6088/7644 in 727.6s
+  [test_beam4_lp0] 6128/7644 in 734.2s
+  [test_beam4_lp0] 6168/7644 in 742.1s
+  [test_beam4_lp0] 6208/7644 in 748.4s
+  [test_beam4_lp0] 6248/7644 in 757.5s
+  [test_beam4_lp0] 6288/7644 in 765.0s
+  [test_beam4_lp0] 6328/7644 in 770.4s
+  [test_beam4_lp0] 6368/7644 in 779.3s
+  [test_beam4_lp0] 6408/7644 in 784.0s
+  [test_beam4_lp0] 6448/7644 in 792.5s
+  [test_beam4_lp0] 6488/7644 in 798.4s
+  [test_beam4_lp0] 6528/7644 in 806.3s
+  [test_beam4_lp0] 6568/7644 in 814.5s
+  [test_beam4_lp0] 6608/7644 in 819.9s
+  [test_beam4_lp0] 6648/7644 in 829.4s
+  [test_beam4_lp0] 6688/7644 in 837.0s
+  [test_beam4_lp0] 6728/7644 in 842.6s
+  [test_beam4_lp0] 6768/7644 in 851.7s
+  [test_beam4_lp0] 6808/7644 in 857.1s
+  [test_beam4_lp0] 6848/7644 in 864.4s
+  [test_beam4_lp0] 6888/7644 in 870.5s
+  [test_beam4_lp0] 6928/7644 in 877.7s
+  [test_beam4_lp0] 6968/7644 in 885.7s
+  [test_beam4_lp0] 7008/7644 in 890.6s
+  [test_beam4_lp0] 7048/7644 in 899.5s
+  [test_beam4_lp0] 7088/7644 in 905.3s
+  [test_beam4_lp0] 7128/7644 in 912.2s
+  [test_beam4_lp0] 7168/7644 in 919.5s
+  [test_beam4_lp0] 7208/7644 in 924.9s
+  [test_beam4_lp0] 7248/7644 in 934.0s
+  [test_beam4_lp0] 7288/7644 in 940.5s
+  [test_beam4_lp0] 7328/7644 in 947.2s
+  [test_beam4_lp0] 7368/7644 in 954.2s
+  [test_beam4_lp0] 7408/7644 in 960.0s
+  [test_beam4_lp0] 7448/7644 in 967.6s
+  [test_beam4_lp0] 7488/7644 in 970.9s
+  [test_beam4_lp0] 7528/7644 in 974.5s
+  [test_beam4_lp0] 7568/7644 in 977.7s
+  [test_beam4_lp0] 7608/7644 in 981.4s
+  [test_beam4_lp0] 7644/7644 in 984.4s
+[test_beam4_lp0] {'n': 7644, 'cer': 0.08600198496810585, 'token_error_rate': 0.06581427257512477, 'exact_match': 0.5781004709576139, 'beams': 4, 'length_penalty': 0.0, 'constrain': False, 'seconds': 984.6, 'tag': 'test_beam4_lp0'}
+wrote results/decode_v2/SUMMARY.md
+{
+  "device": "cpu",
+  "discovered_checkpoints": {},
+  "averaged_from": [],
+  "average_skipped": "no run with 2+ checkpoints (v2 only saved best; last was never written)",
+  "valid": {
+    "beam4_lp0": {
+      "n": 1000,
+      "cer": 0.06894894894894894,
+      "token_error_rate": 0.05874718218457545,
+      "exact_match": 0.675,
+      "beams": 4,
+      "length_penalty": 0.0,
+      "constrain": false,
+      "seconds": 43.0,
+      "tag": "beam4_lp0",
+      "ckpt": "best"
+    },
+    "beam4_lp0_brace": {
+      "n": 1000,
+      "cer": 0.06894894894894894,
+      "token_error_rate": 0.05874718218457545,
+      "exact_match": 0.675,
+      "beams": 4,
+      "length_penalty": 0.0,
+      "constrain": true,
+      "seconds": 44.2,
+      "tag": "beam4_lp0_brace",
+      "ckpt": "best"
+    },
+    "beam4_lp0.6": {
+      "n": 1000,
+      "cer": 0.06858858858858859,
+      "token_error_rate": 0.05936197827720473,
+      "exact_match": 0.672,
+      "beams": 4,
+      "length_penalty": 0.6,
+      "constrain": false,
+      "seconds": 51.3,
+      "tag": "beam4_lp0.6",
+      "ckpt": "best"
+    },
+    "beam4_lp0.6_brace": {
+      "n": 1000,
+      "cer": 0.06858858858858859,
+      "token_error_rate": 0.05936197827720473,
+      "exact_match": 0.672,
+      "beams": 4,
+      "length_penalty": 0.6,
+      "constrain": true,
+      "seconds": 51.4,
+      "tag": "beam4_lp0.6_brace",
+      "ckpt": "best"
+    },
+    "beam4_lp0.8": {
+      "n": 1000,
+      "cer": 0.06822822822822823,
+      "token_error_rate": 0.05908873556936949,
+      "exact_match": 0.672,
+      "beams": 4,
+      "length_penalty": 0.8,
+      "constrain": false,
+      "seconds": 40.0,
+      "tag": "beam4_lp0.8",
+      "ckpt": "best"
+    },
+    "beam4_lp0.8_brace": {
+      "n": 1000,
+      "cer": 0.06822822822822823,
+      "token_error_rate": 0.05908873556936949,
+      "exact_match": 0.672,
+      "beams": 4,
+      "length_penalty": 0.8,
+      "constrain": true,
+      "seconds": 42.7,
+      "tag": "beam4_lp0.8_brace",
+      "ckpt": "best"
+    },
+    "beam4_lp1": {
+      "n": 1000,
+      "cer": 0.06866866866866866,
+      "token_error_rate": 0.05963522098503996,
+      "exact_match": 0.67,
+      "beams": 4,
+      "length_penalty": 1.0,
+      "constrain": false,
+      "seconds": 82.5,
+      "tag": "beam4_lp1",
+      "ckpt": "best"
+    },
+    "beam4_lp1_brace": {
+      "n": 1000,
+      "cer": 0.06866866866866866,
+      "token_error_rate": 0.05963522098503996,
+      "exact_match": 0.67,
+      "beams": 4,
+      "length_penalty": 1.0,
+      "constrain": true,
+      "seconds": 97.1,
+      "tag": "beam4_lp1_brace",
+      "ckpt": "best"
+    }
+  },
+  "winner_valid": {
+    "tag": "beam4_lp0",
+    "n": 1000,
+    "cer": 0.06894894894894894,
+    "token_error_rate": 0.05874718218457545,
+    "exact_match": 0.675,
+    "beams": 4,
+    "length_penalty": 0.0,
+    "constrain": false,
+    "seconds": 43.0,
+    "ckpt": "best"
+  },
+  "test": {
+    "beam4_lp0": {
+      "n": 7644,
+      "cer": 0.08600198496810585,
+      "token_error_rate": 0.06581427257512477,
+      "exact_match": 0.5781004709576139,
+      "beams": 4,
+      "length_penalty": 0.0,
+      "constrain": false,
+      "seconds": 984.6,
+      "tag": "test_beam4_lp0"
+    },
+    "beam4_lp1": {
+      "n": 7644,
+      "cer": 0.08728872308697452,
+      "token_error_rate": 0.06657569772175564,
+      "exact_match": 0.576792255363684,
+      "beams": 4,
+      "length_penalty": 1.0,
+      "constrain": false,
+      "source": "results/kaggle_v2_eval/eval/metrics.json",
+      "tag": "beam4_lp1"
+    }
+  },
+  "recommendation": "Use `beam4_lp0` at decode time (length_penalty=0.0). Full-test exact 57.81% vs baseline 57.68% (+0.13 points)."
+}

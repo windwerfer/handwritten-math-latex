@@ -1,0 +1,172 @@
+{
+  "args": {
+    "model": "results/kaggle_v2/run/best",
+    "valid": [
+      "data/raw/val-*.parquet"
+    ],
+    "test": [
+      "data/raw/test-*.parquet"
+    ],
+    "out": "results/decode_v2",
+    "valid_limit": 1000,
+    "seed": 0,
+    "beams": 4,
+    "length_penalties": [
+      0.0,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "brace": "both",
+    "eval_batch_size": 8,
+    "encode_batch_size": 16,
+    "max_len": 256,
+    "time_budget_h": 1.75,
+    "discover_ckpts": [
+      "results/kaggle_v2/run",
+      "kaggle/ckpt_dataset"
+    ],
+    "skip_average": false,
+    "test_confirm": true,
+    "limit_test": null
+  },
+  "device": "cpu",
+  "discovered_checkpoints": {},
+  "averaged_from": [],
+  "average_skipped": "no run with 2+ checkpoints (v2 only saved best; last was never written)",
+  "valid": {
+    "beam4_lp0": {
+      "n": 1000,
+      "cer": 0.06894894894894894,
+      "token_error_rate": 0.05874718218457545,
+      "exact_match": 0.675,
+      "beams": 4,
+      "length_penalty": 0.0,
+      "constrain": false,
+      "seconds": 43.0,
+      "tag": "beam4_lp0",
+      "ckpt": "best"
+    },
+    "beam4_lp0_brace": {
+      "n": 1000,
+      "cer": 0.06894894894894894,
+      "token_error_rate": 0.05874718218457545,
+      "exact_match": 0.675,
+      "beams": 4,
+      "length_penalty": 0.0,
+      "constrain": true,
+      "seconds": 44.2,
+      "tag": "beam4_lp0_brace",
+      "ckpt": "best"
+    },
+    "beam4_lp0.6": {
+      "n": 1000,
+      "cer": 0.06858858858858859,
+      "token_error_rate": 0.05936197827720473,
+      "exact_match": 0.672,
+      "beams": 4,
+      "length_penalty": 0.6,
+      "constrain": false,
+      "seconds": 51.3,
+      "tag": "beam4_lp0.6",
+      "ckpt": "best"
+    },
+    "beam4_lp0.6_brace": {
+      "n": 1000,
+      "cer": 0.06858858858858859,
+      "token_error_rate": 0.05936197827720473,
+      "exact_match": 0.672,
+      "beams": 4,
+      "length_penalty": 0.6,
+      "constrain": true,
+      "seconds": 51.4,
+      "tag": "beam4_lp0.6_brace",
+      "ckpt": "best"
+    },
+    "beam4_lp0.8": {
+      "n": 1000,
+      "cer": 0.06822822822822823,
+      "token_error_rate": 0.05908873556936949,
+      "exact_match": 0.672,
+      "beams": 4,
+      "length_penalty": 0.8,
+      "constrain": false,
+      "seconds": 40.0,
+      "tag": "beam4_lp0.8",
+      "ckpt": "best"
+    },
+    "beam4_lp0.8_brace": {
+      "n": 1000,
+      "cer": 0.06822822822822823,
+      "token_error_rate": 0.05908873556936949,
+      "exact_match": 0.672,
+      "beams": 4,
+      "length_penalty": 0.8,
+      "constrain": true,
+      "seconds": 42.7,
+      "tag": "beam4_lp0.8_brace",
+      "ckpt": "best"
+    },
+    "beam4_lp1": {
+      "n": 1000,
+      "cer": 0.06866866866866866,
+      "token_error_rate": 0.05963522098503996,
+      "exact_match": 0.67,
+      "beams": 4,
+      "length_penalty": 1.0,
+      "constrain": false,
+      "seconds": 82.5,
+      "tag": "beam4_lp1",
+      "ckpt": "best"
+    },
+    "beam4_lp1_brace": {
+      "n": 1000,
+      "cer": 0.06866866866866866,
+      "token_error_rate": 0.05963522098503996,
+      "exact_match": 0.67,
+      "beams": 4,
+      "length_penalty": 1.0,
+      "constrain": true,
+      "seconds": 97.1,
+      "tag": "beam4_lp1_brace",
+      "ckpt": "best"
+    }
+  },
+  "winner_valid": {
+    "tag": "beam4_lp0",
+    "n": 1000,
+    "cer": 0.06894894894894894,
+    "token_error_rate": 0.05874718218457545,
+    "exact_match": 0.675,
+    "beams": 4,
+    "length_penalty": 0.0,
+    "constrain": false,
+    "seconds": 43.0,
+    "ckpt": "best"
+  },
+  "test": {
+    "beam4_lp0": {
+      "n": 7644,
+      "cer": 0.08600198496810585,
+      "token_error_rate": 0.06581427257512477,
+      "exact_match": 0.5781004709576139,
+      "beams": 4,
+      "length_penalty": 0.0,
+      "constrain": false,
+      "seconds": 984.6,
+      "tag": "test_beam4_lp0"
+    },
+    "beam4_lp1": {
+      "n": 7644,
+      "cer": 0.08728872308697452,
+      "token_error_rate": 0.06657569772175564,
+      "exact_match": 0.576792255363684,
+      "beams": 4,
+      "length_penalty": 1.0,
+      "constrain": false,
+      "source": "results/kaggle_v2_eval/eval/metrics.json",
+      "tag": "beam4_lp1"
+    }
+  },
+  "recommendation": "Use `beam4_lp0` at decode time (length_penalty=0.0). Full-test exact 57.81% vs baseline 57.68% (+0.13 points)."
+}

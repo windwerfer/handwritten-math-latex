@@ -19,3 +19,6 @@ kaggle/v2_poll.log
 data/excerpt/
 .pytest_cache/
 kaggle/v3_full_pushed.txt
+
+# encoder caches from scripts/eval_decode.py (large, rebuildable)
+results/**/cache/

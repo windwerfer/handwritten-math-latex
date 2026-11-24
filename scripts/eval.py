@@ -28,6 +28,8 @@ def main():
     ap.add_argument("--limit", type=int)
     ap.add_argument("--eval-batch-size", type=int, default=64)
     ap.add_argument("--max-len", type=int, default=256)
+    ap.add_argument("--length-penalty", type=float, default=0.0,
+                    help="HF beam length_penalty (alpha). 0.0 is recommended (see results/decode_v2/)")
     ap.add_argument("--workers", type=int, default=2)
     args = ap.parse_args()
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)

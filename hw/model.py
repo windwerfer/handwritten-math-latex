@@ -31,7 +31,10 @@ def loss_fn(model, batch, device):
 
 
 @torch.no_grad()
-def predict(model, tok, pixel_values, device, max_length=256, num_beams=1):
+def predict(model, tok, pixel_values, device, max_length=256, num_beams=1, length_penalty=0.0):
+    """length_penalty is HuggingFace's alpha (score / length**alpha). 0.0 (raw log-prob
+    sum) beat the library default of 1.0 on the official MathWriting test set; see
+    results/decode_v2/SUMMARY.md. It has no effect on greedy (num_beams=1)."""
     ids = model.generate(pixel_values.to(device), max_length=max_length, num_beams=num_beams,
-                         do_sample=False)
+                         do_sample=False, length_penalty=length_penalty)
     return tok.batch_decode(ids, skip_special_tokens=True)
