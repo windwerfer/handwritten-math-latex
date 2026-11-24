@@ -1,0 +1,389 @@
+[{"stream_name":"stdout","time":0.895680008,"data":"+ nvidia-smi; nproc; free -g; df -h /tmp /kaggle/working\n"}
+,{"stream_name":"stdout","time":0.932722953,"data":"Mon Nov 23 21:59:04 2026       \n"}
+,{"stream_name":"stdout","time":0.932752445,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":0.932757768,"data":"| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\n"}
+,{"stream_name":"stdout","time":0.932762127,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":0.932766458,"data":"| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n"}
+,{"stream_name":"stdout","time":0.932770698,"data":"| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n"}
+,{"stream_name":"stdout","time":0.932775043,"data":"|                                         |                        |               MIG M. |\n"}
+,{"stream_name":"stdout","time":0.932779018,"data":"|=========================================+========================+======================|\n"}
+,{"stream_name":"stdout","time":0.995332878,"data":"|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |\n"}
+,{"stream_name":"stdout","time":0.995358013,"data":"| N/A   57C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |\n"}
+,{"stream_name":"stdout","time":0.995363636,"data":"|                                         |                        |                  N/A |\n"}
+,{"stream_name":"stdout","time":0.995395192,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":0.995400865,"data":"|   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |\n"}
+,{"stream_name":"stdout","time":0.995405808,"data":"| N/A   52C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |\n"}
+,{"stream_name":"stdout","time":0.99540996,"data":"|                                         |                        |                  N/A |\n"}
+,{"stream_name":"stdout","time":0.995416047,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":0.996418385,"data":"\n"}
+,{"stream_name":"stdout","time":0.996434485,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":0.996439784,"data":"| Processes:                                                                              |\n"}
+,{"stream_name":"stdout","time":0.996445495,"data":"|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n"}
+,{"stream_name":"stdout","time":0.996451183,"data":"|        ID   ID                                                               Usage      |\n"}
+,{"stream_name":"stdout","time":0.996455584,"data":"|=========================================================================================|\n"}
+,{"stream_name":"stdout","time":0.999064641,"data":"|  No running processes found                                                             |\n"}
+,{"stream_name":"stdout","time":0.999084103,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":1.35180818,"data":"4\n"}
+,{"stream_name":"stdout","time":1.437143471,"data":"               total        used        free      shared  buff/cache   available\n"}
+,{"stream_name":"stdout","time":1.4371639059999999,"data":"Mem:              31           1          25           0           5          30\n"}
+,{"stream_name":"stdout","time":1.4371758589999999,"data":"Swap:              0           0           0\n"}
+,{"stream_name":"stdout","time":1.4431519800000001,"data":"Filesystem      Size  Used Avail Use% Mounted on\n"}
+,{"stream_name":"stdout","time":1.443227625,"data":"overlay         8.0T  5.6T  2.5T  70% /\n"}
+,{"stream_name":"stdout","time":1.443235094,"data":"/dev/loop2       20G  116K   20G   1% /kaggle/working\n"}
+,{"stream_name":"stdout","time":1.444113229,"data":"+ pip install -q rapidfuzz huggingface_hub\n"}
+,{"stream_name":"stdout","time":8.994202493,"data":"dataset dir /kaggle/input/datasets/windwerfer/handwriter-mathwriting-subset-texo\n"}
+,{"stream_name":"stdout","time":11.265777913,"data":"+ ls -R /kaggle/working/handwriter | head -40; grep -c normalize /kaggle/working/handwriter/hw/latex_tok.py\n"}
+,{"stream_name":"stdout","time":11.276775962,"data":"/kaggle/working/handwriter:\n"}
+,{"stream_name":"stdout","time":11.276805517,"data":"hw\n"}
+,{"stream_name":"stdout","time":11.276812544,"data":"models\n"}
+,{"stream_name":"stdout","time":11.276820822,"data":"scripts\n"}
+,{"stream_name":"stdout","time":11.276823474,"data":"\n"}
+,{"stream_name":"stdout","time":11.276825942,"data":"/kaggle/working/handwriter/hw:\n"}
+,{"stream_name":"stdout","time":11.276828436,"data":"data.py\n"}
+,{"stream_name":"stdout","time":11.276830979,"data":"__init__.py\n"}
+,{"stream_name":"stdout","time":11.276833452,"data":"latex_tok.py\n"}
+,{"stream_name":"stdout","time":11.276836044,"data":"metrics.py\n"}
+,{"stream_name":"stdout","time":11.276838455,"data":"model.py\n"}
+,{"stream_name":"stdout","time":11.276840999,"data":"normalize.py\n"}
+,{"stream_name":"stdout","time":11.276843432,"data":"texo_vendor\n"}
+,{"stream_name":"stdout","time":11.276845889,"data":"\n"}
+,{"stream_name":"stdout","time":11.276848283,"data":"/kaggle/working/handwriter/hw/texo_vendor:\n"}
+,{"stream_name":"stdout","time":11.276851004,"data":"hgnet2.py\n"}
+,{"stream_name":"stdout","time":11.276853417,"data":"__init__.py\n"}
+,{"stream_name":"stdout","time":11.276855858,"data":"layer.py\n"}
+,{"stream_name":"stdout","time":11.276858258,"data":"LICENSE-AGPL-3.0\n"}
+,{"stream_name":"stdout","time":11.276861164,"data":"\n"}
+,{"stream_name":"stdout","time":11.276863517,"data":"/kaggle/working/handwriter/models:\n"}
+,{"stream_name":"stdout","time":11.276866054,"data":"texo\n"}
+,{"stream_name":"stdout","time":11.276868462,"data":"\n"}
+,{"stream_name":"stdout","time":11.276870943,"data":"/kaggle/working/handwriter/models/texo:\n"}
+,{"stream_name":"stdout","time":11.27687345,"data":"config.json\n"}
+,{"stream_name":"stdout","time":11.2768759,"data":"generation_config.json\n"}
+,{"stream_name":"stdout","time":11.276878345,"data":"model.safetensors\n"}
+,{"stream_name":"stdout","time":11.276880802,"data":"README.md\n"}
+,{"stream_name":"stdout","time":11.27688319,"data":"special_tokens_map.json\n"}
+,{"stream_name":"stdout","time":11.276885702,"data":"tokenizer_config.json\n"}
+,{"stream_name":"stdout","time":11.276888137,"data":"tokenizer.json\n"}
+,{"stream_name":"stdout","time":11.276890611,"data":"\n"}
+,{"stream_name":"stdout","time":11.276892965,"data":"/kaggle/working/handwriter/scripts:\n"}
+,{"stream_name":"stdout","time":11.276895497,"data":"export_onnx.py\n"}
+,{"stream_name":"stdout","time":11.276897927,"data":"prep_data.py\n"}
+,{"stream_name":"stdout","time":11.276903905,"data":"train.py\n"}
+,{"stream_name":"stdout","time":11.280903068,"data":"4\n"}
+,{"stream_name":"stderr","time":12.314620766,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":22.211122559,"data":"+ ls -la /tmp/mathwriting\n"}
+,{"stream_name":"stdout","time":22.242596914,"data":"total 8\n"}
+,{"stream_name":"stdout","time":22.242632533,"data":"drwxr-xr-x 2 root root 4096 Nov 23 21:59 .\n"}
+,{"stream_name":"stdout","time":22.24263819,"data":"drwxrwxrwt 1 root root 4096 Nov 23 21:59 ..\n"}
+,{"stream_name":"stdout","time":22.242662785,"data":"lrwxrwxrwx 1 root root   57 Nov 23 21:59 test-00000-of-00001-694f317d8b634199.parquet -\u003e /tmp/hf/data/test-00000-of-00001-694f317d8b634199.parquet\n"}
+,{"stream_name":"stdout","time":22.242668066,"data":"lrwxrwxrwx 1 root root   58 Nov 23 21:59 train-00000-of-00003-ab0ae6b9fa4a3f06.parquet -\u003e /tmp/hf/data/train-00000-of-00003-ab0ae6b9fa4a3f06.parquet\n"}
+,{"stream_name":"stdout","time":22.2426736,"data":"lrwxrwxrwx 1 root root   58 Nov 23 21:59 train-00001-of-00003-589d2b65116e09aa.parquet -\u003e /tmp/hf/data/train-00001-of-00003-589d2b65116e09aa.parquet\n"}
+,{"stream_name":"stdout","time":22.242678025,"data":"lrwxrwxrwx 1 root root   58 Nov 23 21:59 train-00002-of-00003-42472859069c07bc.parquet -\u003e /tmp/hf/data/train-00002-of-00003-42472859069c07bc.parquet\n"}
+,{"stream_name":"stdout","time":22.242682401,"data":"lrwxrwxrwx 1 root root   56 Nov 23 21:59 val-00000-of-00001-184984e66f80ed7a.parquet -\u003e /tmp/hf/data/val-00000-of-00001-184984e66f80ed7a.parquet\n"}
+,{"stream_name":"stdout","time":22.243207488,"data":"+ /usr/bin/python3 scripts/train.py --data /tmp/mathwriting --model models/texo --out /kaggle/working/run --batch-size 64 --eval-batch-size 128 --lr 5e-5 --workers 4 --max-len 256 --data-parallel --valid-limit 2000 --epochs 10 --warmup 500 --time-budget-h 9.5 --beams 1 4 --final-full-valid --skip-zeroshot\n"}
+,{"stream_name":"stdout","time":50.494952928000004,"data":"device cuda 2 torch 2.11.0+cu130 transformers 5.20.2\n"}
+,{"stream_name":"stderr","time":51.301657286,"data":"\rLoading weights:   0%|          | 0/541 [00:00\u003c?, ?it/s]\rLoading weights:  46%|████▌     | 247/541 [00:00\u003c00:00, 2449.31it/s]\rLoading weights:  91%|█████████ | 493/541 [00:00\u003c00:00, 2447.14it/s]\rLoading weights: 100%|██████████| 541/541 [00:00\u003c00:00, 2471.52it/s]\n"}
+,{"stream_name":"stdout","time":51.622981627,"data":"params (M) 19.997664\n"}
+,{"stream_name":"stdout","time":55.628578959,"data":"sizes 229864 2000 7644\n"}
+,{"stream_name":"stderr","time":77.985888919,"data":"/kaggle/working/handwriter/scripts/train.py:162: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":77.985931686,"data":"  scaler.step(opt); scaler.update(); sched.step(); step += 1\n"}
+,{"stream_name":"stdout","time":77.986142999,"data":"{'step': 1, 'epoch': 0, 'loss': 0.7150235176086426, 'lr': 1.999999996173172e-07, 'elapsed_s': 22.4}\n"}
+,{"stream_name":"stdout","time":163.838633432,"data":"{'step': 50, 'epoch': 0, 'loss': 0.43510523438453674, 'lr': 5.099975604010594e-06, 'elapsed_s': 108.2}\n"}
+,{"stream_name":"stdout","time":252.24697095,"data":"{'step': 100, 'epoch': 0, 'loss': 0.371564120054245, 'lr': 1.0099806746420127e-05, 'elapsed_s': 196.6}\n"}
+,{"stream_name":"stdout","time":341.030983695,"data":"{'step': 150, 'epoch': 0, 'loss': 0.4628540873527527, 'lr': 1.5099349926927702e-05, 'elapsed_s': 285.4}\n"}
+,{"stream_name":"stdout","time":430.289636208,"data":"{'step': 200, 'epoch': 0, 'loss': 0.31696903705596924, 'lr': 2.0098461654403422e-05, 'elapsed_s': 374.7}\n"}
+,{"stream_name":"stdout","time":519.550942241,"data":"{'step': 250, 'epoch': 0, 'loss': 0.32015329599380493, 'lr': 2.509699845146438e-05, 'elapsed_s': 463.9}\n"}
+,{"stream_name":"stdout","time":609.179808362,"data":"{'step': 300, 'epoch': 0, 'loss': 0.29435816407203674, 'lr': 3.0094816859050385e-05, 'elapsed_s': 553.5}\n"}
+,{"stream_name":"stdout","time":609.179958836,"data":"[plan] ~113.7 min/epoch, 3591 steps/epoch, budget 9.5h -\u003e 5 epochs (17955 steps)\n"}
+,{"stream_name":"stdout","time":697.995447727,"data":"{'step': 350, 'epoch': 0, 'loss': 0.31884369254112244, 'lr': 3.506710147639201e-05, 'elapsed_s': 642.4}\n"}
+,{"stream_name":"stdout","time":786.933086978,"data":"{'step': 400, 'epoch': 0, 'loss': 0.29337725043296814, 'lr': 4.005091418498699e-05, 'elapsed_s': 731.3}\n"}
+,{"stream_name":"stdout","time":875.669750112,"data":"{'step': 450, 'epoch': 0, 'loss': 0.2783915102481842, 'lr': 4.503013717756888e-05, 'elapsed_s': 820.0}\n"}
+,{"stream_name":"stdout","time":962.331081809,"data":"{'step': 500, 'epoch': 0, 'loss': 0.23866356909275055, 'lr': 4.9904390304415085e-05, 'elapsed_s': 906.7}\n"}
+,{"stream_name":"stdout","time":1048.829210385,"data":"{'step': 550, 'epoch': 0, 'loss': 0.23181679844856262, 'lr': 4.9884327764585505e-05, 'elapsed_s': 993.2}\n"}
+,{"stream_name":"stdout","time":1136.142677156,"data":"{'step': 600, 'epoch': 0, 'loss': 0.2247782051563263, 'lr': 4.986236067607344e-05, 'elapsed_s': 1080.5}\n"}
+,{"stream_name":"stdout","time":1223.925227954,"data":"{'step': 650, 'epoch': 0, 'loss': 0.22971674799919128, 'lr': 4.983849072015353e-05, 'elapsed_s': 1168.3}\n"}
+,{"stream_name":"stdout","time":1311.97159046,"data":"{'step': 700, 'epoch': 0, 'loss': 0.15917637944221497, 'lr': 4.9812719723738435e-05, 'elapsed_s': 1256.3}\n"}
+,{"stream_name":"stdout","time":1400.498881993,"data":"{'step': 750, 'epoch': 0, 'loss': 0.19976742565631866, 'lr': 4.978504965923896e-05, 'elapsed_s': 1344.9}\n"}
+,{"stream_name":"stdout","time":1488.467472462,"data":"{'step': 800, 'epoch': 0, 'loss': 0.18055163323879242, 'lr': 4.975548264441313e-05, 'elapsed_s': 1432.8}\n"}
+,{"stream_name":"stdout","time":1576.493554864,"data":"{'step': 850, 'epoch': 0, 'loss': 0.24973642826080322, 'lr': 4.972402094220412e-05, 'elapsed_s': 1520.9}\n"}
+,{"stream_name":"stdout","time":1664.447513901,"data":"{'step': 900, 'epoch': 0, 'loss': 0.23084679245948792, 'lr': 4.969066696056699e-05, 'elapsed_s': 1608.8}\n"}
+,{"stream_name":"stdout","time":1752.141553975,"data":"{'step': 950, 'epoch': 0, 'loss': 0.21999894082546234, 'lr': 4.965542325228446e-05, 'elapsed_s': 1696.5}\n"}
+,{"stream_name":"stdout","time":1839.354190042,"data":"{'step': 1000, 'epoch': 0, 'loss': 0.17973986268043518, 'lr': 4.96182925147715e-05, 'elapsed_s': 1783.7}\n"}
+,{"stream_name":"stdout","time":1927.027238303,"data":"{'step': 1050, 'epoch': 0, 'loss': 0.13253839313983917, 'lr': 4.957927758986888e-05, 'elapsed_s': 1871.4}\n"}
+,{"stream_name":"stdout","time":2014.46473926,"data":"{'step': 1100, 'epoch': 0, 'loss': 0.16725222766399384, 'lr': 4.9538381463625674e-05, 'elapsed_s': 1958.8}\n"}
+,{"stream_name":"stdout","time":2102.051122198,"data":"{'step': 1150, 'epoch': 0, 'loss': 0.2498912215232849, 'lr': 4.949560726607071e-05, 'elapsed_s': 2046.4}\n"}
+,{"stream_name":"stdout","time":2189.299083432,"data":"{'step': 1200, 'epoch': 0, 'loss': 0.1323641538619995, 'lr': 4.945095827097302e-05, 'elapsed_s': 2133.7}\n"}
+,{"stream_name":"stdout","time":2276.419764311,"data":"{'step': 1250, 'epoch': 0, 'loss': 0.22413189709186554, 'lr': 4.940443789559127e-05, 'elapsed_s': 2220.8}\n"}
+,{"stream_name":"stdout","time":2363.848838744,"data":"{'step': 1300, 'epoch': 0, 'loss': 0.18262836337089539, 'lr': 4.935604970041224e-05, 'elapsed_s': 2308.2}\n"}
+,{"stream_name":"stdout","time":2451.381040722,"data":"{'step': 1350, 'epoch': 0, 'loss': 0.15324163436889648, 'lr': 4.9305797388878264e-05, 'elapsed_s': 2395.7}\n"}
+,{"stream_name":"stdout","time":2538.534138551,"data":"{'step': 1400, 'epoch': 0, 'loss': 0.1433885544538498, 'lr': 4.925368480710385e-05, 'elapsed_s': 2482.9}\n"}
+,{"stream_name":"stdout","time":2626.032430569,"data":"{'step': 1450, 'epoch': 0, 'loss': 0.1389121562242508, 'lr': 4.9199715943581256e-05, 'elapsed_s': 2570.4}\n"}
+,{"stream_name":"stdout","time":2713.285535082,"data":"{'step': 1500, 'epoch': 0, 'loss': 0.15282349288463593, 'lr': 4.914389492887529e-05, 'elapsed_s': 2657.7}\n"}
+,{"stream_name":"stdout","time":2800.207179181,"data":"{'step': 1550, 'epoch': 0, 'loss': 0.17301221191883087, 'lr': 4.908622603530708e-05, 'elapsed_s': 2744.6}\n"}
+,{"stream_name":"stdout","time":2887.580572273,"data":"{'step': 1600, 'epoch': 0, 'loss': 0.2105843871831894, 'lr': 4.902671367662719e-05, 'elapsed_s': 2831.9}\n"}
+,{"stream_name":"stdout","time":2974.803485979,"data":"{'step': 1650, 'epoch': 0, 'loss': 0.11819568276405334, 'lr': 4.896536240767774e-05, 'elapsed_s': 2919.2}\n"}
+,{"stream_name":"stdout","time":3062.490548863,"data":"{'step': 1700, 'epoch': 0, 'loss': 0.09383553266525269, 'lr': 4.8902176924043816e-05, 'elapsed_s': 3006.9}\n"}
+,{"stream_name":"stdout","time":3149.999091781,"data":"{'step': 1750, 'epoch': 0, 'loss': 0.16378046572208405, 'lr': 4.88371620616941e-05, 'elapsed_s': 3094.4}\n"}
+,{"stream_name":"stdout","time":3237.500482375,"data":"{'step': 1800, 'epoch': 0, 'loss': 0.15651056170463562, 'lr': 4.877032279661073e-05, 'elapsed_s': 3181.9}\n"}
+,{"stream_name":"stdout","time":3325.334338621,"data":"{'step': 1850, 'epoch': 0, 'loss': 0.10891417413949966, 'lr': 4.870166424440846e-05, 'elapsed_s': 3269.7}\n"}
+,{"stream_name":"stdout","time":3413.546369361,"data":"{'step': 1900, 'epoch': 0, 'loss': 0.1709340363740921, 'lr': 4.863119165994312e-05, 'elapsed_s': 3357.9}\n"}
+,{"stream_name":"stdout","time":3501.277231567,"data":"{'step': 1950, 'epoch': 0, 'loss': 0.1455969512462616, 'lr': 4.8558910436909475e-05, 'elapsed_s': 3445.6}\n"}
+,{"stream_name":"stdout","time":3589.078042616,"data":"{'step': 2000, 'epoch': 0, 'loss': 0.1641286313533783, 'lr': 4.8484826107428347e-05, 'elapsed_s': 3533.4}\n"}
+,{"stream_name":"stdout","time":3677.034868865,"data":"{'step': 2050, 'epoch': 0, 'loss': 0.10798379778862, 'lr': 4.840894434162325e-05, 'elapsed_s': 3621.4}\n"}
+,{"stream_name":"stdout","time":3764.072491545,"data":"{'step': 2100, 'epoch': 0, 'loss': 0.12447253614664078, 'lr': 4.833127094718643e-05, 'elapsed_s': 3708.4}\n"}
+,{"stream_name":"stdout","time":3851.138046808,"data":"{'step': 2150, 'epoch': 0, 'loss': 0.1550992727279663, 'lr': 4.8251811868934334e-05, 'elapsed_s': 3795.5}\n"}
+,{"stream_name":"stdout","time":3938.74992673,"data":"{'step': 2200, 'epoch': 0, 'loss': 0.15291649103164673, 'lr': 4.817057318835263e-05, 'elapsed_s': 3883.1}\n"}
+,{"stream_name":"stdout","time":4026.043468347,"data":"{'step': 2250, 'epoch': 0, 'loss': 0.11976034939289093, 'lr': 4.8087561123130764e-05, 'elapsed_s': 3970.4}\n"}
+,{"stream_name":"stdout","time":4113.709278661,"data":"{'step': 2300, 'epoch': 0, 'loss': 0.14199131727218628, 'lr': 4.8002782026686076e-05, 'elapsed_s': 4058.1}\n"}
+,{"stream_name":"stdout","time":4200.98570485,"data":"{'step': 2350, 'epoch': 0, 'loss': 0.10929202288389206, 'lr': 4.7916242387677536e-05, 'elapsed_s': 4145.4}\n"}
+,{"stream_name":"stdout","time":4288.733125328,"data":"{'step': 2400, 'epoch': 0, 'loss': 0.14182156324386597, 'lr': 4.7827948829509104e-05, 'elapsed_s': 4233.1}\n"}
+,{"stream_name":"stdout","time":4376.348856128,"data":"{'step': 2450, 'epoch': 0, 'loss': 0.16107529401779175, 'lr': 4.7737908109822854e-05, 'elapsed_s': 4320.7}\n"}
+,{"stream_name":"stdout","time":4464.119567366,"data":"{'step': 2500, 'epoch': 0, 'loss': 0.11788282543420792, 'lr': 4.764612711998171e-05, 'elapsed_s': 4408.5}\n"}
+,{"stream_name":"stdout","time":4553.370745897,"data":"{'step': 2550, 'epoch': 0, 'loss': 0.12697486579418182, 'lr': 4.7552612884542055e-05, 'elapsed_s': 4497.7}\n"}
+,{"stream_name":"stdout","time":4641.912284272,"data":"{'step': 2600, 'epoch': 0, 'loss': 0.14037111401557922, 'lr': 4.7457372560716086e-05, 'elapsed_s': 4586.3}\n"}
+,{"stream_name":"stdout","time":4730.24688418,"data":"{'step': 2650, 'epoch': 0, 'loss': 0.17366479337215424, 'lr': 4.736041343782399e-05, 'elapsed_s': 4674.6}\n"}
+,{"stream_name":"stdout","time":4818.675710524,"data":"{'step': 2700, 'epoch': 0, 'loss': 0.11418568342924118, 'lr': 4.726174293673611e-05, 'elapsed_s': 4763.0}\n"}
+,{"stream_name":"stdout","time":4906.840479299,"data":"{'step': 2750, 'epoch': 0, 'loss': 0.15412619709968567, 'lr': 4.716136860930496e-05, 'elapsed_s': 4851.2}\n"}
+,{"stream_name":"stdout","time":4994.831291783,"data":"{'step': 2800, 'epoch': 0, 'loss': 0.1312100887298584, 'lr': 4.70592981377872e-05, 'elapsed_s': 4939.2}\n"}
+,{"stream_name":"stdout","time":5083.2911737,"data":"{'step': 2850, 'epoch': 0, 'loss': 0.14312689006328583, 'lr': 4.6955539334255716e-05, 'elapsed_s': 5027.7}\n"}
+,{"stream_name":"stdout","time":5171.456745469,"data":"{'step': 2900, 'epoch': 0, 'loss': 0.1381300985813141, 'lr': 4.6850100140001685e-05, 'elapsed_s': 5115.8}\n"}
+,{"stream_name":"stdout","time":5259.501866456,"data":"{'step': 2950, 'epoch': 0, 'loss': 0.17423245310783386, 'lr': 4.6742988624926783e-05, 'elapsed_s': 5203.9}\n"}
+,{"stream_name":"stdout","time":5347.687380815,"data":"{'step': 3000, 'epoch': 0, 'loss': 0.10698040574789047, 'lr': 4.6634212986925576e-05, 'elapsed_s': 5292.1}\n"}
+,{"stream_name":"stdout","time":5434.949503791,"data":"{'step': 3050, 'epoch': 0, 'loss': 0.13002759218215942, 'lr': 4.652378155125802e-05, 'elapsed_s': 5379.3}\n"}
+,{"stream_name":"stdout","time":5522.115861533,"data":"{'step': 3100, 'epoch': 0, 'loss': 0.08937948942184448, 'lr': 4.641170276991236e-05, 'elapsed_s': 5466.5}\n"}
+,{"stream_name":"stdout","time":5609.480665154,"data":"{'step': 3150, 'epoch': 0, 'loss': 0.11542543768882751, 'lr': 4.629798522095818e-05, 'elapsed_s': 5553.8}\n"}
+,{"stream_name":"stdout","time":5696.715558176,"data":"{'step': 3200, 'epoch': 0, 'loss': 0.13372167944908142, 'lr': 4.6182637607889913e-05, 'elapsed_s': 5641.1}\n"}
+,{"stream_name":"stdout","time":5784.057862311,"data":"{'step': 3250, 'epoch': 0, 'loss': 0.14267943799495697, 'lr': 4.6065668758960685e-05, 'elapsed_s': 5728.4}\n"}
+,{"stream_name":"stdout","time":5871.248570657,"data":"{'step': 3300, 'epoch': 0, 'loss': 0.1550777405500412, 'lr': 4.5947087626506656e-05, 'elapsed_s': 5815.6}\n"}
+,{"stream_name":"stdout","time":5958.578074135,"data":"{'step': 3350, 'epoch': 0, 'loss': 0.12478368729352951, 'lr': 4.582690328626182e-05, 'elapsed_s': 5902.9}\n"}
+,{"stream_name":"stdout","time":6046.130708426,"data":"{'step': 3400, 'epoch': 0, 'loss': 0.11423445492982864, 'lr': 4.5705124936663415e-05, 'elapsed_s': 5990.5}\n"}
+,{"stream_name":"stdout","time":6133.432118967,"data":"{'step': 3450, 'epoch': 0, 'loss': 0.12235930562019348, 'lr': 4.558176189814786e-05, 'elapsed_s': 6077.8}\n"}
+,{"stream_name":"stdout","time":6220.631380962,"data":"{'step': 3500, 'epoch': 0, 'loss': 0.14057287573814392, 'lr': 4.545682361243748e-05, 'elapsed_s': 6165.0}\n"}
+,{"stream_name":"stdout","time":6307.955643287,"data":"{'step': 3550, 'epoch': 0, 'loss': 0.09607340395450592, 'lr': 4.533031964181781e-05, 'elapsed_s': 6252.3}\n"}
+,{"stream_name":"stdout","time":6400.419039492,"data":"[valid_ep0] {'n': 2000, 'cer': 0.08355461861228793, 'token_error_rate': 0.0737779013976775, 'exact_match': 0.591, 'beams': 1, 'seconds': 21.3}\n"}
+,{"stream_name":"stderr","time":6400.692759441,"data":"\rWriting model shards:   0%|          | 0/1 [00:00\u003c?, ?it/s]\rWriting model shards: 100%|██████████| 1/1 [00:00\u003c00:00,  6.33it/s]\rWriting model shards: 100%|██████████| 1/1 [00:00\u003c00:00,  6.31it/s]\n"}
+,{"stream_name":"stdout","time":6419.868801421,"data":"{'step': 3600, 'epoch': 1, 'loss': 0.12470955401659012, 'lr': 4.520225966840574e-05, 'elapsed_s': 6364.2}\n"}
+,{"stream_name":"stdout","time":6507.313091859,"data":"{'step': 3650, 'epoch': 1, 'loss': 0.17058022320270538, 'lr': 4.507265349340853e-05, 'elapsed_s': 6451.7}\n"}
+,{"stream_name":"stdout","time":6594.873435479,"data":"{'step': 3700, 'epoch': 1, 'loss': 0.11571716517210007, 'lr': 4.494151103637362e-05, 'elapsed_s': 6539.2}\n"}
+,{"stream_name":"stdout","time":6682.399409643,"data":"{'step': 3750, 'epoch': 1, 'loss': 0.07445409148931503, 'lr': 4.480884233442944e-05, 'elapsed_s': 6626.8}\n"}
+,{"stream_name":"stdout","time":6769.676314568,"data":"{'step': 3800, 'epoch': 1, 'loss': 0.08441687375307083, 'lr': 4.467465754151722e-05, 'elapsed_s': 6714.0}\n"}
+,{"stream_name":"stdout","time":6856.991004057,"data":"{'step': 3850, 'epoch': 1, 'loss': 0.08676023036241531, 'lr': 4.4538966927613836e-05, 'elapsed_s': 6801.4}\n"}
+,{"stream_name":"stdout","time":6944.596179048,"data":"{'step': 3900, 'epoch': 1, 'loss': 0.10793135315179825, 'lr': 4.4401780877945765e-05, 'elapsed_s': 6889.0}\n"}
+,{"stream_name":"stdout","time":7032.4460773,"data":"{'step': 3950, 'epoch': 1, 'loss': 0.14441074430942535, 'lr': 4.4263109892194275e-05, 'elapsed_s': 6976.8}\n"}
+,{"stream_name":"stdout","time":7119.919637799,"data":"{'step': 4000, 'epoch': 1, 'loss': 0.1365445852279663, 'lr': 4.4122964583691826e-05, 'elapsed_s': 7064.3}\n"}
+,{"stream_name":"stdout","time":7207.465356903,"data":"{'step': 4050, 'epoch': 1, 'loss': 0.1231359913945198, 'lr': 4.398135567860972e-05, 'elapsed_s': 7151.8}\n"}
+,{"stream_name":"stdout","time":7295.054989622,"data":"{'step': 4100, 'epoch': 1, 'loss': 0.10433511435985565, 'lr': 4.383829401513721e-05, 'elapsed_s': 7239.4}\n"}
+,{"stream_name":"stdout","time":7383.015382116,"data":"{'step': 4150, 'epoch': 1, 'loss': 0.07681282609701157, 'lr': 4.369379054265196e-05, 'elapsed_s': 7327.4}\n"}
+,{"stream_name":"stdout","time":7470.625273748,"data":"{'step': 4200, 'epoch': 1, 'loss': 0.09908279031515121, 'lr': 4.3547856320882044e-05, 'elapsed_s': 7415.0}\n"}
+,{"stream_name":"stdout","time":7558.239352549,"data":"{'step': 4250, 'epoch': 1, 'loss': 0.07813483476638794, 'lr': 4.3400502519059436e-05, 'elapsed_s': 7502.6}\n"}
+,{"stream_name":"stdout","time":7645.473283438,"data":"{'step': 4300, 'epoch': 1, 'loss': 0.12740148603916168, 'lr': 4.3251740415065234e-05, 'elapsed_s': 7589.8}\n"}
+,{"stream_name":"stdout","time":7732.778537704,"data":"{'step': 4350, 'epoch': 1, 'loss': 0.13005349040031433, 'lr': 4.31015813945664e-05, 'elapsed_s': 7677.1}\n"}
+,{"stream_name":"stdout","time":7820.471582558,"data":"{'step': 4400, 'epoch': 1, 'loss': 0.09164240956306458, 'lr': 4.295003695014445e-05, 'elapsed_s': 7764.8}\n"}
+,{"stream_name":"stdout","time":7908.077462456,"data":"{'step': 4450, 'epoch': 1, 'loss': 0.08632126450538635, 'lr': 4.279711868041576e-05, 'elapsed_s': 7852.4}\n"}
+,{"stream_name":"stdout","time":7995.958862929,"data":"{'step': 4500, 'epoch': 1, 'loss': 0.0884779840707779, 'lr': 4.264283828914392e-05, 'elapsed_s': 7940.3}\n"}
+,{"stream_name":"stdout","time":8084.269407887,"data":"{'step': 4550, 'epoch': 1, 'loss': 0.10658097267150879, 'lr': 4.2487207584343955e-05, 'elapsed_s': 8028.6}\n"}
+,{"stream_name":"stdout","time":8171.977107187,"data":"{'step': 4600, 'epoch': 1, 'loss': 0.07831764966249466, 'lr': 4.233023847737856e-05, 'elapsed_s': 8116.3}\n"}
+,{"stream_name":"stdout","time":8259.616729532,"data":"{'step': 4650, 'epoch': 1, 'loss': 0.09818288683891296, 'lr': 4.21719429820465e-05, 'elapsed_s': 8204.0}\n"}
+,{"stream_name":"stdout","time":8347.329172916,"data":"{'step': 4700, 'epoch': 1, 'loss': 0.10683175176382065, 'lr': 4.2012333213663066e-05, 'elapsed_s': 8291.7}\n"}
+,{"stream_name":"stdout","time":8435.273118253,"data":"{'step': 4750, 'epoch': 1, 'loss': 0.08031787723302841, 'lr': 4.1851421388132886e-05, 'elapsed_s': 8379.6}\n"}
+,{"stream_name":"stdout","time":8523.008975223,"data":"{'step': 4800, 'epoch': 1, 'loss': 0.1135147288441658, 'lr': 4.1689219821014886e-05, 'elapsed_s': 8467.4}\n"}
+,{"stream_name":"stdout","time":8610.90826201,"data":"{'step': 4850, 'epoch': 1, 'loss': 0.1370915025472641, 'lr': 4.152574092657976e-05, 'elapsed_s': 8555.3}\n"}
+,{"stream_name":"stdout","time":8698.185363542,"data":"{'step': 4900, 'epoch': 1, 'loss': 0.10984194278717041, 'lr': 4.1360997216859826e-05, 'elapsed_s': 8642.6}\n"}
+,{"stream_name":"stdout","time":8785.168210495,"data":"{'step': 4950, 'epoch': 1, 'loss': 0.09476231783628464, 'lr': 4.119500130069138e-05, 'elapsed_s': 8729.5}\n"}
+,{"stream_name":"stdout","time":8872.864827143,"data":"{'step': 5000, 'epoch': 1, 'loss': 0.08879776298999786, 'lr': 4.102776588274969e-05, 'elapsed_s': 8817.2}\n"}
+,{"stream_name":"stdout","time":8960.102688329,"data":"{'step': 5050, 'epoch': 1, 'loss': 0.08253262937068939, 'lr': 4.0859303762576625e-05, 'elapsed_s': 8904.5}\n"}
+,{"stream_name":"stdout","time":9047.670264078,"data":"{'step': 5100, 'epoch': 1, 'loss': 0.04628842696547508, 'lr': 4.068962783360101e-05, 'elapsed_s': 8992.0}\n"}
+,{"stream_name":"stdout","time":9134.977203816,"data":"{'step': 5150, 'epoch': 1, 'loss': 0.09242936968803406, 'lr': 4.0518751082151816e-05, 'elapsed_s': 9079.3}\n"}
+,{"stream_name":"stdout","time":9222.660443684,"data":"{'step': 5200, 'epoch': 1, 'loss': 0.08948595076799393, 'lr': 4.034668658646429e-05, 'elapsed_s': 9167.0}\n"}
+,{"stream_name":"stdout","time":9310.741156161,"data":"{'step': 5250, 'epoch': 1, 'loss': 0.0861666202545166, 'lr': 4.0173447515678916e-05, 'elapsed_s': 9255.1}\n"}
+,{"stream_name":"stdout","time":9398.36326268,"data":"{'step': 5300, 'epoch': 1, 'loss': 0.06489387154579163, 'lr': 3.9999047128833565e-05, 'elapsed_s': 9342.7}\n"}
+,{"stream_name":"stdout","time":9486.322115538,"data":"{'step': 5350, 'epoch': 1, 'loss': 0.08898228406906128, 'lr': 3.982349877384867e-05, 'elapsed_s': 9430.7}\n"}
+,{"stream_name":"stdout","time":9574.531274442,"data":"{'step': 5400, 'epoch': 1, 'loss': 0.11689513921737671, 'lr': 3.964681588650562e-05, 'elapsed_s': 9518.9}\n"}
+,{"stream_name":"stdout","time":9662.143457388,"data":"{'step': 5450, 'epoch': 1, 'loss': 0.11727998405694962, 'lr': 3.946901198941848e-05, 'elapsed_s': 9606.5}\n"}
+,{"stream_name":"stdout","time":9749.987580254,"data":"{'step': 5500, 'epoch': 1, 'loss': 0.11297281831502914, 'lr': 3.929010069099898e-05, 'elapsed_s': 9694.4}\n"}
+,{"stream_name":"stdout","time":9837.718282452,"data":"{'step': 5550, 'epoch': 1, 'loss': 0.07988923043012619, 'lr': 3.9110095684415e-05, 'elapsed_s': 9782.1}\n"}
+,{"stream_name":"stdout","time":9925.431163234,"data":"{'step': 5600, 'epoch': 1, 'loss': 0.07874798774719238, 'lr': 3.892901074654255e-05, 'elapsed_s': 9869.8}\n"}
+,{"stream_name":"stdout","time":10013.284538198,"data":"{'step': 5650, 'epoch': 1, 'loss': 0.09790243953466415, 'lr': 3.874685973691132e-05, 'elapsed_s': 9957.7}\n"}
+,{"stream_name":"stdout","time":10101.040021548,"data":"{'step': 5700, 'epoch': 1, 'loss': 0.09522601962089539, 'lr': 3.856365659664399e-05, 'elapsed_s': 10045.4}\n"}
+,{"stream_name":"stdout","time":10189.150961944,"data":"{'step': 5750, 'epoch': 1, 'loss': 0.07344650477170944, 'lr': 3.8379415347389125e-05, 'elapsed_s': 10133.5}\n"}
+,{"stream_name":"stdout","time":10276.906292884,"data":"{'step': 5800, 'epoch': 1, 'loss': 0.107704758644104, 'lr': 3.819415009024811e-05, 'elapsed_s': 10221.3}\n"}
+,{"stream_name":"stdout","time":10364.69098911,"data":"{'step': 5850, 'epoch': 1, 'loss': 0.08168819546699524, 'lr': 3.800787500469588e-05, 'elapsed_s': 10309.1}\n"}
+,{"stream_name":"stdout","time":10452.582844946,"data":"{'step': 5900, 'epoch': 1, 'loss': 0.10827566683292389, 'lr': 3.782060434749564e-05, 'elapsed_s': 10397.0}\n"}
+,{"stream_name":"stdout","time":10540.640089423,"data":"{'step': 5950, 'epoch': 1, 'loss': 0.07570307701826096, 'lr': 3.763235245160774e-05, 'elapsed_s': 10485.0}\n"}
+,{"stream_name":"stdout","time":10628.339073348,"data":"{'step': 6000, 'epoch': 1, 'loss': 0.05707916244864464, 'lr': 3.744313372509271e-05, 'elapsed_s': 10572.7}\n"}
+,{"stream_name":"stdout","time":10716.366684633,"data":"{'step': 6050, 'epoch': 1, 'loss': 0.06670132279396057, 'lr': 3.725296265000848e-05, 'elapsed_s': 10660.7}\n"}
+,{"stream_name":"stdout","time":10804.435571217,"data":"{'step': 6100, 'epoch': 1, 'loss': 0.08513543009757996, 'lr': 3.7061853781302e-05, 'elapsed_s': 10748.8}\n"}
+,{"stream_name":"stdout","time":10892.167442493,"data":"{'step': 6150, 'epoch': 1, 'loss': 0.047662027180194855, 'lr': 3.6869821745695255e-05, 'elapsed_s': 10836.5}\n"}
+,{"stream_name":"stdout","time":10980.203476632,"data":"{'step': 6200, 'epoch': 1, 'loss': 0.0808766707777977, 'lr': 3.6676881240565796e-05, 'elapsed_s': 10924.6}\n"}
+,{"stream_name":"stdout","time":11068.107016424,"data":"{'step': 6250, 'epoch': 1, 'loss': 0.06975100189447403, 'lr': 3.648304703282188e-05, 'elapsed_s': 11012.5}\n"}
+,{"stream_name":"stdout","time":11156.252978363,"data":"{'step': 6300, 'epoch': 1, 'loss': 0.06715866178274155, 'lr': 3.628833395777224e-05, 'elapsed_s': 11100.6}\n"}
+,{"stream_name":"stdout","time":11243.967524198,"data":"{'step': 6350, 'epoch': 1, 'loss': 0.12919117510318756, 'lr': 3.609275691799065e-05, 'elapsed_s': 11188.3}\n"}
+,{"stream_name":"stdout","time":11331.727878073,"data":"{'step': 6400, 'epoch': 1, 'loss': 0.07747239619493484, 'lr': 3.5896330882175354e-05, 'elapsed_s': 11276.1}\n"}
+,{"stream_name":"stdout","time":11419.687582182,"data":"{'step': 6450, 'epoch': 1, 'loss': 0.055086564272642136, 'lr': 3.5699070884003445e-05, 'elapsed_s': 11364.1}\n"}
+,{"stream_name":"stdout","time":11507.20561127,"data":"{'step': 6500, 'epoch': 1, 'loss': 0.12315905094146729, 'lr': 3.5500992020980175e-05, 'elapsed_s': 11451.6}\n"}
+,{"stream_name":"stdout","time":11594.806167088,"data":"{'step': 6550, 'epoch': 1, 'loss': 0.07089082896709442, 'lr': 3.5302109453283515e-05, 'elapsed_s': 11539.2}\n"}
+,{"stream_name":"stdout","time":11682.739424365,"data":"{'step': 6600, 'epoch': 1, 'loss': 0.10160460323095322, 'lr': 3.510243840260384e-05, 'elapsed_s': 11627.1}\n"}
+,{"stream_name":"stdout","time":11770.653337724,"data":"{'step': 6650, 'epoch': 1, 'loss': 0.09016279131174088, 'lr': 3.490199415097892e-05, 'elapsed_s': 11715.0}\n"}
+,{"stream_name":"stdout","time":11858.154163753,"data":"{'step': 6700, 'epoch': 1, 'loss': 0.056458741426467896, 'lr': 3.4700792039624265e-05, 'elapsed_s': 11802.5}\n"}
+,{"stream_name":"stdout","time":11945.80192413,"data":"{'step': 6750, 'epoch': 1, 'loss': 0.10589426010847092, 'lr': 3.4498847467759e-05, 'elapsed_s': 11890.2}\n"}
+,{"stream_name":"stdout","time":12033.729531497,"data":"{'step': 6800, 'epoch': 1, 'loss': 0.06552547961473465, 'lr': 3.4296175891427276e-05, 'elapsed_s': 11978.1}\n"}
+,{"stream_name":"stdout","time":12121.473339278,"data":"{'step': 6850, 'epoch': 1, 'loss': 0.09156631678342819, 'lr': 3.409279282231527e-05, 'elapsed_s': 12065.8}\n"}
+,{"stream_name":"stdout","time":12209.191523916,"data":"{'step': 6900, 'epoch': 1, 'loss': 0.086537204682827, 'lr': 3.3888713826564086e-05, 'elapsed_s': 12153.6}\n"}
+,{"stream_name":"stdout","time":12296.897755651,"data":"{'step': 6950, 'epoch': 1, 'loss': 0.07583769410848618, 'lr': 3.368395452357824e-05, 'elapsed_s': 12241.3}\n"}
+,{"stream_name":"stdout","time":12384.410921248,"data":"{'step': 7000, 'epoch': 1, 'loss': 0.07183188945055008, 'lr': 3.347853058483037e-05, 'elapsed_s': 12328.8}\n"}
+,{"stream_name":"stdout","time":12472.070926752,"data":"{'step': 7050, 'epoch': 1, 'loss': 0.07186174392700195, 'lr': 3.3272457732661666e-05, 'elapsed_s': 12416.4}\n"}
+,{"stream_name":"stdout","time":12561.350690281,"data":"{'step': 7100, 'epoch': 1, 'loss': 0.1243681013584137, 'lr': 3.306575173907862e-05, 'elapsed_s': 12505.7}\n"}
+,{"stream_name":"stdout","time":12650.932848019,"data":"{'step': 7150, 'epoch': 1, 'loss': 0.06724745780229568, 'lr': 3.285842842454589e-05, 'elapsed_s': 12595.3}\n"}
+,{"stream_name":"stdout","time":12734.05286159,"data":"[valid_ep1] {'n': 2000, 'cer': 0.13743336103622322, 'token_error_rate': 0.17213684722898268, 'exact_match': 0.6185, 'beams': 1, 'seconds': 26.7}\n"}
+,{"stream_name":"stdout","time":12769.977734401,"data":"{'step': 7200, 'epoch': 2, 'loss': 0.07636183500289917, 'lr': 3.2650503656775446e-05, 'elapsed_s': 12714.3}\n"}
+,{"stream_name":"stdout","time":12859.028723937,"data":"{'step': 7250, 'epoch': 2, 'loss': 0.0936024934053421, 'lr': 3.244199334951211e-05, 'elapsed_s': 12803.4}\n"}
+,{"stream_name":"stdout","time":12948.612775915,"data":"{'step': 7300, 'epoch': 2, 'loss': 0.05439188703894615, 'lr': 3.223291346131564e-05, 'elapsed_s': 12893.0}\n"}
+,{"stream_name":"stdout","time":13038.549087186,"data":"{'step': 7350, 'epoch': 2, 'loss': 0.06596153229475021, 'lr': 3.202327999433924e-05, 'elapsed_s': 12982.9}\n"}
+,{"stream_name":"stdout","time":13128.676338426,"data":"{'step': 7400, 'epoch': 2, 'loss': 0.05860714241862297, 'lr': 3.181310899310486e-05, 'elapsed_s': 13073.0}\n"}
+,{"stream_name":"stdout","time":13217.996347563,"data":"{'step': 7450, 'epoch': 2, 'loss': 0.07802129536867142, 'lr': 3.160241654327524e-05, 'elapsed_s': 13162.4}\n"}
+,{"stream_name":"stdout","time":13307.378925718,"data":"{'step': 7500, 'epoch': 2, 'loss': 0.05438370630145073, 'lr': 3.139121877042273e-05, 'elapsed_s': 13251.7}\n"}
+,{"stream_name":"stdout","time":13396.761791154,"data":"{'step': 7550, 'epoch': 2, 'loss': 0.07478867471218109, 'lr': 3.11795318387951e-05, 'elapsed_s': 13341.1}\n"}
+,{"stream_name":"stdout","time":13486.313443118,"data":"{'step': 7600, 'epoch': 2, 'loss': 0.06695171445608139, 'lr': 3.096737195007845e-05, 'elapsed_s': 13430.7}\n"}
+,{"stream_name":"stdout","time":13575.553116263,"data":"{'step': 7650, 'epoch': 2, 'loss': 0.060868192464113235, 'lr': 3.075475534215712e-05, 'elapsed_s': 13519.9}\n"}
+,{"stream_name":"stdout","time":13665.163833591,"data":"{'step': 7700, 'epoch': 2, 'loss': 0.053690310567617416, 'lr': 3.0541698287870965e-05, 'elapsed_s': 13609.5}\n"}
+,{"stream_name":"stdout","time":13754.833923713,"data":"{'step': 7750, 'epoch': 2, 'loss': 0.06025800481438637, 'lr': 3.0328217093769883e-05, 'elapsed_s': 13699.2}\n"}
+,{"stream_name":"stdout","time":13844.537018793,"data":"{'step': 7800, 'epoch': 2, 'loss': 0.06091770902276039, 'lr': 3.0114328098865734e-05, 'elapsed_s': 13788.9}\n"}
+,{"stream_name":"stdout","time":13933.758574573,"data":"{'step': 7850, 'epoch': 2, 'loss': 0.053992196917533875, 'lr': 2.9900047673381886e-05, 'elapsed_s': 13878.1}\n"}
+,{"stream_name":"stdout","time":14023.060890263,"data":"{'step': 7900, 'epoch': 2, 'loss': 0.09487950056791306, 'lr': 2.968539221750023e-05, 'elapsed_s': 13967.4}\n"}
+,{"stream_name":"stdout","time":14112.487224381,"data":"{'step': 7950, 'epoch': 2, 'loss': 0.07341369241476059, 'lr': 2.947037816010605e-05, 'elapsed_s': 14056.9}\n"}
+,{"stream_name":"stdout","time":14202.068517351,"data":"{'step': 8000, 'epoch': 2, 'loss': 0.08108842372894287, 'lr': 2.9255021957530544e-05, 'elapsed_s': 14146.4}\n"}
+,{"stream_name":"stdout","time":14291.374553895,"data":"{'step': 8050, 'epoch': 2, 'loss': 0.056830037385225296, 'lr': 2.9039340092291373e-05, 'elapsed_s': 14235.7}\n"}
+,{"stream_name":"stdout","time":14380.384939452,"data":"{'step': 8100, 'epoch': 2, 'loss': 0.0845426619052887, 'lr': 2.882334907183115e-05, 'elapsed_s': 14324.8}\n"}
+,{"stream_name":"stdout","time":14469.652181048,"data":"{'step': 8150, 'epoch': 2, 'loss': 0.08823544532060623, 'lr': 2.8607065427254e-05, 'elapsed_s': 14414.0}\n"}
+,{"stream_name":"stdout","time":14558.939911831,"data":"{'step': 8200, 'epoch': 2, 'loss': 0.04912787303328514, 'lr': 2.839050571206035e-05, 'elapsed_s': 14503.3}\n"}
+,{"stream_name":"stdout","time":14648.716914836,"data":"{'step': 8250, 'epoch': 2, 'loss': 0.06341242045164108, 'lr': 2.8173686500879987e-05, 'elapsed_s': 14593.1}\n"}
+,{"stream_name":"stdout","time":14738.379431104,"data":"{'step': 8300, 'epoch': 2, 'loss': 0.03964098542928696, 'lr': 2.7956624388203512e-05, 'elapsed_s': 14682.7}\n"}
+,{"stream_name":"stdout","time":14827.640049197,"data":"{'step': 8350, 'epoch': 2, 'loss': 0.07208108901977539, 'lr': 2.7739335987112237e-05, 'elapsed_s': 14772.0}\n"}
+,{"stream_name":"stdout","time":14917.522547652,"data":"{'step': 8400, 'epoch': 2, 'loss': 0.05108087137341499, 'lr': 2.752183792800671e-05, 'elapsed_s': 14861.9}\n"}
+,{"stream_name":"stdout","time":15007.021991481,"data":"{'step': 8450, 'epoch': 2, 'loss': 0.06157314404845238, 'lr': 2.7304146857333868e-05, 'elapsed_s': 14951.4}\n"}
+,{"stream_name":"stdout","time":15096.233636878,"data":"{'step': 8500, 'epoch': 2, 'loss': 0.09254024177789688, 'lr': 2.7086279436313018e-05, 'elapsed_s': 15040.6}\n"}
+,{"stream_name":"stdout","time":15185.039217094,"data":"{'step': 8550, 'epoch': 2, 'loss': 0.058152347803115845, 'lr': 2.686825233966061e-05, 'elapsed_s': 15129.4}\n"}
+,{"stream_name":"stdout","time":15273.74689397,"data":"{'step': 8600, 'epoch': 2, 'loss': 0.058321624994277954, 'lr': 2.665008225431404e-05, 'elapsed_s': 15218.1}\n"}
+,{"stream_name":"stdout","time":15363.095847274,"data":"{'step': 8650, 'epoch': 2, 'loss': 0.04707227647304535, 'lr': 2.643178587815451e-05, 'elapsed_s': 15307.5}\n"}
+,{"stream_name":"stdout","time":15452.781353292,"data":"{'step': 8700, 'epoch': 2, 'loss': 0.060798849910497665, 'lr': 2.6213379918729002e-05, 'elapsed_s': 15397.1}\n"}
+,{"stream_name":"stdout","time":15542.212290115,"data":"{'step': 8750, 'epoch': 2, 'loss': 0.05135297402739525, 'lr': 2.5994881091971605e-05, 'elapsed_s': 15486.6}\n"}
+,{"stream_name":"stdout","time":15631.958271038,"data":"{'step': 8800, 'epoch': 2, 'loss': 0.04717859625816345, 'lr': 2.5776306120924076e-05, 'elapsed_s': 15576.3}\n"}
+,{"stream_name":"stdout","time":15720.836454435,"data":"{'step': 8850, 'epoch': 2, 'loss': 0.053677577525377274, 'lr': 2.555767173445598e-05, 'elapsed_s': 15665.2}\n"}
+,{"stream_name":"stdout","time":15810.258041475,"data":"{'step': 8900, 'epoch': 2, 'loss': 0.06524041295051575, 'lr': 2.5338994665984282e-05, 'elapsed_s': 15754.6}\n"}
+,{"stream_name":"stdout","time":15899.968073258,"data":"{'step': 8950, 'epoch': 2, 'loss': 0.05457897484302521, 'lr': 2.5120291652192685e-05, 'elapsed_s': 15844.3}\n"}
+,{"stream_name":"stdout","time":15989.501423626,"data":"{'step': 9000, 'epoch': 2, 'loss': 0.04544847086071968, 'lr': 2.4901579431750625e-05, 'elapsed_s': 15933.9}\n"}
+,{"stream_name":"stdout","time":16078.417286559,"data":"{'step': 9050, 'epoch': 2, 'loss': 0.06259828805923462, 'lr': 2.4682874744032185e-05, 'elapsed_s': 16022.8}\n"}
+,{"stream_name":"stdout","time":16168.228559115,"data":"{'step': 9100, 'epoch': 2, 'loss': 0.03553066402673721, 'lr': 2.4464194327834926e-05, 'elapsed_s': 16112.6}\n"}
+,{"stream_name":"stdout","time":16257.267412089,"data":"{'step': 9150, 'epoch': 2, 'loss': 0.06385845690965652, 'lr': 2.4245554920098766e-05, 'elapsed_s': 16201.6}\n"}
+,{"stream_name":"stdout","time":16346.628542435,"data":"{'step': 9200, 'epoch': 2, 'loss': 0.07490767538547516, 'lr': 2.4026973254624984e-05, 'elapsed_s': 16291.0}\n"}
+,{"stream_name":"stdout","time":16435.275943723,"data":"{'step': 9250, 'epoch': 2, 'loss': 0.07004823535680771, 'lr': 2.38084660607955e-05, 'elapsed_s': 16379.6}\n"}
+,{"stream_name":"stdout","time":16524.423870026,"data":"{'step': 9300, 'epoch': 2, 'loss': 0.03567866235971451, 'lr': 2.3590050062292473e-05, 'elapsed_s': 16468.8}\n"}
+,{"stream_name":"stdout","time":16613.503011426,"data":"{'step': 9350, 'epoch': 2, 'loss': 0.05245355889201164, 'lr': 2.3371741975818314e-05, 'elapsed_s': 16557.9}\n"}
+,{"stream_name":"stdout","time":16702.95874295,"data":"{'step': 9400, 'epoch': 2, 'loss': 0.04828513413667679, 'lr': 2.3153558509816293e-05, 'elapsed_s': 16647.3}\n"}
+,{"stream_name":"stdout","time":16792.207272067,"data":"{'step': 9450, 'epoch': 2, 'loss': 0.03307607024908066, 'lr': 2.2935516363191693e-05, 'elapsed_s': 16736.6}\n"}
+,{"stream_name":"stdout","time":16881.45202193,"data":"{'step': 9500, 'epoch': 2, 'loss': 0.03683141618967056, 'lr': 2.2717632224033796e-05, 'elapsed_s': 16825.8}\n"}
+,{"stream_name":"stdout","time":16970.335629549,"data":"{'step': 9550, 'epoch': 2, 'loss': 0.051452361047267914, 'lr': 2.2499922768338587e-05, 'elapsed_s': 16914.7}\n"}
+,{"stream_name":"stdout","time":17059.336239949,"data":"{'step': 9600, 'epoch': 2, 'loss': 0.05368413031101227, 'lr': 2.2282404658732485e-05, 'elapsed_s': 17003.7}\n"}
+,{"stream_name":"stdout","time":17148.481866156,"data":"{'step': 9650, 'epoch': 2, 'loss': 0.05403095483779907, 'lr': 2.2065094543197008e-05, 'elapsed_s': 17092.8}\n"}
+,{"stream_name":"stdout","time":17237.502069643,"data":"{'step': 9700, 'epoch': 2, 'loss': 0.09480126202106476, 'lr': 2.184800905379466e-05, 'elapsed_s': 17181.9}\n"}
+,{"stream_name":"stdout","time":17326.45801851,"data":"{'step': 9750, 'epoch': 2, 'loss': 0.02925657294690609, 'lr': 2.16311648053959e-05, 'elapsed_s': 17270.8}\n"}
+,{"stream_name":"stdout","time":17415.612986793,"data":"{'step': 9800, 'epoch': 2, 'loss': 0.06339988112449646, 'lr': 2.1414578394407593e-05, 'elapsed_s': 17360.0}\n"}
+,{"stream_name":"stdout","time":17504.425764672,"data":"{'step': 9850, 'epoch': 2, 'loss': 0.05222780257463455, 'lr': 2.1198266397502703e-05, 'elapsed_s': 17448.8}\n"}
+,{"stream_name":"stdout","time":17593.478788666,"data":"{'step': 9900, 'epoch': 2, 'loss': 0.050237610936164856, 'lr': 2.0982245370351638e-05, 'elapsed_s': 17537.8}\n"}
+,{"stream_name":"stdout","time":17682.555852603,"data":"{'step': 9950, 'epoch': 2, 'loss': 0.04624953120946884, 'lr': 2.076653184635513e-05, 'elapsed_s': 17626.9}\n"}
+,{"stream_name":"stdout","time":17771.546149598,"data":"{'step': 10000, 'epoch': 2, 'loss': 0.07963868975639343, 'lr': 2.0551142335378805e-05, 'elapsed_s': 17715.9}\n"}
+,{"stream_name":"stdout","time":17860.127702053,"data":"{'step': 10050, 'epoch': 2, 'loss': 0.04352140426635742, 'lr': 2.033609332248963e-05, 'elapsed_s': 17804.5}\n"}
+,{"stream_name":"stdout","time":17949.342868721,"data":"{'step': 10100, 'epoch': 2, 'loss': 0.09838087111711502, 'lr': 2.012140126669416e-05, 'elapsed_s': 17893.7}\n"}
+,{"stream_name":"stdout","time":18038.171296079,"data":"{'step': 10150, 'epoch': 2, 'loss': 0.04830370470881462, 'lr': 1.9907082599678898e-05, 'elapsed_s': 17982.5}\n"}
+,{"stream_name":"stdout","time":18127.289143882,"data":"{'step': 10200, 'epoch': 2, 'loss': 0.06944381445646286, 'lr': 1.969315372455258e-05, 'elapsed_s': 18071.7}\n"}
+,{"stream_name":"stdout","time":18216.755027445,"data":"{'step': 10250, 'epoch': 2, 'loss': 0.04895045608282089, 'lr': 1.947963101459086e-05, 'elapsed_s': 18161.1}\n"}
+,{"stream_name":"stdout","time":18305.560599635,"data":"{'step': 10300, 'epoch': 2, 'loss': 0.06577450037002563, 'lr': 1.9266530811983054e-05, 'elapsed_s': 18249.9}\n"}
+,{"stream_name":"stdout","time":18394.230414768,"data":"{'step': 10350, 'epoch': 2, 'loss': 0.08540336042642593, 'lr': 1.9053869426581468e-05, 'elapsed_s': 18338.6}\n"}
+,{"stream_name":"stdout","time":18482.843456546,"data":"{'step': 10400, 'epoch': 2, 'loss': 0.09988370537757874, 'lr': 1.8841663134653036e-05, 'elapsed_s': 18427.2}\n"}
+,{"stream_name":"stdout","time":18571.129728664,"data":"{'step': 10450, 'epoch': 2, 'loss': 0.06080137565732002, 'lr': 1.8629928177633637e-05, 'elapsed_s': 18515.5}\n"}
+,{"stream_name":"stdout","time":18659.442231267,"data":"{'step': 10500, 'epoch': 2, 'loss': 0.07206681370735168, 'lr': 1.8418680760885027e-05, 'elapsed_s': 18603.8}\n"}
+,{"stream_name":"stdout","time":18747.981149299,"data":"{'step': 10550, 'epoch': 2, 'loss': 0.07313252240419388, 'lr': 1.8207937052454535e-05, 'elapsed_s': 18692.3}\n"}
+,{"stream_name":"stdout","time":18836.253904738,"data":"{'step': 10600, 'epoch': 2, 'loss': 0.055335626006126404, 'lr': 1.799771318183764e-05, 'elapsed_s': 18780.6}\n"}
+,{"stream_name":"stdout","time":18924.420365381,"data":"{'step': 10650, 'epoch': 2, 'loss': 0.09387268126010895, 'lr': 1.7788025238743492e-05, 'elapsed_s': 18868.8}\n"}
+,{"stream_name":"stdout","time":19012.813759679,"data":"{'step': 10700, 'epoch': 2, 'loss': 0.04436253383755684, 'lr': 1.7578889271863436e-05, 'elapsed_s': 18957.2}\n"}
+,{"stream_name":"stdout","time":19101.329194231,"data":"{'step': 10750, 'epoch': 2, 'loss': 0.05964525789022446, 'lr': 1.7370321287642732e-05, 'elapsed_s': 19045.7}\n"}
+,{"stream_name":"stdout","time":19157.323022861,"data":"[valid_ep2] {'n': 2000, 'cer': 0.06506800721626498, 'token_error_rate': 0.057158751129963145, 'exact_match': 0.6785, 'beams': 1, 'seconds': 16.1}\n"}
+,{"stream_name":"stderr","time":19157.869797463,"data":"\rWriting model shards:   0%|          | 0/1 [00:00\u003c?, ?it/s]\rWriting model shards: 100%|██████████| 1/1 [00:00\u003c00:00,  2.29it/s]\rWriting model shards: 100%|██████████| 1/1 [00:00\u003c00:00,  2.29it/s]\n"}
+,{"stream_name":"stdout","time":19208.659419136,"data":"{'step': 10800, 'epoch': 3, 'loss': 0.04023618996143341, 'lr': 1.716233724905547e-05, 'elapsed_s': 19153.0}\n"}
+,{"stream_name":"stdout","time":19296.244266527,"data":"{'step': 10850, 'epoch': 3, 'loss': 0.030689246952533722, 'lr': 1.6954953074382856e-05, 'elapsed_s': 19240.6}\n"}
+,{"stream_name":"stdout","time":19384.569475048,"data":"{'step': 10900, 'epoch': 3, 'loss': 0.02661287970840931, 'lr': 1.6748184635994857e-05, 'elapsed_s': 19328.9}\n"}
+,{"stream_name":"stdout","time":19473.326431796,"data":"{'step': 10950, 'epoch': 3, 'loss': 0.03721707686781883, 'lr': 1.6542047759135393e-05, 'elapsed_s': 19417.7}\n"}
+,{"stream_name":"stdout","time":19562.018222125,"data":"{'step': 11000, 'epoch': 3, 'loss': 0.04495814070105553, 'lr': 1.6336558220711162e-05, 'elapsed_s': 19506.4}\n"}
+,{"stream_name":"stdout","time":19650.946999926,"data":"{'step': 11050, 'epoch': 3, 'loss': 0.018176482990384102, 'lr': 1.61317317480841e-05, 'elapsed_s': 19595.3}\n"}
+,{"stream_name":"stdout","time":19739.841291429,"data":"{'step': 11100, 'epoch': 3, 'loss': 0.036490920931100845, 'lr': 1.5927584017867736e-05, 'elapsed_s': 19684.2}\n"}
+,{"stream_name":"stdout","time":19828.257776215,"data":"{'step': 11150, 'epoch': 3, 'loss': 0.04150839522480965, 'lr': 1.5724130654727276e-05, 'elapsed_s': 19772.6}\n"}
+,{"stream_name":"stdout","time":19916.957943726,"data":"{'step': 11200, 'epoch': 3, 'loss': 0.05842292308807373, 'lr': 1.552138723018382e-05, 'elapsed_s': 19861.3}\n"}
+,{"stream_name":"stdout","time":20005.797821747,"data":"{'step': 11250, 'epoch': 3, 'loss': 0.03990064933896065, 'lr': 1.5319369261422533e-05, 'elapsed_s': 19950.2}\n"}
+,{"stream_name":"stdout","time":20094.383683008,"data":"{'step': 11300, 'epoch': 3, 'loss': 0.051491376012563705, 'lr': 1.5118092210105093e-05, 'elapsed_s': 20038.8}\n"}
+,{"stream_name":"stdout","time":20182.939589895,"data":"{'step': 11350, 'epoch': 3, 'loss': 0.02670939452946186, 'lr': 1.491757148118622e-05, 'elapsed_s': 20127.3}\n"}
+,{"stream_name":"stdout","time":20271.794899077,"data":"{'step': 11400, 'epoch': 3, 'loss': 0.042906638234853745, 'lr': 1.4717822421734718e-05, 'elapsed_s': 20216.2}\n"}
+,{"stream_name":"stdout","time":20360.649422587,"data":"{'step': 11450, 'epoch': 3, 'loss': 0.049179557710886, 'lr': 1.4518860319758815e-05, 'elapsed_s': 20305.0}\n"}
+,{"stream_name":"stdout","time":20449.759200834,"data":"{'step': 11500, 'epoch': 3, 'loss': 0.032094117254018784, 'lr': 1.432070040303613e-05, 'elapsed_s': 20394.1}\n"}
+,{"stream_name":"stdout","time":20538.586526035,"data":"{'step': 11550, 'epoch': 3, 'loss': 0.027594352141022682, 'lr': 1.4123357837948175e-05, 'elapsed_s': 20483.0}\n"}
+,{"stream_name":"stdout","time":20627.733025652,"data":"{'step': 11600, 'epoch': 3, 'loss': 0.0360463447868824, 'lr': 1.3926847728319554e-05, 'elapsed_s': 20572.1}\n"}
+,{"stream_name":"stdout","time":20716.602423184,"data":"{'step': 11650, 'epoch': 3, 'loss': 0.03433571383357048, 'lr': 1.3731185114262033e-05, 'elapsed_s': 20661.0}\n"}
+,{"stream_name":"stdout","time":20805.239591955,"data":"{'step': 11700, 'epoch': 3, 'loss': 0.04881833866238594, 'lr': 1.3536384971023347e-05, 'elapsed_s': 20749.6}\n"}
+,{"stream_name":"stdout","time":20894.118905139,"data":"{'step': 11750, 'epoch': 3, 'loss': 0.03816107660531998, 'lr': 1.3342462207841183e-05, 'elapsed_s': 20838.5}\n"}
+,{"stream_name":"stdout","time":20983.062703475,"data":"{'step': 11800, 'epoch': 3, 'loss': 0.03304024785757065, 'lr': 1.3149431666801925e-05, 'elapsed_s': 20927.4}\n"}
+,{"stream_name":"stdout","time":21071.710778378,"data":"{'step': 11850, 'epoch': 3, 'loss': 0.03710048645734787, 'lr': 1.2957308121704834e-05, 'elapsed_s': 21016.1}\n"}
+,{"stream_name":"stdout","time":21160.119946894,"data":"{'step': 11900, 'epoch': 3, 'loss': 0.053513672202825546, 'lr': 1.2766106276931211e-05, 'elapsed_s': 21104.5}\n"}
+,{"stream_name":"stdout","time":21248.811913043,"data":"{'step': 11950, 'epoch': 3, 'loss': 0.030165810137987137, 'lr': 1.257584076631911e-05, 'elapsed_s': 21193.2}\n"}
+,{"stream_name":"stdout","time":21337.867292702,"data":"{'step': 12000, 'epoch': 3, 'loss': 0.03422398492693901, 'lr': 1.238652615204318e-05, 'elapsed_s': 21282.2}\n"}
+,{"stream_name":"stdout","time":21426.921872809,"data":"{'step': 12050, 'epoch': 3, 'loss': 0.044889140874147415, 'lr': 1.2198176923500235e-05, 'elapsed_s': 21371.3}\n"}
+,{"stream_name":"stdout","time":21515.976793327,"data":"{'step': 12100, 'epoch': 3, 'loss': 0.05409586802124977, 'lr': 1.201080749620023e-05, 'elapsed_s': 21460.3}\n"}
+,{"stream_name":"stdout","time":21604.901751021,"data":"{'step': 12150, 'epoch': 3, 'loss': 0.029183583334088326, 'lr': 1.182443221066303e-05, 'elapsed_s': 21549.3}\n"}
+,{"stream_name":"stdout","time":21693.431874893,"data":"{'step': 12200, 'epoch': 3, 'loss': 0.03439551591873169, 'lr': 1.1639065331320745e-05, 'elapsed_s': 21637.8}\n"}
+,{"stream_name":"stdout","time":21782.109459327,"data":"{'step': 12250, 'epoch': 3, 'loss': 0.03572290018200874, 'lr': 1.1454721045426073e-05, 'elapsed_s': 21726.5}\n"}
+,{"stream_name":"stdout","time":21871.076917142,"data":"{'step': 12300, 'epoch': 3, 'loss': 0.0325629785656929, 'lr': 1.127141346196639e-05, 'elapsed_s': 21815.4}\n"}
+,{"stream_name":"stdout","time":21959.182515456,"data":"{'step': 12350, 'epoch': 3, 'loss': 0.04161864519119263, 'lr': 1.1089156610583976e-05, 'elapsed_s': 21903.6}\n"}
+,{"stream_name":"stdout","time":22047.35215271,"data":"{'step': 12400, 'epoch': 3, 'loss': 0.03666580840945244, 'lr': 1.0907964440502189e-05, 'elapsed_s': 21991.7}\n"}
+,{"stream_name":"stdout","time":22135.52948291,"data":"{'step': 12450, 'epoch': 3, 'loss': 0.03537961468100548, 'lr': 1.0727850819457877e-05, 'elapsed_s': 22079.9}\n"}
+,{"stream_name":"stdout","time":22224.167321889,"data":"{'step': 12500, 'epoch': 3, 'loss': 0.04363774135708809, 'lr': 1.0548829532639951e-05, 'elapsed_s': 22168.5}\n"}
+,{"stream_name":"stdout","time":22312.212283884,"data":"{'step': 12550, 'epoch': 3, 'loss': 0.019386664032936096, 'lr': 1.037091428163438e-05, 'elapsed_s': 22256.6}\n"}
+,{"stream_name":"stdout","time":22401.147064914,"data":"{'step': 12600, 'epoch': 3, 'loss': 0.05166320130228996, 'lr': 1.0194118683375503e-05, 'elapsed_s': 22345.5}\n"}
+,{"stream_name":"stdout","time":22489.189285361,"data":"{'step': 12650, 'epoch': 3, 'loss': 0.027148745954036713, 'lr': 1.0018456269103804e-05, 'elapsed_s': 22433.6}\n"}
+,{"stream_name":"stdout","time":22577.810715267,"data":"{'step': 12700, 'epoch': 3, 'loss': 0.03798122704029083, 'lr': 9.843940483330349e-06, 'elapsed_s': 22522.2}\n"}
+,{"stream_name":"stdout","time":22666.100479886,"data":"{'step': 12750, 'epoch': 3, 'loss': 0.025442073121666908, 'lr': 9.670584682807726e-06, 'elapsed_s': 22610.5}\n"}
+,{"stream_name":"stdout","time":22754.290418209,"data":"{'step': 12800, 'epoch': 3, 'loss': 0.06175798550248146, 'lr': 9.49840213550787e-06, 'elapsed_s': 22698.7}\n"}
+,{"stream_name":"stdout","time":22842.706607539,"data":"{'step': 12850, 'epoch': 3, 'loss': 0.05994034186005592, 'lr': 9.327406019606454e-06, 'elapsed_s': 22787.1}\n"}
+,{"stream_name":"stdout","time":22931.06583729,"data":"{'step': 12900, 'epoch': 3, 'loss': 0.02707642875611782, 'lr': 9.157609422474415e-06, 'elapsed_s': 22875.4}\n"}
+,{"stream_name":"stdout","time":23019.45722202,"data":"{'step': 12950, 'epoch': 3, 'loss': 0.029332075268030167, 'lr': 8.98902533967618e-06, 'elapsed_s': 22963.8}\n"}
+,{"stream_name":"stdout","time":23107.890174887,"data":"{'step': 13000, 'epoch': 3, 'loss': 0.05391501262784004, 'lr': 8.821666673975132e-06, 'elapsed_s': 23052.3}\n"}
+,{"stream_name":"stdout","time":23196.863700362,"data":"{'step': 13050, 'epoch': 3, 'loss': 0.04925912991166115, 'lr': 8.655546234346032e-06, 'elapsed_s': 23141.2}\n"}
+,{"stream_name":"stdout","time":23284.973357594,"data":"{'step': 13100, 'epoch': 3, 'loss': 0.024545704945921898, 'lr': 8.490676734994687e-06, 'elapsed_s': 23229.3}\n"}
+,{"stream_name":"stdout","time":23373.521021336,"data":"{'step': 13150, 'epoch': 3, 'loss': 0.028780432417988777, 'lr': 8.327070794384832e-06, 'elapsed_s': 23317.9}\n"}
+,{"stream_name":"stdout","time":23462.184529499,"data":"{'step': 13200, 'epoch': 3, 'loss': 0.028727132827043533, 'lr': 8.164740934272394e-06, 'elapsed_s': 23406.6}\n"}
+,{"stream_name":"stdout","time":23550.789742524,"data":"{'step': 13250, 'epoch': 3, 'loss': 0.05357164144515991, 'lr': 8.003699578747118e-06, 'elapsed_s': 23495.2}\n"}
+,{"stream_name":"stdout","time":23639.161425968,"data":"{'step': 13300, 'epoch': 3, 'loss': 0.021658891811966896, 'lr': 7.843959053281663e-06, 'elapsed_s': 23583.5}\n"}
+,{"stream_name":"stdout","time":23727.954064063,"data":"{'step': 13350, 'epoch': 3, 'loss': 0.05789140984416008, 'lr': 7.685531583788258e-06, 'elapsed_s': 23672.3}\n"}
+,{"stream_name":"stdout","time":23816.442027045,"data":"{'step': 13400, 'epoch': 3, 'loss': 0.037325553596019745, 'lr': 7.5284292956829956e-06, 'elapsed_s': 23760.8}\n"}
+,{"stream_name":"stdout","time":23905.089564928,"data":"{'step': 13450, 'epoch': 3, 'loss': 0.03016502596437931, 'lr': 7.372664212957794e-06, 'elapsed_s': 23849.5}\n"}
+,{"stream_name":"stdout","time":23993.287955293,"data":"{'step': 13500, 'epoch': 3, 'loss': 0.024554945528507233, 'lr': 7.218248257260127e-06, 'elapsed_s': 23937.7}\n"}
+,{"stream_name":"stdout","time":24081.44351498,"data":"{'step': 13550, 'epoch': 3, 'loss': 0.02846398763358593, 'lr': 7.065193246980562e-06, 'elapsed_s': 24025.8}\n"}
+,{"stream_name":"stdout","time":24170.541472491,"data":"{'step': 13600, 'epoch': 3, 'loss': 0.04045618698000908, 'lr': 6.913510896348288e-06, 'elapsed_s': 24114.9}\n"}
+,{"stream_name":"stdout","time":24258.8891219,"data":"{'step': 13650, 'epoch': 3, 'loss': 0.0204347874969244, 'lr': 6.763212814534475e-06, 'elapsed_s': 24203.3}\n"}
+,{"stream_name":"stdout","time":24347.23926614,"data":"{'step': 13700, 'epoch': 3, 'loss': 0.02905667945742607, 'lr': 6.614310504763851e-06, 'elapsed_s': 24291.6}\n"}
+,{"stream_name":"stdout","time":24436.409449562,"data":"{'step': 13750, 'epoch': 3, 'loss': 0.04354699328541756, 'lr': 6.4668153634341785e-06, 'elapsed_s': 24380.8}\n"}
+,{"stream_name":"stdout","time":24525.035084752,"data":"{'step': 13800, 'epoch': 3, 'loss': 0.039591364562511444, 'lr': 6.320738679244117e-06, 'elapsed_s': 24469.4}\n"}
+,{"stream_name":"stdout","time":24614.014161778,"data":"{'step': 13850, 'epoch': 3, 'loss': 0.029233915731310844, 'lr': 6.176091632329161e-06, 'elapsed_s': 24558.4}\n"}
+,{"stream_name":"stdout","time":24702.740544815,"data":"{'step': 13900, 'epoch': 3, 'loss': 0.029822025448083878, 'lr': 6.032885293406004e-06, 'elapsed_s': 24647.1}\n"}
+,{"stream_name":"stdout","time":24790.819000585,"data":"{'step': 13950, 'epoch': 3, 'loss': 0.024313265457749367, 'lr': 5.891130622925209e-06, 'elapsed_s': 24735.2}\n"}
+,{"stream_name":"stdout","time":24879.491326705,"data":"{'step': 14000, 'epoch': 3, 'loss': 0.03499048948287964, 'lr': 5.7508384702323226e-06, 'elapsed_s': 24823.9}\n"}
+,{"stream_name":"stdout","time":24967.476844433,"data":"{'step': 14050, 'epoch': 3, 'loss': 0.039249010384082794, 'lr': 5.612019572737551e-06, 'elapsed_s': 24911.8}\n"}
+,{"stream_name":"stdout","time":25055.265699293,"data":"{'step': 14100, 'epoch': 3, 'loss': 0.046509165316820145, 'lr': 5.474684555093898e-06, 'elapsed_s': 24999.6}\n"}
+,{"stream_name":"stdout","time":25143.209082626,"data":"{'step': 14150, 'epoch': 3, 'loss': 0.05656655877828598, 'lr': 5.338843928384088e-06, 'elapsed_s': 25087.6}\n"}
+,{"stream_name":"stdout","time":25231.928121298,"data":"{'step': 14200, 'epoch': 3, 'loss': 0.046063315123319626, 'lr': 5.204508089315982e-06, 'elapsed_s': 25176.3}\n"}
+,{"stream_name":"stdout","time":25319.723475688,"data":"{'step': 14250, 'epoch': 3, 'loss': 0.031676895916461945, 'lr': 5.071687319426946e-06, 'elapsed_s': 25264.1}\n"}
+,{"stream_name":"stderr","time":25370.144471487,"data":"Killed\n"}
+,{"stream_name":"stderr","time":25374.065227719,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":25374.065265048,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":25374.355544122,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":25374.355571497,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":25375.992963191,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":25377.015134113,"data":"[NbConvertApp] Writing 285219 bytes to __results__.html\n"}
+]

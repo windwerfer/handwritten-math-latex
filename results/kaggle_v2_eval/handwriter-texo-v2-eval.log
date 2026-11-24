@@ -1,0 +1,60 @@
+[{"stream_name":"stdout","time":1.153119904,"data":"+ nvidia-smi -L; nproc; free -g\n"}
+,{"stream_name":"stdout","time":1.1862707160000001,"data":"GPU 0: Tesla T4 (UUID: GPU-7cf259cf-378f-96f3-048a-b0def41311fa)\n"}
+,{"stream_name":"stdout","time":1.1863357190000001,"data":"GPU 1: Tesla T4 (UUID: GPU-4a235937-7e9c-e32f-2c38-10ebdbaadbdc)\n"}
+,{"stream_name":"stdout","time":1.195938869,"data":"4\n"}
+,{"stream_name":"stdout","time":1.225971016,"data":"               total        used        free      shared  buff/cache   available\n"}
+,{"stream_name":"stdout","time":1.225989402,"data":"Mem:              31           1          25           0           5          30\n"}
+,{"stream_name":"stdout","time":1.225992759,"data":"Swap:              0           0           0\n"}
+,{"stream_name":"stdout","time":1.227741346,"data":"+ pip install -q rapidfuzz huggingface_hub\n"}
+,{"stream_name":"stdout","time":8.83753524,"data":"dataset dir /kaggle/input/datasets/windwerfer/handwriter-texo-checkpoints\n"}
+,{"stream_name":"stderr","time":16.745062085,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":17.950706057,"data":"+ /usr/bin/python3 scripts/eval.py --test /tmp/hf/data/test-00000-of-00001-694f317d8b634199.parquet --out /kaggle/working/eval --eval-batch-size 128 --workers 3 --model texo_zeroshot=models/texo:1 --model v1=models/v1:1 --model v2best=models/v2best:1,4\n"}
+,{"stream_name":"stdout","time":50.680925549,"data":"device cuda test 7644\n"}
+,{"stream_name":"stderr","time":51.463123491,"data":"\rLoading weights:   0%|          | 0/541 [00:00\u003c?, ?it/s]\rLoading weights:  48%|████▊     | 260/541 [00:00\u003c00:00, 2595.21it/s]\rLoading weights:  97%|█████████▋| 526/541 [00:00\u003c00:00, 2627.80it/s]\rLoading weights: 100%|██████████| 541/541 [00:00\u003c00:00, 2636.00it/s]\n"}
+,{"stream_name":"stdout","time":105.415375673,"data":"[texo_zeroshot_beam1] {'n': 7644, 'cer': 0.3842509239078935, 'token_error_rate': 0.2892887836798697, 'exact_match': 0.10897435897435898, 'beams': 1, 'seconds': 53.6}\n"}
+,{"stream_name":"stderr","time":105.821390908,"data":"\rLoading weights:   0%|          | 0/541 [00:00\u003c?, ?it/s]\rLoading weights:  50%|█████     | 273/541 [00:00\u003c00:00, 2707.74it/s]\rLoading weights: 100%|██████████| 541/541 [00:00\u003c00:00, 2764.04it/s]\n"}
+,{"stream_name":"stdout","time":151.631133,"data":"[v1_beam1] {'n': 7644, 'cer': 0.17780426618522047, 'token_error_rate': 0.13498333911312818, 'exact_match': 0.3252223966509681, 'beams': 1, 'seconds': 45.7}\n"}
+,{"stream_name":"stderr","time":152.053152644,"data":"\rLoading weights:   0%|          | 0/541 [00:00\u003c?, ?it/s]\rLoading weights:  50%|████▉     | 268/541 [00:00\u003c00:00, 2673.60it/s]\rLoading weights:  99%|█████████▉| 537/541 [00:00\u003c00:00, 2682.20it/s]\rLoading weights: 100%|██████████| 541/541 [00:00\u003c00:00, 2694.55it/s]\n"}
+,{"stream_name":"stdout","time":199.052807642,"data":"[v2best_beam1] {'n': 7644, 'cer': 0.09026617524575202, 'token_error_rate': 0.06910121677246205, 'exact_match': 0.5693354264782836, 'beams': 1, 'seconds': 46.9}\n"}
+,{"stream_name":"stdout","time":271.151278549,"data":"[v2best_beam4] {'n': 7644, 'cer': 0.08728872308697452, 'token_error_rate': 0.06657569772175564, 'exact_match': 0.576792255363684, 'beams': 4, 'seconds': 72.0}\n"}
+,{"stream_name":"stdout","time":272.577353583,"data":"{\n"}
+,{"stream_name":"stdout","time":272.577378524,"data":"  \"texo_zeroshot_beam1\": {\n"}
+,{"stream_name":"stdout","time":272.577384491,"data":"    \"n\": 7644,\n"}
+,{"stream_name":"stdout","time":272.577388956,"data":"    \"cer\": 0.3842509239078935,\n"}
+,{"stream_name":"stdout","time":272.577406689,"data":"    \"token_error_rate\": 0.2892887836798697,\n"}
+,{"stream_name":"stdout","time":272.577410756,"data":"    \"exact_match\": 0.10897435897435898,\n"}
+,{"stream_name":"stdout","time":272.577414598,"data":"    \"beams\": 1,\n"}
+,{"stream_name":"stdout","time":272.577418499,"data":"    \"seconds\": 53.6\n"}
+,{"stream_name":"stdout","time":272.577422035,"data":"  },\n"}
+,{"stream_name":"stdout","time":272.57742553,"data":"  \"v1_beam1\": {\n"}
+,{"stream_name":"stdout","time":272.577429195,"data":"    \"n\": 7644,\n"}
+,{"stream_name":"stdout","time":272.577432072,"data":"    \"cer\": 0.17780426618522047,\n"}
+,{"stream_name":"stdout","time":272.577435796,"data":"    \"token_error_rate\": 0.13498333911312818,\n"}
+,{"stream_name":"stdout","time":272.577439205,"data":"    \"exact_match\": 0.3252223966509681,\n"}
+,{"stream_name":"stdout","time":272.577443015,"data":"    \"beams\": 1,\n"}
+,{"stream_name":"stdout","time":272.577446118,"data":"    \"seconds\": 45.7\n"}
+,{"stream_name":"stdout","time":272.577449938,"data":"  },\n"}
+,{"stream_name":"stdout","time":272.577453158,"data":"  \"v2best_beam1\": {\n"}
+,{"stream_name":"stdout","time":272.577456563,"data":"    \"n\": 7644,\n"}
+,{"stream_name":"stdout","time":272.577460075,"data":"    \"cer\": 0.09026617524575202,\n"}
+,{"stream_name":"stdout","time":272.577463988,"data":"    \"token_error_rate\": 0.06910121677246205,\n"}
+,{"stream_name":"stdout","time":272.577467924,"data":"    \"exact_match\": 0.5693354264782836,\n"}
+,{"stream_name":"stdout","time":272.577472068,"data":"    \"beams\": 1,\n"}
+,{"stream_name":"stdout","time":272.577475111,"data":"    \"seconds\": 46.9\n"}
+,{"stream_name":"stdout","time":272.577478838,"data":"  },\n"}
+,{"stream_name":"stdout","time":272.577482032,"data":"  \"v2best_beam4\": {\n"}
+,{"stream_name":"stdout","time":272.577485889,"data":"    \"n\": 7644,\n"}
+,{"stream_name":"stdout","time":272.577489229,"data":"    \"cer\": 0.08728872308697452,\n"}
+,{"stream_name":"stdout","time":272.577493025,"data":"    \"token_error_rate\": 0.06657569772175564,\n"}
+,{"stream_name":"stdout","time":272.577496162,"data":"    \"exact_match\": 0.576792255363684,\n"}
+,{"stream_name":"stdout","time":272.577499603,"data":"    \"beams\": 4,\n"}
+,{"stream_name":"stdout","time":272.577503027,"data":"    \"seconds\": 72.0\n"}
+,{"stream_name":"stdout","time":272.577506538,"data":"  }\n"}
+,{"stream_name":"stdout","time":272.577509914,"data":"}\n"}
+,{"stream_name":"stderr","time":280.90139778,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":280.901429535,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":281.158819433,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":281.158844092,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":281.951868802,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":282.999861676,"data":"[NbConvertApp] Writing 283520 bytes to __results__.html\n"}
+]

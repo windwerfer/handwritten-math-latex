@@ -1,0 +1,46 @@
+[{"stream_name":"stdout","time":0.817152742,"data":"+ nvidia-smi; nproc; free -g; df -h /tmp /kaggle/working\n"}
+,{"stream_name":"stdout","time":0.853220192,"data":"Mon Nov 23 21:41:41 2026       \n"}
+,{"stream_name":"stdout","time":0.853245834,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":0.853256256,"data":"| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\n"}
+,{"stream_name":"stdout","time":0.853259826,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":0.853263164,"data":"| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n"}
+,{"stream_name":"stdout","time":0.853265589,"data":"| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n"}
+,{"stream_name":"stdout","time":0.853268061,"data":"|                                         |                        |               MIG M. |\n"}
+,{"stream_name":"stdout","time":0.853270483,"data":"|=========================================+========================+======================|\n"}
+,{"stream_name":"stdout","time":0.903459251,"data":"|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |\n"}
+,{"stream_name":"stdout","time":0.903480733,"data":"| N/A   47C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |\n"}
+,{"stream_name":"stdout","time":0.903485244,"data":"|                                         |                        |                  N/A |\n"}
+,{"stream_name":"stdout","time":0.903500316,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":0.903642887,"data":"|   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |\n"}
+,{"stream_name":"stdout","time":0.903649541,"data":"| N/A   51C    P8              9W /   70W |       0MiB /  15360MiB |      0%      Default |\n"}
+,{"stream_name":"stdout","time":0.903654755,"data":"|                                         |                        |                  N/A |\n"}
+,{"stream_name":"stdout","time":0.903660079,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":0.903668738,"data":"\n"}
+,{"stream_name":"stdout","time":0.903673781,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":0.903679077,"data":"| Processes:                                                                              |\n"}
+,{"stream_name":"stdout","time":0.903684397,"data":"|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n"}
+,{"stream_name":"stdout","time":0.903689681,"data":"|        ID   ID                                                               Usage      |\n"}
+,{"stream_name":"stdout","time":0.903694916,"data":"|=========================================================================================|\n"}
+,{"stream_name":"stdout","time":0.907000437,"data":"|  No running processes found                                                             |\n"}
+,{"stream_name":"stdout","time":0.907042674,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":1.242194681,"data":"4\n"}
+,{"stream_name":"stdout","time":1.318549373,"data":"               total        used        free      shared  buff/cache   available\n"}
+,{"stream_name":"stdout","time":1.318569946,"data":"Mem:              31           1          25           0           5          30\n"}
+,{"stream_name":"stdout","time":1.31858905,"data":"Swap:              0           0           0\n"}
+,{"stream_name":"stdout","time":1.331955751,"data":"Filesystem      Size  Used Avail Use% Mounted on\n"}
+,{"stream_name":"stdout","time":1.331976362,"data":"overlay         8.0T  5.6T  2.5T  70% /\n"}
+,{"stream_name":"stdout","time":1.331981521,"data":"/dev/loop2       20G  116K   20G   1% /kaggle/working\n"}
+,{"stream_name":"stdout","time":1.331986295,"data":"+ pip install -q rapidfuzz huggingface_hub\n"}
+,{"stream_name":"stdout","time":7.411217652,"data":"dataset dir /kaggle/input/datasets/windwerfer/handwriter-mathwriting-subset-texo\n"}
+,{"stream_name":"stderr","time":8.330519085,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":8.330875276,"data":"  File \"/kaggle/src/script.py\", line 18, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":8.330883956,"data":"    tarfile.open(glob.glob(src + \"/code.tar.gz\")[0]).extractall(work)\n"}
+,{"stream_name":"stderr","time":8.330886835,"data":"                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\n"}
+,{"stream_name":"stderr","time":8.330889412,"data":"IndexError: list index out of range\n"}
+,{"stream_name":"stderr","time":10.429889568,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":10.429914919,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":10.673758391,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":10.673783609000001,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":11.620143462,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":12.534129197,"data":"[NbConvertApp] Writing 282324 bytes to __results__.html\n"}
+]

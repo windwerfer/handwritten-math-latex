@@ -1,0 +1,34 @@
+{
+  "texo_zeroshot_beam1": {
+    "n": 7644,
+    "cer": 0.3842509239078935,
+    "token_error_rate": 0.2892887836798697,
+    "exact_match": 0.10897435897435898,
+    "beams": 1,
+    "seconds": 53.6
+  },
+  "v1_beam1": {
+    "n": 7644,
+    "cer": 0.17780426618522047,
+    "token_error_rate": 0.13498333911312818,
+    "exact_match": 0.3252223966509681,
+    "beams": 1,
+    "seconds": 45.7
+  },
+  "v2best_beam1": {
+    "n": 7644,
+    "cer": 0.09026617524575202,
+    "token_error_rate": 0.06910121677246205,
+    "exact_match": 0.5693354264782836,
+    "beams": 1,
+    "seconds": 46.9
+  },
+  "v2best_beam4": {
+    "n": 7644,
+    "cer": 0.08728872308697452,
+    "token_error_rate": 0.06657569772175564,
+    "exact_match": 0.576792255363684,
+    "beams": 4,
+    "seconds": 72.0
+  }
+}

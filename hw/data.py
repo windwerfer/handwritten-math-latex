@@ -43,35 +43,50 @@ def preprocess(img: Image.Image, size: int = 384, train: bool = False) -> torch.
 class MathWritingParquet(torch.utils.data.Dataset):
     """MathWriting rows from one or more parquet files.
     Accepts either our subset format (image_bytes column) or the HF
-    deepcopy/MathWriting-human format (image struct column). limit -> seeded random sample."""
+    deepcopy/MathWriting-human format (image struct column). limit -> seeded random sample.
+
+    Memory: all images live in ONE contiguous uint8 buffer + offsets, labels in fixed-width
+    numpy string arrays. No per-sample Python objects are kept, so forked DataLoader workers
+    don't gradually copy the dataset through refcount writes (copy-on-access), which is what
+    OOM-killed the v2 Kaggle run after ~7 h with 230k samples held as pandas bytes objects."""
 
     def __init__(self, paths, train=False, size=384, limit=None, seed=0):
+        import pyarrow.parquet as pq
         if isinstance(paths, (str, Path)):
             paths = [paths]
-        parts = []
+        blobs, latex, sids = [], [], []
         for p in paths:
-            df = pd.read_parquet(p)
-            if "image_bytes" not in df.columns:
-                df["image_bytes"] = df["image"].map(lambda d: d["bytes"])
-                df = df.drop(columns=["image"])
-            parts.append(df[["image_bytes", "latex", "sample_id"]])
-        df = pd.concat(parts, ignore_index=True)
-        if limit and limit < len(df):
-            df = df.sample(n=limit, random_state=seed)
-        self.df = df.reset_index(drop=True)
+            t = pq.read_table(p)
+            col = t.column("image_bytes") if "image_bytes" in t.column_names else \
+                t.column("image").combine_chunks().field("bytes")
+            blobs += col.to_pylist()
+            latex += t.column("latex").to_pylist()
+            sids += t.column("sample_id").to_pylist()
+            del t, col
+        idx = np.arange(len(latex))
+        if limit and limit < len(idx):
+            idx = np.random.RandomState(seed).choice(idx, size=limit, replace=False)
+        lens = np.array([len(blobs[i]) for i in idx], dtype=np.int64)
+        self.offsets = np.concatenate([[0], np.cumsum(lens)])
+        self.buf = np.frombuffer(b"".join(blobs[i] for i in idx), dtype=np.uint8)
+        del blobs
+        self.latex = np.array([latex[i] for i in idx])          # fixed-width unicode, no objects
+        self.texo = np.array([to_texo(latex[i]) for i in idx])  # precomputed training targets
+        self.sample_id = np.array([sids[i] for i in idx])
         self.train, self.size = train, size
 
     def __len__(self):
-        return len(self.df)
+        return len(self.latex)
 
     def image(self, i) -> Image.Image:
-        return Image.open(io.BytesIO(self.df.image_bytes[i]))
+        a, b = self.offsets[i], self.offsets[i + 1]
+        return Image.open(io.BytesIO(self.buf[a:b].tobytes()))
 
     def __getitem__(self, i):
         return {
             "pixel_values": preprocess(self.image(i), self.size, self.train),
-            "text": to_texo(self.df.latex[i]),
-            "latex": self.df.latex[i],
+            "text": str(self.texo[i]),
+            "latex": str(self.latex[i]),
             "idx": i,
         }
 

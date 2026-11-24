@@ -68,3 +68,66 @@ Outputs: `results/kaggle_v1/` (metrics.json, predictions_*.csv, samples/*.png, k
 fine-tuned weights: `kaggle/output/v1/run/model/` (not in git).
 Note: pinning transformers==4.40.0 failed on Kaggle (tokenizers wheel build); the run used Kaggle's
 preinstalled transformers, which worked since we compute the loss ourselves.
+
+
+## v2 — full MathWriting human train, canonical labels (2026-11-23/24)
+
+**Label normalization** (`hw/normalize.py`, tests in `tests/test_normalize.py`, 61 passing): one canonical
+style for training targets *and* scoring — function names as commands (`lim`→`\lim`, `sin`→`\sin`,
+`inf`→`\inf`, …), standard symbol names (`\infin`→`\infty`, `\rarr`/`\to`→`\rightarrow`, `\ge`→`\geq`,
+`\le`→`\leq`, `\ne`→`\neq`, …), `pmatrix`/`array{cc}`→`(\begin{matrix}…\end{matrix})`, braced sub/superscripts,
+primes as `^{\prime}`, spacing/sizing commands dropped, `\mathrm{}`/`\operatorname{}` unwrapped, no whitespace.
+Changes ~7 % of MathWriting labels (6.6–10.6 % per split; 13–17 % counting whitespace-only changes).
+Texo-vocab gaps are bridged bijectively in `hw/latex_tok.py` (`\infty`↔`\infin`, `\rightarrow`↔`\rarr`,
+`matrix`↔`array`, `\tanh`/`\inf` → `\operatorname{…}`): **0 OOV tokens** and 0 round-trip mismatches over
+train shard 0 + valid + test.
+
+**Training (Kaggle, 2×T4, DataParallel, bs 64, lr 5e-5 cosine, BN stats frozen):** all 229,864 human train
+inks. Throughput only ~36 img/s (CPU-bound, 4 vCPUs) → 114 min/epoch, budget cut plan to 5 epochs. The run was
+**OOM-killed (host RAM) at step 14,250 (epoch 3, ~7 h)**; the best checkpoint (epoch 2) was saved.
+Valid CER (2,000 random official-valid samples): ep0 8.36 % → ep1 13.74 % (spike) → ep2 **6.51 %** (EM 67.9 %).
+The ep1 spike came with *higher* exact match (61.9 % vs 59.1 %) and TER > CER, i.e. a few long degenerate
+outputs rather than general degradation (per-epoch valid predictions are now saved to confirm next time).
+
+**Test (official MathWriting test, all 7,644 human inks, canonical scoring; Kaggle eval kernel
+`windwerfer/handwriter-texo-v2-eval`, `results/kaggle_v2_eval/`):**
+
+| model | decoding | CER | TER | exact match |
+|---|---|---|---|---|
+| Texo zero-shot | greedy | 38.4 % | 28.9 % | 10.9 % |
+| v1 (5k subset, 5 ep) | greedy | 17.8 % | 13.5 % | 32.5 % |
+| v2 best (full human train, ep 2) | greedy | 9.03 % | 6.91 % | 56.9 % |
+| v2 best | beam 4 | **8.73 %** | **6.66 %** | **57.7 %** |
+
+(For reference: tjoab/latex_finetuned, TrOCR 334M trained on MathWriting, reports 14.9 % CER — different
+normalization, not strictly comparable.)
+
+Typical v2 errors (token edit ops, greedy): case confusions dominate (`x`↔`X`, `p`↔`P`, `s`↔`S`, `c`↔`C`,
+`k`↔`K`, `z`↔`Z`, `v`↔`V`), `.`↔`\cdot`, Greek vs Latin look-alikes (`\omega`→`w`, `\nu`→`v`, `\kappa`→`k`,
+`d`→`\partial`, `z`→`2`), and structure errors: brace/subscript insertions/deletions (`{ } _` are the top
+inserted/deleted tokens, e.g. `Spec`→`Sp_{ec}`). Many are genuinely ambiguous in handwriting.
+
+**ONNX (exported on the box from v2 best, `scripts/export_onnx.py`, files in `onnx/v2best/`, not in git;
+parity on 200 random official-test samples, CPU ORT 1.23, 4 threads):**
+
+| variant | encoder + decoder size | CER | EM | identical to PyTorch | s/img |
+|---|---|---|---|---|---|
+| PyTorch fp32 | – | 8.74 % | 58.5 % | – | 0.065 |
+| ONNX fp32 | 57.3 + 22.7 = 80.0 MB | 8.74 % | 58.5 % | 100 % | 0.045 |
+| ONNX fp16 | 28.7 + 11.4 = 40.2 MB | 8.74 % | 58.5 % | 100 % | 0.049 |
+| ONNX int8 (dynamic, both) | 14.6 + 5.9 = 20.5 MB | 9.76 % | 55.5 % | 82.5 % | 0.235 |
+| enc fp32 + dec int8 | 63.2 MB | 8.80 % | 58.0 % | 96 % | 0.035 |
+| **enc fp16 + dec int8** | **34.6 MB** | 8.56 % | 58.5 % | 97 % | 0.035 |
+
+int8 on the CNN encoder (ConvInteger) is both slower and less accurate on CPU; for <30 MB, try static
+(calibrated) QDQ quantization of the encoder or fp16 + int8 decoder. Graphs: `encoder.onnx` (pixel_values
+f32[B,3,384,384] → f32[B,144,384]), `decoder.onnx` (input_ids i64[B,T], encoder_hidden_states → logits[B,T,687]),
+no KV cache (2-layer decoder); greedy loop + `tokenizer.json` vocab → `hw.latex_tok.from_texo` post-processing.
+
+**OOM cause & fix.** The dataset held 230k images as Python `bytes` objects in a pandas object column
+(~1.2 GB + object overhead). Forked DataLoader workers (4 persistent train workers + extra eval workers)
+touch each object's refcount on access, so copy-on-write pages were gradually duplicated into every worker
+until host RAM (31 GB) ran out after ~7 h. Fix (`hw/data.py`): images in one contiguous `uint8` numpy buffer +
+offsets, labels / precomputed Texo targets / ids in fixed-width numpy string arrays (no per-sample Python
+objects); eval loaders use ≤2 non-persistent workers (`scripts/train.py`). Also recommended next time: single
+GPU without DataParallel (v1 single-T4 got 83 img/s vs 36 img/s here) and fewer CPU augmentations.

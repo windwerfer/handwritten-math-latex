@@ -1,0 +1,80 @@
+{
+  "args": {
+    "data": "/tmp/mathwriting",
+    "model": "models/texo",
+    "out": "/kaggle/working/run",
+    "train_limit": null,
+    "valid_limit": 2000,
+    "test_limit": null,
+    "epochs": 10,
+    "max_steps": 0,
+    "time_budget_h": 9.5,
+    "batch_size": 64,
+    "eval_batch_size": 128,
+    "lr": 5e-05,
+    "warmup": 500,
+    "max_len": 256,
+    "beams": [
+      1,
+      4
+    ],
+    "final_full_valid": true,
+    "workers": 4,
+    "skip_zeroshot": true,
+    "no_save": false,
+    "data_parallel": true,
+    "bn_train": false,
+    "freeze_encoder": false,
+    "seed": 0
+  },
+  "plan": {
+    "min_per_epoch": 113.7,
+    "steps_per_epoch": 3591,
+    "epochs": 5,
+    "total": 17955
+  },
+  "valid": [
+    {
+      "epoch": 0,
+      "step": 3591,
+      "elapsed_min": 105.7,
+      "n": 2000,
+      "cer": 0.08355461861228793,
+      "token_error_rate": 0.0737779013976775,
+      "exact_match": 0.591,
+      "beams": 1,
+      "seconds": 21.3
+    },
+    {
+      "epoch": 1,
+      "step": 7182,
+      "elapsed_min": 211.3,
+      "n": 2000,
+      "cer": 0.13743336103622322,
+      "token_error_rate": 0.17213684722898268,
+      "exact_match": 0.6185,
+      "beams": 1,
+      "seconds": 26.7
+    },
+    {
+      "epoch": 2,
+      "step": 10773,
+      "elapsed_min": 318.4,
+      "n": 2000,
+      "cer": 0.06506800721626498,
+      "token_error_rate": 0.057158751129963145,
+      "exact_match": 0.6785,
+      "beams": 1,
+      "seconds": 16.1
+    }
+  ],
+  "best_valid": {
+    "epoch": 2,
+    "n": 2000,
+    "cer": 0.06506800721626498,
+    "token_error_rate": 0.057158751129963145,
+    "exact_match": 0.6785,
+    "beams": 1,
+    "seconds": 16.1
+  }
+}

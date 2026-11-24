@@ -40,15 +40,16 @@ def files(d, *prefixes):
 
 def evaluate(model, tok, ds, args, device, tag, beams=1, save=True):
     model.eval()
+    # few, non-persistent eval workers (train workers stay alive during eval)
     dl = torch.utils.data.DataLoader(ds, batch_size=args.eval_batch_size, shuffle=False,
-                                     num_workers=args.workers, collate_fn=make_collate(tok))
+                                     num_workers=min(2, args.workers), collate_fn=make_collate(tok))
     rows, t0 = [], time.time()
     for b in dl:
         with torch.autocast(device.type, dtype=torch.float16, enabled=device.type == "cuda"):
             raw = predict(model, tok, b["pixel_values"], device, max_length=args.max_len,
                           num_beams=beams)
         for i, r, gt in zip(b["idx"], raw, b["latex"]):
-            rows.append({"idx": i, "sample_id": ds.df.sample_id[i], "gt": gt,
+            rows.append({"idx": i, "sample_id": str(ds.sample_id[i]), "gt": gt,
                          "pred": from_texo(r), "pred_tokens": r})
     df = pd.DataFrame(rows)
     m = scores(list(df["pred"]), list(df["gt"]))
@@ -175,7 +176,7 @@ def main():
                 metrics["plan"] = {"min_per_epoch": round(ep_s / 60, 1), "steps_per_epoch": len(dl), **plan}
             if args.max_steps and step >= args.max_steps:
                 break
-        m, _ = evaluate(model, tok, valid, args, device, f"valid_ep{ep}", save=False)
+        m, _ = evaluate(model, tok, valid, args, device, f"valid_ep{ep}", save=True)
         metrics.setdefault("valid", []).append({"epoch": ep, "step": step,
                                                 "elapsed_min": round((time.time() - t0) / 60, 1), **m})
         if not args.no_save and (best is None or m["cer"] < best["cer"]):

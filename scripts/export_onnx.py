@@ -107,7 +107,7 @@ def main():
     model, tok = load(a.model); model.eval()
     ds = MathWritingParquet(a.test, limit=a.n)
     px = torch.stack([ds[i]["pixel_values"] for i in range(len(ds))])
-    gts = list(ds.df.latex)
+    gts = [str(x) for x in ds.latex]
     res = {}
     t0 = time.time(); pt = []
     for i in range(0, len(ds), a.batch):
