@@ -1,4 +1,7 @@
-"""
+"""Vendored from https://github.com/alephpi/Texo (AGPL-3.0).
+
+SPDX-License-Identifier: AGPL-3.0-only
+
 reference
 - https://github.com/PaddlePaddle/PaddleDetection/blob/develop/ppdet/modeling/backbones/hgnet_v2.py
 

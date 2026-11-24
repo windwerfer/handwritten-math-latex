@@ -1,0 +1,14 @@
+# Python 3.11+. Install torch/torchvision first for your platform, e.g.:
+#   pip install torch==2.7.0 torchvision --index-url https://download.pytorch.org/whl/cpu
+transformers>=4.40.0
+albumentations
+opencv-python-headless
+pillow
+rapidfuzz
+pyarrow
+pandas
+numpy
+matplotlib
+onnx
+onnxruntime
+pytest

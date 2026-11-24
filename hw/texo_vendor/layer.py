@@ -1,4 +1,7 @@
-"""
+"""Vendored from https://github.com/alephpi/Texo (AGPL-3.0).
+
+SPDX-License-Identifier: AGPL-3.0-only
+
 Adapted from RT-DETR (https://github.com/lyuwenyu/RT-DETR)
 Copyright(c) 2023 lyuwenyu. All Rights Reserved.
 """
