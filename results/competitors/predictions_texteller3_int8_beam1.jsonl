@@ -1,0 +1,1000 @@
+{"sample_id": "728855ac96fa6bee", "gt": "\\langle a_{0},a_{1},...\\rangle\\in R^{\\omega}", "pred": "\\langle a_{0},a_{1},\\cdot\\cdot\\cdot\\rangle\\in R^{\\nu}", "pred_raw": "\\[\\langle a_{0},a_{1},\\cdot\\cdot\\cdot\\rangle\\in R^{\\nu}\\]", "n_tokens": 25}
+{"sample_id": "2acd5833815827a0", "gt": "X[(p+m)\\Delta_{F}]", "pred": "X[(p+m)\\Delta_{F}]", "pred_raw": "\\[X[(p+m)\\Delta_{F}]\\]", "n_tokens": 13}
+{"sample_id": "c1da9e59d6782124", "gt": "\\{f^{n}(x)\\}_{n\\in N}", "pred": "\\{f^n(x)\\}_{n\\in N}", "pred_raw": "\\[\\{f^n(x)\\}_{n\\in N}\\]", "n_tokens": 14}
+{"sample_id": "d80fc0b526631ac4", "gt": "\\frac{\\partial f}{\\partial x^{\\alpha}}dx^{\\alpha}=0", "pred": "\\frac{\\partial f}{\\partial x^{\\alpha}}dx^{\\alpha}=0", "pred_raw": "\\[\\frac{\\partial f}{\\partial x^{\\alpha}}dx^{\\alpha}=0\\]", "n_tokens": 19}
+{"sample_id": "5ac0897056688639", "gt": "k=\\omega\\sqrt{LC}=\\frac{\\omega}{u}", "pred": "k=w \\sqrt{LC}= \\frac{w}{u}", "pred_raw": "\\[k=w \\sqrt{LC}= \\frac{w}{u}\\]", "n_tokens": 18}
+{"sample_id": "be1d0edb0222e783", "gt": "10^{-12}\\frac{m}{s}", "pred": "10^{-12} \\frac{m}{s}", "pred_raw": "\\[10^{-12} \\frac{m}{s}\\]", "n_tokens": 14}
+{"sample_id": "4ffe36126817c79a", "gt": "P(a_{T+1}|\\hat{a}_{1:T},o_{1:T})", "pred": "P(a_{t+1}|\\hat{a}_{1:t},o_{1:t})", "pred_raw": "\\[P(a_{t+1}|\\hat{a}_{1:t},o_{1:t})\\]", "n_tokens": 25}
+{"sample_id": "5ae2793d5e3b87f2", "gt": "(\\begin{matrix}N_{t}\\\\ D_{t}\\end{matrix})=J^{t}(\\begin{matrix}N_{0}\\\\ D_{0}\\end{matrix})", "pred": "(\\begin{matrix}N_{1}\\\\ D_{1}\\end{matrix})=J^{t}(\\begin{matrix}N_{0}\\\\ D_{0}\\end{matrix})", "pred_raw": "\\[(\\begin{matrix}N_{1}\\\\ D_{1}\\end{matrix})=J^{t}(\\begin{matrix}N_{0}\\\\ D_{0}\\end{matrix})\\]", "n_tokens": 39}
+{"sample_id": "bf5bfcea2b213f63", "gt": "P=K\\rho^{1+\\frac{1}{n}}", "pred": "P=K\\rho^{1+\\frac{1}{n}}", "pred_raw": "\\[P=K\\rho^{1+\\frac{1}{n}}\\]", "n_tokens": 17}
+{"sample_id": "ac5593697f921ea3", "gt": "M:F_{q}^{n}\\rightarrow F_{q}^{n}", "pred": "M:F_{q}^{n} \\rightarrow F_{q}^{n}", "pred_raw": "\\[M:F_{q}^{n} \\rightarrow F_{q}^{n}\\]", "n_tokens": 19}
+{"sample_id": "ed3ccd67aba071e2", "gt": "H=\\sigma(W^{T}X)", "pred": "H= \\sigma(W^TX)", "pred_raw": "\\[H= \\sigma(W^TX)\\]", "n_tokens": 12}
+{"sample_id": "0e609c655da6196f", "gt": "a=(x-1)\\div0.005", "pred": "a=(x-1) \\div 0.005", "pred_raw": "\\[a=(x-1) \\div 0.005\\]", "n_tokens": 15}
+{"sample_id": "cf56b3cc6555f5f6", "gt": "B_{r}=-\\frac{2B_{0}}{R^{3}}sin\\lambda", "pred": "B_{r}=-\\frac{2B_{0}}{R^{3}}sin\\lambda", "pred_raw": "\\[B_{r}=-\\frac{2B_{0}}{R^{3}}sin\\lambda\\]", "n_tokens": 22}
+{"sample_id": "540e190aac2b5113", "gt": "2^{112}(=2^{2*56})", "pred": "2^{112}(=2^{2*56})", "pred_raw": "\\[2^{112}(=2^{2*56})\\]", "n_tokens": 13}
+{"sample_id": "4811d4a4d363f8e2", "gt": "Q(q)=\\frac{\\hbar^{2}}{4m}\\{S;q\\}", "pred": "Q(q)= \\frac{ \\hbar^2}{4 m} \\{S,q \\}", "pred_raw": "\\[Q(q)= \\frac{ \\hbar^2}{4 m} \\{S,q \\}\\]", "n_tokens": 23}
+{"sample_id": "d62dce7acfa8898d", "gt": "\\psi=(1-\\sqrt{5})/2", "pred": "\\psi=(1-\\sqrt{5})/2", "pred_raw": "\\[\\psi=(1-\\sqrt{5})/2\\]", "n_tokens": 13}
+{"sample_id": "1fd291dd2a777077", "gt": "I(x)=\\frac{I_{0}}{1+\\beta cxI_{0}}", "pred": "I(x)= \\frac{I_{0}}{1+\\beta eI_{0}}", "pred_raw": "\\[I(x)= \\frac{I_{0}}{1+\\beta eI_{0}}\\]", "n_tokens": 22}
+{"sample_id": "489a927d2ac7d712", "gt": "\\kappa_{s}=\\kappa(T_{s})", "pred": "\\kappa_{s}=\\kappa(T_{s})", "pred_raw": "\\[\\kappa_{s}=\\kappa(T_{s})\\]", "n_tokens": 13}
+{"sample_id": "2f027df3b4d27587", "gt": "[\\begin{matrix}f\\\\ g\\end{matrix}]=[\\begin{matrix}A&B\\\\ C&D\\end{matrix}][\\begin{matrix}x\\\\ y\\end{matrix}]", "pred": "[f]= \\left[ \\begin{matrix} A&B \\\\ C&D \\end{matrix} \\right] \\left[ \\begin{matrix} X \\\\ Y \\end{matrix} \\right]", "pred_raw": "\\[[f]= \\left[ \\begin{matrix} A&B \\\\ C&D \\end{matrix} \\right] \\left[ \\begin{matrix} X \\\\ Y \\end{matrix} \\right]\\]", "n_tokens": 47}
+{"sample_id": "a7f6cb950b70b891", "gt": "A^{n+1}=A^{n}\\times A", "pred": "A^{n+1}=A^{n}\\times A", "pred_raw": "\\[A^{n+1}=A^{n}\\times A\\]", "n_tokens": 16}
+{"sample_id": "7b4c3d9d3e70aca0", "gt": "W=W^{\\prime}+\\mu^{-1}", "pred": "w=w^{+}+ \\mu^{-1}", "pred_raw": "\\[w=w^{+}+ \\mu^{-1}\\]", "n_tokens": 13}
+{"sample_id": "647116e568771736", "gt": "Q(a)v=(v\\cdot a)a", "pred": "Q(a)v=(v\\cdot a)a", "pred_raw": "\\[Q(a)v=(v\\cdot a)a\\]", "n_tokens": 16}
+{"sample_id": "7a484fc0cb88bdb9", "gt": "S_{ijk}\\rightarrow S_{ij}(\\omega_{k})", "pred": "S_{ijk} \\rightarrow S_{ij}(w_{k})", "pred_raw": "\\[S_{ijk} \\rightarrow S_{ij}(w_{k})\\]", "n_tokens": 17}
+{"sample_id": "1ce66852ecd024c6", "gt": "M_{X}(t):=E[e^{tX}]", "pred": "M_{X}(t):=E[e^{tX}]", "pred_raw": "\\[M_{X}(t):=E[e^{tX}]\\]", "n_tokens": 15}
+{"sample_id": "f8d9c87d1ca01357", "gt": "(u^{+i})^{*}=u_{i}^{-}", "pred": "(u^{+i})^{*}=u_i^{-}", "pred_raw": "\\[(u^{+i})^{*}=u_i^{-}\\]", "n_tokens": 11}
+{"sample_id": "a35a29f5dc0222e1", "gt": "6\\sqrt{29-2\\sqrt{2}}", "pred": "6 \\sqrt{29-2 \\sqrt{2}}", "pred_raw": "\\[6 \\sqrt{29-2 \\sqrt{2}}\\]", "n_tokens": 15}
+{"sample_id": "81a16440a076579d", "gt": "-0.4\\pm0.9\\times10^{-10}", "pred": "-0.4 \\pm 0.9 \\times 10^{-10}", "pred_raw": "\\[-0.4 \\pm 0.9 \\times 10^{-10}\\]", "n_tokens": 17}
+{"sample_id": "0a70d74bf9b2eba7", "gt": "=\\frac{1}{2}\\cdot\\dot{m}\\cdot(v_{1}^{2}-v_{2}^{2})", "pred": "= \\frac{1}{2} \\cdot \\dot{m} \\cdot(v_1^2-v_2^2)", "pred_raw": "\\[= \\frac{1}{2} \\cdot \\dot{m} \\cdot(v_1^2-v_2^2)\\]", "n_tokens": 32}
+{"sample_id": "62ac8fa9679c4b9a", "gt": "\\Delta z=H(z)\\Delta\\chi", "pred": "\\Delta z=H(z)\\Delta X", "pred_raw": "\\[\\Delta z=H(z)\\Delta X\\]", "n_tokens": 13}
+{"sample_id": "c58cb993436f3b0c", "gt": "\\frac{\\partial S}{\\partial\\varphi}=p_{\\varphi}=-ac", "pred": "\\frac{\\partial S}{\\partial\\varphi}=P\\varphi=-ac", "pred_raw": "\\[\\frac{\\partial S}{\\partial\\varphi}=P\\varphi=-ac\\]", "n_tokens": 18}
+{"sample_id": "d204f7b4cf940ec2", "gt": "V_{max}=\\sqrt{2c_{p}T_{t}}", "pred": "V_{max}=\\sqrt{2c_{p}T_{t}}", "pred_raw": "\\[V_{max}=\\sqrt{2c_{p}T_{t}}\\]", "n_tokens": 18}
+{"sample_id": "80f4df554a8d2d1e", "gt": "[v=\\frac{1}{2}\\sqrt{\\pi}erf(x)]", "pred": "[v= \\frac{1}{2} \\sqrt{ \\pi}erf(x)]", "pred_raw": "\\[[v= \\frac{1}{2} \\sqrt{ \\pi}erf(x)]\\]", "n_tokens": 22}
+{"sample_id": "ae073c24f1bc2bda", "gt": "\\frac{1}{14}+\\frac{1}{21}+\\frac{1}{42}=\\frac{1}{7}", "pred": "\\frac{1}{14}+ \\frac{1}{21}+ \\frac{1}{42}= \\frac{1}{7}", "pred_raw": "\\[\\frac{1}{14}+ \\frac{1}{21}+ \\frac{1}{42}= \\frac{1}{7}\\]", "n_tokens": 30}
+{"sample_id": "626cbb2570b88975", "gt": "d[P]/dt=k_{1}[A][M]", "pred": "d[P]/dt=k_{1}[A][M]", "pred_raw": "\\[d[P]/dt=k_{1}[A][M]\\]", "n_tokens": 17}
+{"sample_id": "d96bd9bbbc7f08e2", "gt": "\\frac{b}{sin\\theta}=\\frac{r}{sin(\\frac{\\pi-\\theta}{2})}", "pred": "\\frac{b}{sin \\theta}= \\frac{r}{sin( \\frac{ \\pi- \\theta}{2})}", "pred_raw": "\\[\\frac{b}{sin \\theta}= \\frac{r}{sin( \\frac{ \\pi- \\theta}{2})}\\]", "n_tokens": 29}
+{"sample_id": "1904cde76e3e9e43", "gt": "a^{2}-c^{2}=d^{2}-b^{2}", "pred": "a^2-c^2=d^2-b^2", "pred_raw": "\\[a^2-c^2=d^2-b^2\\]", "n_tokens": 19}
+{"sample_id": "7c2a2818f89b03d7", "gt": "L=[T]_{0}/[R]_{0}", "pred": "L=[T]_{0}/[R]_{0}", "pred_raw": "\\[L=[T]_{0}/[R]_{0}\\]", "n_tokens": 13}
+{"sample_id": "4e7a86897eb26970", "gt": "\\mu=A\\cdot e^{Q/RT}", "pred": "\\mu=A\\cdot e^{Q/RT}", "pred_raw": "\\[\\mu=A\\cdot e^{Q/RT}\\]", "n_tokens": 14}
+{"sample_id": "6d81836bcaa2a6be", "gt": "\\int\\frac{1}{x}dx=lnx+C", "pred": "\\int \\frac{1}{x}dx=1nx+C", "pred_raw": "\\[\\int \\frac{1}{x}dx=1nx+C\\]", "n_tokens": 18}
+{"sample_id": "8f884084d6e1362f", "gt": "\\hat{x}_{0|0}=[\\begin{matrix}0\\\\ 0\\end{matrix}]", "pred": "\\sum_{0|0}= \\left[ \\begin{matrix} 0 \\\\ 0 \\end{matrix} \\right]", "pred_raw": "\\[\\sum_{0|0}= \\left[ \\begin{matrix} 0 \\\\ 0 \\end{matrix} \\right]\\]", "n_tokens": 28}
+{"sample_id": "a59cc19898be93a6", "gt": "E=i\\hbar\\frac{\\partial}{\\partial t}", "pred": "E=i\\hbar\\frac{\\partial}{\\partial t}", "pred_raw": "\\[E=i\\hbar\\frac{\\partial}{\\partial t}\\]", "n_tokens": 16}
+{"sample_id": "680329821f01890d", "gt": "f_{+},\\varphi", "pred": "f+j \\varphi", "pred_raw": "\\[f+j \\varphi\\]", "n_tokens": 9}
+{"sample_id": "881951f760925d4c", "gt": "(n+1)^{k_{n+1}}", "pred": "(n+1)^{k_{n+1}}", "pred_raw": "\\[(n+1)^{k_{n+1}}\\]", "n_tokens": 13}
+{"sample_id": "bce6f7f87024ce0a", "gt": "\\int dV|\\Psi|^{2}=N", "pred": "\\int dV|\\Psi|^{2}=N", "pred_raw": "\\[\\int dV|\\Psi|^{2}=N\\]", "n_tokens": 12}
+{"sample_id": "ca04350a03af31d3", "gt": "\\frac{1}{2^{N}}(\\begin{matrix}N\\\\ k\\end{matrix})", "pred": "\\frac{1}{2^N} \\left( \\begin{matrix}N \\\\ k \\end{matrix} \\right)", "pred_raw": "\\[\\frac{1}{2^N} \\left( \\begin{matrix}N \\\\ k \\end{matrix} \\right)\\]", "n_tokens": 30}
+{"sample_id": "d84923b044e72d09", "gt": "S_{l}(t+", "pred": "s_{l}(t+", "pred_raw": "\\[s_{l}(t+\\]", "n_tokens": 9}
+{"sample_id": "76d5b6afd43e6d92", "gt": "cr+cs=a^{2}+b^{2}", "pred": "cr+cs=a^2+b^2", "pred_raw": "\\[cr+cs=a^2+b^2\\]", "n_tokens": 15}
+{"sample_id": "2058c453059484a0", "gt": "L(u)=(a_{1},a_{2})", "pred": "L(a)=(a_{1},a_{2})", "pred_raw": "\\[L(a)=(a_{1},a_{2})\\]", "n_tokens": 15}
+{"sample_id": "822ac5689bdc2b66", "gt": "\\overline{Var(z)}=1-\\overline{R}", "pred": "\\sqrt{ar(z)}=1-\\overline{R}", "pred_raw": "\\[\\sqrt{ar(z)}=1-\\overline{R}\\]", "n_tokens": 15}
+{"sample_id": "2030bdb1ba36988d", "gt": "\\sqrt{13}\\approx3.606", "pred": "\\sqrt{13} \\approx 3.606", "pred_raw": "\\[\\sqrt{13} \\approx 3.606\\]", "n_tokens": 14}
+{"sample_id": "fac97c0b876e3231", "gt": "\\alpha_{i}|\\alpha_{i+1}\\forall1\\le i<r", "pred": "\\alpha_{i}|\\alpha_{i+1}\\forall 1\\le i<r", "pred_raw": "\\[\\alpha_{i}|\\alpha_{i+1}\\forall 1\\le i<r\\]", "n_tokens": 21}
+{"sample_id": "c4fe4924aabf85b0", "gt": "f_{r}(e^{i\\theta})=f(re^{i\\theta})", "pred": "f_{r}(e^{i\\theta})=f(re^{i\\theta})", "pred_raw": "\\[f_{r}(e^{i\\theta})=f(re^{i\\theta})\\]", "n_tokens": 21}
+{"sample_id": "1a4095cf2596d073", "gt": "A_{[\\alpha\\beta]\\gamma\\cdot\\cdot\\cdot}", "pred": "A[ \\alpha \\beta] \\gamma \\ldots", "pred_raw": "\\[A[ \\alpha \\beta] \\gamma \\ldots\\]", "n_tokens": 15}
+{"sample_id": "3b44c7649d73d309", "gt": "(h,q^{n}-1)=1", "pred": "(h,q^{n}-1)=1", "pred_raw": "\\[(h,q^{n}-1)=1\\]", "n_tokens": 13}
+{"sample_id": "62086df322d253b5", "gt": "[[", "pred": "C", "pred_raw": "\\[C\\]", "n_tokens": 5}
+{"sample_id": "573c3bbb26722504", "gt": "\\{\\eta_{t}(.)", "pred": "\\{ \\eta_{t}(.)", "pred_raw": "\\[\\{ \\eta_{t}(.)\\]", "n_tokens": 9}
+{"sample_id": "df5c73fbbef36adf", "gt": "\\lfloor(n+1)p\\rfloor", "pred": "\\lfloor(n+1)p\\rfloor", "pred_raw": "\\[\\lfloor(n+1)p\\rfloor\\]", "n_tokens": 13}
+{"sample_id": "bebab3783b20b958", "gt": "F_{i}*\\frac{dV_{g}}{dT}=\\frac{dC}{dT}", "pred": "F_{i}*\\frac{dV_{g}}{dT}=\\frac{dC}{dT}", "pred_raw": "\\[F_{i}*\\frac{dV_{g}}{dT}=\\frac{dC}{dT}\\]", "n_tokens": 21}
+{"sample_id": "e255103cace52205", "gt": "(\\frac{3}{\\sqrt{10}},\\frac{-1}{\\sqrt{6}},\\frac{4}{\\sqrt{3}},0)", "pred": "( \\frac{3}{ \\sqrt{10}}, \\frac{-1}{ \\sqrt{6}}, \\frac{4}{ \\sqrt{3}},0)", "pred_raw": "\\[( \\frac{3}{ \\sqrt{10}}, \\frac{-1}{ \\sqrt{6}}, \\frac{4}{ \\sqrt{3}},0)\\]", "n_tokens": 35}
+{"sample_id": "4a97d8d9be7ef7e1", "gt": "\\sum_{k=1}^{n}\\frac{1}{k}-ln(n)", "pred": "\\sum_{k=1}^{n}\\frac{1}{k}ln(n)", "pred_raw": "\\[\\sum_{k=1}^{n}\\frac{1}{k}ln(n)\\]", "n_tokens": 21}
+{"sample_id": "6535599272d3f342", "gt": "p|q^{k}-1", "pred": "p|q^{k}-1", "pred_raw": "\\[p|q^{k}-1\\]", "n_tokens": 11}
+{"sample_id": "cd1a286a779f8abb", "gt": "2^{1/p}>2", "pred": "2^{1/p}>2", "pred_raw": "\\[2^{1/p}>2\\]", "n_tokens": 11}
+{"sample_id": "a1295daad5dd7f92", "gt": "\\tau\\sqrt{\\frac{g}{h}}=9.80", "pred": "\\tau\\sqrt{\\frac{g}{h}}=9.80", "pred_raw": "\\[\\tau\\sqrt{\\frac{g}{h}}=9.80\\]", "n_tokens": 17}
+{"sample_id": "3667c84bc8755793", "gt": "L^{\\otimes m}", "pred": "L^{ \\otimes m}", "pred_raw": "\\[L^{ \\otimes m}\\]", "n_tokens": 9}
+{"sample_id": "888a320cd8f9c4fd", "gt": "x=(\\lambda-\\lambda_{0})cos\\varphi_{0}", "pred": "x=(\\lambda-\\lambda_{0})cos\\varphi_{0}", "pred_raw": "\\[x=(\\lambda-\\lambda_{0})cos\\varphi_{0}\\]", "n_tokens": 17}
+{"sample_id": "cdc3494916d18d99", "gt": "\\alpha=\\frac{\\pi}{4n}(2n-1)", "pred": "\\alpha= \\frac{ \\pi}{4n}(2n-1)", "pred_raw": "\\[\\alpha= \\frac{ \\pi}{4n}(2n-1)\\]", "n_tokens": 19}
+{"sample_id": "99f519bdc5f57f62", "gt": "\\overline{\\nabla}_{X}Y=\\nabla_{X}Y", "pred": "\\overline{\\nabla}_{X}Y=\\nabla_{X}Y", "pred_raw": "\\[\\overline{\\nabla}_{X}Y=\\nabla_{X}Y\\]", "n_tokens": 17}
+{"sample_id": "3e1e70f606c30a18", "gt": "K_{z}*K_{z^{\\prime}}=K_{z+z^{\\prime}}", "pred": "K_{z}*K_{z^{\\prime}}=K_{z+z^{\\prime}}", "pred_raw": "\\[K_{z}*K_{z^{\\prime}}=K_{z+z^{\\prime}}\\]", "n_tokens": 21}
+{"sample_id": "778f232eb5df326c", "gt": "1-\\sqrt{-5}", "pred": "1- \\sqrt{-5}", "pred_raw": "\\[1- \\sqrt{-5}\\]", "n_tokens": 10}
+{"sample_id": "ee584784f1f798bf", "gt": "z_{i}\\in R^{k}(1\\le i\\le n)", "pred": "z_{i}\\in R^{k}(1 \\leq i \\leq n)", "pred_raw": "\\[z_{i}\\in R^{k}(1 \\leq i \\leq n)\\]", "n_tokens": 20}
+{"sample_id": "17e5f33acfaafc2a", "gt": "\\frac{1}{n+1}x^{n+1}+C", "pred": "\\frac{1}{n+1}x^{n+1}+C", "pred_raw": "\\[\\frac{1}{n+1}x^{n+1}+C\\]", "n_tokens": 19}
+{"sample_id": "f33a7320b3232c7b", "gt": "\\int e^{cx}dx=\\frac{1}{c}e^{cx}", "pred": "\\int e^{cx}dx= \\frac{1}{c}e^{cx}", "pred_raw": "\\[\\int e^{cx}dx= \\frac{1}{c}e^{cx}\\]", "n_tokens": 21}
+{"sample_id": "0480cf86b72aaad9", "gt": "R=df/dn(n=0)", "pred": "R=df/dn(n=0)", "pred_raw": "\\[R=df/dn(n=0)\\]", "n_tokens": 13}
+{"sample_id": "ac5d66876511bfce", "gt": "\\tilde{f}=f+h", "pred": "\\tilde{f}=f+h", "pred_raw": "\\[\\tilde{f}=f+h\\]", "n_tokens": 11}
+{"sample_id": "f7b3557ac8e3ed74", "gt": "F_{q^{k}}^{*}", "pred": "F_{q^k}^ \\ast", "pred_raw": "\\[F_{q^k}^ \\ast\\]", "n_tokens": 12}
+{"sample_id": "6a004b2f5e8fc5f9", "gt": "(t^{\\prime}-t)/\\epsilon", "pred": "(t^{ \\prime}-t)/ \\epsilon", "pred_raw": "\\[(t^{ \\prime}-t)/ \\epsilon\\]", "n_tokens": 13}
+{"sample_id": "01292cf19c2c9c7c", "gt": "u=1+l^{2}+m^{2}", "pred": "u=1+1^{2}+m^{2}", "pred_raw": "\\[u=1+1^{2}+m^{2}\\]", "n_tokens": 15}
+{"sample_id": "52de516c50a0c627", "gt": "P_{\\beta}(\\sigma)=\\frac{e^{-\\beta H(\\sigma)}}{Z_{\\beta}}", "pred": "P_{\\beta}(\\sigma)=\\frac{e^{-\\beta H(\\sigma)}}{Z_{\\beta}}", "pred_raw": "\\[P_{\\beta}(\\sigma)=\\frac{e^{-\\beta H(\\sigma)}}{Z_{\\beta}}\\]", "n_tokens": 22}
+{"sample_id": "8dcd795d528bb691", "gt": "\\partial_{v}f(x)=Df(x)v", "pred": "\\partial_{v}f(x)=Df(x)v", "pred_raw": "\\[\\partial_{v}f(x)=Df(x)v\\]", "n_tokens": 17}
+{"sample_id": "a8879606a6bf3ce5", "gt": "X=x-mg/k", "pred": "X=x-mg/k", "pred_raw": "\\[X=x-mg/k\\]", "n_tokens": 11}
+{"sample_id": "2ab1a0616f167aa1", "gt": "p_{1}/\\pi_{1}<p_{2}/\\pi_{2}", "pred": "p_{1}/\\pi_{1}<p_{2}/\\pi_{2}", "pred_raw": "\\[p_{1}/\\pi_{1}<p_{2}/\\pi_{2}\\]", "n_tokens": 19}
+{"sample_id": "d2eace48448c2a72", "gt": "\\Omega=e\\Omega(e)e^{*}", "pred": "\\Omega=e \\Omega(e)e^{*}", "pred_raw": "\\[\\Omega=e \\Omega(e)e^{*}\\]", "n_tokens": 13}
+{"sample_id": "3f015f4b9f591126", "gt": "-\\frac{m}{2}(\\overline{\\nu}^{C}\\nu+\\overline{\\nu}\\nu^{C})", "pred": "- \\frac{m}{2}( \\overline{ \\nu}^{C} \\nu+ \\overline{ \\nu} \\nu^{C})", "pred_raw": "\\[- \\frac{m}{2}( \\overline{ \\nu}^{C} \\nu+ \\overline{ \\nu} \\nu^{C})\\]", "n_tokens": 32}
+{"sample_id": "5bc207ecc3fd136c", "gt": "q=q(0)+j\\frac{p(0)}{\\omega L}", "pred": "q=q(0)+j \\frac{p(0)}{wL}", "pred_raw": "\\[q=q(0)+j \\frac{p(0)}{wL}\\]", "n_tokens": 20}
+{"sample_id": "ed4de0882748f7b9", "gt": "Z_{F+G}=Z_{F}+Z_{G}", "pred": "Z_{F+G}=Z_{F}+Z_{G}", "pred_raw": "\\[Z_{F+G}=Z_{F}+Z_{G}\\]", "n_tokens": 17}
+{"sample_id": "249bf59774c8b093", "gt": "3^{3^{3^{3^{46}}}}", "pred": "3^{3^{3^{3^{46}}}}", "pred_raw": "\\[3^{3^{3^{3^{46}}}}\\]", "n_tokens": 13}
+{"sample_id": "a1a1a9e4fe99888f", "gt": "V_{C}=\\frac{1}{C}\\int_{0}^{t}Idt", "pred": "V_{c}=\\frac{1}{c}\\int_{0}^{t}Idt", "pred_raw": "\\[V_{c}=\\frac{1}{c}\\int_{0}^{t}Idt\\]", "n_tokens": 22}
+{"sample_id": "3ffcf29cf660e2ce", "gt": "\\Omega((logn)/n^{2})", "pred": "\\Omega((logn)/n^{2})", "pred_raw": "\\[\\Omega((logn)/n^{2})\\]", "n_tokens": 12}
+{"sample_id": "2dce46c9c3ac4b22", "gt": "X^{2}-X+1", "pred": "X^{2}-X+1", "pred_raw": "\\[X^{2}-X+1\\]", "n_tokens": 11}
+{"sample_id": "8b17ae8a85fe626a", "gt": "\\delta(q_{s},\\sigma)\\rightarrow q_{t}", "pred": "\\delta(q_s,\\sigma) \\rightarrow q_t", "pred_raw": "\\[\\delta(q_s,\\sigma) \\rightarrow q_t\\]", "n_tokens": 17}
+{"sample_id": "70625560cc91e88e", "gt": "P_{t,t^{\\prime}}(x|x^{\\prime})", "pred": "P_{t,t^{\\prime}}(x|x^{\\prime})", "pred_raw": "\\[P_{t,t^{\\prime}}(x|x^{\\prime})\\]", "n_tokens": 17}
+{"sample_id": "e7d32d206bd46c44", "gt": "v=\\frac{1}{\\hbar}\\nabla_{k}E(k)", "pred": "V=\\frac{1}{\\hbar}\\nabla_{k}E(k)", "pred_raw": "\\[V=\\frac{1}{\\hbar}\\nabla_{k}E(k)\\]", "n_tokens": 19}
+{"sample_id": "fb1902b11e8b0b5b", "gt": "I_{-1}^{1}r=0=I_{-\\infty}^{+\\infty}r", "pred": "I_{-1}^{1}r=0=I_{- \\infty}^{+ \\infty}r", "pred_raw": "\\[I_{-1}^{1}r=0=I_{- \\infty}^{+ \\infty}r\\]", "n_tokens": 23}
+{"sample_id": "c3661b01f9c955e6", "gt": "H\\Phi_{0}(x)=E_{0}\\Phi_{0}(x)", "pred": "H\\Phi_{0}(x)=F_{0}\\Phi_{0}(x)", "pred_raw": "\\[H\\Phi_{0}(x)=F_{0}\\Phi_{0}(x)\\]", "n_tokens": 21}
+{"sample_id": "8125a51a8666c43b", "gt": "\\prod_{i\\subseteq\\Sigma}M_{i}/U", "pred": "\\prod_{i\\subseteq\\Sigma}M_{i}/U", "pred_raw": "\\[\\prod_{i\\subseteq\\Sigma}M_{i}/U\\]", "n_tokens": 17}
+{"sample_id": "471cdf740cdcd4d4", "gt": "\\hat{\\epsilon}E_{0}", "pred": "\\widehat{ \\epsilon}E_{0}", "pred_raw": "\\[\\widehat{ \\epsilon}E_{0}\\]", "n_tokens": 12}
+{"sample_id": "744f4107e4303229", "gt": "(p_{i},|\\phi_{i}\\rangle)", "pred": "(p_{i},|\\phi_{i}\\rangle)", "pred_raw": "\\[(p_{i},|\\phi_{i}\\rangle)\\]", "n_tokens": 13}
+{"sample_id": "acbca42a7fb4b63f", "gt": "\\sum F_{x}=0=R_{Ax}", "pred": "\\sum F_x=0=R_{Ax}", "pred_raw": "\\[\\sum F_x=0=R_{Ax}\\]", "n_tokens": 14}
+{"sample_id": "8a36bb0eb339f5ad", "gt": "T_{j}\\subseteq[t]", "pred": "T_{j}\\subseteq[t]", "pred_raw": "\\[T_{j}\\subseteq[t]\\]", "n_tokens": 11}
+{"sample_id": "4edea2ae1fd21c32", "gt": "A^{2}=dI+\\lambda J", "pred": "{A^{2}}=A I+AJ", "pred_raw": "\\[{A^{2}}=A I+AJ\\]", "n_tokens": 13}
+{"sample_id": "66ac253d0742b423", "gt": "\\frac{ln(1+c)}{2c}", "pred": "\\frac{ln(1+c)}{2c}", "pred_raw": "\\[\\frac{ln(1+c)}{2c}\\]", "n_tokens": 14}
+{"sample_id": "70987253196e7c8d", "gt": "\\pi_{n}X=[S^{n},X]", "pred": "\\pi_{n}X=[S^{n},X]", "pred_raw": "\\[\\pi_{n}X=[S^{n},X]\\]", "n_tokens": 15}
+{"sample_id": "2470ce5d4cf513ca", "gt": "v=\\sqrt{\\gamma\\frac{P_{0}}{\\rho}}", "pred": "v= \\sqrt{ \\gamma \\frac{P_{0}}{P}}", "pred_raw": "\\[v= \\sqrt{ \\gamma \\frac{P_{0}}{P}}\\]", "n_tokens": 19}
+{"sample_id": "9856c275f12cef86", "gt": "V=\\sqrt{2.67x}", "pred": "V=\\sqrt{2.67x}", "pred_raw": "\\[V=\\sqrt{2.67x}\\]", "n_tokens": 12}
+{"sample_id": "455be0e5243fdf37", "gt": "\\hat{B}=\\hat{x}\\hat{y}\\hat{z}\\hat{v}=i\\hat{v}", "pred": "\\hat{B}=\\hat{x}\\hat{y}\\hat{z}\\hat{v}=i\\hat{v}", "pred_raw": "\\[\\hat{B}=\\hat{x}\\hat{y}\\hat{z}\\hat{v}=i\\hat{v}\\]", "n_tokens": 29}
+{"sample_id": "0235a447c15a24d7", "gt": "nlog_{2}n-\\frac{n}{ln2}", "pred": "nlog_{2}n-\\frac{n}{ln2}", "pred_raw": "\\[nlog_{2}n-\\frac{n}{ln2}\\]", "n_tokens": 17}
+{"sample_id": "2df2fe901d05cfbb", "gt": "dt=\\frac{r_{0}d\\phi}{1\\pm\\omega r_{0}}", "pred": "dt=\\frac{r_{0}d\\phi}{1\\pm\\omega r_{0}}", "pred_raw": "\\[dt=\\frac{r_{0}d\\phi}{1\\pm\\omega r_{0}}\\]", "n_tokens": 24}
+{"sample_id": "61bcaa925f10811b", "gt": "Eq\\alpha\\Rightarrow\\alpha\\rightarrow[\\alpha]\\rightarrow Bool", "pred": "Eq\\alpha\\Rightarrow\\alpha\\rightarrow[\\alpha]\\rightarrow Bool", "pred_raw": "\\[Eq\\alpha\\Rightarrow\\alpha\\rightarrow[\\alpha]\\rightarrow Bool\\]", "n_tokens": 19}
+{"sample_id": "584c7cf8d38a3032", "gt": "C_{X}^{-1}=0", "pred": "c_{x}^{-1}=0", "pred_raw": "\\[c_{x}^{-1}=0\\]", "n_tokens": 11}
+{"sample_id": "6953e36866fd4144", "gt": "Var(\\overline{x})=\\sigma^{2}/n", "pred": "Var( \\overline{x})= \\sigma^{2}/n", "pred_raw": "\\[Var( \\overline{x})= \\sigma^{2}/n\\]", "n_tokens": 17}
+{"sample_id": "8729228d7b0a56cc", "gt": "\\frac{d}{dt}(\\frac{dt}{d\\tau})\\approx0", "pred": "\\frac{d}{dt}(\\frac{dt}{d\\tau})=0", "pred_raw": "\\[\\frac{d}{dt}(\\frac{dt}{d\\tau})=0\\]", "n_tokens": 19}
+{"sample_id": "3ae8ef13e6eecdde", "gt": "P(r_{i})\\propto p(r_{i})", "pred": "p(r_{i})\\propto p(r_{i})", "pred_raw": "\\[p(r_{i})\\propto p(r_{i})\\]", "n_tokens": 16}
+{"sample_id": "9268b38576c38a54", "gt": "i,g\\in[0,1,...,n]", "pred": "i,g\\in[0,1,...,n]", "pred_raw": "\\[i,g\\in[0,1,...,n]\\]", "n_tokens": 15}
+{"sample_id": "c1ccb1648b47e4aa", "gt": "(3+N)+1", "pred": "(3+N)+1", "pred_raw": "\\[(3+N)+1\\]", "n_tokens": 9}
+{"sample_id": "a00c5fa6b4ef6cf9", "gt": "\\upsilon_{in}=\\upsilon_{s}\\frac{R_{in}}{R_{S}+R_{in}}", "pred": "V_{in}=V_{S}\\frac{R_{in}}{R_{S}+R_{in}}", "pred_raw": "\\[V_{in}=V_{S}\\frac{R_{in}}{R_{S}+R_{in}}\\]", "n_tokens": 25}
+{"sample_id": "30d44458e63d2c9d", "gt": "F=\\frac{1}{c}\\overline{E}e_{4}+\\overline{B}e_{123}", "pred": "F= \\frac{1}{c} \\overline{E}e_{4}+ \\overline{B}e_{123}", "pred_raw": "\\[F= \\frac{1}{c} \\overline{E}e_{4}+ \\overline{B}e_{123}\\]", "n_tokens": 30}
+{"sample_id": "ec0f1d56385a3f06", "gt": "Br(k)=Q/Z", "pred": "Br(k)=Q/Z", "pred_raw": "\\[Br(k)=Q/Z\\]", "n_tokens": 11}
+{"sample_id": "fd9c003f2466935a", "gt": "p_{1}/\\pi_{1}<p_{2}/\\pi_{2}", "pred": "\\frac{p}{1/\\pi_{1}}<\\frac{p_{2}}{\\pi_{2}}", "pred_raw": "\\[\\frac{p}{1/\\pi_{1}}<\\frac{p_{2}}{\\pi_{2}}\\]", "n_tokens": 23}
+{"sample_id": "6b70757f93928d82", "gt": "D(a)=D(b)=0", "pred": "D(a)=D(b)=0", "pred_raw": "\\[D(a)=D(b)=0\\]", "n_tokens": 13}
+{"sample_id": "f6e16070d2bc4a57", "gt": "\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1,a>b", "pred": "\\frac{x^{2}}{a^{2}}- \\frac{y^{2}}{b^{2}}=1,a>b", "pred_raw": "\\[\\frac{x^{2}}{a^{2}}- \\frac{y^{2}}{b^{2}}=1,a>b\\]", "n_tokens": 30}
+{"sample_id": "7766d93bb300836d", "gt": "a_{n}-2a_{n+1}", "pred": "a_{n}-2a_{n+1}", "pred_raw": "\\[a_{n}-2a_{n+1}\\]", "n_tokens": 14}
+{"sample_id": "a1b8159d1721b5b6", "gt": "P_{i}(t=0)-", "pred": "P_{i}(t=0)-", "pred_raw": "\\[P_{i}(t=0)-\\]", "n_tokens": 11}
+{"sample_id": "7025b0031a95cb0e", "gt": "(z,r)\\mapsto(\\alpha^{t}z,c^{t}r)", "pred": "(z,r)\\mapsto(\\alpha^{t}z,c^{t}r)", "pred_raw": "\\[(z,r)\\mapsto(\\alpha^{t}z,c^{t}r)\\]", "n_tokens": 21}
+{"sample_id": "60ba7e9136a03c60", "gt": "(v^{\\alpha})_{\\alpha=0,1,2,3}", "pred": "(V^{\\alpha})_{\\alpha=0,1,2,3}", "pred_raw": "\\[(V^{\\alpha})_{\\alpha=0,1,2,3}\\]", "n_tokens": 17}
+{"sample_id": "a532bd1d433a36d7", "gt": "i_{*}i^{-1}G", "pred": "i_{*}i^{-1}G", "pred_raw": "\\[i_{*}i^{-1}G\\]", "n_tokens": 11}
+{"sample_id": "270449e5820969ae", "gt": "\\langle A\\rangle_{\\psi}=||A\\psi||^{2}", "pred": "\\langle A\\rangle_{\\psi}=||A\\psi||^{2}", "pred_raw": "\\[\\langle A\\rangle_{\\psi}=||A\\psi||^{2}\\]", "n_tokens": 16}
+{"sample_id": "f61ae1c4090a4583", "gt": "w(P,Q):=\\frac{G}{F}", "pred": "w(P,Q):= \\frac{G}{F}", "pred_raw": "\\[w(P,Q):= \\frac{G}{F}\\]", "n_tokens": 16}
+{"sample_id": "2a6394f6081a71ec", "gt": "|y|\\in O(|x|^{k})", "pred": "|y|\\in O(|x|^{k})", "pred_raw": "\\[|y|\\in O(|x|^{k})\\]", "n_tokens": 12}
+{"sample_id": "a70721489a1f3a9d", "gt": "1^{1^{1^{1^{1^{1}}}}}+3", "pred": "1^{1^{1^{1^{1^{1}}}}}+3", "pred_raw": "\\[1^{1^{1^{1^{1^{1}}}}}+3\\]", "n_tokens": 18}
+{"sample_id": "21868f5f5165ef23", "gt": "R(M,v_{max})=\\lambda_{max}", "pred": "R(M,v_{max})=\\lambda_{max}", "pred_raw": "\\[R(M,v_{max})=\\lambda_{max}\\]", "n_tokens": 15}
+{"sample_id": "d43909532381cc08", "gt": "\\{|x+C_{2}\\rangle|x\\in C_{1}\\}", "pred": "\\{|x+C_{2}\\rangle|x\\in C_{1}\\}", "pred_raw": "\\[\\{|x+C_{2}\\rangle|x\\in C_{1}\\}\\]", "n_tokens": 18}
+{"sample_id": "4947424fb93683d8", "gt": "D_{ij}\\subseteq(\\frac{1}{2})D_{i}", "pred": "D_{ij}\\subseteq(\\frac{1}{2})D_{i}", "pred_raw": "\\[D_{ij}\\subseteq(\\frac{1}{2})D_{i}\\]", "n_tokens": 19}
+{"sample_id": "11ac11b06417edb1", "gt": "\\rho_{A}=|\\psi\\rangle_{A}\\langle\\psi|_{A}", "pred": "\\rho_{A}= \\left|4 \\right>A<4|A", "pred_raw": "\\[\\rho_{A}= \\left|4 \\right>A<4|A\\]", "n_tokens": 20}
+{"sample_id": "e41dd3bba0110690", "gt": "2^{10,000}", "pred": "2^{10,000}", "pred_raw": "\\[2^{10,000}\\]", "n_tokens": 9}
+{"sample_id": "be9e65b1c8d6263b", "gt": "(c:a:b)\\cdot\\tilde{a}:2\\cdot m", "pred": "(c:a:b)\\cdot\\tilde{a}:2\\cdot m", "pred_raw": "\\[(c:a:b)\\cdot\\tilde{a}:2\\cdot m\\]", "n_tokens": 20}
+{"sample_id": "74937e4d8bd3e5be", "gt": "M/(N_{1}\\cap N_{2})", "pred": "M/(N_{1}\\cap N_{2})", "pred_raw": "\\[M/(N_{1}\\cap N_{2})\\]", "n_tokens": 14}
+{"sample_id": "340bb67f39d12e11", "gt": "\\sum k^{3}={(\\begin{matrix}n+1\\\\ 2\\end{matrix})}^{2}", "pred": "\\sum n^{3}={(\\begin{matrix}n+1\\\\ 2\\end{matrix})}^{2}", "pred_raw": "\\[\\sum n^{3}={(\\begin{matrix}n+1\\\\ 2\\end{matrix})}^{2}\\]", "n_tokens": 25}
+{"sample_id": "95ce61a7f4c9a8aa", "gt": "\\overline{a}_{\\overline{n|}i}=\\frac{1-v^{n}}{\\delta}", "pred": "\\overline{a}_{ \\overline{n/i}}= \\frac{1-v^{n}}{ \\delta}", "pred_raw": "\\[\\overline{a}_{ \\overline{n/i}}= \\frac{1-v^{n}}{ \\delta}\\]", "n_tokens": 26}
+{"sample_id": "85b10f4ecb7a32c4", "gt": "x\\in[-2,-0.5]", "pred": "x \\in[-2,-0.5]", "pred_raw": "\\[x \\in[-2,-0.5]\\]", "n_tokens": 13}
+{"sample_id": "a9f76a5a4365e300", "gt": "\\tilde{X}:=(\\tilde{x}_{ij})\\in R^{n\\times m}", "pred": "\\tilde{X}:=(\\tilde{x}_{ij})\\in R^{n\\times m}", "pred_raw": "\\[\\tilde{X}:=(\\tilde{x}_{ij})\\in R^{n\\times m}\\]", "n_tokens": 21}
+{"sample_id": "97d2e818d52f304e", "gt": "\\eta=1-\\frac{1}{r_{v}^{\\gamma-1}}", "pred": "\\eta=1- \\frac{1}{r_{v}^{\\gamma-1}}", "pred_raw": "\\[\\eta=1- \\frac{1}{r_{v}^{\\gamma-1}}\\]", "n_tokens": 20}
+{"sample_id": "a6b856c8dd0ff7f5", "gt": "\\frac{1}{a_{11}}[\\begin{matrix}a_{21}&-\\Delta[a]\\\\ 1&a_{12}\\end{matrix}]", "pred": "\\frac{1}{a_{11}}[\\begin{matrix}a_{21}&-\\Delta[a]\\\\ 1&a_{12}\\end{matrix}]", "pred_raw": "\\[\\frac{1}{a_{11}}[\\begin{matrix}a_{21}&-\\Delta[a]\\\\ 1&a_{12}\\end{matrix}]\\]", "n_tokens": 33}
+{"sample_id": "3ca991dd0cd0e01a", "gt": "\\frac{z}{z_{0}}-1", "pred": "\\frac{z}{z_{0}}-1", "pred_raw": "\\[\\frac{z}{z_{0}}-1\\]", "n_tokens": 13}
+{"sample_id": "08cb48fb25f0de50", "gt": "X_{2i}\\epsilon R^{Q}", "pred": "X_{bi} \\in R^Q", "pred_raw": "\\[X_{bi} \\in R^Q\\]", "n_tokens": 13}
+{"sample_id": "0748626519ec54a9", "gt": "H(f)=1+j\\frac{w}{B}", "pred": "H(f)=1+j\\frac{w}{B}", "pred_raw": "\\[H(f)=1+j\\frac{w}{B}\\]", "n_tokens": 17}
+{"sample_id": "9b7e57a0f35e85ca", "gt": "\\frac{x^{2}}{(p+q)^{2}}+\\frac{y^{2}}{q^{2}}=1", "pred": "\\frac{x^{2}}{(p+q)^{2}}+\\frac{y^{2}}{q^{2}}=1", "pred_raw": "\\[\\frac{x^{2}}{(p+q)^{2}}+\\frac{y^{2}}{q^{2}}=1\\]", "n_tokens": 27}
+{"sample_id": "d70b156078a48152", "gt": "H^{i}(V,Z/l^{k}Z)", "pred": "H^i(V,Z/l^nz)", "pred_raw": "\\[H^i(V,Z/l^nz)\\]", "n_tokens": 15}
+{"sample_id": "26e6166d34ee6bfb", "gt": "tr^{2}H>4", "pred": "tr^2H>4", "pred_raw": "\\[tr^2H>4\\]", "n_tokens": 10}
+{"sample_id": "78cc6abd2751a7b2", "gt": "\\sum_{i=2}^{\\infty}\\frac{1}{i}-\\sum_{i=2}^{\\infty}\\frac{1}{i^{2}}", "pred": "\\sum_{i=2}^{ \\infty} \\frac{1}{i}- \\sum_{i=2}^{ \\infty} \\frac{1}{i^{2}}", "pred_raw": "\\[\\sum_{i=2}^{ \\infty} \\frac{1}{i}- \\sum_{i=2}^{ \\infty} \\frac{1}{i^{2}}\\]", "n_tokens": 38}
+{"sample_id": "f8d7868ad41e729e", "gt": "J_{n+1}=2^{n}-J_{n}", "pred": "J_{n+1}=2^{n}-J_{n}", "pred_raw": "\\[J_{n+1}=2^{n}-J_{n}\\]", "n_tokens": 17}
+{"sample_id": "887fe112208db812", "gt": "\\gamma_{la}>\\gamma_{ls}-\\gamma_{sa}>0", "pred": "\\gamma_{la}>\\gamma_{ls}-\\gamma_{sa}>0", "pred_raw": "\\[\\gamma_{la}>\\gamma_{ls}-\\gamma_{sa}>0\\]", "n_tokens": 17}
+{"sample_id": "72e9373bdf2d561a", "gt": "log_{10}(R/r)", "pred": "\\log_{10}(R/r)", "pred_raw": "\\[\\log_{10}(R/r)\\]", "n_tokens": 11}
+{"sample_id": "c2788beab489f34f", "gt": "\\Omega_{X/S}=\\Delta^{*}(I/I^{2})", "pred": "\\Omega_{X/S}=\\Delta^{*}(I/I^{2})", "pred_raw": "\\[\\Omega_{X/S}=\\Delta^{*}(I/I^{2})\\]", "n_tokens": 17}
+{"sample_id": "96183a7c7e1f3b02", "gt": "\\Omega([\\rho(R)];\\mu,T)", "pred": "\\Omega([P(R)];\\mu,T)", "pred_raw": "\\[\\Omega([P(R)];\\mu,T)\\]", "n_tokens": 14}
+{"sample_id": "a3f3bc49c0c930da", "gt": "E_{i}=C\\frac{M_{i}}{N_{i}}", "pred": "E_{i}=C\\frac{M_{i}}{N_{i}}", "pred_raw": "\\[E_{i}=C\\frac{M_{i}}{N_{i}}\\]", "n_tokens": 19}
+{"sample_id": "7eac0789bbb3a99d", "gt": "v^{\\rho}:=(\\dot{\\gamma})^{\\rho}", "pred": "v^{\\rho}:=(j)^{\\rho}", "pred_raw": "\\[v^{\\rho}:=(j)^{\\rho}\\]", "n_tokens": 11}
+{"sample_id": "ea2c811c413d3898", "gt": "\\overline{V_{1}}=\\overline{V_{2}}", "pred": "\\overline{V_{1}}= \\overline{V_{2}}", "pred_raw": "\\[\\overline{V_{1}}= \\overline{V_{2}}\\]", "n_tokens": 16}
+{"sample_id": "6fb964f91fb2f02b", "gt": "E_{1}\\cup E_{2}\\cup...=B", "pred": "E_{1}\\cup E_{2}\\cup...=B", "pred_raw": "\\[E_{1}\\cup E_{2}\\cup...=B\\]", "n_tokens": 17}
+{"sample_id": "9eadf1a7a7cfb45d", "gt": "\\Delta G=\\sum_{i}\\Delta G_{i}", "pred": "\\Delta G=\\sum_{i}\\Delta G_{i}", "pred_raw": "\\[\\Delta G=\\sum_{i}\\Delta G_{i}\\]", "n_tokens": 15}
+{"sample_id": "a51fab3b08bd4ccd", "gt": "\\eta_{k}(k=1,...,K)", "pred": "\\eta_{k}(k=1,...,K)", "pred_raw": "\\[\\eta_{k}(k=1,...,K)\\]", "n_tokens": 13}
+{"sample_id": "eb01a46f8de66362", "gt": "\\mu^{-1}([\\epsilon,\\infty))", "pred": "\\mu^{-1}([E,\\infty))", "pred_raw": "\\[\\mu^{-1}([E,\\infty))\\]", "n_tokens": 11}
+{"sample_id": "3346d2228ad64a04", "gt": "\\sum_{k=1}^{n}k^{m}=nP(n)", "pred": "\\sum_{k=1}^{n}k^{m}=nP(n)", "pred_raw": "\\[\\sum_{k=1}^{n}k^{m}=nP(n)\\]", "n_tokens": 19}
+{"sample_id": "ad6692574c1d12ab", "gt": "Z_{in0}=\\frac{V_{1}}{I_{in0}}=Z", "pred": "Z_{in0}=\\frac{V_{1}}{I_{in0}}=Z", "pred_raw": "\\[Z_{in0}=\\frac{V_{1}}{I_{in0}}=Z\\]", "n_tokens": 21}
+{"sample_id": "dff17ec4b8710db5", "gt": "\\sum_{i=1}^{d}(d+1-i)b^{i}", "pred": "\\sum_{i=1}^{d}(d+1-i)b^{i}", "pred_raw": "\\[\\sum_{i=1}^{d}(d+1-i)b^{i}\\]", "n_tokens": 21}
+{"sample_id": "13fd5acee0c037d3", "gt": "I_{K}(f)/H", "pred": "I_{K}(f)/H", "pred_raw": "\\[I_{K}(f)/H\\]", "n_tokens": 11}
+{"sample_id": "9f36dd4a442fcec3", "gt": "P(x)=|\\langle x_{0},x\\rangle|^{2}", "pred": "P(x)=|<x_{0},x>|^{2}", "pred_raw": "\\[P(x)=|<x_{0},x>|^{2}\\]", "n_tokens": 17}
+{"sample_id": "ea0f42cdc3b3d25f", "gt": "0\\le x_{1},x_{2},x_{6}\\le10", "pred": "0 \\leq x_1,x_2,x_3 \\leq10", "pred_raw": "\\[0 \\leq x_1,x_2,x_3 \\leq10\\]", "n_tokens": 21}
+{"sample_id": "bb23be1c94425dd8", "gt": "z^{-1}=z^{*}/||z||", "pred": "z^{-1}=z^{*}/||z||", "pred_raw": "\\[z^{-1}=z^{*}/||z||\\]", "n_tokens": 12}
+{"sample_id": "2efa90334697c46c", "gt": "\\sqrt{n}\\ge\\frac{1.96\\sigma}{0.5}", "pred": "\\sqrt{n}\\ge\\frac{1.96\\sigma}{0.5}", "pred_raw": "\\[\\sqrt{n}\\ge\\frac{1.96\\sigma}{0.5}\\]", "n_tokens": 21}
+{"sample_id": "436c1116ef73a324", "gt": "(\\overline{3},1,-\\frac{4}{3})", "pred": "(3,1,-\\frac{4}{3})", "pred_raw": "\\[(3,1,-\\frac{4}{3})\\]", "n_tokens": 13}
+{"sample_id": "1ce7d51737cb4691", "gt": "K_{sp}=(x)(2x)^{2}", "pred": "K_{sp}=(x)(2x)^{2}", "pred_raw": "\\[K_{sp}=(x)(2x)^{2}\\]", "n_tokens": 14}
+{"sample_id": "cec97af8955e2f10", "gt": "24ms^{-1}=12s/23s", "pred": "24ms^{-1}=12s/235", "pred_raw": "\\[24ms^{-1}=12s/235\\]", "n_tokens": 13}
+{"sample_id": "b51bed533fd6fdd8", "gt": "\\alpha=\\frac{\\sigma_{1}^{2}}{\\sum_{i}\\sigma_{i}^{2}}", "pred": "\\alpha= \\frac{ \\sigma_{1}^{2}}{ \\sum_{i} \\sigma_{i}^{2}}", "pred_raw": "\\[\\alpha= \\frac{ \\sigma_{1}^{2}}{ \\sum_{i} \\sigma_{i}^{2}}\\]", "n_tokens": 27}
+{"sample_id": "e995f31549c52411", "gt": "\\oplus_{i=1}^{m}L^{2}(R,\\mu_{i})", "pred": "\\bigoplus^{m}\\limits_{i=1}L^{2}(R,\\mu_{i})", "pred_raw": "\\[\\bigoplus^{m}\\limits_{i=1}L^{2}(R,\\mu_{i})\\]", "n_tokens": 23}
+{"sample_id": "3c9bb3157e87d07b", "gt": "sinc(x)=\\frac{sinx}{x}", "pred": "\\sin c(x)= \\frac{ \\sin x}{x}", "pred_raw": "\\[\\sin c(x)= \\frac{ \\sin x}{x}\\]", "n_tokens": 17}
+{"sample_id": "8cf8e98eebc51e56", "gt": "(n-1)\\frac{s^{2}}{\\sigma^{2}}\\sim\\chi_{n-1}^{2}", "pred": "(n-1) \\frac{S^2}{ \\sigma^2} \\sim \\chi_{n-1}^2", "pred_raw": "\\[(n-1) \\frac{S^2}{ \\sigma^2} \\sim \\chi_{n-1}^2\\]", "n_tokens": 30}
+{"sample_id": "4a328717aee4d9e2", "gt": "\\pi_{X_{4}}-1", "pred": "\\pi x_{4}-1", "pred_raw": "\\[\\pi x_{4}-1\\]", "n_tokens": 10}
+{"sample_id": "86c5d509efa29816", "gt": "\\overline{x}_{n+1}", "pred": "\\overline{x}_{n+1}", "pred_raw": "\\[\\overline{x}_{n+1}\\]", "n_tokens": 11}
+{"sample_id": "1fa16f9b2ca264db", "gt": "L^{-1}(x)\\approx x\\frac{3-x^{2}}{1-x^{2}}", "pred": "L^{-1}(x) \\approx x \\frac{3-x^{2}}{1-x^{2}}", "pred_raw": "\\[L^{-1}(x) \\approx x \\frac{3-x^{2}}{1-x^{2}}\\]", "n_tokens": 27}
+{"sample_id": "4ad6fdefa81234ac", "gt": "c\\ge12]", "pred": "c \\geq12]", "pred_raw": "\\[c \\geq12]\\]", "n_tokens": 8}
+{"sample_id": "d3dbb095382c7adb", "gt": "1/e^{z}=e^{-z}", "pred": "1/e^z=e^{-z}", "pred_raw": "\\[1/e^z=e^{-z}\\]", "n_tokens": 13}
+{"sample_id": "8fbbd0a424ffac4f", "gt": "T^{-}", "pred": "\\boxed{\\begin{array}{c}\\Big{\\backslash}\\\\ \\Big{\\backslash}\\end{array}}", "pred_raw": "\\[\\boxed{\\begin{array}{c}\\Big{\\backslash}\\\\ \\Big{\\backslash}\\end{array}}\\]", "n_tokens": 24}
+{"sample_id": "99a862440bb3787f", "gt": "\\hat{y}=\\hat{\\alpha}+\\hat{\\beta}x", "pred": "\\hat{y}=\\hat{\\alpha}+\\hat{\\beta}x", "pred_raw": "\\[\\hat{y}=\\hat{\\alpha}+\\hat{\\beta}x\\]", "n_tokens": 17}
+{"sample_id": "7422eb20f17ddef6", "gt": "\\frac{U}{T^{2}}=\\frac{\\partial\\Phi}{\\partial T}", "pred": "\\frac{U}{T^{2}}=\\frac{\\partial\\Phi}{\\partial T}", "pred_raw": "\\[\\frac{U}{T^{2}}=\\frac{\\partial\\Phi}{\\partial T}\\]", "n_tokens": 20}
+{"sample_id": "d9fd249f59b38f23", "gt": "8.6.", "pred": "\\sum.6", "pred_raw": "\\[\\sum.6\\]", "n_tokens": 7}
+{"sample_id": "a4dd0e2440ea41ce", "gt": "v_{p}=\\langle v\\rangle\\sqrt{\\pi}/2", "pred": "v_{p}= \\langle v \\rangle \\sqrt{ \\pi}/2", "pred_raw": "\\[v_{p}= \\langle v \\rangle \\sqrt{ \\pi}/2\\]", "n_tokens": 20}
+{"sample_id": "ce0dc1f1d214803a", "gt": "P_{e|H_{0}}", "pred": "P_{eff_{0}}", "pred_raw": "\\[P_{eff_{0}}\\]", "n_tokens": 9}
+{"sample_id": "f18d4a28e26b6617", "gt": "Be=\\frac{\\Delta PL^{2}}{\\rho\\delta^{2}}", "pred": "Be=\\frac{\\Delta PL^{2}}{\\rho\\delta^{2}}", "pred_raw": "\\[Be=\\frac{\\Delta PL^{2}}{\\rho\\delta^{2}}\\]", "n_tokens": 19}
+{"sample_id": "761521e81b2fec50", "gt": "n(t)=\\frac{k}{(c+t)}", "pred": "n(t)= \\frac{k}{c+t}", "pred_raw": "\\[n(t)= \\frac{k}{c+t}\\]", "n_tokens": 16}
+{"sample_id": "d7dd32bf0a939ae5", "gt": "2(L_{u}-L_{r})", "pred": "2(L_{u}-L_{r})", "pred_raw": "\\[2(L_{u}-L_{r})\\]", "n_tokens": 13}
+{"sample_id": "3849046f3108b8a2", "gt": "M=S^{T}AB^{-1}A^{T}S", "pred": "M=S^{T}AB^{-1}A^{T}S", "pred_raw": "\\[M=S^{T}AB^{-1}A^{T}S\\]", "n_tokens": 19}
+{"sample_id": "d82a6aabdf48a43a", "gt": "x(t+t_{0})=x(t)", "pred": "x(t+t_{0})=x(t)", "pred_raw": "\\[x(t+t_{0})=x(t)\\]", "n_tokens": 15}
+{"sample_id": "536b2837fe31df73", "gt": "\\sigma(X^{*},\\hat{X})", "pred": "\\sigma(X^4, \\hat{X})", "pred_raw": "\\[\\sigma(X^4, \\hat{X})\\]", "n_tokens": 14}
+{"sample_id": "ea7da0ddec61dcad", "gt": "E=\\frac{fa^{4}}{\\sqrt{1\\cdot\\frac{v^{4}}{a^{4}}}}", "pred": "E=\\frac{fa^{4}}{\\sqrt{1\\cdot\\frac{v^{4}}{a^{4}}}}", "pred_raw": "\\[E=\\frac{fa^{4}}{\\sqrt{1\\cdot\\frac{v^{4}}{a^{4}}}}\\]", "n_tokens": 27}
+{"sample_id": "1ef9cddc0958c8ec", "gt": "\\sigma_{y}^{2}(\\tau)=\\frac{2\\pi^{2}\\tau}{3}h_{-2}", "pred": "\\sigma_y^2( \\tau)= \\frac{2 \\pi^2 \\tau}{3}h-2", "pred_raw": "\\[\\sigma_y^2( \\tau)= \\frac{2 \\pi^2 \\tau}{3}h-2\\]", "n_tokens": 29}
+{"sample_id": "e7735e2f566fa845", "gt": "I_{im+}", "pred": "I_{im+}", "pred_raw": "\\[I_{im+}\\]", "n_tokens": 7}
+{"sample_id": "44bf0e6a4b9ddaad", "gt": "O(\\sqrt[4]{N})", "pred": "O(\\sqrt[4]{N})", "pred_raw": "\\[O(\\sqrt[4]{N})\\]", "n_tokens": 11}
+{"sample_id": "00fee560e6c9af79", "gt": "\\sqrt{1-\\omega^{2}r_{0}^{2}}", "pred": "\\sqrt{1- \\omega^2r_0^2}", "pred_raw": "\\[\\sqrt{1- \\omega^2r_0^2}\\]", "n_tokens": 17}
+{"sample_id": "5764052d28b2da6d", "gt": "\\int_{d}^{\\infty}e^{f(x)}dx", "pred": "\\int_{d}^{ \\infty}e^{f(x)}dx", "pred_raw": "\\[\\int_{d}^{ \\infty}e^{f(x)}dx\\]", "n_tokens": 18}
+{"sample_id": "d0ee690dea97f600", "gt": "f(x),x\\in[0,L]", "pred": "f(x),x \\in[0,L]", "pred_raw": "\\[f(x),x \\in[0,L]\\]", "n_tokens": 15}
+{"sample_id": "5d85d86027818186", "gt": "A=\\int\\lambda dE_{A}(\\lambda)", "pred": "A=\\int\\lambda dE_{A}(\\lambda)", "pred_raw": "\\[A=\\int\\lambda dE_{A}(\\lambda)\\]", "n_tokens": 15}
+{"sample_id": "5e7a8fc3494612f1", "gt": "n,m=1,...,l_{\\mu}", "pred": "n,m=1,...,l_{\\mu}", "pred_raw": "\\[n,m=1,...,l_{\\mu}\\]", "n_tokens": 13}
+{"sample_id": "c593303d34b20caf", "gt": "0<n\\le N/2", "pred": "0<n \\leq N/2", "pred_raw": "\\[0<n \\leq N/2\\]", "n_tokens": 12}
+{"sample_id": "cd94f40f36b072d2", "gt": "\\lambda=\\frac{ln2}{t_{1/2}}", "pred": "\\lambda= \\frac{ln2}{t_{1/2}}", "pred_raw": "\\[\\lambda= \\frac{ln2}{t_{1/2}}\\]", "n_tokens": 17}
+{"sample_id": "9dc8b2957534d6f4", "gt": "2^{112}(=2^{2*56})", "pred": "2^{112}(=2^{2*56})", "pred_raw": "\\[2^{112}(=2^{2*56})\\]", "n_tokens": 13}
+{"sample_id": "d1fa01f0ed45f2b0", "gt": "L(\\alpha)+\\alpha=K(x)", "pred": "L( \\alpha)+ \\alpha=K(x)", "pred_raw": "\\[L( \\alpha)+ \\alpha=K(x)\\]", "n_tokens": 15}
+{"sample_id": "422c061877bfbc6e", "gt": "cos3\\theta=\\frac{3\\sqrt{3}}{2}\\frac{I_{3}^{\\prime}}{I_{2}^{\\prime\\frac{3}{2}}}", "pred": "\\cos 3 \\theta= \\frac{3 \\sqrt{3}}{2} \\frac{I_{3}^{ \\prime}}{I_{2}^{ \\prime} \\frac{3}{2}}", "pred_raw": "\\[\\cos 3 \\theta= \\frac{3 \\sqrt{3}}{2} \\frac{I_{3}^{ \\prime}}{I_{2}^{ \\prime} \\frac{3}{2}}\\]", "n_tokens": 43}
+{"sample_id": "b9ce0648e497c757", "gt": "\\{f_{X}(\\cdot;\\theta)|\\theta\\in\\Theta\\}", "pred": "\\{f_{X}(\\cdot;\\theta)|\\theta\\in\\Theta\\}", "pred_raw": "\\[\\{f_{X}(\\cdot;\\theta)|\\theta\\in\\Theta\\}\\]", "n_tokens": 17}
+{"sample_id": "9de97ac165d4d906", "gt": "\\sigma_{T}=T^{1/\\alpha}\\sigma", "pred": "\\sigma_{T}=T^{1/\\alpha}\\sigma", "pred_raw": "\\[\\sigma_{T}=T^{1/\\alpha}\\sigma\\]", "n_tokens": 15}
+{"sample_id": "d349c766fe692546", "gt": "E=1-\\tau_{pb}/\\tau_{pb}^{\\prime}", "pred": "E=1-T_{pb}/T_{pb}^{ \\prime}", "pred_raw": "\\[E=1-T_{pb}/T_{pb}^{ \\prime}\\]", "n_tokens": 18}
+{"sample_id": "c3f50b84cd0232d8", "gt": "P(f", "pred": "P(f", "pred_raw": "\\[P(f\\]", "n_tokens": 7}
+{"sample_id": "31275b159fb80838", "gt": "T=[0,\\infty)", "pred": "T=[0, \\infty)", "pred_raw": "\\[T=[0, \\infty)\\]", "n_tokens": 10}
+{"sample_id": "512de584407e7661", "gt": "x=5+\\frac{14}{x}", "pred": "x=5+\\frac{14}{x}", "pred_raw": "\\[x=5+\\frac{14}{x}\\]", "n_tokens": 13}
+{"sample_id": "a0140fe72cb405e7", "gt": "G=\\frac{2V}{j\\cdot1V}=-2j", "pred": "G= \\frac{2V}{j1V}=-2j", "pred_raw": "\\[G= \\frac{2V}{j1V}=-2j\\]", "n_tokens": 18}
+{"sample_id": "6af2d5d05656ecc9", "gt": "\\Omega_{X/S}=\\Delta^{*}(I/I^{2})", "pred": "\\Omega_{X/S}=\\Delta^{*}(I/I^{2})", "pred_raw": "\\[\\Omega_{X/S}=\\Delta^{*}(I/I^{2})\\]", "n_tokens": 17}
+{"sample_id": "e36a9b771f5f8940", "gt": "O(nlog^{d-1}n)", "pred": "O(nlog^{d-1}n)", "pred_raw": "\\[O(nlog^{d-1}n)\\]", "n_tokens": 14}
+{"sample_id": "6cd2b1a77323d80d", "gt": "R_{01}=\\frac{W_{cu}}{3{I_{S}}^{2}}", "pred": "R_{01}=\\frac{W_{cu}}{3{I_{S}}^{2}}", "pred_raw": "\\[R_{01}=\\frac{W_{cu}}{3{I_{S}}^{2}}\\]", "n_tokens": 21}
+{"sample_id": "96f4dee2b838f616", "gt": "\\{\\begin{matrix}q,p\\\\ r,s\\end{matrix}\\}", "pred": "\\left( \\begin{matrix} q,p \\\\ r,s \\end{matrix} \\right)", "pred_raw": "\\[\\left( \\begin{matrix} q,p \\\\ r,s \\end{matrix} \\right)\\]", "n_tokens": 25}
+{"sample_id": "c76b4831a746fe90", "gt": "\\{\\begin{matrix}3,4\\\\ 3,3,3\\end{matrix}\\}", "pred": "\\{\\begin{matrix}3,4\\\\ 3,3,3\\end{matrix}\\}", "pred_raw": "\\[\\{\\begin{matrix}3,4\\\\ 3,3,3\\end{matrix}\\}\\]", "n_tokens": 21}
+{"sample_id": "db1a860bc347bf80", "gt": "\\frac{E_{s}}{N_{0}}=\\frac{E_{b}}{N_{0}}log_{2}M", "pred": "\\frac{E_s}{N_0}= \\frac{E_b}{N_0} \\log_2 M", "pred_raw": "\\[\\frac{E_s}{N_0}= \\frac{E_b}{N_0} \\log_2 M\\]", "n_tokens": 30}
+{"sample_id": "24728c37acffff26", "gt": "k\\in[0;\\infty)", "pred": "k\\in[0;\\infty]", "pred_raw": "\\[k\\in[0;\\infty]\\]", "n_tokens": 11}
+{"sample_id": "f58eaa6d4e5756a7", "gt": "V(0)=\\dot{V}(0)=0", "pred": "V(0)=V(0)=0", "pred_raw": "\\[V(0)=V(0)=0\\]", "n_tokens": 13}
+{"sample_id": "f39d56d87f075a0a", "gt": "1-z=r^{2}", "pred": "1-z=r^{2}", "pred_raw": "\\[1-z=r^{2}\\]", "n_tokens": 11}
+{"sample_id": "c227426055f052fb", "gt": "\\Delta\\epsilon=\\int vd(\\Delta v)", "pred": "\\Delta_{E}=\\int vd(\\Delta v)", "pred_raw": "\\[\\Delta_{E}=\\int vd(\\Delta v)\\]", "n_tokens": 14}
+{"sample_id": "a807a2ace988a7b6", "gt": "-D_{k}r^{k}\\ge0", "pred": "-D_{k}r^{k}\\geq0", "pred_raw": "\\[-D_{k}r^{k}\\geq0\\]", "n_tokens": 14}
+{"sample_id": "d5345b6bf577d4b2", "gt": "0=-\\nabla p+\\rho g", "pred": "0=-\\nabla p+\\rho g", "pred_raw": "\\[0=-\\nabla p+\\rho g\\]", "n_tokens": 11}
+{"sample_id": "396cf9186e3ec15b", "gt": "\\hat{X}^{opt}(z^{n})", "pred": "\\hat{X}^{opt}(z^{n})", "pred_raw": "\\[\\hat{X}^{opt}(z^{n})\\]", "n_tokens": 13}
+{"sample_id": "eebfe9ac0d70855d", "gt": "y^{\\prime},y\\in S(a,b)", "pred": "y^{ \\prime},y \\in S(a,b)", "pred_raw": "\\[y^{ \\prime},y \\in S(a,b)\\]", "n_tokens": 17}
+{"sample_id": "297ac5dbb85ff744", "gt": "P(Z\\ge k)\\le\\frac{1}{2k^{2}}", "pred": "\\mathbb{P}(Z\\ge k)\\le\\frac{1}{2k^{2}}", "pred_raw": "\\[\\mathbb{P}(Z\\ge k)\\le\\frac{1}{2k^{2}}\\]", "n_tokens": 23}
+{"sample_id": "f49cbbbb097cf8df", "gt": "F_{0}:S^{0}\\rightarrow T^{0}", "pred": "F_{0}:S^{0} \\rightarrow T^{0}", "pred_raw": "\\[F_{0}:S^{0} \\rightarrow T^{0}\\]", "n_tokens": 17}
+{"sample_id": "36e011680eb997ed", "gt": "p_{0}=exp(-am^{b})", "pred": "p_{0}=exp(-am^{b})", "pred_raw": "\\[p_{0}=exp(-am^{b})\\]", "n_tokens": 13}
+{"sample_id": "ba538a859e3bd229", "gt": "\\frac{||J(x)||}{||f(x)||/||x||}", "pred": "\\frac{||J(x)||}{||Y(x)||/||X||}", "pred_raw": "\\[\\frac{||J(x)||}{||Y(x)||/||X||}\\]", "n_tokens": 20}
+{"sample_id": "8253f93dc18fe9fc", "gt": "M:F_{q}^{n}\\rightarrow F_{q}^{n}", "pred": "M:F_{q}^{n}\\rightarrow F_{q}^{n}", "pred_raw": "\\[M:F_{q}^{n}\\rightarrow F_{q}^{n}\\]", "n_tokens": 18}
+{"sample_id": "108b2cbc0f320da0", "gt": "k=\\pm4,\\pm2,-1", "pred": "k= \\pm4, \\pm2,-1", "pred_raw": "\\[k= \\pm4, \\pm2,-1\\]", "n_tokens": 15}
+{"sample_id": "b9bddf87be19385d", "gt": "ln\\tau,\\tau,\\tau x,\\tau x^{2}", "pred": "\\zeta_{h \\zeta, \\tau, \\zeta_{X}, \\tau_{X}^2}", "pred_raw": "\\[\\zeta_{h \\zeta, \\tau, \\zeta_{X}, \\tau_{X}^2}\\]", "n_tokens": 24}
+{"sample_id": "4c462b6f79a7c504", "gt": "\\alpha_{i}\\rightarrow\\alpha_{i}e^{-i\\omega t}", "pred": "\\alpha_{i} \\rightarrow \\alpha_{i}e^{-iwt}", "pred_raw": "\\[\\alpha_{i} \\rightarrow \\alpha_{i}e^{-iwt}\\]", "n_tokens": 19}
+{"sample_id": "45b17fc7dcc8431c", "gt": "M_{X}(t):=E[e^{tX}]", "pred": "M_{x}(t)=E[e^{tx}]", "pred_raw": "\\[M_{x}(t)=E[e^{tx}]\\]", "n_tokens": 15}
+{"sample_id": "e7da320483330eab", "gt": "\\pi^{+}\\rightarrow\\mu^{+}\\rightarrow e^{+}", "pred": "\\pi^{+}\\rightarrow\\mu^{+}\\rightarrow e^{+}", "pred_raw": "\\[\\pi^{+}\\rightarrow\\mu^{+}\\rightarrow e^{+}\\]", "n_tokens": 12}
+{"sample_id": "42d06dd4c91e0c3a", "gt": "n|M_{n}-1", "pred": "n|M_{n}-1", "pred_raw": "\\[n|M_{n}-1\\]", "n_tokens": 11}
+{"sample_id": "c89c39f01d67308c", "gt": "P_{0|0}=[\\begin{matrix}0&0\\\\ 0&0\\end{matrix}]", "pred": "P_{0|0}=[\\begin{matrix}0&0\\\\ 0&0\\end{matrix}]", "pred_raw": "\\[P_{0|0}=[\\begin{matrix}0&0\\\\ 0&0\\end{matrix}]\\]", "n_tokens": 25}
+{"sample_id": "85beb96864ff6efc", "gt": "|\\phi_{2^{i}}\\rangle", "pred": "| \\phi_{2^{i}}\\rangle", "pred_raw": "\\[| \\phi_{2^{i}}\\rangle\\]", "n_tokens": 12}
+{"sample_id": "2f5f0c8f959daae9", "gt": "f(z)=\\frac{e^{iz}}{z}", "pred": "f(z)= \\frac{e^{iz}}{z}", "pred_raw": "\\[f(z)= \\frac{e^{iz}}{z}\\]", "n_tokens": 16}
+{"sample_id": "ec0283742e9a1ecf", "gt": "0^{(\\delta)}=0", "pred": "0^{( \\delta)}=0", "pred_raw": "\\[0^{( \\delta)}=0\\]", "n_tokens": 10}
+{"sample_id": "c9e00a12cd64da93", "gt": "I/I_{0}=e^{-m\\tau}", "pred": "I/I_{0}=e^{-m\\tau}", "pred_raw": "\\[I/I_{0}=e^{-m\\tau}\\]", "n_tokens": 15}
+{"sample_id": "1206b1535bdfb069", "gt": "|\\frac{d^{2}y}{dx^{2}}|\\approx\\frac{1}{R}", "pred": "|\\frac{d^{2}y}{dx^{2}}|\\approx\\frac{1}{R}", "pred_raw": "\\[|\\frac{d^{2}y}{dx^{2}}|\\approx\\frac{1}{R}\\]", "n_tokens": 23}
+{"sample_id": "c7eeefe85da7fef4", "gt": "p(a/2)>2p(a)", "pred": "p(a/2)>2p(a)", "pred_raw": "\\[p(a/2)>2p(a)\\]", "n_tokens": 14}
+{"sample_id": "e571561f092f3288", "gt": "(L-K+1)^{2}", "pred": "(L-K+1)^{2}", "pred_raw": "\\[(L-K+1)^{2}\\]", "n_tokens": 11}
+{"sample_id": "607bede34d7beff6", "gt": "F\\hat{z}", "pred": "F \\hat{z}", "pred_raw": "\\[F \\hat{z}\\]", "n_tokens": 9}
+{"sample_id": "0577724edc225bbb", "gt": "lim_{x\\rightarrow0}\\frac{x}{x^{3}}=\\infty.(6)", "pred": "\\lim_{x \\rightarrow 0} \\frac{x}{x^3}= \\infty.(6)", "pred_raw": "\\[\\lim_{x \\rightarrow 0} \\frac{x}{x^3}= \\infty.(6)\\]", "n_tokens": 24}
+{"sample_id": "bacdaef52301e171", "gt": "M^{K}:=-D\\nabla^{2}w^{K}", "pred": "M^{K}:=-D\\nabla^{2}w^{K}", "pred_raw": "\\[M^{K}:=-D\\nabla^{2}w^{K}\\]", "n_tokens": 17}
+{"sample_id": "8fe159f4d5f35671", "gt": "H^{\\prime}|\\psi_{+}\\rangle=E_{+}|\\psi_{+}\\rangle", "pred": "H^{\\prime}|\\psi_{+}\\rangle=E_{+}|\\psi_{+}\\rangle", "pred_raw": "\\[H^{\\prime}|\\psi_{+}\\rangle=E_{+}|\\psi_{+}\\rangle\\]", "n_tokens": 18}
+{"sample_id": "03ab27a5e969801b", "gt": "e^{e^{e^{e^{7.705}}}}<10^{10^{10^{964}}}", "pred": "e^{e^{e^{e^{7.705}}}}<10^{10^{10^{164}}}", "pred_raw": "\\[e^{e^{e^{e^{7.705}}}}<10^{10^{10^{164}}}\\]", "n_tokens": 25}
+{"sample_id": "0f6771e0f18a549d", "gt": "\\frac{|v\\rangle+i|w\\rangle}{\\sqrt{2}}", "pred": "\\frac{|v\\rangle+i|w\\rangle}{\\sqrt{2}}", "pred_raw": "\\[\\frac{|v\\rangle+i|w\\rangle}{\\sqrt{2}}\\]", "n_tokens": 19}
+{"sample_id": "58e554c735bec883", "gt": "r=\\sqrt{2J_{2}}", "pred": "r= \\sqrt{2J_2}", "pred_raw": "\\[r= \\sqrt{2J_2}\\]", "n_tokens": 13}
+{"sample_id": "e222197ef88ca140", "gt": "d^{n}y=f^{(n)}(x)(dx)^{n}", "pred": "d^{n}y=f^{(n)}(x)(dx)^{n}", "pred_raw": "\\[d^{n}y=f^{(n)}(x)(dx)^{n}\\]", "n_tokens": 19}
+{"sample_id": "65d70f5b9e2b0fb1", "gt": "\\hat{H^{\\prime}}=\\hat{T}\\hat{H}\\hat{T}^{-1}=\\hat{H}", "pred": "\\hat{H}^{ \\prime}= \\hat{T} \\hat{H} \\hat{T}^{-1}= \\hat{H}", "pred_raw": "\\[\\hat{H}^{ \\prime}= \\hat{T} \\hat{H} \\hat{T}^{-1}= \\hat{H}\\]", "n_tokens": 32}
+{"sample_id": "1a7bab2414c7b3bc", "gt": "T^{4}-T_{s}^{4}\\approx u^{4}", "pred": "T^{4}-T_{s}^{4}\\approx u^{4}", "pred_raw": "\\[T^{4}-T_{s}^{4}\\approx u^{4}\\]", "n_tokens": 18}
+{"sample_id": "44e30717754f03d5", "gt": "v_{max}-e^{-\\alpha t}", "pred": "v_{max}-e^{- \\alpha t}", "pred_raw": "\\[v_{max}-e^{- \\alpha t}\\]", "n_tokens": 13}
+{"sample_id": "50601b36b1870c8c", "gt": "\\tau=inf\\{t>0:X(t)<0\\}", "pred": "\\tau=inf\\{t>0:X(t)<0\\}", "pred_raw": "\\[\\tau=inf\\{t>0:X(t)<0\\}\\]", "n_tokens": 17}
+{"sample_id": "848a5735428e5e71", "gt": "(X,Y,Z,Z^{2},Z^{3})", "pred": "(X,Y,Z,Z^{2},Z^{3})", "pred_raw": "\\[(X,Y,Z,Z^{2},Z^{3})\\]", "n_tokens": 17}
+{"sample_id": "fee88f7891c4181b", "gt": "Tr(\\rho^{2})=(Tr\\rho)^{2}", "pred": "Tr(\\rho^{2})=(Tr\\rho)^{2}", "pred_raw": "\\[Tr(\\rho^{2})=(Tr\\rho)^{2}\\]", "n_tokens": 15}
+{"sample_id": "4eebce5d5e5d936c", "gt": "\\sigma(x)\\notin p_{1}", "pred": "G_{i}(x) \\neq p_{i}", "pred_raw": "\\[G_{i}(x) \\neq p_{i}\\]", "n_tokens": 15}
+{"sample_id": "f0c0cd2f8cae845c", "gt": "1000\\times9.5=9,500", "pred": "1000 \\times 9.5=9,500", "pred_raw": "\\[1000 \\times 9.5=9,500\\]", "n_tokens": 14}
+{"sample_id": "d6f45acfe96b1fce", "gt": "\\sqrt{1}=+1", "pred": "\\sqrt{1}=+1", "pred_raw": "\\[\\sqrt{1}=+1\\]", "n_tokens": 9}
+{"sample_id": "59f4e0dfaad76890", "gt": "1/x\\approx1-x", "pred": "1/x\\approx1-x", "pred_raw": "\\[1/x\\approx1-x\\]", "n_tokens": 12}
+{"sample_id": "52080e147261a5ee", "gt": "y_{t+1}=\\alpha-\\frac{\\beta}{y_{t}}", "pred": "y_{t+1}=\\alpha-\\frac{\\beta}{y_{t}}", "pred_raw": "\\[y_{t+1}=\\alpha-\\frac{\\beta}{y_{t}}\\]", "n_tokens": 19}
+{"sample_id": "3d75cfbe55e8f821", "gt": "E=\\frac{e^{H}-1}{K-1}", "pred": "E=\\frac{e^{\\mu}-1}{\\kappa-1}", "pred_raw": "\\[E=\\frac{e^{\\mu}-1}{\\kappa-1}\\]", "n_tokens": 17}
+{"sample_id": "1cbabadbf5fd8595", "gt": "f^{-1}(y)=\\pm\\sqrt{y}", "pred": "f^{-1}(y)=\\pm\\sqrt{y}", "pred_raw": "\\[f^{-1}(y)=\\pm\\sqrt{y}\\]", "n_tokens": 15}
+{"sample_id": "990c0bf69d69a0c7", "gt": "O_{T^{\\prime}}\\rightarrow f_{*}O_{T}", "pred": "O_{T^{\\prime}}\\rightarrow f_{*}O_{T}", "pred_raw": "\\[O_{T^{\\prime}}\\rightarrow f_{*}O_{T}\\]", "n_tokens": 16}
+{"sample_id": "0eb498bf410f2edd", "gt": "C(n-1,k)", "pred": "C(n-1,k)", "pred_raw": "\\[C(n-1,k)\\]", "n_tokens": 11}
+{"sample_id": "1237f7aa382a6071", "gt": "I_{m}A=AI_{n}=A", "pred": "I_{m}A=AI_{n}=A", "pred_raw": "\\[I_{m}A=AI_{n}=A\\]", "n_tokens": 15}
+{"sample_id": "af8c24b2ce22d8f5", "gt": "10^{-12}\\frac{m}{s}", "pred": "10^{-12}\\frac{m}{s}", "pred_raw": "\\[10^{-12}\\frac{m}{s}\\]", "n_tokens": 13}
+{"sample_id": "dac43f233b70ede3", "gt": "\\prod_{n=1}^{\\infty}(1-\\frac{p}{p^{3}-1})", "pred": "\\prod_{n=1}^{ \\infty} \\left( 1- \\frac{p}{p^3-1} \\right)", "pred_raw": "\\[\\prod_{n=1}^{ \\infty} \\left( 1- \\frac{p}{p^3-1} \\right)\\]", "n_tokens": 31}
+{"sample_id": "20b404558ac3cb63", "gt": "(0,e^{-x^{2}/2}/\\sqrt{2\\pi}]", "pred": "(0,e^{-x^{2}/2}/\\sqrt{2\\pi}]", "pred_raw": "\\[(0,e^{-x^{2}/2}/\\sqrt{2\\pi}]\\]", "n_tokens": 19}
+{"sample_id": "3daddda8effca416", "gt": "\\{(x,y)|\\phi(x,y)\\}", "pred": "\\{(x,y)|\\phi(x,y)\\}", "pred_raw": "\\[\\{(x,y)|\\phi(x,y)\\}\\]", "n_tokens": 13}
+{"sample_id": "e28b1129d60623d8", "gt": "P_{c}=(\\frac{k\\rho_{c}C}{\\mu H})^{\\gamma}", "pred": "P_{c}=(\\frac{k\\rho_{c}C}{\\mu H})^{\\gamma}", "pred_raw": "\\[P_{c}=(\\frac{k\\rho_{c}C}{\\mu H})^{\\gamma}\\]", "n_tokens": 22}
+{"sample_id": "cd01b3043e2a3232", "gt": "P_{i}\\propto\\frac{exp(-\\frac{E}{kT})}{Z}", "pred": "p_{i}\\propto\\frac{exp(-\\frac{E}{kT})}{Z}", "pred_raw": "\\[p_{i}\\propto\\frac{exp(-\\frac{E}{kT})}{Z}\\]", "n_tokens": 21}
+{"sample_id": "42f4087d3d891de6", "gt": "\\sigma_{i}\\in\\{-1,1\\}", "pred": "\\sigma_{i}\\in\\{-1,1\\}", "pred_raw": "\\[\\sigma_{i}\\in\\{-1,1\\}\\]", "n_tokens": 13}
+{"sample_id": "ff6a7cc36ec39885", "gt": "K:X\\times X\\rightarrow R", "pred": "K:X\\times X\\rightarrow R", "pred_raw": "\\[K:X\\times X\\rightarrow R\\]", "n_tokens": 13}
+{"sample_id": "bb73b2c9e5bf27de", "gt": "\\{z|z\\overline{r}+\\overline{z}r=0\\}", "pred": "\\{z|z \\overline{r}+ \\overline{z}r=0 \\}", "pred_raw": "\\[\\{z|z \\overline{r}+ \\overline{z}r=0 \\}\\]", "n_tokens": 20}
+{"sample_id": "83e9ea5145ad5954", "gt": "V=\\frac{IC_{l}}{PIC_{ij}(l)}", "pred": "V=\\frac{IC_{i}}{PIC_{ij}(1)}", "pred_raw": "\\[V=\\frac{IC_{i}}{PIC_{ij}(1)}\\]", "n_tokens": 18}
+{"sample_id": "7078999683c4352c", "gt": "H_{1}=-\\vec{d}\\cdot\\vec{E}", "pred": "H_{1}=-\\vec{d}\\cdot\\vec{E}", "pred_raw": "\\[H_{1}=-\\vec{d}\\cdot\\vec{E}\\]", "n_tokens": 17}
+{"sample_id": "7ebd798b0e6ce9ea", "gt": "\\hat{g}=\\frac{k}{T^{2}}", "pred": "\\hat{g}= \\frac{k}{T^{2}}", "pred_raw": "\\[\\hat{g}= \\frac{k}{T^{2}}\\]", "n_tokens": 16}
+{"sample_id": "17bfccca5afd67f8", "gt": "B=\\{b_{j}(y_{t})\\}", "pred": "B=\\{b_{j}(y_{t})\\}", "pred_raw": "\\[B=\\{b_{j}(y_{t})\\}\\]", "n_tokens": 13}
+{"sample_id": "72bb217948e0ed1f", "gt": "\\Omega(dlogn)\\le t(d,n)", "pred": "\\Omega(dlogn)\\le t(d,n)", "pred_raw": "\\[\\Omega(dlogn)\\le t(d,n)\\]", "n_tokens": 16}
+{"sample_id": "e3942afadc42e54f", "gt": "\\Delta x\\Delta p>h/2", "pred": "\\Delta x \\Delta p>h/2", "pred_raw": "\\[\\Delta x \\Delta p>h/2\\]", "n_tokens": 13}
+{"sample_id": "e2bd6eef4cec7fd2", "gt": "\\bigcup_{n\\in F}(S-n)=N", "pred": "\\bigcup_{n\\in F}(S-n)=N", "pred_raw": "\\[\\bigcup_{n\\in F}(S-n)=N\\]", "n_tokens": 16}
+{"sample_id": "f283d6b70d155a50", "gt": "\\dot{V}=r\\dot{r}", "pred": "v=r^{2}", "pred_raw": "\\[v=r^{2}\\]", "n_tokens": 9}
+{"sample_id": "7c3b3f1129e3ffeb", "gt": "V(r)=\\frac{k}{r}=ku", "pred": "V(r)=\\frac{k}{r}=ku", "pred_raw": "\\[V(r)=\\frac{k}{r}=ku\\]", "n_tokens": 15}
+{"sample_id": "01d2f97f90ed79e6", "gt": "m\\equiv\\frac{RF_{,R}}{F}", "pred": "m \\equiv \\frac{RF_{,R}}{F}", "pred_raw": "\\[m \\equiv \\frac{RF_{,R}}{F}\\]", "n_tokens": 15}
+{"sample_id": "6f886b938af71c79", "gt": "H^{*}(X)\\cong H_{n-*}(X)", "pred": "H^{*}(x)\\cong H_{n-*}(x)", "pred_raw": "\\[H^{*}(x)\\cong H_{n-*}(x)\\]", "n_tokens": 15}
+{"sample_id": "c9ccc1fba1747305", "gt": "h=\\frac{|R|+|A|}{n}", "pred": "h= \\frac{|R|+|A|}{n}", "pred_raw": "\\[h= \\frac{|R|+|A|}{n}\\]", "n_tokens": 14}
+{"sample_id": "b1a09f9cd40f2bf3", "gt": "[0,0.5]", "pred": "[0,0.5]", "pred_raw": "\\[[0,0.5]\\]", "n_tokens": 9}
+{"sample_id": "b68c50ace7073d58", "gt": "X_{i}-\\overline{X}", "pred": "X_{i}- \\overline{X}", "pred_raw": "\\[X_{i}- \\overline{X}\\]", "n_tokens": 12}
+{"sample_id": "0e4f3d34193c72a7", "gt": "m,m_{1},m_{2}\\in M", "pred": "m,m_{1},m_{2} \\in M", "pred_raw": "\\[m,m_{1},m_{2} \\in M\\]", "n_tokens": 17}
+{"sample_id": "368e2df2726d5f51", "gt": "2gq^{1/2}=2g\\sqrt{q}", "pred": "2gq^{1/2}=2g \\sqrt{q}", "pred_raw": "\\[2gq^{1/2}=2g \\sqrt{q}\\]", "n_tokens": 18}
+{"sample_id": "c083aea94f245849", "gt": "X=[\\begin{matrix}A&B\\\\ B^{T}&C\\end{matrix}]", "pred": "X=[\\begin{matrix}A&B\\\\ B^{T}&C\\end{matrix}]", "pred_raw": "\\[X=[\\begin{matrix}A&B\\\\ B^{T}&C\\end{matrix}]\\]", "n_tokens": 23}
+{"sample_id": "8dd3cf816fcd5934", "gt": "|V_{0}|+n/4^{k}", "pred": "|{ \\bigvee}_{0}|+n/4^{k}", "pred_raw": "\\[|{ \\bigvee}_{0}|+n/4^{k}\\]", "n_tokens": 15}
+{"sample_id": "6faff511428e60f3", "gt": "2Rsin(\\frac{a}{2})", "pred": "2Rsin(\\frac{a}{2})", "pred_raw": "\\[2Rsin(\\frac{a}{2})\\]", "n_tokens": 13}
+{"sample_id": "9d7fc607db4015fe", "gt": "\\tau\\frac{\\partial q}{\\partial t}+q=-\\kappa\\nabla h", "pred": "\\tau\\frac{\\partial q}{\\partial t}+q=-k\\nabla h", "pred_raw": "\\[\\tau\\frac{\\partial q}{\\partial t}+q=-k\\nabla h\\]", "n_tokens": 20}
+{"sample_id": "abd7f3bea3daa81f", "gt": "a_{n}-2a_{n+1}", "pred": "a_{n}-2a_{n+1}", "pred_raw": "\\[a_{n}-2a_{n+1}\\]", "n_tokens": 14}
+{"sample_id": "3832764f232cc328", "gt": "(\\begin{matrix}cos2\\theta&sin2\\theta\\\\ sin2\\theta&-cos2\\theta\\end{matrix})", "pred": "(\\begin{matrix}cos2\\theta&sin2\\theta\\\\ sin2\\theta&-cos2\\theta\\end{matrix})", "pred_raw": "\\[(\\begin{matrix}cos2\\theta&sin2\\theta\\\\ sin2\\theta&-cos2\\theta\\end{matrix})\\]", "n_tokens": 31}
+{"sample_id": "5ac95bc45910f45a", "gt": "J_{\\hat{n}}", "pred": "J \\widehat{n}", "pred_raw": "\\[J \\widehat{n}\\]", "n_tokens": 9}
+{"sample_id": "a5ee89ba4405cc91", "gt": "C=\\epsilon_{0}\\pi\\frac{4800}{11}", "pred": "C= \\epsilon_{0} \\pi \\frac{4800}{11}", "pred_raw": "\\[C= \\epsilon_{0} \\pi \\frac{4800}{11}\\]", "n_tokens": 20}
+{"sample_id": "ac6be84b779cc7f2", "gt": "\\lambda\\ge2\\sqrt{d-1}-o(1)", "pred": "\\lambda \\geq 2 \\sqrt{d-1}-o(1)", "pred_raw": "\\[\\lambda \\geq 2 \\sqrt{d-1}-o(1)\\]", "n_tokens": 18}
+{"sample_id": "83d11baad823cf78", "gt": "a_{1}\\equiv a_{2}(modn)", "pred": "a_{1}\\equiv a_{2}(modn)", "pred_raw": "\\[a_{1}\\equiv a_{2}(modn)\\]", "n_tokens": 15}
+{"sample_id": "c384c1c58462f687", "gt": "VdV+\\frac{k.p}{\\rho^{2}}.d\\rho=0", "pred": "VdV+\\frac{4.8}{\\rho^{2}}d\\rho=0", "pred_raw": "\\[VdV+\\frac{4.8}{\\rho^{2}}d\\rho=0\\]", "n_tokens": 22}
+{"sample_id": "b76aaf326e448261", "gt": "2P_{\\frac{1}{2}}", "pred": "2P_{ \\frac{1}{2}}", "pred_raw": "\\[2P_{ \\frac{1}{2}}\\]", "n_tokens": 13}
+{"sample_id": "0b6cee8742f4f0d9", "gt": "\\hat{X}^{opt}(z^{n})", "pred": "\\hat{X}^{opt}(z^n)", "pred_raw": "\\[\\hat{X}^{opt}(z^n)\\]", "n_tokens": 13}
+{"sample_id": "49d53ae85310b020", "gt": "C^{\\infty}(R^{n},R^{m})", "pred": "C^{\\infty}(R^{n},R^{m})", "pred_raw": "\\[C^{\\infty}(R^{n},R^{m})\\]", "n_tokens": 15}
+{"sample_id": "9d4bb66f9ec9654d", "gt": "K=\\sigma Y\\sqrt{\\pi a}", "pred": "K= \\sigma Y \\sqrt{ \\pi a}", "pred_raw": "\\[K= \\sigma Y \\sqrt{ \\pi a}\\]", "n_tokens": 15}
+{"sample_id": "4fc5f80703c7d1de", "gt": "\\Delta g_{B}=\\Delta g_{FA}-a_{B}", "pred": "\\Delta g_{B}=\\Delta g_{FA}-a_{B}", "pred_raw": "\\[\\Delta g_{B}=\\Delta g_{FA}-a_{B}\\]", "n_tokens": 17}
+{"sample_id": "bb4ee0fdc872b460", "gt": "\\psi_{2m+1}\\in Z[x,A,B]", "pred": "\\psi_{2m+1} \\in Z[x,A,B]", "pred_raw": "\\[\\psi_{2m+1} \\in Z[x,A,B]\\]", "n_tokens": 20}
+{"sample_id": "531e77ab9ef31952", "gt": "\\sum_{\\gamma\\in\\Gamma}n_{\\gamma}t^{\\gamma}", "pred": "\\sum_{ \\gamma \\in \\Gamma}n_{ \\gamma}t^{ \\gamma}", "pred_raw": "\\[\\sum_{ \\gamma \\in \\Gamma}n_{ \\gamma}t^{ \\gamma}\\]", "n_tokens": 22}
+{"sample_id": "688a1e75f80bd86b", "gt": "2x_{1}=D+\\frac{r_{1}^{2}-r_{2}^{2}}{D}", "pred": "2x_{1}=D+\\frac{r_{1}^{2}-r_{2}^{2}}{D}", "pred_raw": "\\[2x_{1}=D+\\frac{r_{1}^{2}-r_{2}^{2}}{D}\\]", "n_tokens": 26}
+{"sample_id": "e8d43ade703f42c5", "gt": "D_{P}\\\\ G/H", "pred": "DP_{n}/H", "pred_raw": "\\[DP_{n}/H\\]", "n_tokens": 9}
+{"sample_id": "aae2cd6aa7ef356d", "gt": "w_{r}=1_{[0,N-1]}", "pred": "w_{r}=1_{[0,N-1]}", "pred_raw": "\\[w_{r}=1_{[0,N-1]}\\]", "n_tokens": 15}
+{"sample_id": "7a0df3c9bd51fe0b", "gt": "eta-reduct[X]=X", "pred": "eta-reduct[X]=X", "pred_raw": "\\[eta-reduct[X]=X\\]", "n_tokens": 13}
+{"sample_id": "d885cbc9c38b32ee", "gt": "(m_{p}/m_{e})^{4}\\approx10^{13}", "pred": "(m_{p}/m_{e})^{4}\\approx10^{13}", "pred_raw": "\\[(m_{p}/m_{e})^{4}\\approx10^{13}\\]", "n_tokens": 18}
+{"sample_id": "9500c67ed201fb7a", "gt": "4sin^{2}(\\pi/10)", "pred": "4 \\sin^2( \\pi/10)", "pred_raw": "\\[4 \\sin^2( \\pi/10)\\]", "n_tokens": 14}
+{"sample_id": "e0a9a03632e1fecb", "gt": "\\eta_{inh}=\\frac{ln\\eta_{rel}}{c}", "pred": "\\eta_{inh}=\\frac{ln\\eta_{rel}}{c}", "pred_raw": "\\[\\eta_{inh}=\\frac{ln\\eta_{rel}}{c}\\]", "n_tokens": 18}
+{"sample_id": "4755690def555f70", "gt": "0<\\mu<\\frac{2}{\\lambda_{max}}", "pred": "0<\\mu<\\frac{2}{\\lambda_{max}}", "pred_raw": "\\[0<\\mu<\\frac{2}{\\lambda_{max}}\\]", "n_tokens": 15}
+{"sample_id": "447e4d5427d5c798", "gt": "\\sqrt{1-x^{2}-y^{2}}", "pred": "\\sqrt{1-x^2-y^2}", "pred_raw": "\\[\\sqrt{1-x^2-y^2}\\]", "n_tokens": 15}
+{"sample_id": "3dd8fdebe425230d", "gt": "\\frac{A}{r^{2}}=\\frac{\\theta}{2}", "pred": "\\frac{A}{r^{2}}=\\frac{\\theta}{2}", "pred_raw": "\\[\\frac{A}{r^{2}}=\\frac{\\theta}{2}\\]", "n_tokens": 17}
+{"sample_id": "3c24365562a7a0ac", "gt": "g(\\zeta)=f(\\zeta^{-2})^{-\\frac{1}{2}}", "pred": "g(\\zeta)=f(\\zeta^{-2})^{-\\frac{1}{2}}", "pred_raw": "\\[g(\\zeta)=f(\\zeta^{-2})^{-\\frac{1}{2}}\\]", "n_tokens": 19}
+{"sample_id": "4c22df26854d1660", "gt": "R=|Z|cos\\theta", "pred": "R=|Z| \\cos \\theta", "pred_raw": "\\[R=|Z| \\cos \\theta\\]", "n_tokens": 12}
+{"sample_id": "10a41ef5cbcad23e", "gt": "\\varphi\\rightarrow\\frac{-\\nabla f}{|\\nabla f|}", "pred": "\\varphi \\rightarrow \\frac{- \\nabla f}{| \\nabla f|}", "pred_raw": "\\[\\varphi \\rightarrow \\frac{- \\nabla f}{| \\nabla f|}\\]", "n_tokens": 17}
+{"sample_id": "31af1373a86b2b5d", "gt": "Z=\\{-1\\}\\cup(0,1)", "pred": "Z=\\{-1\\}\\cup(0,1)", "pred_raw": "\\[Z=\\{-1\\}\\cup(0,1)\\]", "n_tokens": 14}
+{"sample_id": "2d2330623de6def0", "gt": "\\vec{m}\\in M", "pred": "\\overrightarrow{m} \\in M", "pred_raw": "\\[\\overrightarrow{m} \\in M\\]", "n_tokens": 11}
+{"sample_id": "44346eb757774904", "gt": "\\eta_{c}=\\sum_{i=1}^{N}k_{i}\\eta_{c_{i}}", "pred": "n_{c}=\\sum_{i=1}^{N}k_{i}n_{c_{i}}", "pred_raw": "\\[n_{c}=\\sum_{i=1}^{N}k_{i}n_{c_{i}}\\]", "n_tokens": 25}
+{"sample_id": "960d9795521cd880", "gt": "R=\\{1,0\\}^{|r|}", "pred": "R=\\{1,0\\}^{|r|}", "pred_raw": "\\[R=\\{1,0\\}^{|r|}\\]", "n_tokens": 12}
+{"sample_id": "9defba52e1738e81", "gt": "12+", "pred": "12+", "pred_raw": "\\[12+\\]", "n_tokens": 5}
+{"sample_id": "94d900cc2dc7e5af", "gt": "(\\begin{matrix}\\mu_{1}&\\mu_{2}&\\gamma\\\\ \\nu_{1}&\\nu_{2}&\\nu\\end{matrix})", "pred": "\\begin{pmatrix} \\mu_{1}&\\mu_{2}& \\nu \\\\ \\nu_{1}&\\nu_{2}&\\nu \\end{pmatrix}", "pred_raw": "\\[\\begin{pmatrix} \\mu_{1}&\\mu_{2}& \\nu \\\\ \\nu_{1}&\\nu_{2}&\\nu \\end{pmatrix}\\]", "n_tokens": 34}
+{"sample_id": "b167bc4e1c7e27e6", "gt": "\\delta(q_{s},q_{c})\\rightarrow q_{t}", "pred": "\\delta(q_r,q_r) \\rightarrow q_r", "pred_raw": "\\[\\delta(q_r,q_r) \\rightarrow q_r\\]", "n_tokens": 19}
+{"sample_id": "a7979ae956f92505", "gt": "\\Phi_{e}=\\int\\frac{U_{e}}{T^{2}}dT", "pred": "\\Phi_{e}= \\int \\frac{U_{e}}{T^{2}}dT", "pred_raw": "\\[\\Phi_{e}= \\int \\frac{U_{e}}{T^{2}}dT\\]", "n_tokens": 22}
+{"sample_id": "2c4fd3e29818c4f5", "gt": "1\\le p<+\\infty", "pred": "1\\le p<+\\infty", "pred_raw": "\\[1\\le p<+\\infty\\]", "n_tokens": 10}
+{"sample_id": "815a01abf18474e8", "gt": "\\sum(x_{i}-y_{i})^{2}", "pred": "\\sum(x_{i}-y_{i})^{2}", "pred_raw": "\\[\\sum(x_{i}-y_{i})^{2}\\]", "n_tokens": 15}
+{"sample_id": "98586cd04dd1687b", "gt": "m\\dot{v}=-\\frac{\\partial H}{\\partial x}", "pred": "mv=-\\frac{\\partial H}{\\partial x}", "pred_raw": "\\[mv=-\\frac{\\partial H}{\\partial x}\\]", "n_tokens": 13}
+{"sample_id": "4b7aa4879d863a71", "gt": "[F_{k}:F]=k", "pred": "[F_{k}:F]=k", "pred_raw": "\\[[F_{k}:F]=k\\]", "n_tokens": 11}
+{"sample_id": "6e5f96c1767e25b8", "gt": "Da_{i}=a_{i}D+a_{i}^{\\prime}", "pred": "Da_{i}=a_{i}D+a_{i}^{\\prime}", "pred_raw": "\\[Da_{i}=a_{i}D+a_{i}^{\\prime}\\]", "n_tokens": 19}
+{"sample_id": "56f699525f8350ad", "gt": "lim_{x\\rightarrow-\\infty}\\frac{4x^{3}+3}{5x^{3}-2}=\\frac{4}{5}", "pred": "\\lim_{x \\rightarrow- \\infty} \\frac{4x^{3}+3}{5x^{3}-2}= \\frac{4}{5}", "pred_raw": "\\[\\lim_{x \\rightarrow- \\infty} \\frac{4x^{3}+3}{5x^{3}-2}= \\frac{4}{5}\\]", "n_tokens": 36}
+{"sample_id": "f7a2fb9aed0a42a1", "gt": "\\sigma=|c|\\frac{\\Delta t}{\\Delta x}\\in N", "pred": "\\sigma=|c|\\frac{\\Delta t}{\\Delta x}\\in N", "pred_raw": "\\[\\sigma=|c|\\frac{\\Delta t}{\\Delta x}\\in N\\]", "n_tokens": 18}
+{"sample_id": "c9a941d6214dab1e", "gt": "\\dot{v}_{2}=\\frac{1}{C}i_{2}", "pred": "i_{2}=\\frac{1}{c}i_{2}", "pred_raw": "\\[i_{2}=\\frac{1}{c}i_{2}\\]", "n_tokens": 17}
+{"sample_id": "0c63684ae90911ef", "gt": "x+y=-13", "pred": "x+y=-13", "pred_raw": "\\[x+y=-13\\]", "n_tokens": 9}
+{"sample_id": "6e8c4dd1f0adcc8d", "gt": "\\sqrt{16-x^{2}}", "pred": "\\sqrt{16-x^2}", "pred_raw": "\\[\\sqrt{16-x^2}\\]", "n_tokens": 11}
+{"sample_id": "07b0f45704c040e8", "gt": "=e^{f(x)}f^{\\prime}(x)", "pred": "=e^{f(x)}f^{\\prime}(x)", "pred_raw": "\\[=e^{f(x)}f^{\\prime}(x)\\]", "n_tokens": 15}
+{"sample_id": "a2c1a119df023e96", "gt": "\\frac{n^{2}\\hbar^{2}}{rm_{e}}=Ze^{2}", "pred": "\\frac{n2 \\hbar^{2}}{rm_e}=2e^2", "pred_raw": "\\[\\frac{n2 \\hbar^{2}}{rm_e}=2e^2\\]", "n_tokens": 21}
+{"sample_id": "b456f068a0a81aa1", "gt": "C_{X}^{-1}=0", "pred": "C_{x}^{-1}=0", "pred_raw": "\\[C_{x}^{-1}=0\\]", "n_tokens": 11}
+{"sample_id": "ecf088212c8fb2a4", "gt": "E_{L}[u]=E_{M}[u]", "pred": "E_{L}[u]=E_{M}[u]", "pred_raw": "\\[E_{L}[u]=E_{M}[u]\\]", "n_tokens": 15}
+{"sample_id": "6bccb24be7ac1dcf", "gt": "Z_{r}=\\frac{N_{r}}{0.5(t-q)}", "pred": "Z_{r}=\\frac{N_{r}}{0.5(t-q)}", "pred_raw": "\\[Z_{r}=\\frac{N_{r}}{0.5(t-q)}\\]", "n_tokens": 21}
+{"sample_id": "6077832d61005260", "gt": "d,d_{0}>d_{c}", "pred": "d,d_{0}>d_{c}", "pred_raw": "\\[d,d_{0}>d_{c}\\]", "n_tokens": 13}
+{"sample_id": "ee930241d95d2bc2", "gt": "O(nlog^{d-1}n)", "pred": "O(nlog^{d-1}n)", "pred_raw": "\\[O(nlog^{d-1}n)\\]", "n_tokens": 14}
+{"sample_id": "0a82ae1c73230c54", "gt": "g\\rightarrow gl_{V}", "pred": "g \\rightarrow gl_{V}", "pred_raw": "\\[g \\rightarrow gl_{V}\\]", "n_tokens": 10}
+{"sample_id": "8a509bb34130fa8d", "gt": "s=x_{1}+\\dot{x}_{1}=0", "pred": "s=x_{1}+\\dot{x}_{1}=0", "pred_raw": "\\[s=x_{1}+\\dot{x}_{1}=0\\]", "n_tokens": 17}
+{"sample_id": "61467f52d24bf155", "gt": "F(d_{1},d_{2},...d_{k},F)", "pred": "F(d_{1},d_{2},...d_{k},F)", "pred_raw": "\\[F(d_{1},d_{2},...d_{k},F)\\]", "n_tokens": 19}
+{"sample_id": "a4818f4a8f4b2b2d", "gt": "\\phi(x)=ce^{-h^{2}x^{2}}", "pred": "\\phi(x)=ce^{-h^{2}x^{2}}", "pred_raw": "\\[\\phi(x)=ce^{-h^{2}x^{2}}\\]", "n_tokens": 17}
+{"sample_id": "40d78e3e846ec7d6", "gt": "\\frac{1}{10^{3}\\pi}", "pred": "\\frac{1}{10^{3} \\pi}", "pred_raw": "\\[\\frac{1}{10^{3} \\pi}\\]", "n_tokens": 14}
+{"sample_id": "ad174abc859fc1fb", "gt": "v_{i}\\in H_{0}^{3},i=1,2,3", "pred": "v_{i}\\in H_{0}^{3},i=1,2,3", "pred_raw": "\\[v_{i}\\in H_{0}^{3},i=1,2,3\\]", "n_tokens": 22}
+{"sample_id": "4c2b2d9e5e5acd04", "gt": "\\pm z_{1}^{c_{1}}...z_{n}^{c_{n}}", "pred": "\\pm z_{1}^{c_{1}}...z_{n}^{c_{n}}", "pred_raw": "\\[\\pm z_{1}^{c_{1}}...z_{n}^{c_{n}}\\]", "n_tokens": 20}
+{"sample_id": "328ae57d4d124487", "gt": "y=x^{2}-x-2", "pred": "y=x^{2}-x-2", "pred_raw": "\\[y=x^{2}-x-2\\]", "n_tokens": 13}
+{"sample_id": "71f743ff55d040b7", "gt": "D_{P}\\cdot\\tau_{i}^{-1}H", "pred": "D_{P}\\cdot\\tau_{i}^{-1}H", "pred_raw": "\\[D_{P}\\cdot\\tau_{i}^{-1}H\\]", "n_tokens": 17}
+{"sample_id": "855a5a491ad6649a", "gt": "\\sqrt{\\rho}=\\rho=|\\phi\\rangle\\langle\\phi|", "pred": "\\sqrt{\\rho}=\\rho=|\\phi\\rangle\\langle\\phi|", "pred_raw": "\\[\\sqrt{\\rho}=\\rho=|\\phi\\rangle\\langle\\phi|\\]", "n_tokens": 17}
+{"sample_id": "e6eb75790215dcbf", "gt": "R_{C/R}C^{*}", "pred": "R_{C/R}C^{*}", "pred_raw": "\\[R_{C/R}C^{*}\\]", "n_tokens": 11}
+{"sample_id": "8f139881daf406fa", "gt": "r^{(m)}(k)\\rightarrow r(k)", "pred": "r^{(m)}(k) \\rightarrow r(k)", "pred_raw": "\\[r^{(m)}(k) \\rightarrow r(k)\\]", "n_tokens": 15}
+{"sample_id": "bbf539d2d3fd68d8", "gt": "\\sqrt{k}(l+\\frac{5}{2})=E_{l}", "pred": "\\sqrt{k}(l+ \\frac{5}{2})=E_{l}", "pred_raw": "\\[\\sqrt{k}(l+ \\frac{5}{2})=E_{l}\\]", "n_tokens": 20}
+{"sample_id": "3df04ce34522e61b", "gt": "\\partial_{i}f=\\frac{\\partial f}{\\partial\\xi^{i}}:=\\frac{\\partial\\overline{f}}{\\partial\\xi^{i}}", "pred": "\\partial_{i}f=\\frac{\\partial f}{\\partial\\xi^{i}}:=\\frac{\\partial\\overline{f}}{\\partial\\xi^{i}}", "pred_raw": "\\[\\partial_{i}f=\\frac{\\partial f}{\\partial\\xi^{i}}:=\\frac{\\partial\\overline{f}}{\\partial\\xi^{i}}\\]", "n_tokens": 34}
+{"sample_id": "98543163776d7bd3", "gt": "(x^{2}+x+1)", "pred": "(x^{2}+x+1)", "pred_raw": "\\[(x^{2}+x+1)\\]", "n_tokens": 11}
+{"sample_id": "3c05c30a2647b85b", "gt": "\\Delta(1/\\lambda)=1/L", "pred": "\\Delta(1/\\lambda)=1/L", "pred_raw": "\\[\\Delta(1/\\lambda)=1/L\\]", "n_tokens": 13}
+{"sample_id": "e82439eafaaf8e0e", "gt": "C|\\psi\\rangle", "pred": "C|\\psi\\rangle", "pred_raw": "\\[C|\\psi\\rangle\\]", "n_tokens": 9}
+{"sample_id": "4ee2f428920018ab", "gt": "\\frac{1}{12}(\\begin{matrix}4&8&4\\\\ 5&7&-4\\\\ 1&-1&4\\end{matrix})", "pred": "\\frac{1}{12} \\left[ \\begin{matrix} 4&8&4 \\\\ 5&7&-4 \\\\ 1&-1&4 \\end{matrix} \\right]", "pred_raw": "\\[\\frac{1}{12} \\left[ \\begin{matrix} 4&8&4 \\\\ 5&7&-4 \\\\ 1&-1&4 \\end{matrix} \\right]\\]", "n_tokens": 42}
+{"sample_id": "217b7fe6bee6c5cd", "gt": "0.5=E[X_{1}]", "pred": "0.5=E[X_1]", "pred_raw": "\\[0.5=E[X_1]\\]", "n_tokens": 13}
+{"sample_id": "cdb51323319fc876", "gt": "\\Delta\\overline{\\nu}=0", "pred": "\\Delta \\overline{v}=0", "pred_raw": "\\[\\Delta \\overline{v}=0\\]", "n_tokens": 11}
+{"sample_id": "261ccd28867e8ae9", "gt": "\\omega^{2}=-U^{2}(\\frac{2k}{rd})\\theta^{2}", "pred": "\\omega^{2}=-U^{2}(\\frac{2k}{rd})\\theta^{2}", "pred_raw": "\\[\\omega^{2}=-U^{2}(\\frac{2k}{rd})\\theta^{2}\\]", "n_tokens": 22}
+{"sample_id": "27797369e2d0e9d5", "gt": "\\frac{\\pi}{180}M_{r}cos\\varphi", "pred": "\\frac{r}{180}M_{r}cos\\varphi", "pred_raw": "\\[\\frac{r}{180}M_{r}cos\\varphi\\]", "n_tokens": 17}
+{"sample_id": "846754dfc8b16bf5", "gt": "\\mu^{-1}([\\epsilon,\\infty))", "pred": "M^{-1}([0, \\infty])", "pred_raw": "\\[M^{-1}([0, \\infty])\\]", "n_tokens": 12}
+{"sample_id": "210c7cf6bfabe250", "gt": "\\Gamma=\\frac{P_{1}P_{2}...}{S_{1}S_{2}...}", "pred": "\\Gamma= \\frac{l_1l_2 \\ldots}{s_1s_2}", "pred_raw": "\\[\\Gamma= \\frac{l_1l_2 \\ldots}{s_1s_2}\\]", "n_tokens": 24}
+{"sample_id": "29b1257bd7754622", "gt": "0\\le\\alpha_{i},\\beta_{i}\\le1", "pred": "0 \\leq \\alpha_{i}, \\beta_{i} \\leq 1", "pred_raw": "\\[0 \\leq \\alpha_{i}, \\beta_{i} \\leq 1\\]", "n_tokens": 20}
+{"sample_id": "776a4a05b7811dcc", "gt": "U=I^{*a}N^{-1}", "pred": "u=I^{*a}N^{-1}", "pred_raw": "\\[u=I^{*a}N^{-1}\\]", "n_tokens": 13}
+{"sample_id": "30ef4608bf67e953", "gt": "v_{pec}=a(t)\\dot{\\chi}(t)", "pred": "v_{prc}=a(t)\\dot{x}(t)", "pred_raw": "\\[v_{prc}=a(t)\\dot{x}(t)\\]", "n_tokens": 18}
+{"sample_id": "510f9daaeb6ceb22", "gt": "e_{\\lambda}(f_{ij})=\\frac{f_{ij}}{\\lambda}\\frac{\\partial\\lambda}{\\partial f_{ij}}", "pred": "e_{x}(f_{ij})=\\frac{f_{ij}}{\\lambda}\\frac{\\partial\\lambda}{\\partial f_{ij}}", "pred_raw": "\\[e_{x}(f_{ij})=\\frac{f_{ij}}{\\lambda}\\frac{\\partial\\lambda}{\\partial f_{ij}}\\]", "n_tokens": 30}
+{"sample_id": "da594836bf58352f", "gt": "y_{i,1}=x_{i}^{T}\\beta_{1}+\\epsilon_{i,1}", "pred": "y_{i,1}=x_{i}^{T}\\beta_{1}+\\epsilon_{i,1}", "pred_raw": "\\[y_{i,1}=x_{i}^{T}\\beta_{1}+\\epsilon_{i,1}\\]", "n_tokens": 25}
+{"sample_id": "937a5ab3aff999df", "gt": "\\int_{0}^{\\infty}y_{\\lambda}J_{\\lambda}d\\lambda", "pred": "\\int_{0}^{\\infty}y_{\\lambda}J_{\\lambda}d\\lambda", "pred_raw": "\\[\\int_{0}^{\\infty}y_{\\lambda}J_{\\lambda}d\\lambda\\]", "n_tokens": 21}
+{"sample_id": "6e5d8965eea2fe34", "gt": "\\alpha^{\\prime},\\alpha^{\\prime\\prime}\\in\\Phi^{+}(\\gamma)", "pred": "\\alpha^{\\prime},\\alpha^{\\prime\\prime}\\in\\Phi^{+}(\\gamma)", "pred_raw": "\\[\\alpha^{\\prime},\\alpha^{\\prime\\prime}\\in\\Phi^{+}(\\gamma)\\]", "n_tokens": 19}
+{"sample_id": "c9ba71bc919b2e8c", "gt": "(-1+1)>0", "pred": "(-1+1)>0", "pred_raw": "\\[(-1+1)>0\\]", "n_tokens": 9}
+{"sample_id": "1e453bd7b12d306b", "gt": "1_{[0,\\alpha\\sqrt{n}]}(||p_{\\sigma}||)", "pred": "1_{[0,\\alpha\\sqrt{n}]}(||p_{\\sigma}||)", "pred_raw": "\\[1_{[0,\\alpha\\sqrt{n}]}(||p_{\\sigma}||)\\]", "n_tokens": 19}
+{"sample_id": "698ebfbbad14807a", "gt": "V=\\frac{1}{2}(3+2\\sqrt{2})", "pred": "V=\\frac{1}{2}(3+2 \\sqrt{2})", "pred_raw": "\\[V=\\frac{1}{2}(3+2 \\sqrt{2})\\]", "n_tokens": 19}
+{"sample_id": "a0d2f40e88d31bf4", "gt": "\\frac{M-2G}{2M-2G}", "pred": "\\frac{M-2G}{2M-2G}", "pred_raw": "\\[\\frac{M-2G}{2M-2G}\\]", "n_tokens": 16}
+{"sample_id": "99062d0ecbe91a35", "gt": "(236c)^{11}", "pred": "(236c)^{11}", "pred_raw": "\\[(236c)^{11}\\]", "n_tokens": 8}
+{"sample_id": "029b5da0999d4903", "gt": "\\omega_{\\{(k,i),(k^{\\prime},i^{\\prime}),(k^{\\prime\\prime},i^{\\prime\\prime})\\}}", "pred": "\\omega_{\\{(k,i),(k^{\\prime},i^{\\prime}),(k^{\\prime\\prime},i^{\\prime\\prime})\\}}", "pred_raw": "\\[\\omega_{\\{(k,i),(k^{\\prime},i^{\\prime}),(k^{\\prime\\prime},i^{\\prime\\prime})\\}}\\]", "n_tokens": 30}
+{"sample_id": "d57af58e75ecbb3d", "gt": "O(VElog\\frac{V^{2}}{E})", "pred": "O(VElog\\frac{V^{2}}{E})", "pred_raw": "\\[O(VElog\\frac{V^{2}}{E})\\]", "n_tokens": 16}
+{"sample_id": "a7f4dbec49c70b77", "gt": "(logn)^{O(1/\\epsilon)}", "pred": "( \\log n)^{O(1/ \\varepsilon)}", "pred_raw": "\\[( \\log n)^{O(1/ \\varepsilon)}\\]", "n_tokens": 14}
+{"sample_id": "073c8833214003f6", "gt": "\\frac{-N_{c}^{2}}{N_{f}}d^{(2)}(N_{f})", "pred": "\\frac{-N_{c}^{2}}{N_{f}}d^{(2)}(N_{f})", "pred_raw": "\\[\\frac{-N_{c}^{2}}{N_{f}}d^{(2)}(N_{f})\\]", "n_tokens": 23}
+{"sample_id": "0f1279d7350c6a0f", "gt": "r_{p}\\ne r_{p(k+1)}", "pred": "r_{p}\\ne r_{p(k+1)}", "pred_raw": "\\[r_{p}\\ne r_{p(k+1)}\\]", "n_tokens": 16}
+{"sample_id": "06d4d9a38054e9b2", "gt": "u^{2}-u+k=0", "pred": "u^2-u+k=0", "pred_raw": "\\[u^2-u+k=0\\]", "n_tokens": 13}
+{"sample_id": "729b394ef8f197c9", "gt": "\\nabla\\cdot\\vec{v}=3y+2yz", "pred": "\\nabla\\cdot\\vec{v}=3y+2yz", "pred_raw": "\\[\\nabla\\cdot\\vec{v}=3y+2yz\\]", "n_tokens": 17}
+{"sample_id": "a6bc480da102e633", "gt": "f^{-1}(y)=\\pm\\sqrt{y}", "pred": "f^{-1}(y)=\\pm\\sqrt{y}", "pred_raw": "\\[f^{-1}(y)=\\pm\\sqrt{y}\\]", "n_tokens": 15}
+{"sample_id": "d91b1e1aa4afc9a5", "gt": "\\frac{4}{3}\\pi p_{f}^{3}(\\vec{r})", "pred": "\\frac{4}{3} \\pi p_{t}^{3}(\\vec{r})", "pred_raw": "\\[\\frac{4}{3} \\pi p_{t}^{3}(\\vec{r})\\]", "n_tokens": 21}
+{"sample_id": "99e703cbd3300328", "gt": "du_{o}/ds(s)<0", "pred": "du_{0}/ds(s)<0", "pred_raw": "\\[du_{0}/ds(s)<0\\]", "n_tokens": 13}
+{"sample_id": "37a775e358272f1e", "gt": "deg_{i}(E)<0", "pred": "deg_i(E)<0", "pred_raw": "\\[deg_i(E)<0\\]", "n_tokens": 11}
+{"sample_id": "6e9026bf38f203f4", "gt": "v\\in T^{1,0}M", "pred": "v\\in T^{1,0}M", "pred_raw": "\\[v\\in T^{1,0}M\\]", "n_tokens": 14}
+{"sample_id": "7f74824c6f21c716", "gt": "100(1-\\alpha)", "pred": "100(1- \\alpha)", "pred_raw": "\\[100(1- \\alpha)\\]", "n_tokens": 10}
+{"sample_id": "6841eb891b2d65fe", "gt": "\\forall x\\exists y[\\varphi(x,y,z)]", "pred": "[y,x]y[ \\varphi(x,y,z)]", "pred_raw": "\\[[y,x]y[ \\varphi(x,y,z)]\\]", "n_tokens": 18}
+{"sample_id": "c33328ff1364bfcc", "gt": "P_{L}^{G}=P_{L}\\cap I_{K}O_{K}", "pred": "P_{L}^{G}=P_{L}\\cap I_{K}O_{K}", "pred_raw": "\\[P_{L}^{G}=P_{L}\\cap I_{K}O_{K}\\]", "n_tokens": 22}
+{"sample_id": "5cfdf2c3b3a55dce", "gt": "r_{max}=\\frac{n_{0}+1}{2n_{0}}", "pred": "r_{max}= \\frac{n_{0}+1}{2n_{0}}", "pred_raw": "\\[r_{max}= \\frac{n_{0}+1}{2n_{0}}\\]", "n_tokens": 21}
+{"sample_id": "a32a83dc67829a4c", "gt": "C_{0}^{\\infty}(U)\\subseteq L^{2}(U)", "pred": "C_{0}^{\\infty}(U)\\subseteq L^{2}(U)", "pred_raw": "\\[C_{0}^{\\infty}(U)\\subseteq L^{2}(U)\\]", "n_tokens": 18}
+{"sample_id": "e042f3e1ac0b1cdd", "gt": "d=2mn(m^{2}-n^{2})", "pred": "d=2mn(m^{2}-n^{2})", "pred_raw": "\\[d=2mn(m^{2}-n^{2})\\]", "n_tokens": 16}
+{"sample_id": "1cc7c15480f7952e", "gt": "Q=[\\begin{matrix}T\\\\ N\\\\ B\\end{matrix}]", "pred": "Q=[\\begin{matrix}T\\\\ N\\\\ B\\end{matrix}]", "pred_raw": "\\[Q=[\\begin{matrix}T\\\\ N\\\\ B\\end{matrix}]\\]", "n_tokens": 19}
+{"sample_id": "a8f0f8526d9300a0", "gt": "w\\Vdash(A\\wedge B)[e]", "pred": "w \\Vdash(A \\wedge B)[e]", "pred_raw": "\\[w \\Vdash(A \\wedge B)[e]\\]", "n_tokens": 14}
+{"sample_id": "b9d7aba3edb52f3e", "gt": "f(x_{1}^{|q|},x_{2}^{|q|},x_{3}^{|q|},...)", "pred": "f(x_{1}^{|q|},x_{2}^{|q|},x_{3}^{|q|},...)", "pred_raw": "\\[f(x_{1}^{|q|},x_{2}^{|q|},x_{3}^{|q|},...)\\]", "n_tokens": 25}
+{"sample_id": "4f3b4cf1b7d2ac04", "gt": "(2R)^{3}", "pred": "(2R)^3", "pred_raw": "\\[(2R)^3\\]", "n_tokens": 8}
+{"sample_id": "0f8b61fe58da9291", "gt": "\\frac{1}{12}(\\begin{matrix}4&8&4\\\\ 5&7&-4\\\\ 1&-1&4\\end{matrix})", "pred": "\\frac{1}{12}(\\begin{matrix}4&8&4\\\\ 5&7&-4\\\\ 1&-1&4\\end{matrix})", "pred_raw": "\\[\\frac{1}{12}(\\begin{matrix}4&8&4\\\\ 5&7&-4\\\\ 1&-1&4\\end{matrix})\\]", "n_tokens": 35}
+{"sample_id": "8e3dc9a872e68a42", "gt": "-", "pred": "\\overline{\\phantom{\\rule{0.0pt}{1.0pt}}\\phantom{\\rule{0.0pt}{1.0pt}}}", "pred_raw": "\\[\\overline{\\phantom{\\rule{0.0pt}{1.0pt}}\\phantom{\\rule{0.0pt}{1.0pt}}}\\]", "n_tokens": 33}
+{"sample_id": "83560c24f5678159", "gt": "a<_{s}ce(ab)<_{s}b", "pred": "a<_{s}ce(ab)<_{s}b", "pred_raw": "\\[a<_{s}ce(ab)<_{s}b\\]", "n_tokens": 16}
+{"sample_id": "c1bbe314bf746e4f", "gt": "\\hat{\\Pi}\\equiv I-\\Pi", "pred": "\\hat{\\Pi}\\equiv I-\\Pi", "pred_raw": "\\[\\hat{\\Pi}\\equiv I-\\Pi\\]", "n_tokens": 12}
+{"sample_id": "6bd883946c2de24d", "gt": "=", "pred": "\\vdots", "pred_raw": "\\[\\vdots\\]", "n_tokens": 5}
+{"sample_id": "5ccf4a18f25d17f4", "gt": "z_{n+1}=z_{n}^{2}", "pred": "z_{n+1}=z_{n}^{2}", "pred_raw": "\\[z_{n+1}=z_{n}^{2}\\]", "n_tokens": 15}
+{"sample_id": "894c8460a46bd504", "gt": "a^{n}a^{-n}=1", "pred": "a^{n}a^{-n}=1", "pred_raw": "\\[a^{n}a^{-n}=1\\]", "n_tokens": 13}
+{"sample_id": "09715ec39f0c2819", "gt": "\\overline{\\psi}D_{\\mu}\\psi", "pred": "\\overline{\\psi}\\mathbin{\\hbox{\\hbox to 0.0pt{\\hbox{\\kern 2.0pt\\vrule height 6.25pt width 0.2pt depth 0.2pt\\hss}\\hbox{$\\supset$}}}}_{\\mu}\\psi", "pred_raw": "\\[\\overline{\\psi}\\mathbin{\\hbox{\\hbox to 0.0pt{\\hbox{\\kern 2.0pt\\vrule height 6.25pt width 0.2pt depth 0.2pt\\hss}\\hbox{$\\supset$}}}}_{\\mu}\\psi\\]", "n_tokens": 54}
+{"sample_id": "40f8441fee62c5fa", "gt": "-10/2", "pred": "-10/2", "pred_raw": "\\[-10/2\\]", "n_tokens": 7}
+{"sample_id": "40a49a862c7ee677", "gt": "A_{x}^{(12)}", "pred": "A_{x}^{(12)}", "pred_raw": "\\[A_{x}^{(12)}\\]", "n_tokens": 9}
+{"sample_id": "7172393f10587cf6", "gt": "X=|X|e^{jarg(X)}", "pred": "X=|X|e^{jarg(X)}", "pred_raw": "\\[X=|X|e^{jarg(X)}\\]", "n_tokens": 14}
+{"sample_id": "f1339b1e0d74b240", "gt": "(j-(-j))", "pred": "(j-(-j))", "pred_raw": "\\[(j-(-j))\\]", "n_tokens": 7}
+{"sample_id": "98742298c5fe0842", "gt": "\\frac{d^{2}\\theta}{dt^{2}}+1=0", "pred": "\\frac{d^{2}\\theta}{dt^{2}}+1=0", "pred_raw": "\\[\\frac{d^{2}\\theta}{dt^{2}}+1=0\\]", "n_tokens": 19}
+{"sample_id": "52c384d1099c6ce8", "gt": "\\Delta t<\\frac{h^{2}}{2a}", "pred": "v_{t}< \\frac{h^{2}}{2a}", "pred_raw": "\\[v_{t}< \\frac{h^{2}}{2a}\\]", "n_tokens": 17}
+{"sample_id": "4bb2428df9f1591d", "gt": "\\gamma_{\\tau}(t)=\\gamma(\\tau+t)", "pred": "\\gamma_{\\tau}(t)=\\gamma(\\tau+t)", "pred_raw": "\\[\\gamma_{\\tau}(t)=\\gamma(\\tau+t)\\]", "n_tokens": 15}
+{"sample_id": "afc1098d4bee4a19", "gt": "E[X]=\\overline{X}", "pred": "E \\left[ x \\right]= \\overline{x}", "pred_raw": "\\[E \\left[ x \\right]= \\overline{x}\\]", "n_tokens": 16}
+{"sample_id": "2f2cb48701a68d0c", "gt": "G_{\\lambda}(\\sigma)=\\frac{1}{\\sigma+n\\lambda}", "pred": "G_{\\lambda}(\\sigma)=\\frac{1}{\\sigma+n\\lambda}", "pred_raw": "\\[G_{\\lambda}(\\sigma)=\\frac{1}{\\sigma+n\\lambda}\\]", "n_tokens": 19}
+{"sample_id": "4ad57d7b3b5540a1", "gt": "Z_{bus}={Y_{bus}}^{-1}", "pred": "Z_{bus}={7_{bus}}^{-1}", "pred_raw": "\\[Z_{bus}={7_{bus}}^{-1}\\]", "n_tokens": 15}
+{"sample_id": "41537546904e748f", "gt": "\\hat{M}=(\\hat{m}_{ij})\\in R^{I\\times J}", "pred": "\\hat{M}=(\\hat{m}_{ij})\\in R^{I \\times J}", "pred_raw": "\\[\\hat{M}=(\\hat{m}_{ij})\\in R^{I \\times J}\\]", "n_tokens": 21}
+{"sample_id": "407e3f197ee55293", "gt": "|V_{0}|+n/4^{k}", "pred": "|V_{0}|+n/4^{k}", "pred_raw": "\\[|V_{0}|+n/4^{k}\\]", "n_tokens": 13}
+{"sample_id": "9acd2ee6f63fa0bb", "gt": "lim_{(x,y)\\rightarrow(0,0)}x^{y}", "pred": "\\lim_{(x,y)\\rightarrow(0,0)}x^{y}", "pred_raw": "\\[\\lim_{(x,y)\\rightarrow(0,0)}x^{y}\\]", "n_tokens": 19}
+{"sample_id": "db4076adab80c83d", "gt": "f=T_{K}\\varphi+T_{K}^{*}\\varphi", "pred": "f=T_{K}\\varphi+T_{K}^{*}\\varphi", "pred_raw": "\\[f=T_{K}\\varphi+T_{K}^{*}\\varphi\\]", "n_tokens": 17}
+{"sample_id": "64ebc5be4ebdb647", "gt": "c=r_{i}^{2}+r_{j}^{2}+Z_{j}^{2}", "pred": "c=r_{i}^{2}+r_{j}^{2}+z_{j}^{2}", "pred_raw": "\\[c=r_{i}^{2}+r_{j}^{2}+z_{j}^{2}\\]", "n_tokens": 23}
+{"sample_id": "4f82e91be9a575e4", "gt": "(B+1)^{m}=B_{m}", "pred": "(B+1)^m=B_m", "pred_raw": "\\[(B+1)^m=B_m\\]", "n_tokens": 13}
+{"sample_id": "5ebb8c94cc70828a", "gt": "\\mu_{ij}=a_{i}a_{j}a_{i}...", "pred": "a_{ij}=a_{i}a_{j}a_{i}...", "pred_raw": "\\[a_{ij}=a_{i}a_{j}a_{i}...\\]", "n_tokens": 20}
+{"sample_id": "655a762d939f5061", "gt": "\\overline{\\pi}:M(A)\\rightarrow M(B)", "pred": "\\overline{\\pi}:M(A)\\rightarrow M(B)", "pred_raw": "\\[\\overline{\\pi}:M(A)\\rightarrow M(B)\\]", "n_tokens": 16}
+{"sample_id": "39eef60fa6d94743", "gt": "f(\\cdot;v^{(t-1)})", "pred": "f(\\cdot;v^{(t-1)})", "pred_raw": "\\[f(\\cdot;v^{(t-1)})\\]", "n_tokens": 13}
+{"sample_id": "60667a93dda92e2a", "gt": "\\overline{\\pi}:M(A)\\rightarrow M(B)", "pred": "\\overline{\\pi}:M(A) \\rightarrow M(B)", "pred_raw": "\\[\\overline{\\pi}:M(A) \\rightarrow M(B)\\]", "n_tokens": 17}
+{"sample_id": "fd4fcad2c82c1a06", "gt": "A_{0}=\\frac{\\sqrt{3}}{4}a^{2}", "pred": "A_0= \\frac{ \\sqrt{3}}{4}a^2", "pred_raw": "\\[A_0= \\frac{ \\sqrt{3}}{4}a^2\\]", "n_tokens": 21}
+{"sample_id": "6a4681757cb23503", "gt": "-y(\\gamma-\\delta x)=0", "pred": "-y( \\gamma- \\delta X)=0", "pred_raw": "\\[-y( \\gamma- \\delta X)=0\\]", "n_tokens": 14}
+{"sample_id": "70050a553542962a", "gt": "12\\frac{3}{11}\\div13\\frac{1}{2}=\\frac{10}{11}", "pred": "12 \\frac{3}{11} \\div 13 \\frac{1}{2}= \\frac{10}{11}", "pred_raw": "\\[12 \\frac{3}{11} \\div 13 \\frac{1}{2}= \\frac{10}{11}\\]", "n_tokens": 28}
+{"sample_id": "2dac05a75efa6cbf", "gt": "[C_{Op}|P]", "pred": "[C_{Op}|P]", "pred_raw": "\\[[C_{Op}|P]\\]", "n_tokens": 9}
+{"sample_id": "105ebcc4d6455481", "gt": "\\rho=A\\cdot\\tau^{2}-B", "pred": "\\rho=A \\cdot \\pi^2-B", "pred_raw": "\\[\\rho=A \\cdot \\pi^2-B\\]", "n_tokens": 15}
+{"sample_id": "0572f2b7059fbb57", "gt": "lim_{x\\rightarrow0}\\frac{O(x)}{O(x)}", "pred": "\\lim_{x\\rightarrow0}\\frac{O(x)}{O(x)}", "pred_raw": "\\[\\lim_{x\\rightarrow0}\\frac{O(x)}{O(x)}\\]", "n_tokens": 20}
+{"sample_id": "acd8292ccc09f2d5", "gt": "SL_{n}(q)\\rightarrow PSL_{n}(q)", "pred": "SL_{n}(q)\\rightarrow PSL_{n}(q)", "pred_raw": "\\[SL_{n}(q)\\rightarrow PSL_{n}(q)\\]", "n_tokens": 16}
+{"sample_id": "bd8a84fd28d340a0", "gt": "-\\frac{\\pi}{|\\nu|}-2\\pi\\gamma\\delta(\\nu)", "pred": "- \\frac{ \\pi}{|v|}-2 \\pi \\gamma_{0}(v)", "pred_raw": "\\[- \\frac{ \\pi}{|v|}-2 \\pi \\gamma_{0}(v)\\]", "n_tokens": 21}
+{"sample_id": "d56a7802b784d944", "gt": "\\xi=\\frac{a^{2}\\omega_{0}^{2}}{2c}x", "pred": "\\xi= \\frac{ \\alpha^2 \\omega_0^2}{2c}x", "pred_raw": "\\[\\xi= \\frac{ \\alpha^2 \\omega_0^2}{2c}x\\]", "n_tokens": 24}
+{"sample_id": "6c254f7d50e5ff60", "gt": "M^{1}(B)=E[N(B)]", "pred": "M^{ \\prime}(B)=E[N(B)]", "pred_raw": "\\[M^{ \\prime}(B)=E[N(B)]\\]", "n_tokens": 16}
+{"sample_id": "ae9246b84acd7a90", "gt": "(-1)^{n}\\frac{d^{n}}{dt^{n}}f(t)\\ge0", "pred": "(-1)^{n}\\frac{d^{n}}{dt^{n}}f(t)\\ge0", "pred_raw": "\\[(-1)^{n}\\frac{d^{n}}{dt^{n}}f(t)\\ge0\\]", "n_tokens": 24}
+{"sample_id": "6b6b1eae7e498d8a", "gt": "e^{*}=(sign(e_{i}))_{i}", "pred": "e^{*}=(sign(e_{i}))_{i}", "pred_raw": "\\[e^{*}=(sign(e_{i}))_{i}\\]", "n_tokens": 13}
+{"sample_id": "fd2a24576e682eaf", "gt": "(\\begin{matrix}101\\end{matrix})(\\begin{matrix}42\\end{matrix})(\\begin{matrix}361\\end{matrix})", "pred": "(\\begin{matrix}101\\end{matrix})(\\begin{matrix}42\\end{matrix})(\\begin{matrix}361\\end{matrix})", "pred_raw": "\\[(\\begin{matrix}101\\end{matrix})(\\begin{matrix}42\\end{matrix})(\\begin{matrix}361\\end{matrix})\\]", "n_tokens": 34}
+{"sample_id": "eba258111a174f95", "gt": "S_{Z}=B^{\\frac{1}{2}}\\cdot T_{Z}.", "pred": "S_{2}=B^{\\frac{1}{2}}\\cdot T_{2}.", "pred_raw": "\\[S_{2}=B^{\\frac{1}{2}}\\cdot T_{2}.\\]", "n_tokens": 20}
+{"sample_id": "efefd35c6039a985", "gt": "\\underline{T}(t)=\\frac{d\\gamma}{dt}", "pred": "\\underline{T}(t)=\\frac{d\\gamma}{dt}", "pred_raw": "\\[\\underline{T}(t)=\\frac{d\\gamma}{dt}\\]", "n_tokens": 17}
+{"sample_id": "97f6240b89c8f5eb", "gt": "0<sinx<x", "pred": "0< \\sin x<x", "pred_raw": "\\[0< \\sin x<x\\]", "n_tokens": 11}
+{"sample_id": "1882662b702cf0f5", "gt": "\\int_{0}^{\\pi}x^{n}sin(x)dx", "pred": "\\int_{0}^{\\pi}x^{n}sin(x)dx", "pred_raw": "\\[\\int_{0}^{\\pi}x^{n}sin(x)dx\\]", "n_tokens": 19}
+{"sample_id": "047c8a1e14a47a8d", "gt": "cr+cs=a^{2}+b^{2}", "pred": "cr+cs=a^{2}+b^{2}", "pred_raw": "\\[cr+cs=a^{2}+b^{2}\\]", "n_tokens": 15}
+{"sample_id": "fc94f34df33af5cb", "gt": "K(t)=logE[e^{tX}]", "pred": "k(t)= \\log E \\left[ e^{tX} \\right]", "pred_raw": "\\[k(t)= \\log E \\left[ e^{tX} \\right]\\]", "n_tokens": 20}
+{"sample_id": "cee40554c3627c5f", "gt": "\\{f_{X}(\\cdot;\\theta)|\\theta\\in\\Theta\\}", "pred": "\\{f_{X}(\\cdot;\\theta)|\\theta\\in\\Theta\\}", "pred_raw": "\\[\\{f_{X}(\\cdot;\\theta)|\\theta\\in\\Theta\\}\\]", "n_tokens": 17}
+{"sample_id": "de3f9f68d5862630", "gt": "\\Gamma(n+1)Li_{n+1}(\\frac{1}{z})", "pred": "\\Gamma(n+1)Li_{n+1}( \\frac{1}{z})", "pred_raw": "\\[\\Gamma(n+1)Li_{n+1}( \\frac{1}{z})\\]", "n_tokens": 22}
+{"sample_id": "fd34daabac4742a6", "gt": "(\\frac{x}{a})^{2}-(\\frac{y}{b})^{2}=1", "pred": "(\\frac{x}{a})^{2}-(\\frac{y}{b})^{2}=1", "pred_raw": "\\[(\\frac{x}{a})^{2}-(\\frac{y}{b})^{2}=1\\]", "n_tokens": 21}
+{"sample_id": "076d5abf3f37057a", "gt": "...9999=-1", "pred": "\\cdot-9999=-1", "pred_raw": "\\[\\cdot-9999=-1\\]", "n_tokens": 9}
+{"sample_id": "ca0ed5191693c75d", "gt": "\\Lambda^{(m,m+1)}", "pred": "\\Lambda^{(m,m+1)}", "pred_raw": "\\[\\Lambda^{(m,m+1)}\\]", "n_tokens": 11}
+{"sample_id": "b50a999af6e55155", "gt": "r\\vee r^{\\prime}\\equiv max(r,r^{\\prime})", "pred": "r\\vee r^{\\prime}\\equiv max(r,r^{\\prime})", "pred_raw": "\\[r\\vee r^{\\prime}\\equiv max(r,r^{\\prime})\\]", "n_tokens": 19}
+{"sample_id": "ecd4a6b7293c2986", "gt": "\\frac{x_{1}-x}{x_{1}-x_{0}}", "pred": "\\frac{x_{1}-x}{x_{1}-x_{0}}", "pred_raw": "\\[\\frac{x_{1}-x}{x_{1}-x_{0}}\\]", "n_tokens": 19}
+{"sample_id": "a5fbe374c5aec62a", "gt": "2^{n}\\le(\\begin{matrix}2n\\\\ n\\end{matrix})", "pred": "2^{n} \\leq{2n\\choose n}", "pred_raw": "\\[2^{n} \\leq{2n\\choose n}\\]", "n_tokens": 16}
+{"sample_id": "19a8800fb1f481b7", "gt": "E_{N,M}(Z_{1},...,Z_{M})", "pred": "E_{N,M}(Z_{1},...,Z_{M})", "pred_raw": "\\[E_{N,M}(Z_{1},...,Z_{M})\\]", "n_tokens": 17}
+{"sample_id": "3b5516a88b9de38a", "gt": "E[2n]\\backslash E[2]", "pred": "E[2n] \\backslash E[2]", "pred_raw": "\\[E[2n] \\backslash E[2]\\]", "n_tokens": 14}
+{"sample_id": "bf6cdda1bba6c28f", "gt": "lim_{(x,y)\\rightarrow(0,0)}x^{y}", "pred": "\\lim_{(x,y)\\rightarrow(0,0)}x^{y}", "pred_raw": "\\[\\lim_{(x,y)\\rightarrow(0,0)}x^{y}\\]", "n_tokens": 19}
+{"sample_id": "7e82bf89dc2dacd6", "gt": "(\\begin{matrix}4\\\\ 2,2\\end{matrix})/2=3", "pred": "(\\begin{matrix}4\\\\ 2,2\\end{matrix})/2=3", "pred_raw": "\\[(\\begin{matrix}4\\\\ 2,2\\end{matrix})/2=3\\]", "n_tokens": 21}
+{"sample_id": "df1a8744efd41a19", "gt": "2^{k}2^{H(p+\\epsilon)n}\\ge2^{n}", "pred": "2^{k}2^{H(p+ \\epsilon)n} \\geq 2^{n}", "pred_raw": "\\[2^{k}2^{H(p+ \\epsilon)n} \\geq 2^{n}\\]", "n_tokens": 24}
+{"sample_id": "013a32b84ce6252f", "gt": "\\{L(u,v):u,v\\in X\\}", "pred": "\\{L(u,v):u,v\\in X\\}", "pred_raw": "\\[\\{L(u,v):u,v\\in X\\}\\]", "n_tokens": 16}
+{"sample_id": "087ff4647db8d192", "gt": "\\frac{e^{tb}-e^{ta}}{t(b-a)}", "pred": "\\frac{e^{tb}-e^{ta}}{t(b-a)}", "pred_raw": "\\[\\frac{e^{tb}-e^{ta}}{t(b-a)}\\]", "n_tokens": 19}
+{"sample_id": "3cacadef25058e2f", "gt": "u=+\\frac{\\partial\\psi}{\\partial y}", "pred": "u=+\\frac{\\partial\\psi}{\\partial y}", "pred_raw": "\\[u=+\\frac{\\partial\\psi}{\\partial y}\\]", "n_tokens": 14}
+{"sample_id": "2c86487510d562ce", "gt": "a_{i}", "pred": "a_{i}", "pred_raw": "\\[a_{i}\\]", "n_tokens": 7}
+{"sample_id": "44902fe46c3b964e", "gt": "\\alpha=D\\tau/W^{2}h_{0}", "pred": "\\alpha=D_{T}/\\omega^{2}h_{0}", "pred_raw": "\\[\\alpha=D_{T}/\\omega^{2}h_{0}\\]", "n_tokens": 17}
+{"sample_id": "691bbdcb216c1c05", "gt": "E_{L}[u]=E_{M}[u]", "pred": "E_{L}[u]=E_{M}[u]", "pred_raw": "\\[E_{L}[u]=E_{M}[u]\\]", "n_tokens": 15}
+{"sample_id": "2d007aeab9833d87", "gt": "V_{Y0}t=h", "pred": "V_{Y0}t=h", "pred_raw": "\\[V_{Y0}t=h\\]", "n_tokens": 12}
+{"sample_id": "c117d0c45bcbfa38", "gt": "\\pm\\frac{1}{\\sqrt{2}}=\\pm0.7071...", "pred": "\\pm \\frac{1}{ \\sqrt{2}}=\\pm0.7071...", "pred_raw": "\\[\\pm \\frac{1}{ \\sqrt{2}}=\\pm0.7071...\\]", "n_tokens": 21}
+{"sample_id": "af708b3090d02f0f", "gt": "\\frac{d}{dx}y=t(x)y", "pred": "\\frac{d}{dx}y=t(x)y", "pred_raw": "\\[\\frac{d}{dx}y=t(x)y\\]", "n_tokens": 17}
+{"sample_id": "8f7eca44f0a34b84", "gt": "\\pi=\\sqrt{10})", "pred": "\\pi= \\sqrt{10}", "pred_raw": "\\[\\pi= \\sqrt{10}\\]", "n_tokens": 10}
+{"sample_id": "f4a7cef9a79c77c9", "gt": "da^{T}\\cdot F=JdA^{T}", "pred": "da^{T}\\cdot F=JdA^{T}", "pred_raw": "\\[da^{T}\\cdot F=JdA^{T}\\]", "n_tokens": 15}
+{"sample_id": "54f5a5b5a9de2ea3", "gt": "B_{0}^{2}(x)=(1-x)^{2}", "pred": "B_{0}^{2}(x)=(1-x)^{2}", "pred_raw": "\\[B_{0}^{2}(x)=(1-x)^{2}\\]", "n_tokens": 17}
+{"sample_id": "9a34c43f42a118bc", "gt": "\\langle\\Psi,s\\rangle=\\langle\\Psi,s^{\\prime}\\rangle", "pred": "\\langle\\psi,s\\rangle=\\langle\\psi,s^{\\prime}\\rangle", "pred_raw": "\\[\\langle\\psi,s\\rangle=\\langle\\psi,s^{\\prime}\\rangle\\]", "n_tokens": 21}
+{"sample_id": "c800b965c4f8b5b9", "gt": "\\frac{1}{1-\\delta}\\epsilon", "pred": "\\frac{1}{1- \\delta} \\epsilon", "pred_raw": "\\[\\frac{1}{1- \\delta} \\epsilon\\]", "n_tokens": 15}
+{"sample_id": "f2e6873a235aa4a7", "gt": "EV=g\\wedge\\bigcirc S_{0}^{2}V", "pred": "EV=g \\wedge OS_{0}^{2}V", "pred_raw": "\\[EV=g \\wedge OS_{0}^{2}V\\]", "n_tokens": 17}
+{"sample_id": "e7278bdc1567e0f4", "gt": "F_{X}=\\frac{\\sigma_{X}^{2}}{\\mu_{X}}", "pred": "F_{X}=\\frac{\\sigma_{X}^{2}}{\\mu_{X}}", "pred_raw": "\\[F_{X}=\\frac{\\sigma_{X}^{2}}{\\mu_{X}}\\]", "n_tokens": 19}
+{"sample_id": "0518e4f59a069378", "gt": "-\\sqrt{n},...,\\sqrt{n}", "pred": "- \\sqrt{n}, \\ldots, \\sqrt{n}", "pred_raw": "\\[- \\sqrt{n}, \\ldots, \\sqrt{n}\\]", "n_tokens": 16}
+{"sample_id": "9391437798f8e13f", "gt": "x_{1}-x_{2}+x_{0}=0", "pred": "x_{1}-x_{2}+x_{0}=0", "pred_raw": "\\[x_{1}-x_{2}+x_{0}=0\\]", "n_tokens": 17}
+{"sample_id": "a3ce9d34ff4d84e4", "gt": "\\dot{x}^{\\mu}=\\frac{dx^{\\mu}}{d\\tau}", "pred": "\\dot{x}^{\\mu}=\\frac{dx^{\\mu}}{d\\tau}", "pred_raw": "\\[\\dot{x}^{\\mu}=\\frac{dx^{\\mu}}{d\\tau}\\]", "n_tokens": 19}
+{"sample_id": "4eb613dee9998363", "gt": "N=\\{-T,...,T\\},T\\ge1", "pred": "N=\\{-T,...,T\\},T\\ge1", "pred_raw": "\\[N=\\{-T,...,T\\},T\\ge1\\]", "n_tokens": 15}
+{"sample_id": "d9bb03abb0991e23", "gt": "x^{2}>y\\Rightarrow x>\\sqrt{y}", "pred": "x^{2}>y\\Rightarrow x>\\sqrt{y}", "pred_raw": "\\[x^{2}>y\\Rightarrow x>\\sqrt{y}\\]", "n_tokens": 16}
+{"sample_id": "82e43cc8368ac337", "gt": "\\{\\begin{matrix}p\\\\ q,r,s\\end{matrix}\\}", "pred": "\\{q,r,s \\}", "pred_raw": "\\[\\{q,r,s \\}\\]", "n_tokens": 9}
+{"sample_id": "f901fa248194ed56", "gt": "h(k)+x^{2}(modb)", "pred": "h(k)+x^2(modb)", "pred_raw": "\\[h(k)+x^2(modb)\\]", "n_tokens": 14}
+{"sample_id": "2ac2ab3b20c3f454", "gt": "Bm=\\frac{\\tau_{y}L}{\\mu V}", "pred": "B_{M}=\\frac{\\tau_{y}L}{\\mu V}", "pred_raw": "\\[B_{M}=\\frac{\\tau_{y}L}{\\mu V}\\]", "n_tokens": 18}
+{"sample_id": "948609862033e3ec", "gt": "f^{n-1}(\\perp)\\sqsubseteq f^{n}(\\perp)", "pred": "f^{n-1}(1) \\sqsubseteq f^{n}(1)", "pred_raw": "\\[f^{n-1}(1) \\sqsubseteq f^{n}(1)\\]", "n_tokens": 19}
+{"sample_id": "ddca9fe09c2986bf", "gt": "\\gamma_{total}=\\gamma_{1-l}+\\gamma_{l-2}", "pred": "\\gamma_{total}=\\gamma_{1-l}+\\gamma_{l-2}", "pred_raw": "\\[\\gamma_{total}=\\gamma_{1-l}+\\gamma_{l-2}\\]", "n_tokens": 19}
+{"sample_id": "e2cbdf37356e28ca", "gt": "\\frac{V_{dd}}{2}", "pred": "\\frac{V_{jj}}{2}", "pred_raw": "\\[\\frac{V_{jj}}{2}\\]", "n_tokens": 11}
+{"sample_id": "c9039047ac318d22", "gt": "p_{1}/\\pi_{1}<p_{2}/\\pi_{2}", "pred": "p_{1}/ \\pi_{1}<p_{2}/ \\pi_{2}", "pred_raw": "\\[p_{1}/ \\pi_{1}<p_{2}/ \\pi_{2}\\]", "n_tokens": 21}
+{"sample_id": "47aca02c54fc1fc0", "gt": "E=f(a)=f(-a)", "pred": "E=f(a)=f(-a)", "pred_raw": "\\[E=f(a)=f(-a)\\]", "n_tokens": 13}
+{"sample_id": "44e66c822a3dec99", "gt": "d=2mn(m^{2}-n^{2})", "pred": "d=2mn(m^{2}-n^{2})", "pred_raw": "\\[d=2mn(m^{2}-n^{2})\\]", "n_tokens": 16}
+{"sample_id": "049c5fa2130b640a", "gt": "A(t)=e^{W\\cdot t}A(0)", "pred": "A(t)=e^{wt}A(0)", "pred_raw": "\\[A(t)=e^{wt}A(0)\\]", "n_tokens": 15}
+{"sample_id": "30157fc71064b98e", "gt": "\\frac{d}{dt}(\\frac{dt}{d\\tau})\\approx0", "pred": "\\frac{d}{dt}(\\frac{dt}{d\\tau})\\approx0", "pred_raw": "\\[\\frac{d}{dt}(\\frac{dt}{d\\tau})\\approx0\\]", "n_tokens": 20}
+{"sample_id": "3f92e528954aed49", "gt": "a_{1}+a_{14}", "pred": "a_{1}+a_{14}", "pred_raw": "\\[a_{1}+a_{14}\\]", "n_tokens": 11}
+{"sample_id": "fa74b61b3e6e21f7", "gt": "\\sigma[N(R^{n}\\backslash B_{\\delta}(x))]", "pred": "\\sigma[N(R^{n}\\backslash B_{\\delta}(x))]", "pred_raw": "\\[\\sigma[N(R^{n}\\backslash B_{\\delta}(x))]\\]", "n_tokens": 18}
+{"sample_id": "d4bc2c2ae30a53b2", "gt": "K_{x}Na_{1-x}Cl", "pred": "k_{x}Na_{1-x}Cl", "pred_raw": "\\[k_{x}Na_{1-x}Cl\\]", "n_tokens": 15}
+{"sample_id": "ece8c01bc36397b8", "gt": "x+2y-3=0", "pred": "x+2y-3=0", "pred_raw": "\\[x+2y-3=0\\]", "n_tokens": 12}
+{"sample_id": "dcc4d3f59e265684", "gt": "X=U_{2}U_{1}^{-1}", "pred": "X=U_{2}U_{1}^{-1}", "pred_raw": "\\[X=U_{2}U_{1}^{-1}\\]", "n_tokens": 15}
+{"sample_id": "f20eebdede453861", "gt": "32x+4(1-x)=1", "pred": "32x+4(1-x)=1", "pred_raw": "\\[32x+4(1-x)=1\\]", "n_tokens": 14}
+{"sample_id": "4f3520bd7de71dec", "gt": "\\forall_{x}\\exists_{y}G(x,y)", "pred": "\\forall_{x}\\exists_{y}G(x,y)", "pred_raw": "\\[\\forall_{x}\\exists_{y}G(x,y)\\]", "n_tokens": 17}
+{"sample_id": "9e78ec608508b5e4", "gt": "N=|V|", "pred": "N=|V|", "pred_raw": "\\[N=|V|\\]", "n_tokens": 7}
+{"sample_id": "9070f9517370606b", "gt": "lim_{x\\rightarrow0}\\frac{f(x)}{g(x)}=\\frac{3}{2}", "pred": "\\lim_{x \\rightarrow 0} \\frac{f(x)}{g(x)}= \\frac{3}{2}", "pred_raw": "\\[\\lim_{x \\rightarrow 0} \\frac{f(x)}{g(x)}= \\frac{3}{2}\\]", "n_tokens": 28}
+{"sample_id": "4175730d04e74848", "gt": "C_{h}=vb_{h+1}-\\pi_{h}", "pred": "C_{h}=vb_{h+1}-\\pi_{h}", "pred_raw": "\\[C_{h}=vb_{h+1}-\\pi_{h}\\]", "n_tokens": 17}
+{"sample_id": "baf4af9c1abaabf6", "gt": "\\neg(x<x)", "pred": "\\neg(x<x)", "pred_raw": "\\[\\neg(x<x)\\]", "n_tokens": 9}
+{"sample_id": "cfd722f4ccb4ed7d", "gt": "f_{z}(x)=e^{ix^{t}Zx/2}", "pred": "f_{z}(x)=e^{i\\pi tz}x/2", "pred_raw": "\\[f_{z}(x)=e^{i\\pi tz}x/2\\]", "n_tokens": 21}
+{"sample_id": "c94f240e1a1de34b", "gt": "G^{\\prime}=(V,E_{L}^{\\prime},s,t)", "pred": "G^{ \\prime}=(V,E_{L}^{ \\prime},s,t)", "pred_raw": "\\[G^{ \\prime}=(V,E_{L}^{ \\prime},s,t)\\]", "n_tokens": 21}
+{"sample_id": "6cff952436af09d5", "gt": "E=\\frac{-\\mu^{2}}{2}", "pred": "E= \\frac{- \\mu^{2}}{2}", "pred_raw": "\\[E= \\frac{- \\mu^{2}}{2}\\]", "n_tokens": 15}
+{"sample_id": "11a33b36ea6c7f8f", "gt": "R_{1}=\\frac{2a+b}{3}", "pred": "R_{1}= \\frac{2a+b}{3}", "pred_raw": "\\[R_{1}= \\frac{2a+b}{3}\\]", "n_tokens": 17}
+{"sample_id": "bd0326a53e2277fd", "gt": "\\frac{d}{dt}\\gamma(t)=X_{\\gamma(t)}", "pred": "\\frac{d}{dt}\\gamma(t)=X_{\\gamma(t)}", "pred_raw": "\\[\\frac{d}{dt}\\gamma(t)=X_{\\gamma(t)}\\]", "n_tokens": 19}
+{"sample_id": "c267170d422d0b18", "gt": "P(r_{i})\\propto p(r_{i})", "pred": "p(r_{i})\\propto p(r_{i})", "pred_raw": "\\[p(r_{i})\\propto p(r_{i})\\]", "n_tokens": 16}
+{"sample_id": "89151813d59c9263", "gt": "X^{I}\\rightarrow X,\\chi\\mapsto\\chi(0)", "pred": "X^{I}\\rightarrow X,x \\mapsto x(0)", "pred_raw": "\\[X^{I}\\rightarrow X,x \\mapsto x(0)\\]", "n_tokens": 17}
+{"sample_id": "da860fb7bcbaba89", "gt": "\\sum_{\\gamma\\in\\Gamma}n_{\\gamma}t^{\\gamma}", "pred": "\\sum_{ \\gamma \\in \\Gamma}n_{ \\gamma}t^{ \\gamma}", "pred_raw": "\\[\\sum_{ \\gamma \\in \\Gamma}n_{ \\gamma}t^{ \\gamma}\\]", "n_tokens": 22}
+{"sample_id": "ee6cb66913896665", "gt": "\\partial_{t}\\phi^{t}(x)=F(\\phi^{t}(x))", "pred": "\\partial_{t}\\phi^{t}(x)=F(\\phi^{t}(x))", "pred_raw": "\\[\\partial_{t}\\phi^{t}(x)=F(\\phi^{t}(x))\\]", "n_tokens": 21}
+{"sample_id": "c43fb40c8f38630e", "gt": "2^{2^{65536}}", "pred": "2^{2^{65536}}", "pred_raw": "\\[2^{2^{65536}}\\]", "n_tokens": 10}
+{"sample_id": "888cac271bdf19d2", "gt": "L^{0}(F_{T})", "pred": "L^{0}(F_{T})", "pred_raw": "\\[L^{0}(F_{T})\\]", "n_tokens": 11}
+{"sample_id": "4e94b5f36ae6123b", "gt": "a_{n}=G^{-1}(1-\\frac{1}{n})", "pred": "a_{n}=G^{-1}(1-\\frac{1}{n})", "pred_raw": "\\[a_{n}=G^{-1}(1-\\frac{1}{n})\\]", "n_tokens": 19}
+{"sample_id": "a3110552678579e5", "gt": "lim_{k\\rightarrow\\infty}(1/k^{2})^{1/k}=1", "pred": "\\lim_{k \\rightarrow \\infty}(1/k^2)^{1/k}=1", "pred_raw": "\\[\\lim_{k \\rightarrow \\infty}(1/k^2)^{1/k}=1\\]", "n_tokens": 23}
+{"sample_id": "0c7e387c380456c0", "gt": "\\dot{\\rho}_{m}+3H\\rho_{m}=0", "pred": "\\dot{p}_{m}+3Hpm=0", "pred_raw": "\\[\\dot{p}_{m}+3Hpm=0\\]", "n_tokens": 15}
+{"sample_id": "a2cbf79bbc428012", "gt": "D(M[v])[h]", "pred": "D(M[v])[h]", "pred_raw": "\\[D(M[v])[h]\\]", "n_tokens": 12}
+{"sample_id": "73e709e685ffabbc", "gt": "\\theta=\\Theta sin(\\omega t+\\phi)", "pred": "\\theta= \\theta \\sin(kt+ \\phi)", "pred_raw": "\\[\\theta= \\theta \\sin(kt+ \\phi)\\]", "n_tokens": 15}
+{"sample_id": "8af900ef4d45d6f1", "gt": "r_{1}r_{2},...,r_{k}", "pred": "r_{1}r_{2}, \\ldots,r_{k}", "pred_raw": "\\[r_{1}r_{2}, \\ldots,r_{k}\\]", "n_tokens": 18}
+{"sample_id": "925991f51a2ee2d0", "gt": "2r_{-}=\\sqrt{2}(r_{-}+r_{+})", "pred": "2r_{-}=\\sqrt{2}(r_{-}+r_{+})", "pred_raw": "\\[2r_{-}=\\sqrt{2}(r_{-}+r_{+})\\]", "n_tokens": 14}
+{"sample_id": "5299f7af7714622f", "gt": "(x-a)^{2}H(x-a)", "pred": "(x-a)^{2}+(x-a)", "pred_raw": "\\[(x-a)^{2}+(x-a)\\]", "n_tokens": 13}
+{"sample_id": "8b4886d54fb47ffe", "gt": "X[(p+m)\\Delta_{F}]", "pred": "X[(p+m) \\Delta_F]", "pred_raw": "\\[X[(p+m) \\Delta_F]\\]", "n_tokens": 14}
+{"sample_id": "dcf5fac0037e7f26", "gt": "d=\\frac{\\pi}{4}\\times b^{2}\\times s\\times n", "pred": "d=\\frac{\\pi}{4}\\times b^{2}\\times s\\times n", "pred_raw": "\\[d=\\frac{\\pi}{4}\\times b^{2}\\times s\\times n\\]", "n_tokens": 22}
+{"sample_id": "a174bb0816216295", "gt": "\\hat{u}^{2}=\\gamma_{0}+\\gamma_{1}x+v", "pred": "a^{2}= \\gamma_0+ \\gamma_1x+v", "pred_raw": "\\[a^{2}= \\gamma_0+ \\gamma_1x+v\\]", "n_tokens": 20}
+{"sample_id": "43c1b29f00ea5536", "gt": "\\frac{q^{2}}{4}+\\frac{p^{3}}{27}>0", "pred": "\\frac{q^2}{4}+ \\frac{p^3}{27}>0", "pred_raw": "\\[\\frac{q^2}{4}+ \\frac{p^3}{27}>0\\]", "n_tokens": 22}
+{"sample_id": "e68cb3d9b30811f8", "gt": "P(f", "pred": "P(f", "pred_raw": "\\[P(f\\]", "n_tokens": 7}
+{"sample_id": "d626356cf648607f", "gt": "S_{x}=\\{R,S,T,P\\}", "pred": "S_{x}=\\{R,S,T,P\\}", "pred_raw": "\\[S_{x}=\\{R,S,T,P\\}\\]", "n_tokens": 15}
+{"sample_id": "aa64d627eb260621", "gt": "1-e^{-1}=0.61", "pred": "1-e^{-1}=0.61", "pred_raw": "\\[1-e^{-1}=0.61\\]", "n_tokens": 13}
+{"sample_id": "9de327f7a89e0390", "gt": "(1)G(x,u,p)=0", "pred": "(1)G(x,u,p)=0", "pred_raw": "\\[(1)G(x,u,p)=0\\]", "n_tokens": 15}
+{"sample_id": "308b02e9474629a2", "gt": "S_{conf}=k_{B}ln\\Omega_{conf}", "pred": "S_{conf}=k_{B}ln\\Omega_{conf}", "pred_raw": "\\[S_{conf}=k_{B}ln\\Omega_{conf}\\]", "n_tokens": 17}
+{"sample_id": "0448d738a6ef71e5", "gt": "\\Psi_{A}(1,2,...,N_{A})", "pred": "\\Psi_{A}(1,2,\\cdot,\\aleph_{A})", "pred_raw": "\\[\\Psi_{A}(1,2,\\cdot,\\aleph_{A})\\]", "n_tokens": 17}
+{"sample_id": "59493f75b2645754", "gt": "T^{-1}=(T_{b}^{a})^{-1}", "pred": "T^{-1}=(T_{b}^{a})^{-1}", "pred_raw": "\\[T^{-1}=(T_{b}^{a})^{-1}\\]", "n_tokens": 15}
+{"sample_id": "50195e95a0e36d02", "gt": "2^{n}t+m", "pred": "2^{n}t+m", "pred_raw": "\\[2^{n}t+m\\]", "n_tokens": 11}
+{"sample_id": "0d6e4fafb8a34b04", "gt": "\\frac{x}{\\sqrt{x^{2}+a^{2}}}=sin\\theta_{1}", "pred": "\\frac{x}{ \\sqrt{x^{2}+a^{2}}}= \\sin \\theta_{1}", "pred_raw": "\\[\\frac{x}{ \\sqrt{x^{2}+a^{2}}}= \\sin \\theta_{1}\\]", "n_tokens": 25}
+{"sample_id": "a59b21e9bcdb11b6", "gt": "f_{N}-g\\in a\\backslash b_{N}", "pred": "f_{N}-g \\in a \\backslash b_{N}", "pred_raw": "\\[f_{N}-g \\in a \\backslash b_{N}\\]", "n_tokens": 17}
+{"sample_id": "7fbdede4937c8554", "gt": "=2cos\\psi(r-r\\phi^{\\prime})", "pred": "=2 \\cos \\psi(r-r \\phi^{ \\prime})", "pred_raw": "\\[=2 \\cos \\psi(r-r \\phi^{ \\prime})\\]", "n_tokens": 18}
+{"sample_id": "756d0091a508ca90", "gt": "T=\\frac{2}{s}\\langle K\\rangle_{t}", "pred": "T=\\frac{2}{5}\\langle k\\rangle_{t}", "pred_raw": "\\[T=\\frac{2}{5}\\langle k\\rangle_{t}\\]", "n_tokens": 18}
+{"sample_id": "8c79e3714196f6f0", "gt": "2^{2}+2+1-1", "pred": "2^2+2+1-1", "pred_raw": "\\[2^2+2+1-1\\]", "n_tokens": 13}
+{"sample_id": "5f59b5faf8286063", "gt": "v\\in R^{2^{n}-1}", "pred": "v\\in R^{2^{n}-1}", "pred_raw": "\\[v\\in R^{2^{n}-1}\\]", "n_tokens": 14}
+{"sample_id": "95e2783a001381e8", "gt": "\\tilde{C}^{+}\\rightarrow\\tilde{l}^{+}\\nu", "pred": "\\tilde{C}^{+}\\rightarrow\\tilde{l}^{+}\\nu", "pred_raw": "\\[\\tilde{C}^{+}\\rightarrow\\tilde{l}^{+}\\nu\\]", "n_tokens": 15}
+{"sample_id": "1a21474bf72ab8ae", "gt": "\\sigma_{T}=T^{1/\\alpha}\\sigma", "pred": "\\sigma_{T}=T^{1/\\alpha}\\sigma", "pred_raw": "\\[\\sigma_{T}=T^{1/\\alpha}\\sigma\\]", "n_tokens": 15}
+{"sample_id": "d0ce5e8f9e371705", "gt": "\\beta(\\frac{f_{T}}{10})\\approx-j10", "pred": "\\beta(\\frac{f_{1}}{10})\\approx jw", "pred_raw": "\\[\\beta(\\frac{f_{1}}{10})\\approx jw\\]", "n_tokens": 17}
+{"sample_id": "19f9ca82f86ed16f", "gt": "(\\begin{matrix}101\\end{matrix})(\\begin{matrix}42\\end{matrix})(\\begin{matrix}361\\end{matrix})", "pred": "(\\begin{matrix}101\\end{matrix})(\\begin{matrix}42\\end{matrix})(\\begin{matrix}361\\end{matrix})", "pred_raw": "\\[(\\begin{matrix}101\\end{matrix})(\\begin{matrix}42\\end{matrix})(\\begin{matrix}361\\end{matrix})\\]", "n_tokens": 34}
+{"sample_id": "a572b6fcffdeb081", "gt": "\\frac{d^{2}\\psi_{2}}{dx^{2}}=-k^{2}\\psi_{2}", "pred": "\\frac{d^{2}\\psi_{2}}{dx^{2}}=-k^{2}\\psi_{2}", "pred_raw": "\\[\\frac{d^{2}\\psi_{2}}{dx^{2}}=-k^{2}\\psi_{2}\\]", "n_tokens": 25}
+{"sample_id": "3eb2aced79f7fb15", "gt": "0<\\mu<\\frac{2}{\\lambda_{max}}", "pred": "0<\\mu<\\frac{2}{\\lambda_{max}}", "pred_raw": "\\[0<\\mu<\\frac{2}{\\lambda_{max}}\\]", "n_tokens": 15}
+{"sample_id": "b0171018f51e3536", "gt": "p_{q,x}:f\\mapsto q(f(x))", "pred": "p_{q,x}:f \\mapsto q(f(x))", "pred_raw": "\\[p_{q,x}:f \\mapsto q(f(x))\\]", "n_tokens": 18}
+{"sample_id": "6206c1cd451c7f2b", "gt": "\\frac{m^{2}-n^{2}}{2mn}", "pred": "\\frac{n^2-n^2}{2nn}", "pred_raw": "\\[\\frac{n^2-n^2}{2nn}\\]", "n_tokens": 16}
+{"sample_id": "8898d02c9a4870ca", "gt": "w_{ij}=w_{ji}\\forall i,j", "pred": "w_{ij}=w_{ji}\\forall i,j", "pred_raw": "\\[w_{ij}=w_{ji}\\forall i,j\\]", "n_tokens": 16}
+{"sample_id": "6d68287c3dfbc359", "gt": "(a:a:a)\\cdot\\tilde{ab}/\\tilde{6}", "pred": "(a:a:a) \\cdot \\tilde{ab}/\\tilde{6}", "pred_raw": "\\[(a:a:a) \\cdot \\tilde{ab}/\\tilde{6}\\]", "n_tokens": 20}
+{"sample_id": "7803f790981a674e", "gt": "0\\notin S", "pred": "0 \\notin S", "pred_raw": "\\[0 \\notin S\\]", "n_tokens": 8}
+{"sample_id": "ca5a3068bd071c64", "gt": "\\hat{b}^{i}=\\frac{b^{i}}{\\sqrt{g^{ii}}}", "pred": "\\hat{b}^{i}=\\frac{b^{i}}{\\sqrt{g^{ii}}}", "pred_raw": "\\[\\hat{b}^{i}=\\frac{b^{i}}{\\sqrt{g^{ii}}}\\]", "n_tokens": 21}
+{"sample_id": "c89dd66c1da8ef30", "gt": "\\sum_{i=1}^{n}iP_{i}=\\sum_{i=1}^{n}Q_{i}", "pred": "\\sum_{i=1}^{n}iP_{i}=\\sum_{i=1}^{n}Q_{i}", "pred_raw": "\\[\\sum_{i=1}^{n}iP_{i}=\\sum_{i=1}^{n}Q_{i}\\]", "n_tokens": 27}
+{"sample_id": "d711c810ba1625ff", "gt": "d<|F|", "pred": "d<|F|", "pred_raw": "\\[d<|F|\\]", "n_tokens": 7}
+{"sample_id": "46cf74ea63e1538d", "gt": "\\pm\\frac{1}{\\sqrt{2}}=\\pm0.7071...", "pred": "\\pm \\frac{1}{ \\sqrt{2}}= \\pm 0.7071 \\ldots", "pred_raw": "\\[\\pm \\frac{1}{ \\sqrt{2}}= \\pm 0.7071 \\ldots\\]", "n_tokens": 24}
+{"sample_id": "e365f23a586af059", "gt": "L_{2^{n-1}}", "pred": "L_{2^{n-1}}", "pred_raw": "\\[L_{2^{n-1}}\\]", "n_tokens": 11}
+{"sample_id": "92e701e713613b0e", "gt": "z=a(2e^{it}-e^{2it})", "pred": "z=a(2e^{it}-e^{2it})", "pred_raw": "\\[z=a(2e^{it}-e^{2it})\\]", "n_tokens": 17}
+{"sample_id": "55ea9e68a404c929", "gt": "H(E_{j})\\cong H(E_{j})", "pred": "H(E_{j})\\cong H(E_{j})", "pred_raw": "\\[H(E_{j})\\cong H(E_{j})\\]", "n_tokens": 16}
+{"sample_id": "a35e70b2ca351b06", "gt": "(c:(a/a)):\\tilde{c}\\cdot\\tilde{6}", "pred": "(c:(a/a)):\\tilde{c}\\cdot\\tilde{6}", "pred_raw": "\\[(c:(a/a)):\\tilde{c}\\cdot\\tilde{6}\\]", "n_tokens": 19}
+{"sample_id": "d6453851ae1b8702", "gt": "\\Sigma_{i}P(i)=1", "pred": "\\sum_{i}P(i)=1", "pred_raw": "\\[\\sum_{i}P(i)=1\\]", "n_tokens": 13}
+{"sample_id": "28d7c244dd474980", "gt": "G^{-1}=G,G^{0}=G_{0}", "pred": "G^{-1}=G,G^{0}=G_{0}", "pred_raw": "\\[G^{-1}=G,G^{0}=G_{0}\\]", "n_tokens": 17}
+{"sample_id": "4ba51d2df73ba398", "gt": "(E_{2+})-(E_{2-})", "pred": "(E_{2+})-(E_{2-})", "pred_raw": "\\[(E_{2+})-(E_{2-})\\]", "n_tokens": 13}
+{"sample_id": "9ec9cf7a92dcee20", "gt": "\\omega^{*}=\\Sigma_{i=1}^{M}|S_{i}|-n", "pred": "w^{*}=\\sum_{i=1}^{M}|S_{i}|-N", "pred_raw": "\\[w^{*}=\\sum_{i=1}^{M}|S_{i}|-N\\]", "n_tokens": 19}
+{"sample_id": "4d8a9a5d7fb48496", "gt": "\\frac{\\partial u}{\\partial\\tau}=\\frac{1}{2}\\sigma^{2}\\frac{\\partial^{2}u}{\\partial x^{2}}", "pred": "\\frac{\\partial u}{\\partial\\tau}=\\frac{1}{2}\\sigma^{2}\\frac{\\partial^{2}u}{\\partial x^{2}}", "pred_raw": "\\[\\frac{\\partial u}{\\partial\\tau}=\\frac{1}{2}\\sigma^{2}\\frac{\\partial^{2}u}{\\partial x^{2}}\\]", "n_tokens": 35}
+{"sample_id": "7a129bda40add273", "gt": "(m_{p}/m_{e})^{4}\\approx10^{13}", "pred": "(m_{p}/m_{e})^{4}=10^{13}", "pred_raw": "\\[(m_{p}/m_{e})^{4}=10^{13}\\]", "n_tokens": 17}
+{"sample_id": "f4fb7747e7e14392", "gt": "\\tau(w)=(3,3,2,1)", "pred": "T(w)=(3,3,2,1)", "pred_raw": "\\[T(w)=(3,3,2,1)\\]", "n_tokens": 15}
+{"sample_id": "dd2ce7c577682241", "gt": "V(r)=\\frac{k}{r}=ku", "pred": "V(r)=\\frac{k}{r}=ku", "pred_raw": "\\[V(r)=\\frac{k}{r}=ku\\]", "n_tokens": 15}
+{"sample_id": "213a6486d19ac572", "gt": "\\overline{u}=\\sqrt{\\langle u^{2}\\rangle}", "pred": "\\overline{u}= \\sqrt{ \\langle u^2 \\rangle}", "pred_raw": "\\[\\overline{u}= \\sqrt{ \\langle u^2 \\rangle}\\]", "n_tokens": 18}
+{"sample_id": "d709a749a1330001", "gt": "1-(0.95)^{2}=0.097", "pred": "1-(0.95)^{2}=0.097", "pred_raw": "\\[1-(0.95)^{2}=0.097\\]", "n_tokens": 16}
+{"sample_id": "2a19c336441f025b", "gt": "f_{N}-g\\in a\\backslash b_{N}", "pred": "f_{N}-g \\in a \\backslash b_{N}", "pred_raw": "\\[f_{N}-g \\in a \\backslash b_{N}\\]", "n_tokens": 17}
+{"sample_id": "8ae09871530bfc94", "gt": "x=10+2\\epsilon_{3}-5\\epsilon_{8}", "pred": "x=10+2 \\epsilon_{3}-5 \\epsilon_{8}", "pred_raw": "\\[x=10+2 \\epsilon_{3}-5 \\epsilon_{8}\\]", "n_tokens": 19}
+{"sample_id": "43766101eb085f2f", "gt": "\\{L(u,v):u,v\\in X\\}", "pred": "\\{L(u,v):u,v\\in X\\}", "pred_raw": "\\[\\{L(u,v):u,v\\in X\\}\\]", "n_tokens": 16}
+{"sample_id": "5c353aa9389fd02d", "gt": "2=10^{0.301}", "pred": "2=10^{0.301}", "pred_raw": "\\[2=10^{0.301}\\]", "n_tokens": 12}
+{"sample_id": "01e4c8973307a964", "gt": "|g,n\\rangle\\rightarrow|e,n-1\\rangle", "pred": "|g,n\\rangle\\rightarrow|e,n-1\\rangle", "pred_raw": "\\[|g,n\\rangle\\rightarrow|e,n-1\\rangle\\]", "n_tokens": 19}
+{"sample_id": "2b2f0170a13bf634", "gt": "y:[x_{0},x_{1}]\\rightarrow V", "pred": "y:[x_{0},x_{1}]\\rightarrow V", "pred_raw": "\\[y:[x_{0},x_{1}]\\rightarrow V\\]", "n_tokens": 16}
+{"sample_id": "b53c899711ae46c4", "gt": "W^{k,p}\\subseteq W^{m,q}", "pred": "W^{k,p} \\subseteq W^{m,q}", "pred_raw": "\\[W^{k,p} \\subseteq W^{m,q}\\]", "n_tokens": 17}
+{"sample_id": "f1acffc7d7fd27a0", "gt": "Q_{V}(\\vec{R}_{N},N|\\vec{R}_{0}.0)", "pred": "Q_{v}(\\vec{R}_{N},N|\\vec{R}_{0},0)", "pred_raw": "\\[Q_{v}(\\vec{R}_{N},N|\\vec{R}_{0},0)\\]", "n_tokens": 23}
+{"sample_id": "dfe46afec9805790", "gt": "m_{P}/m_{P}^{2}", "pred": "m_{P}/m_{P}^{2}", "pred_raw": "\\[m_{P}/m_{P}^{2}\\]", "n_tokens": 13}
+{"sample_id": "189643ed1ccb950b", "gt": "A=(\\begin{matrix}0&X\\\\ -X^{t}&0\\end{matrix})", "pred": "A= \\left( \\begin{matrix} 0&X \\\\ -X^2&0 \\end{matrix} \\right)", "pred_raw": "\\[A= \\left( \\begin{matrix} 0&X \\\\ -X^2&0 \\end{matrix} \\right)\\]", "n_tokens": 31}
+{"sample_id": "5569947d654817cf", "gt": "(5.c)\\gamma_{,z}=2\\rho\\psi_{,\\rho}\\psi_{,z}", "pred": "(5.c)\\gamma_{,z}=2\\rho\\psi_{,z}\\psi_{,z}", "pred_raw": "\\[(5.c)\\gamma_{,z}=2\\rho\\psi_{,z}\\psi_{,z}\\]", "n_tokens": 23}
+{"sample_id": "bc92c2ed1fa66665", "gt": "[Q^{\\dagger},b\\}=\\frac{dx}{dt}+iF", "pred": "[Q^{\\dagger},b\\}=\\frac{dx}{dt}+iF", "pred_raw": "\\[[Q^{\\dagger},b\\}=\\frac{dx}{dt}+iF\\]", "n_tokens": 17}
+{"sample_id": "26d5d6dc8d880251", "gt": "\\hat{p}_{x}=-i\\hbar\\frac{d}{dx}", "pred": "\\hat{p}_{x}=-i\\hbar\\frac{d}{dx}", "pred_raw": "\\[\\hat{p}_{x}=-i\\hbar\\frac{d}{dx}\\]", "n_tokens": 19}
+{"sample_id": "260459b7d0f02440", "gt": "(P(X),\\Delta,\\cap)", "pred": "\\left(\\mathbb{P}(X)\\underset{\\bigcap}{\\bigcap}\\bigcap\\right)", "pred_raw": "\\[\\left(\\mathbb{P}(X)\\underset{\\bigcap}{\\bigcap}\\bigcap\\right)\\]", "n_tokens": 21}
+{"sample_id": "b56e0a45704fff64", "gt": "-\\frac{\\pi}{|\\nu|}-2\\pi\\gamma\\delta(\\nu)", "pred": "- \\frac{ \\pi}{|r|}-2 \\pi r \\delta(r)", "pred_raw": "\\[- \\frac{ \\pi}{|r|}-2 \\pi r \\delta(r)\\]", "n_tokens": 20}
+{"sample_id": "661be550fe7b0ad8", "gt": "m=-\\frac{1}{2}\\pm i\\frac{\\sqrt{3}}{2}", "pred": "m=- \\frac{1}{2} \\pm i \\frac{ \\sqrt{3}}{2}", "pred_raw": "\\[m=- \\frac{1}{2} \\pm i \\frac{ \\sqrt{3}}{2}\\]", "n_tokens": 25}
+{"sample_id": "1f744a10191fe3e9", "gt": "\\frac{d}{dx}(sin(x^{2}))", "pred": "\\frac{d}{dx}(sin(x^{2}))", "pred_raw": "\\[\\frac{d}{dx}(sin(x^{2}))\\]", "n_tokens": 15}
+{"sample_id": "a9b7db10e1152269", "gt": "S_{z}=\\hbar(s-a^{\\dagger}a)", "pred": "S_{z}= \\hbar(s-a^{T}a)", "pred_raw": "\\[S_{z}= \\hbar(s-a^{T}a)\\]", "n_tokens": 18}
+{"sample_id": "aef66cad84aa8d12", "gt": "f(y^{\\prime})=x\\odot y^{\\prime}", "pred": "f(y^{\\prime})=x\\sigma y^{\\prime}", "pred_raw": "\\[f(y^{\\prime})=x\\sigma y^{\\prime}\\]", "n_tokens": 16}
+{"sample_id": "088ad06ff214d28e", "gt": "(236c)^{11}", "pred": "(236c)^{11}", "pred_raw": "\\[(236c)^{11}\\]", "n_tokens": 8}
+{"sample_id": "ebbf54827c2e62d5", "gt": "(\\nabla f,-1)", "pred": "( \\nabla f,-1)", "pred_raw": "\\[( \\nabla f,-1)\\]", "n_tokens": 9}
+{"sample_id": "63015774cde071ed", "gt": "-|\\dot{p}|^{2}", "pred": "-|p|^2", "pred_raw": "\\[-|p|^2\\]", "n_tokens": 8}
+{"sample_id": "7e6186644fc45708", "gt": "q(x)=E[Q(x,\\xi)]", "pred": "q(x)=E[Q(x,\\xi)]", "pred_raw": "\\[q(x)=E[Q(x,\\xi)]\\]", "n_tokens": 15}
+{"sample_id": "5bdb3507cd92de64", "gt": "Z_{i,j}Z_{k,l}=Z_{i,l}Z_{k,j}", "pred": "z_{i,j}z_{k,l}=z_{i,l}z_{k,j}", "pred_raw": "\\[z_{i,j}z_{k,l}=z_{i,l}z_{k,j}\\]", "n_tokens": 27}
+{"sample_id": "170ccef202434603", "gt": "n-(p+q)", "pred": "n-(p+q)", "pred_raw": "\\[n-(p+q)\\]", "n_tokens": 9}
+{"sample_id": "8a8dbd5387660cfe", "gt": "J_{k}\\equiv\\oint p_{k}dq_{k}", "pred": "J_{k}\\equiv\\oint p_{k}dq_{k}", "pred_raw": "\\[J_{k}\\equiv\\oint p_{k}dq_{k}\\]", "n_tokens": 18}
+{"sample_id": "2c93d4e58a23e90b", "gt": "sin0^{\\circ}=\\frac{\\sqrt{0}}{2}", "pred": "sin\\theta^{0}=\\frac{\\sqrt{0}}{2}", "pred_raw": "\\[sin\\theta^{0}=\\frac{\\sqrt{0}}{2}\\]", "n_tokens": 17}
+{"sample_id": "a98ce9352dde0d5e", "gt": "\\frac{F}{L}=\\rho vG", "pred": "\\frac{F}{L}=\\rho vG", "pred_raw": "\\[\\frac{F}{L}=\\rho vG\\]", "n_tokens": 13}
+{"sample_id": "c688ac8e022dbaa6", "gt": "\\sigma_{xy}=-\\frac{\\partial^{2}C}{\\partial x\\partial y}", "pred": "\\sigma_{xy}=-\\frac{\\partial^{2}C}{\\partial x\\partial y}", "pred_raw": "\\[\\sigma_{xy}=-\\frac{\\partial^{2}C}{\\partial x\\partial y}\\]", "n_tokens": 21}
+{"sample_id": "085d455d0ee03bbc", "gt": "\\Sigma_{e}2^{-e}<\\infty", "pred": "\\sum_{e}2^{-e}< \\infty", "pred_raw": "\\[\\sum_{e}2^{-e}< \\infty\\]", "n_tokens": 14}
+{"sample_id": "e6e526347a085a7f", "gt": "(1)e\\cdot v=v", "pred": "(1)e \\cdot v=v", "pred_raw": "\\[(1)e \\cdot v=v\\]", "n_tokens": 12}
+{"sample_id": "a8f9aa14e263f6ee", "gt": "\\Omega(R)=cP(R)", "pred": "\\Omega(R)=cP(R)", "pred_raw": "\\[\\Omega(R)=cP(R)\\]", "n_tokens": 12}
+{"sample_id": "f42a01427a546133", "gt": "\\Omega_{\\Lambda}\\simeq2/3", "pred": "\\Omega_{\\Lambda}\\simeq2/3", "pred_raw": "\\[\\Omega_{\\Lambda}\\simeq2/3\\]", "n_tokens": 12}
+{"sample_id": "de2bb3f2f582aea1", "gt": "ch(E)=\\sum e^{\\eta_{i}}", "pred": "Ch(E)= \\sum e^{n_i}", "pred_raw": "\\[Ch(E)= \\sum e^{n_i}\\]", "n_tokens": 15}
+{"sample_id": "cfd391323f3a7816", "gt": "U_{t}=e^{itA},t\\in R", "pred": "U_{t}=e^{itA},t\\in R", "pred_raw": "\\[U_{t}=e^{itA},t\\in R\\]", "n_tokens": 17}
+{"sample_id": "de9d80599059caef", "gt": "(1^{*}(01^{*}0)^{*})^{*}", "pred": "(1^{*}(01^{*}0)^{*})^{*}", "pred_raw": "\\[(1^{*}(01^{*}0)^{*})^{*}\\]", "n_tokens": 10}
+{"sample_id": "e2be074ecb7444fa", "gt": "O(\\sqrt[4]{N})", "pred": "O(\\sqrt[4]{N})", "pred_raw": "\\[O(\\sqrt[4]{N})\\]", "n_tokens": 11}
+{"sample_id": "e11236fa0486c158", "gt": "J_{4}^{T}J_{4}=J_{4}J_{4}^{T}=I_{4}", "pred": "J_4^TJ_4=J_4J_4^T=I_4", "pred_raw": "\\[J_4^TJ_4=J_4J_4^T=I_4\\]", "n_tokens": 25}
+{"sample_id": "fdf0c26e1405c015", "gt": "(F_{p})^{d}", "pred": "\\left(F_{p} \\right)^{d}", "pred_raw": "\\[\\left(F_{p} \\right)^{d}\\]", "n_tokens": 14}
+{"sample_id": "8f4b5939ec5ab3f3", "gt": "1\\le p<\\infty,c\\in R", "pred": "1\\le p<\\infty,c\\in R", "pred_raw": "\\[1\\le p<\\infty,c\\in R\\]", "n_tokens": 15}
+{"sample_id": "4a376b1ae0ca5003", "gt": "K=n_{;a}^{a}=2/r_{0}", "pred": "K=n_{;a}^{a}=2/r_{0}", "pred_raw": "\\[K=n_{;a}^{a}=2/r_{0}\\]", "n_tokens": 17}
+{"sample_id": "5063380efcde89ce", "gt": "Z/l\\times Z/l", "pred": "Z/l \\times Z/l", "pred_raw": "\\[Z/l \\times Z/l\\]", "n_tokens": 12}
+{"sample_id": "0c29c827ec5045c2", "gt": "\\pi(k+\\frac{1}{2})", "pred": "\\pi(k+ \\frac{1}{2})", "pred_raw": "\\[\\pi(k+ \\frac{1}{2})\\]", "n_tokens": 14}
+{"sample_id": "fb9895fa3e6207cd", "gt": "E=50\\frac{\\pi^{2}\\hbar^{2}}{2mL^{2}}", "pred": "E=50\\frac{\\pi^{2}\\hbar^{2}}{2mL^{2}}", "pred_raw": "\\[E=50\\frac{\\pi^{2}\\hbar^{2}}{2mL^{2}}\\]", "n_tokens": 22}
+{"sample_id": "ccc6081a5376d827", "gt": "\\Theta=R\\times R^{+}", "pred": "G=R \\times R^{+}", "pred_raw": "\\[G=R \\times R^{+}\\]", "n_tokens": 10}
+{"sample_id": "b6eae35361cd1b2d", "gt": "I_{2}=D(b)f(b)b^{2}", "pred": "I_{2}=D(b)f(b)b^{2}", "pred_raw": "\\[I_{2}=D(b)f(b)b^{2}\\]", "n_tokens": 19}
+{"sample_id": "52e3200af3047670", "gt": "\\frac{1}{12}(\\begin{matrix}4&8&4\\\\ 5&7&-4\\\\ 1&-1&4\\end{matrix})", "pred": "\\frac{1}{2}(\\begin{matrix}4&8&4\\\\ 5&7&-4\\\\ 1&-1&4\\end{matrix})", "pred_raw": "\\[\\frac{1}{2}(\\begin{matrix}4&8&4\\\\ 5&7&-4\\\\ 1&-1&4\\end{matrix})\\]", "n_tokens": 35}
+{"sample_id": "92e8cb1fd0d151a6", "gt": "{\\epsilon_{1}}^{\\epsilon_{0}\\omega}", "pred": "\\epsilon_{1}^{\\epsilon_{0}\\omega}", "pred_raw": "\\[\\epsilon_{1}^{\\epsilon_{0}\\omega}\\]", "n_tokens": 13}
+{"sample_id": "910a36ae9c6cca2d", "gt": "K_{W}=[H^{+}][OH^{-}]", "pred": "K_{w}=[H^{+}][OH^{-}]", "pred_raw": "\\[K_{w}=[H^{+}][OH^{-}]\\]", "n_tokens": 14}
+{"sample_id": "030ea5646116a251", "gt": "M_{2}=P_{1}^{\\prime}|P_{2}|...", "pred": "M_{2}=P_{1}^{\\prime}(P_{2})", "pred_raw": "\\[M_{2}=P_{1}^{\\prime}(P_{2})\\]", "n_tokens": 17}
+{"sample_id": "1a9156ac324e7d6c", "gt": "L\\rightarrow\\lambda L,E\\rightarrow\\frac{1}{\\lambda^{2}}E", "pred": "L \\rightarrow \\lambda L,E \\rightarrow \\frac{1}{\\lambda^{2}}E", "pred_raw": "\\[L \\rightarrow \\lambda L,E \\rightarrow \\frac{1}{\\lambda^{2}}E\\]", "n_tokens": 24}
+{"sample_id": "18e8bc2de466093a", "gt": "\\pi^{\\prime}<P_{i}(T_{i})", "pred": "TT^{ \\prime}<P_{i}(T_{i})", "pred_raw": "\\[TT^{ \\prime}<P_{i}(T_{i})\\]", "n_tokens": 16}
+{"sample_id": "ff5b35f0dd39d22b", "gt": "n=t|m-T|^{-2}pq", "pred": "n=t|m-T|^{-2}pq", "pred_raw": "\\[n=t|m-T|^{-2}pq\\]", "n_tokens": 15}
+{"sample_id": "4a8029f4e4ee49b2", "gt": "\\overline{i}\\equiv I=q\\mu n_{q}EA", "pred": "i \\equiv I=q \\mu n_{q}EA", "pred_raw": "\\[i \\equiv I=q \\mu n_{q}EA\\]", "n_tokens": 17}
+{"sample_id": "68cd1320b4665409", "gt": "V_{e}=I_{sp}*g_{n}", "pred": "V_{e}=I_{sp}*g_{n}", "pred_raw": "\\[V_{e}=I_{sp}*g_{n}\\]", "n_tokens": 15}
+{"sample_id": "f080abc77a436cd2", "gt": "\\Gamma=C([0,1],X)", "pred": "\\Gamma=C([0,1],X)", "pred_raw": "\\[\\Gamma=C([0,1],X)\\]", "n_tokens": 13}
+{"sample_id": "ff3c192a70ff956e", "gt": "m>\\varphi(m)", "pred": "m>4(m)", "pred_raw": "\\[m>4(m)\\]", "n_tokens": 9}
+{"sample_id": "ceefdcbdec685a3c", "gt": "\\sum f(T,c)=1", "pred": "\\sum f(T,c)=1", "pred_raw": "\\[\\sum f(T,c)=1\\]", "n_tokens": 12}
+{"sample_id": "153e3388feb0a773", "gt": "p(x)=x^{3}+2x-3", "pred": "P(x)=x^3+2x-3", "pred_raw": "\\[P(x)=x^3+2x-3\\]", "n_tokens": 16}
+{"sample_id": "ef1de3ad0dd8137b", "gt": "2^{-1/2}", "pred": "\\sum_{i=1}^{n} \\frac{V_{i}-V_{i+1}}{n}", "pred_raw": "\\[\\sum_{i=1}^{n} \\frac{V_{i}-V_{i+1}}{n}\\]", "n_tokens": 26}
+{"sample_id": "5401968c0d9ebacb", "gt": "g(y)=y-\\overline{y}", "pred": "g(y)=y-\\overline{y}", "pred_raw": "\\[g(y)=y-\\overline{y}\\]", "n_tokens": 13}
+{"sample_id": "2b55615afcb05e8f", "gt": "V_{A}^{2}(mc/eB)", "pred": "V_{A}^{2}(mc/eB)", "pred_raw": "\\[V_{A}^{2}(mc/eB)\\]", "n_tokens": 14}
+{"sample_id": "31c5de15ba63d306", "gt": "\\pm\\epsilon^{ijkl}e_{k}\\wedge e_{l}", "pred": "\\pm \\epsilon^{ijkl}e_{k} \\wedge e_{l}", "pred_raw": "\\[\\pm \\epsilon^{ijkl}e_{k} \\wedge e_{l}\\]", "n_tokens": 19}
+{"sample_id": "52ff11e2117d13f0", "gt": "\\gamma^{\\mu}=x^{\\mu}\\circ\\gamma(t)", "pred": "\\gamma^{\\mu}=x^{\\mu}\\circ\\gamma(t)", "pred_raw": "\\[\\gamma^{\\mu}=x^{\\mu}\\circ\\gamma(t)\\]", "n_tokens": 17}
+{"sample_id": "5759999bfbb8dbc5", "gt": "F_{g}=10^{\\frac{-X_{g}}{10}}", "pred": "F_{g}=10^{\\frac{-X_{g}}{10}}", "pred_raw": "\\[F_{g}=10^{\\frac{-X_{g}}{10}}\\]", "n_tokens": 17}
+{"sample_id": "d27a462b612623aa", "gt": "(1-p+px)^{n}", "pred": "(1-p+px)^{n}", "pred_raw": "\\[(1-p+px)^{n}\\]", "n_tokens": 11}
+{"sample_id": "f1c9da706241ec35", "gt": "I(S;\\Omega-S)", "pred": "I(S;\\Omega-S)", "pred_raw": "\\[I(S;\\Omega-S)\\]", "n_tokens": 11}
+{"sample_id": "1a53b23c9b74b593", "gt": "U_{2n}=\\frac{2U_{n}u_{n}}{U_{n}+u_{n}}", "pred": "u_{2n}= \\frac{2u_{n}u_{n}}{u_{n}+u_{n}}", "pred_raw": "\\[u_{2n}= \\frac{2u_{n}u_{n}}{u_{n}+u_{n}}\\]", "n_tokens": 28}
+{"sample_id": "eb76f035c0c673fe", "gt": "\\prod_{j<k}(a_{j}-a_{k})", "pred": "\\prod_{j<k}(a_{j}-a_{k})", "pred_raw": "\\[\\prod_{j<k}(a_{j}-a_{k})\\]", "n_tokens": 17}
+{"sample_id": "489ad1338918ddff", "gt": "P^{\\mu},J^{\\mu\\nu},M", "pred": "P^{\\mu},J^{\\mu\\nu},M", "pred_raw": "\\[P^{\\mu},J^{\\mu\\nu},M\\]", "n_tokens": 15}
+{"sample_id": "69b18e1225acab82", "gt": "\\tilde{V}_{x}=|V_{x}|", "pred": "\\tilde{V}_{x}=|V_{x}|", "pred_raw": "\\[\\tilde{V}_{x}=|V_{x}|\\]", "n_tokens": 13}
+{"sample_id": "c33e1c314c6744e6", "gt": "\\theta=\\theta_{s}\\cdot\\frac{L^{2}}{L_{s}^{2}}=L^{2}", "pred": "\\theta= \\theta_s \\cdot \\frac{L^2}{L_s^2}=L^2", "pred_raw": "\\[\\theta= \\theta_s \\cdot \\frac{L^2}{L_s^2}=L^2\\]", "n_tokens": 28}
+{"sample_id": "25f80858c5104b1e", "gt": "D_{ii}=\\frac{\\sigma_{i}}{\\sigma_{i}^{2}+\\alpha^{2}}", "pred": "D_{ii}=\\frac{\\sigma_{i}}{\\sigma_{i}^{2}+\\alpha^{2}}", "pred_raw": "\\[D_{ii}=\\frac{\\sigma_{i}}{\\sigma_{i}^{2}+\\alpha^{2}}\\]", "n_tokens": 23}
+{"sample_id": "a80ba3f720a38494", "gt": "\\alpha=\\frac{2\\omega k_{0}}{c}=\\frac{\\omega\\kappa_{2}}{n_{0}c}", "pred": "\\alpha=\\frac{2\\omega k_{0}}{c}=\\frac{\\omega\\dot{k}_{2}}{n_{0}c}", "pred_raw": "\\[\\alpha=\\frac{2\\omega k_{0}}{c}=\\frac{\\omega\\dot{k}_{2}}{n_{0}c}\\]", "n_tokens": 32}
+{"sample_id": "9c8b13b1206eb0d3", "gt": "m_{i,j}=x^{i}\\cdot x^{j}", "pred": "m_{i,j}=x^{i}\\cdot x^{j}", "pred_raw": "\\[m_{i,j}=x^{i}\\cdot x^{j}\\]", "n_tokens": 18}
+{"sample_id": "36bd5b4001812566", "gt": "\\chi_{g}^{\\prime}(G)\\le\\Delta(G)+c", "pred": "\\chi_{g}^{\\prime}(G) \\leq \\Delta(G)+c", "pred_raw": "\\[\\chi_{g}^{\\prime}(G) \\leq \\Delta(G)+c\\]", "n_tokens": 20}
+{"sample_id": "42d6f76bdc073261", "gt": "\\sum_{n}\\hat{f}(n)=\\sum_{n}f(n)", "pred": "\\sum_{n} \\widehat{f}(n)= \\sum_{n} f(n)", "pred_raw": "\\[\\sum_{n} \\widehat{f}(n)= \\sum_{n} f(n)\\]", "n_tokens": 23}
+{"sample_id": "652c48bb99522d33", "gt": "\\pm\\frac{1,2}{1,3}", "pred": "\\pm \\frac{1,2}{1,3}", "pred_raw": "\\[\\pm \\frac{1,2}{1,3}\\]", "n_tokens": 15}
+{"sample_id": "10223f47f37d67a5", "gt": "\\epsilon,\\delta,K>0", "pred": "\\epsilon,\\delta,K>0", "pred_raw": "\\[\\epsilon,\\delta,K>0\\]", "n_tokens": 11}
+{"sample_id": "882d6629c1d12285", "gt": "m_{em}=\\frac{4}{3}\\cdot\\frac{E_{em}}{c^{2}}", "pred": "m_{em}=\\frac{4}{3}\\cdot\\frac{E_{em}}{c^{2}}", "pred_raw": "\\[m_{em}=\\frac{4}{3}\\cdot\\frac{E_{em}}{c^{2}}\\]", "n_tokens": 25}
+{"sample_id": "6d64c21dae2f2970", "gt": "O(\\lambda_{\\delta}(n)logn)", "pred": "O(\\lambda g(n)logn)", "pred_raw": "\\[O(\\lambda g(n)logn)\\]", "n_tokens": 13}
+{"sample_id": "6c925137e0e58279", "gt": "S(w)=\\sum_{w_{i}>0}w_{i}", "pred": "S(w)=\\sum_{w_{i}>0}w_{i}", "pred_raw": "\\[S(w)=\\sum_{w_{i}>0}w_{i}\\]", "n_tokens": 19}
+{"sample_id": "674dbfc1ffed0334", "gt": "[q-1,k]", "pred": "[q-1,k]", "pred_raw": "\\[[q-1,k]\\]", "n_tokens": 9}
+{"sample_id": "76fd9a41008a420c", "gt": "\\sum_{i=0}^{n}(\\begin{matrix}n\\\\ \\lfloor n/2\\rfloor\\end{matrix})", "pred": "\\sum_{i=0}^{n}( \\begin{matrix}n \\\\ \\lfloor n/2 \\rfloor \\end{matrix})", "pred_raw": "\\[\\sum_{i=0}^{n}( \\begin{matrix}n \\\\ \\lfloor n/2 \\rfloor \\end{matrix})\\]", "n_tokens": 30}
+{"sample_id": "04b22a5fda1d3489", "gt": "H_{n}(x)=\\sum_{k=0}^{n}a_{n,k}x^{k}", "pred": "H_{n}(x)= \\sum_{k=0}^{n}a_{n,k}x^{k}", "pred_raw": "\\[H_{n}(x)= \\sum_{k=0}^{n}a_{n,k}x^{k}\\]", "n_tokens": 28}
+{"sample_id": "d82acdca44583e15", "gt": "Z/l\\times Z/l", "pred": "Z/l \\times Z/l", "pred_raw": "\\[Z/l \\times Z/l\\]", "n_tokens": 12}
+{"sample_id": "c353a86abc9c6a45", "gt": "\\tau=F^{-1}(0.95)", "pred": "\\tau=F^{-1}(0.95)", "pred_raw": "\\[\\tau=F^{-1}(0.95)\\]", "n_tokens": 13}
+{"sample_id": "9315ce485608549e", "gt": "F_{g}=10^{\\frac{-X_{g}}{10}}", "pred": "F_{g}=10^{\\frac{-X_{g}}{10}}", "pred_raw": "\\[F_{g}=10^{\\frac{-X_{g}}{10}}\\]", "n_tokens": 17}
+{"sample_id": "234120e6b603327e", "gt": "\\sqrt{n}\\ge\\frac{1.96\\sigma}{0.5}", "pred": "\\sqrt{n} \\geq \\frac{1.96 \\sigma}{0.5}", "pred_raw": "\\[\\sqrt{n} \\geq \\frac{1.96 \\sigma}{0.5}\\]", "n_tokens": 22}
+{"sample_id": "2437c969be9daa00", "gt": "U^{(k)}x_{w}^{(k)}=x^{(k)}", "pred": "U^{(k)}x_{w}^{(k)}=x^{(k)}", "pred_raw": "\\[U^{(k)}x_{w}^{(k)}=x^{(k)}\\]", "n_tokens": 17}
+{"sample_id": "c7d7ce0e110744f3", "gt": "so(2n+1,C)", "pred": "so(2n+1,C)", "pred_raw": "\\[so(2n+1,C)\\]", "n_tokens": 12}
+{"sample_id": "510a369b7a9ff923", "gt": "E=\\frac{2.21}{r_{s}^{2}}-\\frac{0.916}{r_{s}}", "pred": "E=\\frac{2.21}{r_{s}^{2}}-\\frac{0.916}{r_{s}}", "pred_raw": "\\[E=\\frac{2.21}{r_{s}^{2}}-\\frac{0.916}{r_{s}}\\]", "n_tokens": 28}
+{"sample_id": "36597022d15a46f4", "gt": "\\Delta w=\\eta y(x_{n})x_{n}", "pred": "\\Delta w= \\eta y(x_{n})x_{n}", "pred_raw": "\\[\\Delta w= \\eta y(x_{n})x_{n}\\]", "n_tokens": 18}
+{"sample_id": "4dcccfb57345f83e", "gt": "f=\\sum_{e\\in\\Gamma}c_{e}T^{e}", "pred": "f=\\sum_{e\\in\\Gamma}c_{e}T^{e}", "pred_raw": "\\[f=\\sum_{e\\in\\Gamma}c_{e}T^{e}\\]", "n_tokens": 21}
+{"sample_id": "13131c43370057b4", "gt": "1/\\tau=k_{a}+k_{b}", "pred": "1/\\tau=k_{a}+k_{b}", "pred_raw": "\\[1/\\tau=k_{a}+k_{b}\\]", "n_tokens": 15}
+{"sample_id": "ec548eac7609af92", "gt": "\\nu+p-n>1", "pred": "v+p-n \\gt 1", "pred_raw": "\\[v+p-n \\gt 1\\]", "n_tokens": 12}
+{"sample_id": "70b739d5248b71c6", "gt": "V_{e}=I_{sp}*g_{n}", "pred": "V_{e}=I_{sp}*g_{n}", "pred_raw": "\\[V_{e}=I_{sp}*g_{n}\\]", "n_tokens": 15}
+{"sample_id": "7b56ea296320ae92", "gt": "Pr(t|B_{i}^{-})", "pred": "Pr(t|B_i^{-})", "pred_raw": "\\[Pr(t|B_i^{-})\\]", "n_tokens": 11}
+{"sample_id": "d5708776125229a5", "gt": "\\hat{x}_{0|0}=[\\begin{matrix}0\\\\ 0\\end{matrix}]", "pred": "\\hat{x}_{0|0}=[\\begin{matrix}0\\\\ 0\\end{matrix}]", "pred_raw": "\\[\\hat{x}_{0|0}=[\\begin{matrix}0\\\\ 0\\end{matrix}]\\]", "n_tokens": 23}
+{"sample_id": "842a20981ab96673", "gt": "\\frac{hL(P-U)}{2PU}+\\frac{S}{L}", "pred": "\\frac{hL(P-U)}{2PU}+\\frac{S}{L}", "pred_raw": "\\[\\frac{hL(P-U)}{2PU}+\\frac{S}{L}\\]", "n_tokens": 20}
+{"sample_id": "905a756c30ad12dd", "gt": "(x_{i},y_{j};x_{i+1},y_{j+1})", "pred": "(x_{i},y_{j},x_{i+1},y_{j+1})", "pred_raw": "\\[(x_{i},y_{j},x_{i+1},y_{j+1})\\]", "n_tokens": 23}
+{"sample_id": "6f811cdee8b50fde", "gt": "x=(\\lambda-\\lambda_{0})cos\\varphi_{0}", "pred": "x=( \\lambda- \\lambda_0) \\cos \\varphi_0", "pred_raw": "\\[x=( \\lambda- \\lambda_0) \\cos \\varphi_0\\]", "n_tokens": 20}
+{"sample_id": "4b0de7f9b7d3926d", "gt": "E=\\frac{-\\mu^{2}}{2}", "pred": "E= \\frac{- \\mu^2}{2}", "pred_raw": "\\[E= \\frac{- \\mu^2}{2}\\]", "n_tokens": 15}
+{"sample_id": "4994dce06e8f96bb", "gt": "\\frac{2m-\\mu}{\\mu}", "pred": "\\frac{2n- \\mu}{ \\mu}", "pred_raw": "\\[\\frac{2n- \\mu}{ \\mu}\\]", "n_tokens": 14}
+{"sample_id": "d85e5ec307e0c6e0", "gt": "Li(x)=\\int_{0}^{x}\\frac{dt}{log(t)}", "pred": "Li(x)= \\int_{0}^{x} \\frac{dt}{ \\log(t)}", "pred_raw": "\\[Li(x)= \\int_{0}^{x} \\frac{dt}{ \\log(t)}\\]", "n_tokens": 24}
+{"sample_id": "3d14c22cac88ccd1", "gt": "L^{2}\\le\\frac{\\pi}{4}area(\\partial P)", "pred": "L^{2}\\le\\frac{\\pi}{4}area(\\partial P)", "pred_raw": "\\[L^{2}\\le\\frac{\\pi}{4}area(\\partial P)\\]", "n_tokens": 20}
+{"sample_id": "4bc6970334e665c7", "gt": "B_{\\lambda^{j}}(x_{0})\\cap\\Omega^{c}", "pred": "B_{\\lambda^{j}}(x_{0})\\cap\\Omega^{c}", "pred_raw": "\\[B_{\\lambda^{j}}(x_{0})\\cap\\Omega^{c}\\]", "n_tokens": 19}
+{"sample_id": "0fafcff79c28b378", "gt": "(\\overline{A})^{\\epsilon}=A^{\\epsilon}", "pred": "( \\overline{A})^{ \\epsilon}=A^{ \\epsilon}", "pred_raw": "\\[( \\overline{A})^{ \\epsilon}=A^{ \\epsilon}\\]", "n_tokens": 16}
+{"sample_id": "38fe60445485470c", "gt": "-|I|>I_{0}", "pred": "|I|>I_{0}", "pred_raw": "\\[|I|>I_{0}\\]", "n_tokens": 9}
+{"sample_id": "3bfe4bdeed61953f", "gt": "c_{n}\\approx\\mu^{n}n^{\\gamma-1}", "pred": "c_{n} \\approx u^{n}n^{\\gamma-1}", "pred_raw": "\\[c_{n} \\approx u^{n}n^{\\gamma-1}\\]", "n_tokens": 19}
+{"sample_id": "c75e8dcfafb309f2", "gt": "Be=\\frac{\\Delta PL^{2}}{\\rho\\delta^{2}}", "pred": "Be=\\frac{\\Delta PL^{2}}{\\rho\\delta^{2}}", "pred_raw": "\\[Be=\\frac{\\Delta PL^{2}}{\\rho\\delta^{2}}\\]", "n_tokens": 19}
+{"sample_id": "4cbb69a329776a7b", "gt": "\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}-\\frac{z^{2}}{c^{2}}=0", "pred": "\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}\\cdot\\frac{z^{2}}{c^{2}}=0", "pred_raw": "\\[\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}\\cdot\\frac{z^{2}}{c^{2}}=0\\]", "n_tokens": 37}
+{"sample_id": "0a6998b130238d6b", "gt": "e_{j}=-\\frac{\\Omega(X_{j}^{-1})}{\\Lambda^{\\prime}(X_{j}^{-1})}", "pred": "e_{j}=-\\frac{\\Omega(X_{j}^{-1})}{\\Lambda^{\\prime}(X_{j}^{-1})}", "pred_raw": "\\[e_{j}=-\\frac{\\Omega(X_{j}^{-1})}{\\Lambda^{\\prime}(X_{j}^{-1})}\\]", "n_tokens": 27}
+{"sample_id": "56dcd1e379ceff0e", "gt": "(modk)", "pred": "(modk)", "pred_raw": "\\[(modk)\\]", "n_tokens": 6}
+{"sample_id": "76054f24ed84ebb1", "gt": "f^{\\mu}=x^{\\mu}L", "pred": "f^{ \\mu}=x^{ \\mu}L", "pred_raw": "\\[f^{ \\mu}=x^{ \\mu}L\\]", "n_tokens": 15}
+{"sample_id": "c8460f0e5ef9e98c", "gt": "0=-\\nabla p+\\rho g", "pred": "0=-\\nabla p+\\rho g", "pred_raw": "\\[0=-\\nabla p+\\rho g\\]", "n_tokens": 11}
+{"sample_id": "4c7680151b17f37b", "gt": "(A^{-1})_{ji}=|A|_{ij}^{-1}", "pred": "(A^{-1})_{ji}=|A|_{ij}", "pred_raw": "\\[(A^{-1})_{ji}=|A|_{ij}\\]", "n_tokens": 13}
+{"sample_id": "02b1dc6d4efd493a", "gt": "\\Omega(R)=cP(R)", "pred": "\\Omega(R)=cP(R)", "pred_raw": "\\[\\Omega(R)=cP(R)\\]", "n_tokens": 12}
+{"sample_id": "774d71ace5e4bfd1", "gt": "R(x)=\\frac{R}{H}H(x)", "pred": "R(x)=\\frac{R}{H}H(x)", "pred_raw": "\\[R(x)=\\frac{R}{H}H(x)\\]", "n_tokens": 17}
+{"sample_id": "77315341633b251b", "gt": "[I-A]", "pred": "\\left[{I-A} \\right]", "pred_raw": "\\[\\left[{I-A} \\right]\\]", "n_tokens": 12}
+{"sample_id": "3e2967e2b0e34303", "gt": "C_{\\frac{1}{2}}", "pred": "C_{ \\frac12}", "pred_raw": "\\[C_{ \\frac12}\\]", "n_tokens": 10}
+{"sample_id": "7357df2f8a6429c2", "gt": "1991_{10}=7C7_{16}", "pred": "1991_{10}=7C7_{16}", "pred_raw": "\\[1991_{10}=7C7_{16}\\]", "n_tokens": 14}
+{"sample_id": "ef34448bb13b7fd5", "gt": "x=\\sum_{k\\in B}\\langle x,e_{k}\\rangle e_{k}", "pred": "x= \\sum_{k \\in B} \\langle x,e_{k} \\rangle e_{k}", "pred_raw": "\\[x= \\sum_{k \\in B} \\langle x,e_{k} \\rangle e_{k}\\]", "n_tokens": 27}
+{"sample_id": "fdd5caf83af37cce", "gt": "2\\sigma_{1}/D", "pred": "2 \\sigma_{1}/D", "pred_raw": "\\[2 \\sigma_{1}/D\\]", "n_tokens": 11}
+{"sample_id": "b6bc10c86d4c61a7", "gt": "\\frac{n!}{(n-k)!\\cdot k^{n}}=m", "pred": "\\frac{n!}{(n-k)! \\cdot k^{n}}=m", "pred_raw": "\\[\\frac{n!}{(n-k)! \\cdot k^{n}}=m\\]", "n_tokens": 19}
+{"sample_id": "c980a906a9ece5ba", "gt": "(\\begin{matrix}2\\\\ 1\\end{matrix})(\\begin{matrix}2\\\\ 1\\end{matrix})(\\begin{matrix}3\\\\ 2\\end{matrix})", "pred": "(2)(2)(2)", "pred_raw": "\\[(2)(2)(2)\\]", "n_tokens": 9}
+{"sample_id": "f7fd789a986fe536", "gt": "F=\\frac{\\alpha}{r^{2}}", "pred": "F= \\frac{ \\alpha}{ \\gamma^{2}}", "pred_raw": "\\[F= \\frac{ \\alpha}{ \\gamma^{2}}\\]", "n_tokens": 16}
+{"sample_id": "5c47cdabdcb318d7", "gt": "(q_{t}^{i}-\\Gamma^{i})\\partial_{i}", "pred": "(q_{t}^{i}-\\Gamma^{i})\\partial_{i}", "pred_raw": "\\[(q_{t}^{i}-\\Gamma^{i})\\partial_{i}\\]", "n_tokens": 17}
+{"sample_id": "15d73d24d8123fdb", "gt": "\\frac{n-5\\pm\\Delta_{n}}{2-2n}", "pred": "\\frac{n-5 \\pm \\Delta n}{2-2n}", "pred_raw": "\\[\\frac{n-5 \\pm \\Delta n}{2-2n}\\]", "n_tokens": 19}
+{"sample_id": "297955923a92759f", "gt": "||\\varphi_{n}-\\varphi_{m}||_{d}<\\epsilon", "pred": "||\\varphi_{n}-\\varphi_{m}||_{d}<\\epsilon", "pred_raw": "\\[||\\varphi_{n}-\\varphi_{m}||_{d}<\\epsilon\\]", "n_tokens": 15}
+{"sample_id": "d1d53e4d70bce15a", "gt": "A=-27q", "pred": "A=-27q", "pred_raw": "\\[A=-27q\\]", "n_tokens": 8}
+{"sample_id": "0fbe410c8583ff52", "gt": "\\varphi(\\varphi(n))", "pred": "\\varphi(\\varphi(n))", "pred_raw": "\\[\\varphi(\\varphi(n))\\]", "n_tokens": 9}
+{"sample_id": "01a53ae1e3a9b918", "gt": "E:R^{n}\\rightarrow T_{p}M", "pred": "E:R^{n}\\rightarrow T_{p}M", "pred_raw": "\\[E:R^{n}\\rightarrow T_{p}M\\]", "n_tokens": 16}
+{"sample_id": "69984d1cc27cf069", "gt": "\\hat{\\rho},\\hat{\\phi},\\hat{z}", "pred": "\\hat{\\rho},\\hat{\\phi},\\hat{z}", "pred_raw": "\\[\\hat{\\rho},\\hat{\\phi},\\hat{z}\\]", "n_tokens": 15}
+{"sample_id": "618367b157f94a8a", "gt": "E[\\varphi(x)]", "pred": "E[\\varphi(x)]", "pred_raw": "\\[E[\\varphi(x)]\\]", "n_tokens": 9}
+{"sample_id": "b11b99c4af3d9f37", "gt": "\\frac{1}{2}+i\\frac{2\\pi n}{logn}", "pred": "\\frac{1}{2}+i \\frac{2 \\pi n}{ \\log n}", "pred_raw": "\\[\\frac{1}{2}+i \\frac{2 \\pi n}{ \\log n}\\]", "n_tokens": 22}
+{"sample_id": "c2569662a604d398", "gt": "g_{4}=-x+3x^{2}", "pred": "g_{4}=-x+3x^{2}", "pred_raw": "\\[g_{4}=-x+3x^{2}\\]", "n_tokens": 14}
+{"sample_id": "558b9abd5cb88d5f", "gt": "q=q(0)+j\\frac{p(0)}{\\omega L}", "pred": "q=q(0)+j\\frac{p(0)}{\\omega L}", "pred_raw": "\\[q=q(0)+j\\frac{p(0)}{\\omega L}\\]", "n_tokens": 20}
+{"sample_id": "16cb7cb5ce563acb", "gt": "1,2,\\cdot\\cdot\\cdot,n", "pred": "1,2, \\ldots,n", "pred_raw": "\\[1,2, \\ldots,n\\]", "n_tokens": 12}
+{"sample_id": "d7cc8d99784e262f", "gt": "a_{G}=(\\frac{1}{n},...,\\frac{1}{n})", "pred": "a_{G}=( \\frac{1}{n},..., \\frac{1}{n})", "pred_raw": "\\[a_{G}=( \\frac{1}{n},..., \\frac{1}{n})\\]", "n_tokens": 21}
+{"sample_id": "0083f66ddd05c46c", "gt": "m_{i,j}=x^{i}\\cdot x^{j}", "pred": "m_{i,j}=x^{i} \\cdot x^{j}", "pred_raw": "\\[m_{i,j}=x^{i} \\cdot x^{j}\\]", "n_tokens": 19}
+{"sample_id": "d5b820419dac75bd", "gt": "\\mu\\in P(R^{k})", "pred": "\\mu\\in P(R^{k})", "pred_raw": "\\[\\mu\\in P(R^{k})\\]", "n_tokens": 12}
+{"sample_id": "adf0c657cb533977", "gt": "1+x+\\frac{x^{2}}{2}", "pred": "1+x+\\frac{x^{2}}{2}", "pred_raw": "\\[1+x+\\frac{x^{2}}{2}\\]", "n_tokens": 15}
+{"sample_id": "937a6d81c991bf55", "gt": "e_{i}\\cdot e_{j}=[D]_{ij}", "pred": "e_{i} \\cdot e_{j}=[D]_{ij}", "pred_raw": "\\[e_{i} \\cdot e_{j}=[D]_{ij}\\]", "n_tokens": 17}
+{"sample_id": "ea20102ec1743172", "gt": "(\\prod_{i=1}^{n}(x-x_{i}))p(x)", "pred": "(\\prod_{i=1}^{n}(x-x_{i}))p(x)", "pred_raw": "\\[(\\prod_{i=1}^{n}(x-x_{i}))p(x)\\]", "n_tokens": 21}
+{"sample_id": "d42280d48021a60c", "gt": "P(f", "pred": "p \\left( f \\right.", "pred_raw": "\\[p \\left( f \\right.\\]", "n_tokens": 11}
+{"sample_id": "8ab44a5a237d40d6", "gt": "Z_{\\infty}^{p,q}=\\bigcap_{r=0}^{\\infty}Z_{r}^{p,q}", "pred": "Z_{\\infty}^{p,q}=\\bigcap_{r=0}^{\\infty}Z_{r}^{p,q}", "pred_raw": "\\[Z_{\\infty}^{p,q}=\\bigcap_{r=0}^{\\infty}Z_{r}^{p,q}\\]", "n_tokens": 27}
+{"sample_id": "d2ebb8762666149e", "gt": "S_{2}=V_{0}sin(\\omega t-\\pi)", "pred": "S_{2}=V_{0}sin(\\omega t-\\pi)", "pred_raw": "\\[S_{2}=V_{0}sin(\\omega t-\\pi)\\]", "n_tokens": 18}
+{"sample_id": "c2c4e09e6245dafe", "gt": "x^{\\prime}=-\\frac{1}{x}", "pred": "x^{\\prime}=\\frac{1}{-x}", "pred_raw": "\\[x^{\\prime}=\\frac{1}{-x}\\]", "n_tokens": 13}
+{"sample_id": "6518713125b465a3", "gt": "E=\\frac{-\\mu^{2}}{2}", "pred": "E= \\frac{- \\mu^{2}}{2}", "pred_raw": "\\[E= \\frac{- \\mu^{2}}{2}\\]", "n_tokens": 15}
+{"sample_id": "14bac194cf6b49e7", "gt": "exp(-(x^{2})/4)", "pred": "exp(-(x^{2})/4)", "pred_raw": "\\[exp(-(x^{2})/4)\\]", "n_tokens": 11}
+{"sample_id": "8c858f5da323e75f", "gt": "E[X]:=\\rho(-X)", "pred": "E[X]:=\\rho(-X)", "pred_raw": "\\[E[X]:=\\rho(-X)\\]", "n_tokens": 11}
+{"sample_id": "440cfcd869f2938e", "gt": "P_{H}V|_{H}=T", "pred": "P_{H}V|_{H}=T", "pred_raw": "\\[P_{H}V|_{H}=T\\]", "n_tokens": 13}
+{"sample_id": "26adaa4977fe89af", "gt": "(\\frac{mol}{m^{2}\\cdot s})", "pred": "( \\frac{mol}{{m^2-5}})", "pred_raw": "\\[( \\frac{mol}{{m^2-5}})\\]", "n_tokens": 15}
+{"sample_id": "eccea302813f84d0", "gt": "f_{EW}(|\\vec{a}-\\vec{b}|)", "pred": "f \\in W(| \\overrightarrow{a}- \\overrightarrow{b}|)", "pred_raw": "\\[f \\in W(| \\overrightarrow{a}- \\overrightarrow{b}|)\\]", "n_tokens": 18}
+{"sample_id": "2de55f58418c4661", "gt": "\\pi(G)^{\\prime}=P\\rho(G)^{\\prime\\prime}P", "pred": "\\pi(G)^{!}=P_{P}(G)^{!!}P", "pred_raw": "\\[\\pi(G)^{!}=P_{P}(G)^{!!}P\\]", "n_tokens": 19}
+{"sample_id": "f69fab87b068ab63", "gt": "R_{eff}^{-1}=R_{1}^{-1}+R_{2}^{-1}", "pred": "R_{eff}^{-1}=R_{1}^{-1}+R_{2}^{-1}", "pred_raw": "\\[R_{eff}^{-1}=R_{1}^{-1}+R_{2}^{-1}\\]", "n_tokens": 21}
+{"sample_id": "aa5d5b30ac555c4e", "gt": "\\overline{Q}^{day}=0", "pred": "\\overline{Q}^{day}=0", "pred_raw": "\\[\\overline{Q}^{day}=0\\]", "n_tokens": 12}
+{"sample_id": "a3bb80287c4a42fc", "gt": "\\int_{0}^{\\infty}\\frac{dx}{\\Gamma(x)}", "pred": "\\int_{0}^{ \\infty} \\frac{dx}{ \\Gamma(x)}", "pred_raw": "\\[\\int_{0}^{ \\infty} \\frac{dx}{ \\Gamma(x)}\\]", "n_tokens": 20}
+{"sample_id": "44bb09af98e7ad47", "gt": "f^{\\prime}(g(p))=p", "pred": "f^{\\prime}(g(p))=p", "pred_raw": "\\[f^{\\prime}(g(p))=p\\]", "n_tokens": 13}
+{"sample_id": "2ebfd75ed5a4f806", "gt": "F=\\frac{1}{4\\pi\\epsilon_{r}\\epsilon_{0}}\\frac{q_{1}q_{2}}{r^{2}}", "pred": "F=\\frac{1}{4\\pi\\epsilon_{r}\\epsilon_{0}}\\frac{q_{1}q_{2}}{r^{2}}", "pred_raw": "\\[F=\\frac{1}{4\\pi\\epsilon_{r}\\epsilon_{0}}\\frac{q_{1}q_{2}}{r^{2}}\\]", "n_tokens": 35}
+{"sample_id": "60c9554323f5130a", "gt": "R=(<_{1},...,<_{t})", "pred": "R=(<_{1},...,<_{t})", "pred_raw": "\\[R=(<_{1},...,<_{t})\\]", "n_tokens": 11}
+{"sample_id": "f4771c981f861a3d", "gt": "U_{x}:H_{x}\\rightarrow K_{\\eta(x)}", "pred": "U_{x}:H_{x}\\rightarrow K_{\\eta(x)}", "pred_raw": "\\[U_{x}:H_{x}\\rightarrow K_{\\eta(x)}\\]", "n_tokens": 18}
+{"sample_id": "8611e1d8aa844005", "gt": "E_{n_{1},n_{2}}^{(0)}", "pred": "i_{n_{1},n_{2}}", "pred_raw": "\\[i_{n_{1},n_{2}}\\]", "n_tokens": 13}
+{"sample_id": "5bf27aaecf12f252", "gt": "\\overline{16}", "pred": "\\overline{Ġ\\big{|}Ġ\\begin{array}{c}Ġ\\text{石}Ġ\\end{array}}", "pred_raw": "\\[\\overline{Ġ\\big{|}Ġ\\begin{array}{c}Ġ\\text{石}Ġ\\end{array}}\\]", "n_tokens": 25}
+{"sample_id": "aaa76d5c95ddd3b0", "gt": "0\\le\\frac{dP}{dw}", "pred": "0 \\leq \\frac{dP}{dw}", "pred_raw": "\\[0 \\leq \\frac{dP}{dw}\\]", "n_tokens": 13}
+{"sample_id": "fa621be0bae40343", "gt": "(x-a)^{2}H(x-a)", "pred": "(x-a)^{2}H(x-a)", "pred_raw": "\\[(x-a)^{2}H(x-a)\\]", "n_tokens": 15}
+{"sample_id": "2baced53ec2bd97d", "gt": "lim_{\\theta\\rightarrow0}\\frac{1-cos\\theta}{\\theta}=0", "pred": "\\lim_{\\theta \\rightarrow 0} \\frac{1- \\cos \\theta}{\\theta}=0", "pred_raw": "\\[\\lim_{\\theta \\rightarrow 0} \\frac{1- \\cos \\theta}{\\theta}=0\\]", "n_tokens": 24}
+{"sample_id": "946d9d0d635a5f6b", "gt": "\\{x\\}=\\{X\\}e^{i\\omega t}", "pred": "\\{x \\}= \\{X \\}e^{i \\omega t}", "pred_raw": "\\[\\{x \\}= \\{X \\}e^{i \\omega t}\\]", "n_tokens": 17}
+{"sample_id": "3beb4d3c9fed07f5", "gt": "\\delta_{j,j_{1}}\\delta_{m,m_{1}}", "pred": "s_{j,j_{1}} \\delta_{m,m_{1}}", "pred_raw": "\\[s_{j,j_{1}} \\delta_{m,m_{1}}\\]", "n_tokens": 20}
+{"sample_id": "405f79ee5dadabb7", "gt": "S_{C}(N)<2^{N}", "pred": "Q(N)<2^{N}", "pred_raw": "\\[Q(N)<2^{N}\\]", "n_tokens": 11}
+{"sample_id": "95c5213efbb79b41", "gt": "\\{\\sigma_{j}^{+},\\sigma_{j}^{-}\\}=1", "pred": "\\{\\sigma_{j}^{+},\\sigma_{j}^{-}\\}=1", "pred_raw": "\\[\\{\\sigma_{j}^{+},\\sigma_{j}^{-}\\}=1\\]", "n_tokens": 14}
+{"sample_id": "3b20639b15b65e3d", "gt": "\\pi(p^{*})-p^{*}y^{*}(p)", "pred": "\\pi(p^{*})-p^{*}y^{*}(p)", "pred_raw": "\\[\\pi(p^{*})-p^{*}y^{*}(p)\\]", "n_tokens": 13}
+{"sample_id": "a95646ecef87aeba", "gt": "\\sum_{i=1}^{n}W_{i}\\times F_{i}=", "pred": "\\sum_{i=1}^{n}W_{i}\\times F_{i}=", "pred_raw": "\\[\\sum_{i=1}^{n}W_{i}\\times F_{i}=\\]", "n_tokens": 20}
+{"sample_id": "76bdeb83720f8dac", "gt": "I(\\rho,N)", "pred": "I(p,N)", "pred_raw": "\\[I(p,N)\\]", "n_tokens": 9}
+{"sample_id": "a415afd5d9adc30a", "gt": "E_{1}=y_{1}+\\frac{v^{2}}{2g}", "pred": "E_{1}=y_{1}+ \\frac{v^{2}}{2g}", "pred_raw": "\\[E_{1}=y_{1}+ \\frac{v^{2}}{2g}\\]", "n_tokens": 21}
+{"sample_id": "4b4356bc9f512e0b", "gt": "\\{F_{i};i\\in I\\}", "pred": "\\{F_{i};i\\in I\\}", "pred_raw": "\\[\\{F_{i};i\\in I\\}\\]", "n_tokens": 12}
+{"sample_id": "9724070beb5777b0", "gt": "1:\\frac{1+\\sqrt{5}}{2}", "pred": "1: \\frac{1+ \\sqrt{5}}{2}", "pred_raw": "\\[1: \\frac{1+ \\sqrt{5}}{2}\\]", "n_tokens": 17}
+{"sample_id": "79cd085946f5b548", "gt": "\\omega+\\omega_{i}\\gg\\omega-\\omega_{i}", "pred": "w+w_{j} \\rightarrow w-w_{i}", "pred_raw": "\\[w+w_{j} \\rightarrow w-w_{i}\\]", "n_tokens": 17}
+{"sample_id": "47dffdd70d76bfb0", "gt": "0\\notin S", "pred": "0 \\notin S", "pred_raw": "\\[0 \\notin S\\]", "n_tokens": 8}
+{"sample_id": "bb9b02391fa739aa", "gt": "\\nabla^{2}\\varphi=-\\frac{\\rho_{f}}{\\epsilon}", "pred": "\\nabla^{2}\\varphi=-\\frac{\\rho_{f}}{\\epsilon}", "pred_raw": "\\[\\nabla^{2}\\varphi=-\\frac{\\rho_{f}}{\\epsilon}\\]", "n_tokens": 17}
+{"sample_id": "dba02617455cd2f0", "gt": "\\frac{\\omega_{1}}{\\omega_{2}}\\notin R", "pred": "\\frac{w_{1}}{w_{2}} \\notin R", "pred_raw": "\\[\\frac{w_{1}}{w_{2}} \\notin R\\]", "n_tokens": 17}
+{"sample_id": "83dd7c9c8f3bcf38", "gt": "20-\\frac{\\sum_{i=1}^{19}i^{n}}{20^{n}}", "pred": "20-\\frac{\\sum_{i=1}^{19}i^{n}}{20^{n}}", "pred_raw": "\\[20-\\frac{\\sum_{i=1}^{19}i^{n}}{20^{n}}\\]", "n_tokens": 23}
+{"sample_id": "c84e6d9128c21219", "gt": "\\Delta P=\\frac{\\rho_{actual}}{\\rho_{ref}}RQ^{2}", "pred": "\\Delta P=\\frac{\\rho_{actual}}{\\rho_{ref}}RQ^{2}", "pred_raw": "\\[\\Delta P=\\frac{\\rho_{actual}}{\\rho_{ref}}RQ^{2}\\]", "n_tokens": 22}
+{"sample_id": "82af27eb321c2aa2", "gt": "p=p(r)Y_{10}", "pred": "p=p(r)Y_{10}", "pred_raw": "\\[p=p(r)Y_{10}\\]", "n_tokens": 13}
+{"sample_id": "d077aa6999c57037", "gt": "S^{2}C^{3}", "pred": "s^2c^3", "pred_raw": "\\[s^2c^3\\]", "n_tokens": 10}
+{"sample_id": "ad3be0cd69f46c28", "gt": "2^{k}t_{0}", "pred": "2^4t_0", "pred_raw": "\\[2^4t_0\\]", "n_tokens": 10}
+{"sample_id": "852632a8112459bb", "gt": "V_{BE}=V_{BE}(I_{B})", "pred": "V_{BE}=V_{BE}(I_{B})", "pred_raw": "\\[V_{BE}=V_{BE}(I_{B})\\]", "n_tokens": 15}
+{"sample_id": "0d9bf6643d1c9681", "gt": "(\\begin{matrix}n\\\\ k\\end{matrix})modm", "pred": "( \\gamma)modm", "pred_raw": "\\[( \\gamma)modm\\]", "n_tokens": 9}
+{"sample_id": "5222e65a1a75182d", "gt": "E[(X-E(X))^{2}]", "pred": "E[(X-E(X))^{2}]", "pred_raw": "\\[E[(X-E(X))^{2}]\\]", "n_tokens": 13}
+{"sample_id": "8cfd657ec41e593e", "gt": "O(n^{\\lceil\\frac{d}{2}\\rceil})", "pred": "O(n^{\\lceil\\frac{d}{2}\\rceil})", "pred_raw": "\\[O(n^{\\lceil\\frac{d}{2}\\rceil})\\]", "n_tokens": 17}
+{"sample_id": "130d557aa7fb63a7", "gt": "D^{\\epsilon}(\\rho||\\sigma)", "pred": "D^{\\epsilon}(\\rho||\\sigma)", "pred_raw": "\\[D^{\\epsilon}(\\rho||\\sigma)\\]", "n_tokens": 11}
+{"sample_id": "4ee8a7dcbf8fb331", "gt": "1,x+x^{2}+x^{3}", "pred": "1,x+x^{2}+x^{3}", "pred_raw": "\\[1,x+x^{2}+x^{3}\\]", "n_tokens": 15}
+{"sample_id": "052b8aebfd8741b9", "gt": "2m-2<n(m-1)", "pred": "2m-2<n(m-1)", "pred_raw": "\\[2m-2<n(m-1)\\]", "n_tokens": 14}
+{"sample_id": "2cbbcab1a4697137", "gt": "K_{i}(s_{i},t_{i},d_{i})", "pred": "K_{i}(s_{i},t_{i},d_{i})", "pred_raw": "\\[K_{i}(s_{i},t_{i},d_{i})\\]", "n_tokens": 19}
+{"sample_id": "2a89376adf9ca262", "gt": "\\propto exp(-z/H)", "pred": "\\alpha exp(-z/H)", "pred_raw": "\\[\\alpha exp(-z/H)\\]", "n_tokens": 10}
+{"sample_id": "4bfcf7146f472cf2", "gt": "\\pi r(r+\\sqrt{r^{2}+h^{2}})", "pred": "\\pi r(r+ \\sqrt{r^2+h^2})", "pred_raw": "\\[\\pi r(r+ \\sqrt{r^2+h^2})\\]", "n_tokens": 19}
+{"sample_id": "a0ea52913aeec96b", "gt": "p_{n+1}=2+\\sum_{i=1}^{n}g_{i}", "pred": "p_{n+1}=2+\\sum_{i=1}^{n}g_{i}", "pred_raw": "\\[p_{n+1}=2+\\sum_{i=1}^{n}g_{i}\\]", "n_tokens": 23}
+{"sample_id": "f2710d28bbade5f2", "gt": "g:=g^{+}-g^{-}", "pred": "g=g^t-g^t", "pred_raw": "\\[g=g^t-g^t\\]", "n_tokens": 13}
+{"sample_id": "00386113d577085b", "gt": "\\langle a_{0},a_{1},...\\rangle\\in R^{\\omega}", "pred": "\\langle a_{0},a_{1},...\\rangle\\in R^{\\omega}", "pred_raw": "\\[\\langle a_{0},a_{1},...\\rangle\\in R^{\\omega}\\]", "n_tokens": 19}
+{"sample_id": "1237c99a9e83762c", "gt": "-|1\\rangle", "pred": "-|1 \\rangle", "pred_raw": "\\[-|1 \\rangle\\]", "n_tokens": 8}
+{"sample_id": "5e4e125d85899a6f", "gt": "f:R(X)\\rightarrow R(S_{R})", "pred": "f:R(X) \\rightarrow R(S_R)", "pred_raw": "\\[f:R(X) \\rightarrow R(S_R)\\]", "n_tokens": 17}
+{"sample_id": "b55ec54058921928", "gt": "|\\frac{q}{p}|=1", "pred": "| \\frac{q}{p}|=1", "pred_raw": "\\[| \\frac{q}{p}|=1\\]", "n_tokens": 12}
+{"sample_id": "f9563c7c140d56f9", "gt": "\\frac{1}{2}sin^{2}0=0", "pred": "\\frac{1}{2}sin^{2}0=0", "pred_raw": "\\[\\frac{1}{2}sin^{2}0=0\\]", "n_tokens": 17}
+{"sample_id": "5e8d2c9a56828a31", "gt": "\\frac{dV_{-}}{dt}=0", "pred": "\\frac{dV_{-}}{dt}=0", "pred_raw": "\\[\\frac{dV_{-}}{dt}=0\\]", "n_tokens": 11}
+{"sample_id": "d85d3564f9fdeb7b", "gt": "|\\psi(t)\\rangle=U(t)|\\psi(0)\\rangle", "pred": "|\\psi(t)\\rangle=U(t)|\\psi(0)\\rangle", "pred_raw": "\\[|\\psi(t)\\rangle=U(t)|\\psi(0)\\rangle\\]", "n_tokens": 19}
+{"sample_id": "e17a9e80a4cb640d", "gt": "lim_{n\\rightarrow\\infty}Pr(X_{n}=0)", "pred": "\\lim_{n\\rightarrow\\infty}Pr(X_{n}=0)", "pred_raw": "\\[\\lim_{n\\rightarrow\\infty}Pr(X_{n}=0)\\]", "n_tokens": 19}
+{"sample_id": "ec29d9a6a099811d", "gt": "(\\frac{m_{s}}{m_{i}})", "pred": "( \\frac{m_{S}}{m_i})", "pred_raw": "\\[( \\frac{m_{S}}{m_i})\\]", "n_tokens": 14}
+{"sample_id": "9e6e3654d56c6f29", "gt": "(U(z),0,0)", "pred": "(U(z),0,0)", "pred_raw": "\\[(U(z),0,0)\\]", "n_tokens": 11}
+{"sample_id": "bddb716ad647464c", "gt": "b-(n-b)=a", "pred": "b-(n-b)=a", "pred_raw": "\\[b-(n-b)=a\\]", "n_tokens": 11}
+{"sample_id": "9e85ef903d0d71b4", "gt": "<10^{-6}", "pred": "<10^{-6}", "pred_raw": "\\[<10^{-6}\\]", "n_tokens": 7}
+{"sample_id": "c30aa72501fd0a9a", "gt": "Y_{12}=\\frac{-Z_{12}}{|Z|}", "pred": "Y_{12}= \\frac{-Z_{12}}{|Z|}", "pred_raw": "\\[Y_{12}= \\frac{-Z_{12}}{|Z|}\\]", "n_tokens": 16}
+{"sample_id": "aa13aef1434f8e51", "gt": "2+\\frac{1}{1+\\frac{1}{2}}", "pred": "2+ \\frac{1}{1+ \\frac{1}{2}}", "pred_raw": "\\[2+ \\frac{1}{1+ \\frac{1}{2}}\\]", "n_tokens": 19}
+{"sample_id": "1932e5f55fba81ff", "gt": "r^{2},\\sqrt{r},exp(r)", "pred": "r^{2}, \\sqrt{r},exp(r)", "pred_raw": "\\[r^{2}, \\sqrt{r},exp(r)\\]", "n_tokens": 16}
+{"sample_id": "1927652495b65a24", "gt": "E[S_{1}+...+S_{\\lambda}]", "pred": "E[S_1+ \\ldots+S_n]", "pred_raw": "\\[E[S_1+ \\ldots+S_n]\\]", "n_tokens": 16}
+{"sample_id": "12d2a5b6e3c836c0", "gt": "E[Z_{i}]=0", "pred": "E[z_i]=0", "pred_raw": "\\[E[z_i]=0\\]", "n_tokens": 11}
+{"sample_id": "c673ba6ce50002cc", "gt": "E[Z_{i}]=0", "pred": "E \\left[ Z_i \\right]=0", "pred_raw": "\\[E \\left[ Z_i \\right]=0\\]", "n_tokens": 15}
+{"sample_id": "097203e11785c263", "gt": "-0.3>\\alpha>-1.6", "pred": "-0.37 \\alpha>-1.6", "pred_raw": "\\[-0.37 \\alpha>-1.6\\]", "n_tokens": 13}
+{"sample_id": "6fac761bf79cb7fc", "gt": "\\tau=\\frac{(\\alpha\\Delta t)}{\\Delta x^{2}}", "pred": "\\tau= \\frac{( \\alpha \\Delta t)}{ \\Delta x^{2}}", "pred_raw": "\\[\\tau= \\frac{( \\alpha \\Delta t)}{ \\Delta x^{2}}\\]", "n_tokens": 20}
+{"sample_id": "bc48c4ba43a57976", "gt": "P_{\\pi}^{-1}=P_{\\pi^{-1}}=P_{\\pi}^{T}", "pred": "P^{-1}_{ \\pi}=P_{ \\pi-1}=P^{T}_{ \\pi}", "pred_raw": "\\[P^{-1}_{ \\pi}=P_{ \\pi-1}=P^{T}_{ \\pi}\\]", "n_tokens": 24}
+{"sample_id": "5f86d392aae35f52", "gt": "ax^{2}+by^{2}+c", "pred": "ax^{2}+by^{2}+c", "pred_raw": "\\[ax^{2}+by^{2}+c\\]", "n_tokens": 13}
+{"sample_id": "73885065247201f8", "gt": "t_{ik}=\\sum_{j}c_{ij}c_{jk}", "pred": "t_{ik}=\\sum_{j}c_{ij}c_{jk}", "pred_raw": "\\[t_{ik}=\\sum_{j}c_{ij}c_{jk}\\]", "n_tokens": 19}
+{"sample_id": "4fd93469313813b9", "gt": "\\{f_{X}(\\cdot;\\theta)|\\theta\\in\\Theta\\}", "pred": "\\{f_{X}(\\cdot;\\theta)|\\theta\\in\\Theta\\}", "pred_raw": "\\[\\{f_{X}(\\cdot;\\theta)|\\theta\\in\\Theta\\}\\]", "n_tokens": 17}
+{"sample_id": "400f185fe67f02e5", "gt": "\\tau_{c}*=f(Re_{p}*)", "pred": "\\tau_{c}*=f(Re_{p}*)", "pred_raw": "\\[\\tau_{c}*=f(Re_{p}*)\\]", "n_tokens": 15}
+{"sample_id": "0758a400f2dcc27b", "gt": "(\\lambda_{i}^{+},\\lambda_{i}^{-})", "pred": "( \\lambda_i^{+}, \\lambda_i^{-})", "pred_raw": "\\[( \\lambda_i^{+}, \\lambda_i^{-})\\]", "n_tokens": 13}
+{"sample_id": "ce2943d8d8726c54", "gt": "h(x)=\\frac{x_{i}}{|x|^{2}}", "pred": "h(x)= \\frac{x_{i}}{|x|^{2}}", "pred_raw": "\\[h(x)= \\frac{x_{i}}{|x|^{2}}\\]", "n_tokens": 18}
+{"sample_id": "05a39bcdbcd491a8", "gt": "e_{2},e_{3}\\in(-1,0]", "pred": "e_{2},e_{3}\\in(-1,0]", "pred_raw": "\\[e_{2},e_{3}\\in(-1,0]\\]", "n_tokens": 17}
+{"sample_id": "1186ebd74ebcbd83", "gt": "1+3=4mod13", "pred": "1+3=4mod13", "pred_raw": "\\[1+3=4mod13\\]", "n_tokens": 11}
+{"sample_id": "fe5d0b9e65be82a6", "gt": "C_{h}=vb_{h+1}-\\pi_{h}", "pred": "c_{h}=vb_{h+1}-\\pi_{h}", "pred_raw": "\\[c_{h}=vb_{h+1}-\\pi_{h}\\]", "n_tokens": 17}
+{"sample_id": "78b9eedfc771cc4d", "gt": "A=U|A|", "pred": "A=U|A|", "pred_raw": "\\[A=U|A|\\]", "n_tokens": 9}
+{"sample_id": "1ac69957c33b233f", "gt": "\\alpha=1-\\frac{D_{s}P_{n}}{D_{n}P_{s}}", "pred": "\\alpha=1-\\frac{D_{s}P_{n}}{D_{n}P_{s}}", "pred_raw": "\\[\\alpha=1-\\frac{D_{s}P_{n}}{D_{n}P_{s}}\\]", "n_tokens": 25}
+{"sample_id": "bfda504f311e7a33", "gt": "\\nu=\\Gamma-\\lambda ln(p^{\\prime})", "pred": "\\nu=\\Gamma-\\lambda ln(p^{\\prime})", "pred_raw": "\\[\\nu=\\Gamma-\\lambda ln(p^{\\prime})\\]", "n_tokens": 14}
+{"sample_id": "f93c21df764d6d75", "gt": "V_{BE}=V_{BE}(I_{B})", "pred": "V_{BE}=V_{BE}(I_{B})", "pred_raw": "\\[V_{BE}=V_{BE}(I_{B})\\]", "n_tokens": 15}
+{"sample_id": "7974c6e7921a1a83", "gt": "\\sum_{i=1}^{d}(d+1-i)b^{i}", "pred": "\\sum_{i=1}^{d} \\left(d+i-1 \\right)b^{i}", "pred_raw": "\\[\\sum_{i=1}^{d} \\left(d+i-1 \\right)b^{i}\\]", "n_tokens": 26}
+{"sample_id": "4f38ed280f11a523", "gt": "\\alpha^{jk_{i}}\\in GF(p^{m_{i}})", "pred": "\\alpha^{j_{k_{i}}}\\in GF(p^{m_{i}})", "pred_raw": "\\[\\alpha^{j_{k_{i}}}\\in GF(p^{m_{i}})\\]", "n_tokens": 21}
+{"sample_id": "1d6b0847c7c5fe58", "gt": "\\underline{\\varphi(\\beta/\\alpha)}", "pred": "\\varphi( \\beta/ \\alpha)", "pred_raw": "\\[\\varphi( \\beta/ \\alpha)\\]", "n_tokens": 11}
+{"sample_id": "e3dec563c01dc229", "gt": "O(\\lambda^{(d-1)/2}log\\lambda)", "pred": "O(\\lambda^{(d-1)/2}log\\lambda)", "pred_raw": "\\[O(\\lambda^{(d-1)/2}log\\lambda)\\]", "n_tokens": 17}
+{"sample_id": "81c416ad3f196167", "gt": "\\frac{nv}{4+(n-2)}", "pred": "\\frac{nv}{4+(n-2)}", "pred_raw": "\\[\\frac{nv}{4+(n-2)}\\]", "n_tokens": 13}
+{"sample_id": "8024693994f373e6", "gt": "A=a_{ij}e_{i}\\otimes e^{j}", "pred": "A=a_{ij}e_{i}\\otimes e^{j}", "pred_raw": "\\[A=a_{ij}e_{i}\\otimes e^{j}\\]", "n_tokens": 18}
+{"sample_id": "e5e4e6c3ff462b88", "gt": "w(P,Q):=\\frac{G}{F}", "pred": "w(P,Q)= \\frac{Q}{F}", "pred_raw": "\\[w(P,Q)= \\frac{Q}{F}\\]", "n_tokens": 16}
+{"sample_id": "446e2a07ecd8089c", "gt": "\\varphi(t,X)=t-\\psi(X)", "pred": "\\varphi(t,X)=t-\\psi(X)", "pred_raw": "\\[\\varphi(t,X)=t-\\psi(X)\\]", "n_tokens": 15}
+{"sample_id": "52f7961bd6873f36", "gt": "\\bigcap_{i\\in I}A_{i}", "pred": "\\bigcap_{i \\in \\pm}A_{i}", "pred_raw": "\\[\\bigcap_{i \\in \\pm}A_{i}\\]", "n_tokens": 15}
+{"sample_id": "60bcf869c1457cac", "gt": "L(r,\\theta,\\dot{s},\\dot{z},\\dot{r},\\dot{\\theta},\\dot{\\phi},t)", "pred": "L(r, \\theta,s,z,\\dot{r},\\dot{\\theta},\\dot{\\phi},t)", "pred_raw": "\\[L(r, \\theta,s,z,\\dot{r},\\dot{\\theta},\\dot{\\phi},t)\\]", "n_tokens": 28}
+{"sample_id": "02de91b624143438", "gt": "y^{2}=x^{3}-n^{2}x", "pred": "y^{2}=x^{3}-n^{2}x", "pred_raw": "\\[y^{2}=x^{3}-n^{2}x\\]", "n_tokens": 17}
+{"sample_id": "c85c6138f0ebf1ae", "gt": "|\\frac{d^{2}y}{dx^{2}}|\\approx\\frac{1}{R}", "pred": "|\\frac{d^{2}y}{dx^{2}}|\\approx\\frac{1}{R}", "pred_raw": "\\[|\\frac{d^{2}y}{dx^{2}}|\\approx\\frac{1}{R}\\]", "n_tokens": 23}
+{"sample_id": "3f98a9676444dc22", "gt": "\\tilde{X_{i}}", "pred": "\\widetilde{X}_{i}", "pred_raw": "\\[\\widetilde{X}_{i}\\]", "n_tokens": 9}
+{"sample_id": "4a27036517e3e83f", "gt": "F_{snake}(\\overline{v}_{i})", "pred": "F_{snake}(\\overline{v}_{i})", "pred_raw": "\\[F_{snake}(\\overline{v}_{i})\\]", "n_tokens": 15}
+{"sample_id": "fb44a57152c42758", "gt": "|\\gamma^{\\prime}|(t)", "pred": "|\\gamma^{\\prime}|(t)", "pred_raw": "\\[|\\gamma^{\\prime}|(t)\\]", "n_tokens": 9}
+{"sample_id": "48d08913c81d4b75", "gt": "\\partial\\{(I^{2},\\varphi_{\\lambda},S_{\\lambda})\\}_{\\lambda\\in\\Lambda}", "pred": "2\\{(I^{2},\\varphi_{\\lambda},S_{\\lambda})\\}_{\\lambda\\in\\Lambda}", "pred_raw": "\\[2\\{(I^{2},\\varphi_{\\lambda},S_{\\lambda})\\}_{\\lambda\\in\\Lambda}\\]", "n_tokens": 23}
+{"sample_id": "f7ce2fccdd66c8f7", "gt": "f_{N}-g\\in a\\backslash b_{N}", "pred": "f_{N}-g \\in a\\backslash b_{N}", "pred_raw": "\\[f_{N}-g \\in a\\backslash b_{N}\\]", "n_tokens": 17}
+{"sample_id": "a930df04bc98adf3", "gt": "\\sum_{x}a=ax+C", "pred": "\\sum_{x}a=ax+C", "pred_raw": "\\[\\sum_{x}a=ax+C\\]", "n_tokens": 13}
+{"sample_id": "28a26c038ba72908", "gt": "J_{\\hat{n}}", "pred": "{- \\mbox{j}}_{ \\widehat{n}}", "pred_raw": "\\[{- \\mbox{j}}_{ \\widehat{n}}\\]", "n_tokens": 14}
+{"sample_id": "93983b42c1707b51", "gt": "=e^{f(x)}f^{\\prime}(x)", "pred": "=e^{f(x)}f^{ \\prime}(x)", "pred_raw": "\\[=e^{f(x)}f^{ \\prime}(x)\\]", "n_tokens": 16}
+{"sample_id": "7481e870d2bf8917", "gt": "(b^{3}-a^{3})/(b-a)", "pred": "(b^{3}-a^{3})/(b-a)", "pred_raw": "\\[(b^{3}-a^{3})/(b-a)\\]", "n_tokens": 15}
+{"sample_id": "67c6befec99b8e68", "gt": "S_{2}=V_{0}sin(\\omega t-\\pi)", "pred": "S_{2}=V_{0}sin(\\omega t-\\pi)", "pred_raw": "\\[S_{2}=V_{0}sin(\\omega t-\\pi)\\]", "n_tokens": 18}
+{"sample_id": "c018fcaf81d7cc87", "gt": "w_{1},w_{2},...,w_{n}=", "pred": "w_{1},w_{2}, \\ldots,w_{n}=", "pred_raw": "\\[w_{1},w_{2}, \\ldots,w_{n}=\\]", "n_tokens": 18}
+{"sample_id": "28fb39b73cc59587", "gt": "p(x_{k+1}|\\hat{\\xi}_{k}^{i})", "pred": "p(x_{k+1}|\\hat{\\xi}_{k}^{i})", "pred_raw": "\\[p(x_{k+1}|\\hat{\\xi}_{k}^{i})\\]", "n_tokens": 19}
+{"sample_id": "00c46c9b07b39bb7", "gt": "l_{n}=kl_{n}\\cdot\\frac{b_{n}}{b_{a}}\\cdot\\frac{s_{n}}{s_{a}}", "pred": "l_{n}=kl_{n} \\cdot \\frac{b_{n}}{b_{a}} \\cdot \\frac{s_{n}}{s_{a}}", "pred_raw": "\\[l_{n}=kl_{n} \\cdot \\frac{b_{n}}{b_{a}} \\cdot \\frac{s_{n}}{s_{a}}\\]", "n_tokens": 37}
+{"sample_id": "214d35d2d05b6497", "gt": "G_{\\alpha\\beta}=-8\\pi GT_{\\alpha\\beta}", "pred": "G \\alpha \\beta=-8 \\pi GT_{ \\alpha \\beta}", "pred_raw": "\\[G \\alpha \\beta=-8 \\pi GT_{ \\alpha \\beta}\\]", "n_tokens": 20}
+{"sample_id": "cc53a7aaef749b32", "gt": "\\overline{B_{1}(p)}=\\{p\\}", "pred": "\\overline{B_1(p)}= \\left \\{p \\right \\}", "pred_raw": "\\[\\overline{B_1(p)}= \\left \\{p \\right \\}\\]", "n_tokens": 18}
+{"sample_id": "908a75a9eb2c14ca", "gt": "\\gamma_{i}={\\phi_{i}}^{2}", "pred": "\\gamma_{i}={\\phi_{i}}^{2}", "pred_raw": "\\[\\gamma_{i}={\\phi_{i}}^{2}\\]", "n_tokens": 13}
+{"sample_id": "33f5ea1b2cb5c410", "gt": "J:V\\rightarrow\\overline{R}", "pred": "\\text{j:V \\rightarrow \\overline{R}}", "pred_raw": "\\[\\text{j:V \\rightarrow \\overline{R}}\\]", "n_tokens": 15}
+{"sample_id": "5c25a22451cde96d", "gt": "P_{k|k-1}", "pred": "P_{k|k-1}", "pred_raw": "\\[P_{k|k-1}\\]", "n_tokens": 11}
+{"sample_id": "3489f86c0ce19f01", "gt": "\\{a^{n}b^{n}|n\\ge1\\}", "pred": "\\{a^nb^n|n\\ge1\\}", "pred_raw": "\\[\\{a^nb^n|n\\ge1\\}\\]", "n_tokens": 14}
+{"sample_id": "88e0445a2b4ad752", "gt": "(3)Z(p^{\\infty})", "pred": "(3)Z(p^{ \\infty})", "pred_raw": "\\[(3)Z(p^{ \\infty})\\]", "n_tokens": 12}
+{"sample_id": "c7c7453379cada93", "gt": "(\\frac{m}{s^{2}})", "pred": "( \\frac{m}{s^2})", "pred_raw": "\\[( \\frac{m}{s^2})\\]", "n_tokens": 12}
+{"sample_id": "473d2af98a27e1a5", "gt": "\\forall n\\in N,|n|_{*}\\le1", "pred": "\\forall n \\in N,|n|_{*} \\leq 1", "pred_raw": "\\[\\forall n \\in N,|n|_{*} \\leq 1\\]", "n_tokens": 16}
+{"sample_id": "dedfafa10cefb3bd", "gt": "k_{t}:id_{D}\\sim k_{1}", "pred": "k_{t}:id_{D}\\sim k_{1}", "pred_raw": "\\[k_{t}:id_{D}\\sim k_{1}\\]", "n_tokens": 16}
+{"sample_id": "694946c243e8820e", "gt": "|G|=|S_{21}|", "pred": "|G|=|S_{21}|", "pred_raw": "\\[|G|=|S_{21}|\\]", "n_tokens": 9}
+{"sample_id": "71334bbe0762d135", "gt": "\\chi^{-1}(-1)", "pred": "\\chi^{-1}(-1)", "pred_raw": "\\[\\chi^{-1}(-1)\\]", "n_tokens": 9}
+{"sample_id": "f02cd95190710ad5", "gt": "a=(\\alpha p_{0i})_{i=1}^{J}", "pred": "a=(\\alpha p_{0i})_{i=1}^{J}", "pred_raw": "\\[a=(\\alpha p_{0i})_{i=1}^{J}\\]", "n_tokens": 17}
+{"sample_id": "5afce04670518da0", "gt": "\\Phi=-\\frac{1}{\\sqrt{r^{2}+\\epsilon^{2}}}", "pred": "\\Phi=-\\frac{1}{\\sqrt{r^{2}+\\epsilon^{2}}}", "pred_raw": "\\[\\Phi=-\\frac{1}{\\sqrt{r^{2}+\\epsilon^{2}}}\\]", "n_tokens": 19}
+{"sample_id": "ebc6987d374eca5b", "gt": "\\tilde{U}^{a}\\equiv dx^{a}/ds", "pred": "\\tilde{U}^{a} \\equiv dx^{a}/ds", "pred_raw": "\\[\\tilde{U}^{a} \\equiv dx^{a}/ds\\]", "n_tokens": 17}
+{"sample_id": "9936b7c2d79763ca", "gt": "BG_{m}\\rightarrow P^{N}", "pred": "BG_{m} \\rightarrow P^N", "pred_raw": "\\[BG_{m} \\rightarrow P^N\\]", "n_tokens": 13}
+{"sample_id": "17199a55a322b939", "gt": "1(", "pred": "1(", "pred_raw": "\\[1(\\]", "n_tokens": 6}
+{"sample_id": "cc57cb3742add42d", "gt": "|V_{0}|\\gg E_{f}", "pred": "|V_0| \\rightarrow E_f", "pred_raw": "\\[|V_0| \\rightarrow E_f\\]", "n_tokens": 13}
+{"sample_id": "088f5b7221265556", "gt": "\\sum_{i=1}^{N}r^{(i)}=0", "pred": "\\sum_{i=1}^{N}r^{(i)}=0", "pred_raw": "\\[\\sum_{i=1}^{N}r^{(i)}=0\\]", "n_tokens": 17}
+{"sample_id": "2e797e6488eeda67", "gt": "\\frac{dy}{dt}=-.1(y-70)", "pred": "\\frac{dy}{dt}=-1(y-70)", "pred_raw": "\\[\\frac{dy}{dt}=-1(y-70)\\]", "n_tokens": 15}
+{"sample_id": "36aa27bd68df6be2", "gt": "SL_{4}/\\mu_{2}\\cong SO_{6}", "pred": "SL_{4}/\\mu_{2}\\cong SO_{6}", "pred_raw": "\\[SL_{4}/\\mu_{2}\\cong SO_{6}\\]", "n_tokens": 16}
+{"sample_id": "bd3936caddaab1cc", "gt": "\\approx(a+w)(e^{a}(1+w)-1)", "pred": "\\approx(a+w)(e^{a}(1+w)-1)", "pred_raw": "\\[\\approx(a+w)(e^{a}(1+w)-1)\\]", "n_tokens": 19}
+{"sample_id": "8e8e3ba858103474", "gt": "\\sqrt{n(N+\\epsilon)}", "pred": "\\sqrt{n(N+\\epsilon)}", "pred_raw": "\\[\\sqrt{n(N+\\epsilon)}\\]", "n_tokens": 11}
+{"sample_id": "0aa2738d330a10b0", "gt": "H=0,t>0", "pred": "H=0,t>0", "pred_raw": "\\[H=0,t>0\\]", "n_tokens": 11}
+{"sample_id": "ad7bf3a6599f1c56", "gt": "H_{eu}^{2}=\\frac{\\sigma_{a}^{2}+\\sigma_{d}^{2}}{\\sigma_{P}^{2}}", "pred": "H_{eu}^{2}=\\frac{\\sigma_{a}^{2}+\\sigma_{d}^{2}}{\\sigma_{P}^{2}}", "pred_raw": "\\[H_{eu}^{2}=\\frac{\\sigma_{a}^{2}+\\sigma_{d}^{2}}{\\sigma_{P}^{2}}\\]", "n_tokens": 29}
+{"sample_id": "2683ca147e5463c1", "gt": "s_{\\mu}*s_{\\nu}=\\sum_{\\lambda}g_{\\mu\\nu}^{\\lambda}s_{\\lambda}", "pred": "s_{\\mu}*s_{\\nu}=\\sum_{\\lambda}g_{\\mu\\nu}^{\\lambda}s_{\\lambda}", "pred_raw": "\\[s_{\\mu}*s_{\\nu}=\\sum_{\\lambda}g_{\\mu\\nu}^{\\lambda}s_{\\lambda}\\]", "n_tokens": 27}
+{"sample_id": "505000355ab61711", "gt": "1-\\prod_{n=k}^{\\infty}(1-p_{n})", "pred": "1-\\prod_{n=k}^{\\infty}(1-p_{n})", "pred_raw": "\\[1-\\prod_{n=k}^{\\infty}(1-p_{n})\\]", "n_tokens": 19}
+{"sample_id": "8180094043260243", "gt": "O(n(n+m))", "pred": "O(n(n+m))", "pred_raw": "\\[O(n(n+m))\\]", "n_tokens": 11}
+{"sample_id": "4f01b782e52c5ab5", "gt": "O_{T^{\\prime}}\\rightarrow f_{*}O_{T}", "pred": "O_{T^{\\prime}}\\rightarrow f_{*}O_{T}", "pred_raw": "\\[O_{T^{\\prime}}\\rightarrow f_{*}O_{T}\\]", "n_tokens": 16}
+{"sample_id": "429de549ba19f947", "gt": "\\mu_{i}\\nu_{j}>0", "pred": "\\mu_{i}\\nu_{j}>0", "pred_raw": "\\[\\mu_{i}\\nu_{j}>0\\]", "n_tokens": 13}
+{"sample_id": "148bef704e5a20b6", "gt": "Z_{i}^{(m)}=mY_{i}^{(m)}", "pred": "Z_i^{(m)}=mY_i^{(m)}", "pred_raw": "\\[Z_i^{(m)}=mY_i^{(m)}\\]", "n_tokens": 16}
+{"sample_id": "facdded2e760cd09", "gt": "H_{0}(\\langle\\vec{X}\\rangle_{m})<\\infty", "pred": "H_{0}( \\langle \\vec{X} \\rangle_{m})< \\infty", "pred_raw": "\\[H_{0}( \\langle \\vec{X} \\rangle_{m})< \\infty\\]", "n_tokens": 22}
+{"sample_id": "071a0d9ae409a20b", "gt": "F[", "pred": "Fl", "pred_raw": "\\[Fl\\]", "n_tokens": 6}
+{"sample_id": "6e807c2c1b264b17", "gt": "\\frac{\\Delta l}{\\Delta r_{N}}=1.22", "pred": "\\frac{ \\Delta l}{ \\Delta r_{N}}=1.22", "pred_raw": "\\[\\frac{ \\Delta l}{ \\Delta r_{N}}=1.22\\]", "n_tokens": 19}
+{"sample_id": "2c74642a21af5267", "gt": "(A|\\psi\\rangle)^{*}|\\psi\\rangle", "pred": "(A|\\psi\\rangle)^{A}|\\psi\\rangle", "pred_raw": "\\[(A|\\psi\\rangle)^{A}|\\psi\\rangle\\]", "n_tokens": 15}
+{"sample_id": "c477ffd1c694528c", "gt": "\\forall i,a_{ii}\\ne0", "pred": "\\forall i,a_{ii}\\ne0", "pred_raw": "\\[\\forall i,a_{ii}\\ne0\\]", "n_tokens": 13}
+{"sample_id": "6cd1face8d17a086", "gt": "(E_{1},\\hat{O}E_{2})", "pred": "(E_{1}, \\widehat{O}E_{2})", "pred_raw": "\\[(E_{1}, \\widehat{O}E_{2})\\]", "n_tokens": 16}
+{"sample_id": "9d10a32ea8d493d3", "gt": "\\delta V^{ext}(t)", "pred": "d \\nu^{ext}(t)", "pred_raw": "\\[d \\nu^{ext}(t)\\]", "n_tokens": 11}
+{"sample_id": "785cdce36c8d0f04", "gt": "\\tilde{N}^{0}\\rightarrow\\tilde{l}^{+}l^{-}", "pred": "\\tilde{N}^{0}\\rightarrow\\tilde{l}^{+}l^{-}", "pred_raw": "\\[\\tilde{N}^{0}\\rightarrow\\tilde{l}^{+}l^{-}\\]", "n_tokens": 17}
+{"sample_id": "fc05b5b75b64c47a", "gt": "\\sum_{k=0}^{n}(q+1)^{k}", "pred": "\\sum_{k=0}^{n}(q+1)^{k}", "pred_raw": "\\[\\sum_{k=0}^{n}(q+1)^{k}\\]", "n_tokens": 17}
+{"sample_id": "4e9d36925088d531", "gt": "lim_{x\\rightarrow a}\\frac{bx^{n}}{x-a})", "pred": "\\lim_{x\\rightarrow a}\\frac{bx^{n}}{x-a}", "pred_raw": "\\[\\lim_{x\\rightarrow a}\\frac{bx^{n}}{x-a}\\]", "n_tokens": 20}
+{"sample_id": "e595d0b378ecb085", "gt": "J_{k}:=\\bigoplus_{j=1}^{k}U_{j}", "pred": "J_{k}:=\\bigoplus_{j=1}^{k}V_{j}", "pred_raw": "\\[J_{k}:=\\bigoplus_{j=1}^{k}V_{j}\\]", "n_tokens": 19}
+{"sample_id": "8408e549c17c971d", "gt": "2Rsin(\\frac{a}{2})", "pred": "2R \\sin( \\frac{a}{2})", "pred_raw": "\\[2R \\sin( \\frac{a}{2})\\]", "n_tokens": 15}
+{"sample_id": "3cfc272d1170395c", "gt": "\\sum_{i}(X_{i},f_{i},\\alpha_{i})=0", "pred": "\\sum_{i}(X_{i},f_{i}, \\alpha_{i})=0", "pred_raw": "\\[\\sum_{i}(X_{i},f_{i}, \\alpha_{i})=0\\]", "n_tokens": 22}
+{"sample_id": "5a5d218cef7d6be2", "gt": "\\overline{x}_{n+1}", "pred": "\\overline{x}_{n+1}", "pred_raw": "\\[\\overline{x}_{n+1}\\]", "n_tokens": 11}
+{"sample_id": "f61aa085bb664097", "gt": "U_{2n}=\\frac{2U_{n}u_{n}}{U_{n}+u_{n}}", "pred": "u_{2n}= \\frac{2u_{n}u_{0}}{u_{n}+u_{m}}", "pred_raw": "\\[u_{2n}= \\frac{2u_{n}u_{0}}{u_{n}+u_{m}}\\]", "n_tokens": 28}
+{"sample_id": "bbf4ccdb4f7a2934", "gt": "Mf(s)=-\\frac{1}{s+a}", "pred": "Mf(s)=-\\frac{1}{s+a}", "pred_raw": "\\[Mf(s)=-\\frac{1}{s+a}\\]", "n_tokens": 15}
+{"sample_id": "6f8f5d7b6dc67e9f", "gt": "z^{-1}=z^{*}/||z||", "pred": "z^{-1}=z^{*}/||z||", "pred_raw": "\\[z^{-1}=z^{*}/||z||\\]", "n_tokens": 12}
+{"sample_id": "bd4ac82bacedce52", "gt": "||Y|_{I}-U_{k}||_{1}\\le\\delta", "pred": "||Y|_{I}-U_{k}||_{1}\\le\\delta", "pred_raw": "\\[||Y|_{I}-U_{k}||_{1}\\le\\delta\\]", "n_tokens": 17}
+{"sample_id": "4150ee2e0353308d", "gt": "\\Omega=arg(-z_{2},z_{1})", "pred": "\\Omega=arg(-z_{2},z_{1})", "pred_raw": "\\[\\Omega=arg(-z_{2},z_{1})\\]", "n_tokens": 15}
+{"sample_id": "0a540bed6280ac9f", "gt": "B_{\\nu}(T)\\simeq\\frac{2\\nu^{2}kT}{c^{2}}", "pred": "B_{ \\nu}(T) \\simeq \\frac{2 \\nu^{2}kT}{c^{2}}", "pred_raw": "\\[B_{ \\nu}(T) \\simeq \\frac{2 \\nu^{2}kT}{c^{2}}\\]", "n_tokens": 27}
+{"sample_id": "581c74ae70292589", "gt": "2^{m/15}=e^{m/T}", "pred": "2^{m/15}=e^{m/T}", "pred_raw": "\\[2^{m/15}=e^{m/T}\\]", "n_tokens": 15}
+{"sample_id": "99bea7b7e11c1382", "gt": "2^{S}", "pred": "2^{s}", "pred_raw": "\\[2^{s}\\]", "n_tokens": 7}
+{"sample_id": "4202585d8024be89", "gt": "=e^{f(x)}f^{\\prime}(x)", "pred": "=e^{-f(x)}-f^{'}(x)", "pred_raw": "\\[=e^{-f(x)}-f^{'}(x)\\]", "n_tokens": 15}
+{"sample_id": "e37327c69646ad3e", "gt": "\\sum_{i=1}^{n}W_{i}\\times F_{i}=", "pred": "\\sum_{i=1}^{n}W_{i}\\times F_{i}=", "pred_raw": "\\[\\sum_{i=1}^{n}W_{i}\\times F_{i}=\\]", "n_tokens": 20}
+{"sample_id": "188852d0914fac9a", "gt": "(n-1)|(m-k)", "pred": "(n-1)|(m-k)", "pred_raw": "\\[(n-1)|(m-k)\\]", "n_tokens": 11}
+{"sample_id": "89e60e51f2bd3635", "gt": "a_{t+1}=k_{1}\\frac{a_{t}}{1+k_{2}a_{t}}", "pred": "a_{t+1}=k_{1} \\frac{a_{t}}{1+k_{2}a_{t}}", "pred_raw": "\\[a_{t+1}=k_{1} \\frac{a_{t}}{1+k_{2}a_{t}}\\]", "n_tokens": 30}
+{"sample_id": "5872d3a4718bcacb", "gt": "deg(f,\\overline{\\Omega},p)\\ne0", "pred": "deg(f, \\overline{ \\Omega},p) \\neq 0", "pred_raw": "\\[deg(f, \\overline{ \\Omega},p) \\neq 0\\]", "n_tokens": 19}
+{"sample_id": "75fd4854c88162d3", "gt": "=\\sqrt{lim_{a\\rightarrow\\infty}\\frac{8a^{2}}{16a^{2}}}", "pred": "= \\sqrt{ \\lim_{a \\rightarrow \\infty} \\frac{8a^{2}}{16a^{2}}}", "pred_raw": "\\[= \\sqrt{ \\lim_{a \\rightarrow \\infty} \\frac{8a^{2}}{16a^{2}}}\\]", "n_tokens": 28}
+{"sample_id": "006badbfc63bbd21", "gt": "p=(p_{x},p_{y},p_{z})", "pred": "p=(p_{x},p_{y},p_{z})", "pred_raw": "\\[p=(p_{x},p_{y},p_{z})\\]", "n_tokens": 17}
+{"sample_id": "8e8dbf8407269250", "gt": "3^{(F_{n}-1)/2}", "pred": "3^{(F_{n}-1)/2}", "pred_raw": "\\[3^{(F_{n}-1)/2}\\]", "n_tokens": 13}
+{"sample_id": "fb51edd6c130f926", "gt": "\\eta(e_{\\mu},e_{\\nu})=\\eta_{\\mu\\nu}", "pred": "\\eta(e_{ \\mu},e_{ \\nu})= \\eta_{\\mu\\nu}", "pred_raw": "\\[\\eta(e_{ \\mu},e_{ \\nu})= \\eta_{\\mu\\nu}\\]", "n_tokens": 22}
+{"sample_id": "7e8bbefaa030a28b", "gt": "C^{++}=C^{oo}=C", "pred": "C^{++}=C^{oo}=C", "pred_raw": "\\[C^{++}=C^{oo}=C\\]", "n_tokens": 12}
+{"sample_id": "e634ed605e39fea9", "gt": "N_{v}(\\mu_{2}-\\mu_{1})=\\frac{df}{dc}", "pred": "N_{v}(\\mu_{2}-\\mu_{1})=\\frac{df}{dc}", "pred_raw": "\\[N_{v}(\\mu_{2}-\\mu_{1})=\\frac{df}{dc}\\]", "n_tokens": 21}
+{"sample_id": "1054c0b283aa2695", "gt": "k[X]=\\bigoplus_{\\lambda}k[X]_{(\\lambda)}", "pred": "k[X]=\\bigoplus_{\\lambda}k[X]_{(\\lambda)}", "pred_raw": "\\[k[X]=\\bigoplus_{\\lambda}k[X]_{(\\lambda)}\\]", "n_tokens": 18}
+{"sample_id": "fe004b761d656d43", "gt": "S=\\frac{c}{4\\pi}E\\times B", "pred": "S=\\frac{c}{4\\pi}E\\times B", "pred_raw": "\\[S=\\frac{c}{4\\pi}E\\times B\\]", "n_tokens": 18}
+{"sample_id": "21d8d2bd29133187", "gt": "\\hat{r}=\\frac{r}{r}", "pred": "\\hat{r}= \\frac{r}{r}", "pred_raw": "\\[\\hat{r}= \\frac{r}{r}\\]", "n_tokens": 14}
+{"sample_id": "10a19fd47f22e526", "gt": "(exp(M_{t}/2))_{t\\ge0}", "pred": "(exp(M_{t}/2))_{t\\ge0}", "pred_raw": "\\[(exp(M_{t}/2))_{t\\ge0}\\]", "n_tokens": 16}
+{"sample_id": "1cde0bdee083e841", "gt": "(0,1/2)", "pred": "(0,1/2)", "pred_raw": "\\[(0,1/2)\\]", "n_tokens": 9}
+{"sample_id": "3f80456d50e7c0ea", "gt": "a^{(b^{c})}", "pred": "a^{(b^{c})}", "pred_raw": "\\[a^{(b^{c})}\\]", "n_tokens": 9}
+{"sample_id": "6fbb4d1ea6e8c1dd", "gt": "\\le^{-1}=\\ge,<^{-1}=>", "pred": "\\le^{-1}=\\ge,<^{-1}=>", "pred_raw": "\\[\\le^{-1}=\\ge,<^{-1}=>\\]", "n_tokens": 13}
+{"sample_id": "bc327f0b791843ec", "gt": "V_{t}=a_{0}\\cdot M\\sqrt{\\frac{T}{T_{0}}}", "pred": "V_{t}=a_{0}\\cdot M\\sqrt{\\frac{T}{T_{0}}}", "pred_raw": "\\[V_{t}=a_{0}\\cdot M\\sqrt{\\frac{T}{T_{0}}}\\]", "n_tokens": 24}
+{"sample_id": "3f46c4a708546f8b", "gt": "\\langle\\sigma\\rangle=-p/\\sqrt{2}", "pred": "\\langle\\sigma\\rangle=-p/\\sqrt{2}", "pred_raw": "\\[\\langle\\sigma\\rangle=-p/\\sqrt{2}\\]", "n_tokens": 15}
+{"sample_id": "9bca1035e96f3869", "gt": "P_{0|0}=[\\begin{matrix}0&0\\\\ 0&0\\end{matrix}]", "pred": "P_{0|0}=[\\begin{matrix}0&0\\\\ 0&0\\end{matrix}]", "pred_raw": "\\[P_{0|0}=[\\begin{matrix}0&0\\\\ 0&0\\end{matrix}]\\]", "n_tokens": 25}
+{"sample_id": "53cdf23bebeb8a1c", "gt": "(uv)/2=q/4", "pred": "(uv)/2=q/4", "pred_raw": "\\[(uv)/2=q/4\\]", "n_tokens": 11}
+{"sample_id": "66a2790c462d63d5", "gt": "D(>p,p,e)", "pred": "D \\left(>p,p,e \\right)", "pred_raw": "\\[D \\left(>p,p,e \\right)\\]", "n_tokens": 16}
+{"sample_id": "d1c67fa5273fe2d7", "gt": "\\oplus_{i=1}^{m}L^{2}(R,\\mu_{i})", "pred": "\\oplus_{i=1}^{m}L^{2}(R,\\mu_{i})", "pred_raw": "\\[\\oplus_{i=1}^{m}L^{2}(R,\\mu_{i})\\]", "n_tokens": 21}
+{"sample_id": "418d21ecda700743", "gt": "n-(p+q)", "pred": "n-(p+q)", "pred_raw": "\\[n-(p+q)\\]", "n_tokens": 9}
+{"sample_id": "4a2ba5710af87f73", "gt": "d^{n}y=f^{(n)}(x)(dx)^{n}", "pred": "d^{n}y=f^{(n)}(x)(dx)^{n}", "pred_raw": "\\[d^{n}y=f^{(n)}(x)(dx)^{n}\\]", "n_tokens": 19}
+{"sample_id": "1eae48d9ac3aa86a", "gt": "\\omega_{\\lambda}\\in H_{dR}^{1}(V_{\\lambda})", "pred": "w_{ \\lambda} \\in H^{1}_{dR}(V_{ \\lambda})", "pred_raw": "\\[w_{ \\lambda} \\in H^{1}_{dR}(V_{ \\lambda})\\]", "n_tokens": 21}
+{"sample_id": "8944bd6a6babb660", "gt": "\\int f_{i}^{\\prime\\prime}(x)f_{j}^{\\prime\\prime}(x)dx", "pred": "\\int f_{i}^{\\prime\\prime}(x)f_{j}^{\\prime\\prime}(x)dx", "pred_raw": "\\[\\int f_{i}^{\\prime\\prime}(x)f_{j}^{\\prime\\prime}(x)dx\\]", "n_tokens": 26}
+{"sample_id": "ac985295b434109a", "gt": "D^{*}=(\\mu^{*}E)^{2}\\frac{(\\delta t)^{2}}{16t_{0}}", "pred": "D^{*}=(\\mu^{*}E)^{2}\\frac{(8t)^{2}}{16t_{0}}", "pred_raw": "\\[D^{*}=(\\mu^{*}E)^{2}\\frac{(8t)^{2}}{16t_{0}}\\]", "n_tokens": 23}
+{"sample_id": "a795c50563102426", "gt": "f(x)=A_{i+1}", "pred": "f(x)=A_{i+1}", "pred_raw": "\\[f(x)=A_{i+1}\\]", "n_tokens": 13}
+{"sample_id": "8df07bb647309a18", "gt": "\\frac{e^{4\\pi\\sqrt{n}}}{\\sqrt{2}n^{3/4}}", "pred": "\\frac{e^{4 \\pi \\sqrt{n}}}{ \\sqrt{2}n^{3/4}}", "pred_raw": "\\[\\frac{e^{4 \\pi \\sqrt{n}}}{ \\sqrt{2}n^{3/4}}\\]", "n_tokens": 26}
+{"sample_id": "28adf664b89bd87f", "gt": "E[h(x,X_{1})]\\equiv0", "pred": "E[h(x|X_{1})]\\equiv0", "pred_raw": "\\[E[h(x|X_{1})]\\equiv0\\]", "n_tokens": 16}
+{"sample_id": "6a61b09ded5b97cf", "gt": "\\langle\\Psi,s\\rangle=\\langle\\Psi,s^{\\prime}\\rangle", "pred": "\\langle\\psi,s\\rangle=\\langle\\psi,s^{\\prime}\\rangle", "pred_raw": "\\[\\langle\\psi,s\\rangle=\\langle\\psi,s^{\\prime}\\rangle\\]", "n_tokens": 21}
+{"sample_id": "99ae18602c195843", "gt": "\\int_{X}^{\\oplus}H_{x}d\\mu(x)", "pred": "\\int_{X}^{G}H_{x}d\\mu(x)", "pred_raw": "\\[\\int_{X}^{G}H_{x}d\\mu(x)\\]", "n_tokens": 19}
+{"sample_id": "16f28255e4ca0fe5", "gt": "sinc(x)=\\frac{sinx}{x}", "pred": "\\sin(x)= \\frac{ \\sin x}{x}", "pred_raw": "\\[\\sin(x)= \\frac{ \\sin x}{x}\\]", "n_tokens": 16}
+{"sample_id": "3fca2cfc516820d4", "gt": "P_{A}=\\sum_{i}\\langle u_{i},\\cdot\\rangle u_{i}", "pred": "P_{A}= \\sum_{i} \\langle u_{i}, \\cdot \\rangle u_{i}", "pred_raw": "\\[P_{A}= \\sum_{i} \\langle u_{i}, \\cdot \\rangle u_{i}\\]", "n_tokens": 26}
+{"sample_id": "fc11e75d3b63c829", "gt": "y_{2}=\\frac{2}{x}+\\frac{3}{x^{2}}e^{-2x}", "pred": "y_{2}= \\frac{2}{x}+ \\frac{3}{{x^{2}}}e^{-2x}", "pred_raw": "\\[y_{2}= \\frac{2}{x}+ \\frac{3}{{x^{2}}}e^{-2x}\\]", "n_tokens": 28}
+{"sample_id": "caa9c9a6c393610f", "gt": "\\beta=||b-Ax_{0}||", "pred": "\\beta=||b-Ax_{0}||", "pred_raw": "\\[\\beta=||b-Ax_{0}||\\]", "n_tokens": 12}
+{"sample_id": "c903abee4eeddcfb", "gt": "\\langle0|:\\hat{O}:|0\\rangle=0", "pred": "\\langle01:\\hat{O}|0\\rangle=0", "pred_raw": "\\[\\langle01:\\hat{O}|0\\rangle=0\\]", "n_tokens": 16}
+{"sample_id": "aec41a1951cd0218", "gt": "u\\cdot\\nabla u=-\\frac{1}{\\rho}\\nabla p", "pred": "u\\cdot\\nabla u=-\\frac{1}{\\rho}\\nabla p", "pred_raw": "\\[u\\cdot\\nabla u=-\\frac{1}{\\rho}\\nabla p\\]", "n_tokens": 19}
+{"sample_id": "0f9769db1fed30e0", "gt": "t:=(e^{h}-1)^{-1}", "pred": "t:=(e^{n}-1)^{-1}", "pred_raw": "\\[t:=(e^{n}-1)^{-1}\\]", "n_tokens": 13}
+{"sample_id": "046bcbd7b4683540", "gt": "\\Rightarrow\\frac{1}{2x}<[1/x]", "pred": "\\Rightarrow\\frac{1}{2x}<[1/x]", "pred_raw": "\\[\\Rightarrow\\frac{1}{2x}<[1/x]\\]", "n_tokens": 17}
+{"sample_id": "3d48157aa12a1b63", "gt": "k=\\omega\\sqrt{LC}=\\frac{\\omega}{u}", "pred": "k=\\omega\\sqrt{LC}=\\frac{\\omega}{u}", "pred_raw": "\\[k=\\omega\\sqrt{LC}=\\frac{\\omega}{u}\\]", "n_tokens": 17}
+{"sample_id": "99e271ada452ec85", "gt": "\\bigcup_{n\\in F}(S-n)=N", "pred": "\\bigcup_{n \\in F}(S-n)=N", "pred_raw": "\\[\\bigcup_{n \\in F}(S-n)=N\\]", "n_tokens": 16}
+{"sample_id": "15981eef78ddea8f", "gt": "\\chi(a)=(\\frac{a}{n})", "pred": "\\chi(a)= \\left( \\frac{a}{n} \\right)", "pred_raw": "\\[\\chi(a)= \\left( \\frac{a}{n} \\right)\\]", "n_tokens": 20}
+{"sample_id": "3c3b50edccdcea58", "gt": "k\\in\\{1,...,n_{ij}\\}", "pred": "k \\in \\{1,...,n_{ij}\\}", "pred_raw": "\\[k \\in \\{1,...,n_{ij}\\}\\]", "n_tokens": 13}
+{"sample_id": "01e6c79f4d27bc54", "gt": "N(t)=N_{0}2^{-t/t_{1/2}}", "pred": "N(t)=N_{0}2^{-t/t_{1/2}}", "pred_raw": "\\[N(t)=N_{0}2^{-t/t_{1/2}}\\]", "n_tokens": 21}
+{"sample_id": "12bf1f0969730d43", "gt": "\\sum_{j}M_{j-1}^{*}/M_{j}^{*}=\\infty", "pred": "\\sum_{j}M_{j-1}^{x}/M_{j}^{x}= \\infty", "pred_raw": "\\[\\sum_{j}M_{j-1}^{x}/M_{j}^{x}= \\infty\\]", "n_tokens": 24}
+{"sample_id": "90a9d0052f669cde", "gt": "\\frac{(n-2)\\pi}{n}", "pred": "\\frac{(n-2)\\pi}{n}", "pred_raw": "\\[\\frac{(n-2)\\pi}{n}\\]", "n_tokens": 13}
+{"sample_id": "7d037c08fb7ed288", "gt": "E[h(x,X_{1})]\\equiv0", "pred": "E[h(x,X_1)] \\equiv 0", "pred_raw": "\\[E[h(x,X_1)] \\equiv 0\\]", "n_tokens": 17}
+{"sample_id": "16e13d2dc9fc9860", "gt": "(\\frac{R}{M})^{j}P_{j}", "pred": "(\\frac{R}{M})^{\\gamma}P_{j}", "pred_raw": "\\[(\\frac{R}{M})^{\\gamma}P_{j}\\]", "n_tokens": 15}
+{"sample_id": "7042cf29e897f3ab", "gt": "(s,t,f(s,t))", "pred": "(s,t,f(s,t))", "pred_raw": "\\[(s,t,f(s,t))\\]", "n_tokens": 13}
+{"sample_id": "8556c75f327c90d6", "gt": "\\overline{a}_{\\overline{n|}i}=\\frac{1-v^{n}}{\\delta}", "pred": "\\overline{a}_{\\overline{n|}i}=\\frac{1-v^{n}}{\\delta}", "pred_raw": "\\[\\overline{a}_{\\overline{n|}i}=\\frac{1-v^{n}}{\\delta}\\]", "n_tokens": 23}
+{"sample_id": "2dec5fc1391782bc", "gt": "B=[\\beta_{1},\\beta_{2},...,\\beta_{k}]", "pred": "B= \\left[ \\beta_{1}, \\beta_{2}, \\ldots, \\beta_{k} \\right]", "pred_raw": "\\[B= \\left[ \\beta_{1}, \\beta_{2}, \\ldots, \\beta_{k} \\right]\\]", "n_tokens": 29}
+{"sample_id": "7a1931e8cad697d3", "gt": "pq=-\\frac{1}{4a^{2}}", "pred": "pq=-\\frac{1}{4a^{2}}", "pred_raw": "\\[pq=-\\frac{1}{4a^{2}}\\]", "n_tokens": 14}
+{"sample_id": "c3c230303c0093b3", "gt": "P_{s,max}=3\\frac{R_{T}}{q}\\frac{L^{2}}{h}", "pred": "P_{s,max}=3\\frac{R_{T}}{q}\\frac{L^{2}}{h}", "pred_raw": "\\[P_{s,max}=3\\frac{R_{T}}{q}\\frac{L^{2}}{h}\\]", "n_tokens": 27}
+{"sample_id": "e021760ded1e5eac", "gt": "\\frac{1}{3}=e^{\\frac{-1}{RC}\\frac{T}{2}}", "pred": "\\frac{1}{3}=e^{-\\frac{1}{RC}\\frac{T}{2}}", "pred_raw": "\\[\\frac{1}{3}=e^{-\\frac{1}{RC}\\frac{T}{2}}\\]", "n_tokens": 23}
+{"sample_id": "1f6db174535c2a4e", "gt": "A^{\\prime}=\\hat{B}(\\varphi,\\hat{n})A", "pred": "\\dot{A}=\\hat{B}(\\varphi,\\hat{n})A", "pred_raw": "\\[\\dot{A}=\\hat{B}(\\varphi,\\hat{n})A\\]", "n_tokens": 19}
+{"sample_id": "6f89125c550ac905", "gt": "\\begin{matrix}\\times&c&d\\\\ a&ac&ad\\\\ b&bc&bd\\end{matrix}", "pred": "\\begin{array}{c}\\bigtimes\\limits_{a}\\subset\\begin{array}{c}a\\\\ ac\\end{array}\\\\ b\\subset bd\\end{array}", "pred_raw": "\\[\\begin{array}{c}\\bigtimes\\limits_{a}\\subset\\begin{array}{c}a\\\\ ac\\end{array}\\\\ b\\subset bd\\end{array}\\]", "n_tokens": 40}
+{"sample_id": "8b48ead58604507c", "gt": "2^{2}+2+1-1", "pred": "2^2+2+1-1", "pred_raw": "\\[2^2+2+1-1\\]", "n_tokens": 13}
+{"sample_id": "d87fd417d0a464d4", "gt": "\\gamma_{\\pm}=\\sqrt[p+q]{\\gamma_{A}^{p}\\gamma_{B}^{q}}", "pred": "\\gamma_{ \\pm}= \\sqrt[p] q_{ \\gamma_{A}^{p} \\gamma_{B}^{q}}", "pred_raw": "\\[\\gamma_{ \\pm}= \\sqrt[p] q_{ \\gamma_{A}^{p} \\gamma_{B}^{q}}\\]", "n_tokens": 29}
+{"sample_id": "b0c164ba36c0596c", "gt": "K=\\bigcap_{n}E_{n}", "pred": "K= \\bigcap_{n}E_{n}", "pred_raw": "\\[K= \\bigcap_{n}E_{n}\\]", "n_tokens": 14}
+{"sample_id": "5b70472475ba799e", "gt": "H_{0}:\\hat{\\rho}_{XY\\cdot Z}=0", "pred": "H_{0}:\\hat{P}\\times y:z=0", "pred_raw": "\\[H_{0}:\\hat{P}\\times y:z=0\\]", "n_tokens": 18}
+{"sample_id": "750634dc27e41cea", "gt": "(3+4i)^{*}=3-4i", "pred": "(3+4i)^{4}=3-4i", "pred_raw": "\\[(3+4i)^{4}=3-4i\\]", "n_tokens": 15}
+{"sample_id": "92c2d70aed43e793", "gt": "\\mu^{-1}([\\epsilon,\\infty))", "pred": "\\mu^{-1}([ \\epsilon, \\infty))", "pred_raw": "\\[\\mu^{-1}([ \\epsilon, \\infty))\\]", "n_tokens": 13}
+{"sample_id": "b64830ccd4043464", "gt": "\\tilde{N}^{0}\\rightarrow\\tilde{l}^{+}l^{-}", "pred": "\\tilde{N}^{0}\\rightarrow\\tilde{l}^{+}l^{-}", "pred_raw": "\\[\\tilde{N}^{0}\\rightarrow\\tilde{l}^{+}l^{-}\\]", "n_tokens": 17}
+{"sample_id": "41f13154d3fcc193", "gt": "\\Pi=-\\tau_{ij}^{r}\\overline{S_{ij}}", "pred": "\\Pi=-\\tau_{ij}\\overline{S_{ij}}", "pred_raw": "\\[\\Pi=-\\tau_{ij}\\overline{S_{ij}}\\]", "n_tokens": 15}
+{"sample_id": "7316e0d269d96772", "gt": "\\Delta Y=\\frac{\\Delta I}{(1-c)}", "pred": "\\Delta Y=\\frac{\\Delta I}{(1-c)}", "pred_raw": "\\[\\Delta Y=\\frac{\\Delta I}{(1-c)}\\]", "n_tokens": 15}
+{"sample_id": "abead148de4a579f", "gt": "a|c.)", "pred": "a(c.)", "pred_raw": "\\[a(c.)\\]", "n_tokens": 8}
+{"sample_id": "aa4ee522c2ea77c1", "gt": "L=[T]_{0}/[R]_{0}", "pred": "L=[T]_{0}/[R]_{0}", "pred_raw": "\\[L=[T]_{0}/[R]_{0}\\]", "n_tokens": 13}
+{"sample_id": "0def1fef3f0f6c6b", "gt": "(e-1)n!", "pred": "(e-1)n!", "pred_raw": "\\[(e-1)n!\\]", "n_tokens": 9}
+{"sample_id": "5d18e12b7b15fc31", "gt": "y=x(n^{x}-1)", "pred": "y=x(n^{x}-1)", "pred_raw": "\\[y=x(n^{x}-1)\\]", "n_tokens": 13}
+{"sample_id": "633d3df195581d68", "gt": "0<H^{s}(E)<\\infty", "pred": "0<H^{s}(E)<\\infty", "pred_raw": "\\[0<H^{s}(E)<\\infty\\]", "n_tokens": 13}
+{"sample_id": "587529e3aec5f340", "gt": "(\\vec{0},\\vec{0})", "pred": "( \\vec{0}, \\vec{0})", "pred_raw": "\\[( \\vec{0}, \\vec{0})\\]", "n_tokens": 13}
+{"sample_id": "b66aaa8d05f7e4e2", "gt": "V(s)=-J\\delta(s_{0},s_{1})", "pred": "V(s)=-J_{\\theta}^{ \\Omega}(s_{0},s_{1})", "pred_raw": "\\[V(s)=-J_{\\theta}^{ \\Omega}(s_{0},s_{1})\\]", "n_tokens": 22}
+{"sample_id": "631666da5212ffe6", "gt": "50\\approx\\sqrt{30\\times77}\\Omega", "pred": "50\\approx\\sqrt{30\\times77}\\Omega", "pred_raw": "\\[50\\approx\\sqrt{30\\times77}\\Omega\\]", "n_tokens": 16}
+{"sample_id": "fabb7bd195c7ca54", "gt": "V=1096.7\\sqrt{H/d}", "pred": "V=1096.7 \\sqrt{H/d}", "pred_raw": "\\[V=1096.7 \\sqrt{H/d}\\]", "n_tokens": 16}
+{"sample_id": "1e4a1247399ff56b", "gt": "l=\\frac{1}{2}k\\lambda=\\frac{1}{2}k\\frac{c}{f}", "pred": "l=\\frac{1}{2}k\\lambda=\\frac{1}{2}k\\frac{c}{f}", "pred_raw": "\\[l=\\frac{1}{2}k\\lambda=\\frac{1}{2}k\\frac{c}{f}\\]", "n_tokens": 29}
+{"sample_id": "8c9f94e8364e5920", "gt": "B_{k_{1}}^{\\alpha_{1}}\\cap...\\cap B_{k_{r}}^{\\alpha_{r}}", "pred": "B_{k_{1}}^{\\alpha_{1}}\\cap\\cdot\\cdot\\cdot\\cap B_{k_{r}}^{\\alpha_{r}}", "pred_raw": "\\[B_{k_{1}}^{\\alpha_{1}}\\cap\\cdot\\cdot\\cdot\\cap B_{k_{r}}^{\\alpha_{r}}\\]", "n_tokens": 32}
+{"sample_id": "7ef415f49faf7e8b", "gt": "\\sum k^{3}={(\\begin{matrix}n+1\\\\ 2\\end{matrix})}^{2}", "pred": "\\sum k^{3}={( \\begin{matrix}n+1\\\\ 2\\end{matrix})}^{2}", "pred_raw": "\\[\\sum k^{3}={( \\begin{matrix}n+1\\\\ 2\\end{matrix})}^{2}\\]", "n_tokens": 26}
+{"sample_id": "52272b192f957d52", "gt": "F(x,y,z)-1.1=0", "pred": "F(x,y,z)-1.1=0", "pred_raw": "\\[F(x,y,z)-1.1=0\\]", "n_tokens": 17}
+{"sample_id": "185c5f7123615a55", "gt": "A=0,B=1", "pred": "A=0,B=1", "pred_raw": "\\[A=0,B=1\\]", "n_tokens": 11}
+{"sample_id": "501afe5104b4af8d", "gt": "F\\hat{z}", "pred": "r= \\left( \\frac{ \\sqrt{2}}{2} \\right.", "pred_raw": "\\[r= \\left( \\frac{ \\sqrt{2}}{2} \\right.\\]", "n_tokens": 21}
+{"sample_id": "d265767644bb6899", "gt": "t:=(e^{h}-1)^{-1}", "pred": "t:=(e^{h}-1)^{-1}", "pred_raw": "\\[t:=(e^{h}-1)^{-1}\\]", "n_tokens": 13}
+{"sample_id": "56185987f9fdc0da", "gt": "\\delta_{j,j_{1}}\\delta_{m,m_{1}}", "pred": "\\delta_{j,j_{1}}\\delta_{m,m_{1}}", "pred_raw": "\\[\\delta_{j,j_{1}}\\delta_{m,m_{1}}\\]", "n_tokens": 19}
+{"sample_id": "657f2bef207936ce", "gt": "I-B^{-1}Z", "pred": "I-B^{-1}Z", "pred_raw": "\\[I-B^{-1}Z\\]", "n_tokens": 11}
+{"sample_id": "e1855d9d6525d435", "gt": "lim_{\\Delta x\\rightarrow0}g(\\Delta x)=0", "pred": "\\lim_{\\Delta x \\rightarrow 0}g( \\Delta x)=0", "pred_raw": "\\[\\lim_{\\Delta x \\rightarrow 0}g( \\Delta x)=0\\]", "n_tokens": 19}
+{"sample_id": "78cd799b6e6eca10", "gt": "G(\\omega)=\\sqrt{\\frac{1}{1+\\omega^{2n}}}", "pred": "G(w)=\\sqrt{\\frac{1}{1+w^{2}}m}", "pred_raw": "\\[G(w)=\\sqrt{\\frac{1}{1+w^{2}}m}\\]", "n_tokens": 21}
+{"sample_id": "509b4fe0e73f8e81", "gt": "F_{c}=Mv^{2}/R", "pred": "F_c=Mv^2/R", "pred_raw": "\\[F_c=Mv^2/R\\]", "n_tokens": 13}
+{"sample_id": "35a530a99786785e", "gt": "Z_{n}=\\frac{1}{\\sqrt{n}}\\sum_{i=1}^{n}X_{i}", "pred": "Z_{n}=\\frac{1}{\\sqrt{n}}\\sum_{i=1}^{n}X_{i}", "pred_raw": "\\[Z_{n}=\\frac{1}{\\sqrt{n}}\\sum_{i=1}^{n}X_{i}\\]", "n_tokens": 27}
+{"sample_id": "77b40b3fc14ba96e", "gt": "I(v)=\\langle v,v\\rangle=|v|^{2}", "pred": "I(v)= \\langle v,v \\rangle=|v|^2", "pred_raw": "\\[I(v)= \\langle v,v \\rangle=|v|^2\\]", "n_tokens": 19}
+{"sample_id": "dc3bcf3e79a4a0ab", "gt": "u\\cdot\\nabla u=-\\frac{1}{\\rho}\\nabla p", "pred": "u\\cdot\\nabla u=-\\frac{1}{\\rho}\\nabla p", "pred_raw": "\\[u\\cdot\\nabla u=-\\frac{1}{\\rho}\\nabla p\\]", "n_tokens": 19}
+{"sample_id": "a5edf57bb75cafaf", "gt": "(logn)^{O(1/\\epsilon)}", "pred": "(logn)^{O(1/\\epsilon)}", "pred_raw": "\\[(logn)^{O(1/\\epsilon)}\\]", "n_tokens": 12}
+{"sample_id": "8d9f0de6c86c4af8", "gt": "\\Gamma_{i+1}=S_{\\Gamma_{i}}", "pred": "\\Gamma_{i+1}=S_{\\Gamma_{i}}", "pred_raw": "\\[\\Gamma_{i+1}=S_{\\Gamma_{i}}\\]", "n_tokens": 15}
+{"sample_id": "caa6ed1684646c16", "gt": "\\pi(k+\\frac{1}{2})", "pred": "\\pi(k+ \\frac{1}{2})", "pred_raw": "\\[\\pi(k+ \\frac{1}{2})\\]", "n_tokens": 14}
+{"sample_id": "5d2d7845288b25d8", "gt": "CO=\\frac{VO_{2}}{C_{a}-C_{v}}", "pred": "CO=\\frac{VO_{2}}{C_{a}-C_{v}}", "pred_raw": "\\[CO=\\frac{VO_{2}}{C_{a}-C_{v}}\\]", "n_tokens": 20}
+{"sample_id": "87764d54c518a806", "gt": "{L_{th}}^{2}=\\frac{D}{\\Sigma_{a,th}}", "pred": "L_{th}^{2}= \\frac{D}{ \\sum_{a,th}}", "pred_raw": "\\[L_{th}^{2}= \\frac{D}{ \\sum_{a,th}}\\]", "n_tokens": 21}
+{"sample_id": "2670b01bd872bd84", "gt": "\\sum_{n=1}^{m}(a_{n}+|a_{n}|)", "pred": "\\sum_{n=1}^{m}(a_{n}+|a_{n}|)", "pred_raw": "\\[\\sum_{n=1}^{m}(a_{n}+|a_{n}|)\\]", "n_tokens": 19}
+{"sample_id": "05f4416e8a265bee", "gt": "0.5=E[X_{1}]", "pred": "0.5=E[X_{1}]", "pred_raw": "\\[0.5=E[X_{1}]\\]", "n_tokens": 13}
+{"sample_id": "d307915c1fbc614a", "gt": "B_{z}(x)=B_{0}e^{-x/\\lambda}", "pred": "D_{z}(x)=B_{0}e^{-x/\\lambda}", "pred_raw": "\\[D_{z}(x)=B_{0}e^{-x/\\lambda}\\]", "n_tokens": 19}
+{"sample_id": "9cb0fc842a16cc1e", "gt": "a=-\\omega^{2}r", "pred": "a=-\\omega^{2}R", "pred_raw": "\\[a=-\\omega^{2}R\\]", "n_tokens": 11}
+{"sample_id": "961f1725c9619a97", "gt": "\\omega_{\\{(k,i),(k^{\\prime},i^{\\prime}),(k^{\\prime\\prime},i^{\\prime\\prime})\\}}", "pred": "\\omega\\{(k,i),(k^{\\prime},i^{\\prime}),(k^{\\prime\\prime},i^{\\prime\\prime})\\}", "pred_raw": "\\[\\omega\\{(k,i),(k^{\\prime},i^{\\prime}),(k^{\\prime\\prime},i^{\\prime\\prime})\\}\\]", "n_tokens": 29}
+{"sample_id": "6f83b1932a50c708", "gt": "\\frac{dy}{dx}=-\\frac{y}{x}\\frac{\\delta x-\\gamma}{\\beta y-\\alpha}", "pred": "\\frac{dy}{dx}=- \\frac{y}{x} \\frac{ \\delta x- \\gamma}{ \\beta y- \\alpha}", "pred_raw": "\\[\\frac{dy}{dx}=- \\frac{y}{x} \\frac{ \\delta x- \\gamma}{ \\beta y- \\alpha}\\]", "n_tokens": 33}
+{"sample_id": "232bb214ec60b8bb", "gt": "[[x,x],x]=0", "pred": "[[x,x],x]=0", "pred_raw": "\\[[[x,x],x]=0\\]", "n_tokens": 11}
+{"sample_id": "fb90cc68497e2902", "gt": "(1,3,1)_{2}\\oplus(1,1,3)_{2}", "pred": "(1,3,1)_{2}\\oplus(1,1,3)_{2}", "pred_raw": "\\[(1,3,1)_{2}\\oplus(1,1,3)_{2}\\]", "n_tokens": 21}
+{"sample_id": "9de262e4c1d80909", "gt": "(P=\\overline{P}+P^{\\prime})", "pred": "(P=\\overline{P}+P^{\\prime})", "pred_raw": "\\[(P=\\overline{P}+P^{\\prime})\\]", "n_tokens": 13}
+{"sample_id": "a064a07253e1d34c", "gt": "A_{p}(\\kappa)=\\frac{I_{p/2}(\\kappa)}{I_{p/2-1}(\\kappa)}", "pred": "A_{p}(k)= \\frac{I_{p/2}(k)}{I_{p/2-1}(k)}", "pred_raw": "\\[A_{p}(k)= \\frac{I_{p/2}(k)}{I_{p/2-1}(k)}\\]", "n_tokens": 30}
+{"sample_id": "c22d1c3d12298ff0", "gt": "lim_{(a,b)\\rightarrow(0,0)}\\frac{a}{b}", "pred": "\\lim(a,b) \\rightarrow(0,0) \\frac{a}{b}", "pred_raw": "\\[\\lim(a,b) \\rightarrow(0,0) \\frac{a}{b}\\]", "n_tokens": 23}
+{"sample_id": "fd975692a0a19142", "gt": "sup_{t}|G_{n}(t)|", "pred": "sup_{t}|G_{n}(t)|", "pred_raw": "\\[sup_{t}|G_{n}(t)|\\]", "n_tokens": 13}
+{"sample_id": "139ea2a84a3dcfdc", "gt": "x_{1}-x_{2}+x_{0}=0", "pred": "x_{1}-x_{2}+x_{0}=0", "pred_raw": "\\[x_{1}-x_{2}+x_{0}=0\\]", "n_tokens": 17}

@@ -1,0 +1,129 @@
+{
+  "scoring": "hw.normalize canonicalisation; exact = canonical strings equal; CER/TER = corpus Levenshtein / ref length",
+  "subset_1000": {
+    "description": "Fixed random subset of official MathWriting test, seed 0, n=1000. See subset_1000.json.",
+    "v2best_beam1": {
+      "n": 1000,
+      "cer": 0.08443111499183782,
+      "token_error_rate": 0.06474861623616236,
+      "exact_match": 0.563,
+      "model": "handwriter-v2best",
+      "input": "image",
+      "beam": 1,
+      "note": "rescored existing full-test predictions on this subset",
+      "source": "results/kaggle_v2_eval/eval/predictions_v2best_beam1.csv"
+    },
+    "v2best_beam4": {
+      "n": 1000,
+      "cer": 0.08211533351049695,
+      "token_error_rate": 0.06319188191881919,
+      "exact_match": 0.572,
+      "model": "handwriter-v2best",
+      "input": "image",
+      "beam": 4,
+      "note": "rescored existing full-test predictions on this subset",
+      "source": "results/kaggle_v2_eval/eval/predictions_v2best_beam4.csv"
+    },
+    "ink2latex_r3_beam1": {
+      "n": 1000,
+      "cer": 0.07691431608519039,
+      "token_error_rate": 0.05840636531365314,
+      "exact_match": 0.565,
+      "model": "ink2latex-r3",
+      "input": "strokes",
+      "beam": 1,
+      "seconds": 11.6,
+      "sec_per_img": 0.0116,
+      "params": 9818920,
+      "ink2latex_native_exact": 0.565,
+      "ink2latex_native_ter": 0.05863839655458009,
+      "ink2latex_loose_exact": 0.578,
+      "note": "native_* uses their tokenize()/canonical token exact and TER, not hw.normalize"
+    },
+    "ink2latex_r3_beam5": {
+      "n": 1000,
+      "cer": 0.0734596256785999,
+      "token_error_rate": 0.05754151291512915,
+      "exact_match": 0.572,
+      "model": "ink2latex-r3",
+      "input": "strokes",
+      "beam": 5,
+      "seconds": 218.6,
+      "sec_per_img": 0.2186,
+      "params": 9818920,
+      "ink2latex_native_exact": 0.572,
+      "ink2latex_native_ter": 0.05582242835845619,
+      "ink2latex_loose_exact": 0.585,
+      "note": "native_* uses their tokenize()/canonical token exact and TER, not hw.normalize"
+    },
+    "texteller3_int8_beam1": {
+      "n": 1000,
+      "cer": 0.07251053490755856,
+      "token_error_rate": 0.047509225092250924,
+      "exact_match": 0.745,
+      "model": "TeXPen-default/TexTeller3-ONNX-int8",
+      "input": "image",
+      "beam": 1,
+      "seconds": 1299.4,
+      "sec_per_img": 1.2994,
+      "quantization": "int8",
+      "note": "TeXPen default profile (int8 enc+dec, greedy, nocache decode). Preprocess matches TeXPen (binarise, trim, letterbox 448). Display wrappers \\[ \\] are stripped before scoring."
+    }
+  },
+  "full_7644": {
+    "description": "Official MathWriting test, all 7644 human inks.",
+    "v2best_beam1": {
+      "n": 7644,
+      "cer": 0.09026617524575202,
+      "token_error_rate": 0.06910121677246205,
+      "exact_match": 0.5693354264782836,
+      "seconds": 46.9,
+      "model": "handwriter-v2best",
+      "input": "image",
+      "source": "results/kaggle_v2_eval/eval/metrics.json"
+    },
+    "v2best_beam4": {
+      "n": 7644,
+      "cer": 0.08728872308697452,
+      "token_error_rate": 0.06657569772175564,
+      "exact_match": 0.576792255363684,
+      "seconds": 72.0,
+      "model": "handwriter-v2best",
+      "input": "image",
+      "source": "results/kaggle_v2_eval/eval/metrics.json"
+    },
+    "ink2latex_r3_beam1": {
+      "n": 7644,
+      "cer": 0.08663039195639055,
+      "token_error_rate": 0.06439696636159402,
+      "exact_match": 0.5850340136054422,
+      "model": "ink2latex-r3",
+      "input": "strokes",
+      "beam": 1,
+      "seconds": 144.6,
+      "sec_per_img": 0.0189,
+      "params": 9818920,
+      "ink2latex_native_exact": 0.5849031920460492,
+      "ink2latex_native_ter": 0.06543053860902912,
+      "ink2latex_loose_exact": 0.5944531658817374,
+      "note": "native_* uses their tokenize()/canonical token exact and TER, not hw.normalize"
+    },
+    "ink2latex_r3_beam5": {
+      "n": 7644,
+      "cer": 0.08283002588438308,
+      "token_error_rate": 0.06175082550548076,
+      "exact_match": 0.5920983778126635,
+      "model": "ink2latex-r3",
+      "input": "strokes",
+      "beam": 5,
+      "seconds": 2176.7,
+      "sec_per_img": 0.2848,
+      "params": 9818920,
+      "ink2latex_native_exact": 0.5919675562532706,
+      "ink2latex_native_ter": 0.062343849863459415,
+      "ink2latex_loose_exact": 0.6015175300889587,
+      "note": "native_* uses their tokenize()/canonical token exact and TER, not hw.normalize"
+    },
+    "texteller3_int8_beam1": "not run (would be ~2.8h at 1.3s/img on this CPU; subset only)"
+  }
+}
