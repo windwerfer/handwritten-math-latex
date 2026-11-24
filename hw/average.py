@@ -69,7 +69,7 @@ def save_averaged(paths, out_dir) -> Path:
     # write weights
     try:
         from safetensors.torch import save_file
-        save_file(avg, str(out / "model.safetensors"))
+        save_file(avg, str(out / "model.safetensors"), metadata={"format": "pt"})  # HF from_pretrained needs it
     except Exception:  # noqa: BLE001
         torch.save(avg, out / "pytorch_model.bin")
     # copy tokenizer + config from the first checkpoint

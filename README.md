@@ -16,41 +16,41 @@ All figures below are on the official MathWriting **test set, all 7,644 human in
 | v1 (5k-image subset, 5 epochs) | greedy | 17.8% | 13.5% | 32.5% |
 | v2 best (full human train, epoch 2) | greedy | 9.03% | 6.91% | 56.9% |
 | v2 best | beam 4, length_penalty=1.0 (HF default) | 8.73% | 6.66% | 57.7% |
-| v2 best | beam 4, length_penalty=0.0 | **8.60%** | **6.58%** | **57.8%** |
+| v2 best | beam 4, length_penalty=0.0 | 8.60% | 6.58% | 57.8% |
+| v3 best (human + synthetic + stroke aug, epoch 4) | greedy | 7.79% | 5.84% | 61.8% |
+| v3 best | beam 4, length_penalty=1.0 | 7.43% | 5.56% | **62.6%** |
+| v3 best | beam 4, length_penalty=0.0 (default) | **7.39%** | **5.49%** | 62.5% |
 
 v2 was trained on all 229,864 official human training inks (Kaggle, 2× Tesla T4). The run hit a host-RAM out-of-memory error in epoch 3; the best checkpoint is epoch 2 (valid CER 6.51% on a 2,000-sample valid subset). That OOM is fixed in the current dataloader (one contiguous image buffer, at most two short-lived eval workers).
 
 Beam search with `length_penalty=0.0` (raw log-prob sum, now the default in `hw.model.predict`) beat HuggingFace's default of 1.0 by 10 extra exact formulas on the official test set (4,419 / 7,644 vs 4,409). The length penalty had been rewarding over-structuring (`Hz` → `H_{z}`, `Mg` → `M_{g}`). Brace/grammar-constrained decoding did not change any v2 beam-4 output. Checkpoint averaging was not possible: only v2-best was saved. Details: `results/decode_v2/SUMMARY.md`.
 
+v3 continues from v2-best and mixes the official MathWriting **synthetic** inks 1:1 with the human training inks (each epoch: all 229,864 human samples plus 229,864 fresh draws from the 396,013 synthetic inks). Human samples use the pre-rendered image half the time and otherwise a re-render from InkML with **stroke-level augmentation** (small rotation, shear, scale, per-stroke offset, point jitter, smoothing, variable pen width, grey ink); synthetic samples are always rendered with augmentation. It trained for 6 epochs on one Kaggle Tesla T4 (8.0 h of training, 8.3 h kernel time); best valid CER was epoch 4 (5.29% on the 2,000-sample valid subset; epoch 5: 5.33%). Compared with v2, beam-4 exact match rose from 57.8% to 62.5% (+4.7 points), CER from 8.60% to 7.39%, TER from 6.58% to 5.49%.
+
+On v3, `length_penalty` 0.0 and 1.0 are a tie on exact match (4,781 vs 4,782 of 7,644); 0.0 is slightly better on CER and TER, so it stays the default. Averaging the best (epoch 4) and last (epoch 5) checkpoints gave no gain. Details: `results/decode_v3/SUMMARY.md`.
+
 Typical remaining errors: letter case (`x`/`X`, `p`/`P`, …), `.` versus `\cdot`, look-alike symbols (`\omega`/`w`, `\nu`/`v`, `d`/`\partial`), and brace or subscript structure.
 
-Predictions, metrics and sample images: `results/kaggle_v2_eval/` (length_penalty=1.0) and `results/decode_v2/` (decode tuning, including length_penalty=0.0).
+Predictions, metrics and sample images: `results/kaggle_v2_eval/` (length_penalty=1.0), `results/decode_v2/` (decode tuning, including length_penalty=0.0), `results/kaggle_v3/` (v3 training log, per-epoch valid predictions, test predictions, ONNX parity) and `results/decode_v3/`.
 
 For reference, a much larger TrOCR model trained on MathWriting (`tjoab/latex_finetuned`, 334M) reports 14.9% CER, under a different normalisation, so the number is not strictly comparable.
 
-### ONNX export (v2 best)
+### ONNX export (v3 best)
 
-Exported with `scripts/export_onnx.py`. The ONNX files themselves are not in git (`onnx/` is gitignored). Parity was measured on **200 random official-test samples**, CPU ONNX Runtime 1.23, 4 threads — so the CER column here is not the full-test figure above.
+Exported with `scripts/export_onnx.py` inside the Kaggle v3 kernel. The ONNX files themselves are not in git (`*.onnx` is gitignored). Parity was measured on **200 random official-test samples** with greedy decoding on the Kaggle CPU (ONNX Runtime, slower than a desktop CPU, so compare the s/img column only within the table). The CER column here is not the full-test figure above.
 
 | variant | encoder + decoder size | CER | exact match | identical to PyTorch | s/img |
 |---|---|---|---|---|---|
-| PyTorch fp32 | – | 8.74% | 58.5% | – | 0.065 |
-| ONNX fp32 | 57.3 + 22.7 = 80.0 MB | 8.74% | 58.5% | 100% | 0.045 |
-| ONNX fp16 | 28.7 + 11.4 = 40.2 MB | 8.74% | 58.5% | 100% | 0.049 |
-| ONNX int8 (dynamic, both) | 14.6 + 5.9 = 20.5 MB | 9.76% | 55.5% | 82.5% | 0.235 |
-| encoder fp32 + decoder int8 | 63.2 MB | 8.80% | 58.0% | 96% | 0.035 |
-| **encoder fp16 + decoder int8** | **34.6 MB** | 8.56% | 58.5% | 97% | 0.035 |
+| PyTorch fp32 | – | 7.56% | 59.5% | – | 0.219 |
+| ONNX fp32 | 57.3 + 22.7 = 80.0 MB | 7.56% | 59.5% | 100% | 0.173 |
+| ONNX fp16 | 28.7 + 11.4 = 40.1 MB | 7.56% | 59.5% | 100% | 0.184 |
+| ONNX int8 (dynamic, both) | 14.6 + 5.8 = 20.5 MB | 8.14% | 60.0% | 86.5% | 0.917 |
+| encoder fp32 + decoder int8 | 63.2 MB | 7.43% | 59.0% | 97% | 0.165 |
+| **encoder fp16 + decoder int8** | **34.5 MB** | 7.61% | 59.5% | 98.5% | 0.163 |
 
-fp16 is a safe default (about 40 MB, identical to PyTorch on this sample). The mixed fp16 encoder + int8 decoder is the smaller option (about 35 MB). Full int8 is smaller but slower and less accurate on CPU. The graphs are `encoder.onnx` (`pixel_values` f32\[B,3,384,384\] → f32\[B,144,384\]) and `decoder.onnx` (no KV cache). Decoding is a greedy loop plus `tokenizer.json`, then `hw.latex_tok.from_texo`.
+As with v2, fp16 is the safe default (about 40 MB, identical to PyTorch on this sample) and the fp16 encoder + int8 decoder is the smaller option (about 35 MB, 98.5% identical). Full int8 is smaller but slower and less faithful on CPU. The graphs are `encoder.onnx` (`pixel_values` f32\[B,3,384,384\] → f32\[B,144,384\]) and `decoder.onnx` (no KV cache). Decoding is a greedy loop plus `tokenizer.json`, then `hw.latex_tok.from_texo`.
 
-## Status: v3 in progress
-
-A v3 training run is in progress (private Kaggle kernel). It continues from v2-best and adds:
-
-- official MathWriting **synthetic** inks mixed 1:1 with human training inks
-- **stroke-level augmentation** when rendering from InkML (small rotation, shear, scale, per-stroke offset, point jitter, smoothing, variable pen width, grey ink)
-
-No v3 test numbers yet. Example renderings are in `results/v3_aug_samples/`.
+v2-best export, for reference (200 test samples, box CPU): ONNX fp16 40.2 MB, 8.74% CER, 58.5% exact; encoder fp16 + decoder int8 34.6 MB, 8.56% CER, 58.5% exact.
 
 ## Licence
 

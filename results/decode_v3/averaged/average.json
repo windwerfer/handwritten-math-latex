@@ -1,0 +1,7 @@
+{
+  "averaged_from": [
+    "results/kaggle_v3/run/best",
+    "results/kaggle_v3/run/last"
+  ],
+  "n": 2
+}

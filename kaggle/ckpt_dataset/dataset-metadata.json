@@ -1,6 +1,10 @@
 {
   "title": "handwriter texo checkpoints",
   "id": "windwerfer/handwriter-texo-checkpoints",
-  "licenses": [{"name": "other"}],
-  "description": "Private: Texo (alephpi/FormulaNet, AGPL-3.0) base weights + handwriter fine-tuned checkpoints on MathWriting (CC BY-NC-SA 4.0): v1 (5k subset) and v2 best (epoch 2, full human train). Plus handwriter code."
+  "licenses": [
+    {
+      "name": "other"
+    }
+  ],
+  "description": "Private: Texo (alephpi/FormulaNet, AGPL-3.0) base weights + handwriter fine-tuned checkpoints on MathWriting (CC BY-NC-SA 4.0): v1 (5k subset), v2 best (epoch 2, human train) and v3 best (epoch 4, human + synthetic inks with stroke augmentation; test beam4 62.56% exact). Plus handwriter code."
 }

@@ -1,0 +1,101 @@
+idx,sample_id,gt,pred,pred_tokens
+0,a60e5a8e94331813,s(t)=\int_{0}^{t}dt^{\prime}v(t^{\prime}),s(t)=\int_{0}^{t}dt^{\prime}v(t^{\prime}),s ( t ) = \int _ { 0 } ^ { t } d t ^ { \prime } v ( t ^ { \prime } )
+1,75a2e83591d8d820,q=\lfloor\frac{n_{1}}{n_{0}}\rfloor,q=\lfloor\frac{n_{1}}{n_{0}}\rfloor,q = \lfloor \frac { n _ { 1 } } { n _ { 0 } } \rfloor
+2,ade60f4d379b8b1b,X^{2}+Y^{2}-Z^{2}=0,X^{2}+Y^{2}-Z^{2}=0,X ^ { 2 } + Y ^ { 2 } - Z ^ { 2 } = 0
+3,b505ab7ec8b0581e,f(n)=x^{(n+1)}-1,f(n)=x^{(n+1)}-1,f ( n ) = x ^ { ( n + 1 ) } - 1
+4,03762d643e1dbb50,\nabla\cdot P=-\rho_{b},\nabla\cdot P=-\rho_{b},\nabla \cdot P = - \rho _ { b }
+5,dcf5fac0037e7f26,d=\frac{\pi}{4}\times b^{2}\times s\times n,d=\frac{\pi}{4}\times b^{2}\times s\times n,d = \frac { \pi } { 4 } \times b ^ { 2 } \times s \times n
+6,86b1d977157442ef,v_{1}(\frac{1}{2})=v_{2}(\frac{1}{2}),v_{1}(\frac{1}{2})=v_{2}(\frac{1}{2}),v _ { 1 } ( \frac { 1 } { 2 } ) = v _ { 2 } ( \frac { 1 } { 2 } )
+7,1ef9cddc0958c8ec,\sigma_{y}^{2}(\tau)=\frac{2\pi^{2}\tau}{3}h_{-2},\sigma_{y}^{2}(\tau)=\frac{2\pi^{2}\tau}{3}h-2,\sigma _ { y } ^ { 2 } ( \tau ) = \frac { 2 \pi ^ { 2 } \tau } { 3 } h - 2
+8,d3fb37d823e552de,\dot{Q}/T,\dot{Q}_{T},\dot { Q } _ { T }
+9,920bf9cf3c44e130,\pi:\Sigma^{*}\rightarrow P(A),\pi:\Sigma^{*}\rightarrow P(A),\pi : \Sigma ^ { * } \rarr P ( A )
+10,c69869a4ce453d94,B_{x}:=\pi^{-1}(x),B_{X}:=\pi^{-1}(X),B _ { X } : = \pi ^ { - 1 } ( X )
+11,87aa38fdc9d3be37,H_{n}^{(r)}=\sum_{k=1}^{n}H_{k}^{(r-1)},H_{n}^{(c)}=\sum_{k=1}^{n}H_{k}^{(c-1)},H _ { n } ^ { ( c ) } = \sum _ { k = 1 } ^ { n } H _ { k } ^ { ( c - 1 ) }
+12,9061609183d17b5e,(\frac{3}{F_{n}})=-1,(\frac{3}{F_{n}})=-1,( \frac { 3 } { F _ { n } } ) = - 1
+13,28fb39b73cc59587,p(x_{k+1}|\hat{\xi}_{k}^{i}),\rho(x_{k+1}|\hat{\xi}_{k}^{i}),\rho ( x _ { k + 1 } | \hat { \xi } _ { k } ^ { i } )
+14,b167bc4e1c7e27e6,"\delta(q_{s},q_{c})\rightarrow q_{t}","\delta(q_{r},q_{c})\rightarrow f_{c}","\delta ( q _ { r } , q _ { c } ) \rarr f _ { c }"
+15,9bb1ab47399aee59,\frac{d}{dx}y=t(x)y,\frac{d}{dx}y=t(x)y,\frac { d } { d x } y = t ( x ) y
+16,fbf6504c1b5adae9,\Delta x\Delta p>h/2,\Delta x\Delta p>h/2,\Delta x \Delta p > h / 2
+17,7f6bd3735a9b0469,\sqrt{S}=S\cdot(1/\sqrt{S}),\sqrt{S}=S\cdot(1/\sqrt{S}),\sqrt { S } = S \cdot ( 1 / \sqrt { S } )
+18,888d0ad09c71e949,"\Psi_{A}(1,2,...,N_{A})","\Psi_{A}(1,2,...,N_{A})","\Psi _ { A } ( 1 , 2 , . . . , N _ { A } )"
+19,340bb67f39d12e11,\sum k^{3}={(\begin{matrix}n+1\\ 2\end{matrix})}^{2},\sum k^{3}=(\begin{matrix}n+1\\2\end{matrix})^{2},\sum k ^ { 3 } = ( \begin{array} n + 1 \\ 2 \end{array} ) ^ { 2 }
+20,f98c8b4c17f401d5,2^{S},2^{s},2 ^ { s }
+21,6aa0efcc0e5ff608,\lambda_{0}={(\frac{k}{e})}^{2}\sigma_{0}TI_{2},\lambda_{0}=(\frac{k}{e})^{2}\sigma_{0}TI_{0},\lambda _ { 0 } = ( \frac { k } { e } ) ^ { 2 } \sigma _ { 0 } T I _ { 0 }
+22,c57997b8018ed438,PO_{L}=Q_{1}^{e_{1}}\cdot\cdot\cdot Q_{n}^{e_{n}},PO_{C}=Q_{1}^{e_{1}}...Q_{n}^{e_{n}},P O _ { C } = Q _ { 1 } ^ { e _ { 1 } } . . . Q _ { n } ^ { e _ { n } }
+23,a71916a49d30765b,"S\rightarrow c_{1,0}(\hat{\epsilon})","S\rightarrow C_{1,0}(\tilde{\epsilon})","S \rarr C _ { 1 , 0 } ( \tilde { \epsilon } )"
+24,a29838ef407490a9,"X^{I}\rightarrow X,\chi\mapsto\chi(0)","X^{I}\rightarrow X,x\mapsto\chi(0)","X ^ { I } \rarr X , x \mapsto \chi ( 0 )"
+25,f4d8c08d673d8d4f,B_{ij}=A_{ij}^{\frac{1}{2}},B_{ij}=A_{ij}^{\frac{1}{2}},B _ { i j } = A _ { i j } ^ { \frac { 1 } { 2 } }
+26,02248037ee4a5528,"(h,h(\hat{k}),h(\hat{l}))","(h,h|\hat{k},h(\hat{l}))","( h , h | \hat { k } , h ( \hat { l } ) )"
+27,4582a65c7e5b0e75,\epsilon^{\prime}\alpha_{0}=\mu\epsilon,\epsilon^{\prime}\alpha_{0}=\mu\epsilon,\epsilon ^ { \prime } \alpha _ { 0 } = \mu \epsilon
+28,fc44ad9691d6321d,F_{x}v=m\dot{v}v,F_{x}v=mvv,F _ { x } v = m v v
+29,3ffb70c248c6e49a,\partial_{i}f=\frac{\partial f}{\partial\xi^{i}}:=\frac{\partial\overline{f}}{\partial\xi^{i}},\partial_{j}f=\frac{\partial f}{\partial\xi^{i}}:=\frac{\partial f}{\partial\xi^{i}},\partial _ { j } f = \frac { \partial f } { \partial \xi ^ { i } } : = \frac { \partial f } { \partial \xi ^ { i } }
+30,0c2a72e2584399c6,sin(2\theta)=\frac{gd}{v^{2}},\sin(2\theta)=\frac{gd}{v^{2}},\sin ( 2 \theta ) = \frac { g d } { v ^ { 2 } }
+31,ef4781b9df3c2643,C=(\begin{matrix}0&1\\ -1&0\end{matrix}),C=(\begin{matrix}0&1\\-1&0\end{matrix}),C = ( \begin{array} 0 & 1 \\ - 1 & 0 \end{array} )
+32,99f519bdc5f57f62,\overline{\nabla}_{X}Y=\nabla_{X}Y,\overline{\nabla}_{X}Y=\nabla_{X}Y,\overline { \nabla } _ { X } Y = \nabla _ { X } Y
+33,81c513b7f83d067c,\xi_{i}^{(a)}dx^{i},\xi_{i}^{(a)}dx^{i},\xi _ { i } ^ { ( a ) } d x ^ { i }
+34,3040704eb1ef43bf,exp(2ik\Omega d^{2}/v),e\chi_{p}(2ik\Omega d^{2}/U),e \chi _ { p } ( 2 i k \Omega d ^ { 2 } / U )
+35,1fd9152f450eb7a2,"(x_{i},y_{j};x_{i+1},y_{j+1})","(X_{i},y_{j};x_{i+1},y_{j+1})","( X _ { i } , y _ { j } ; x _ { i + 1 } , y _ { j + 1 } )"
+36,dcdb8da18d1bfdd6,\frac{1}{n}E(f-Ef)^{2},\frac{1}{n}E(f-Ef)^{2},\frac { 1 } { n } E ( f - E f ) ^ { 2 }
+37,038c609ec875dc17,\Phi_{lm}=\vec{r}\times\nabla Y_{lm},\Phi_{lm}=\vec{r}\times\nabla Y_{lm},\Phi _ { l m } = \vec { r } \times \nabla Y _ { l m }
+38,1e287192a3a20ee9,"r^{2},\sqrt{r},exp(r)","r^{2},\sqrt{r},\exp(r)","r ^ { 2 } , \sqrt { r } , e x p ( r )"
+39,e6c6c882d4766e4b,t_{1}=X^{c}g_{1}^{s_{1}}g_{2}^{s_{2}},t_{1}=X^{c}g_{1}^{s_{1}}g_{2}^{s_{2}},t _ { 1 } = X ^ { c } g _ { 1 } ^ { s _ { 1 } } g _ { 2 } ^ { s _ { 2 } }
+40,043083dc47710e3f,V=f(t)=V_{0}e^{-\frac{t}{\tau}},V=f(t)=V_{0}e^{-\frac{t}{\tau}},V = f ( t ) = V _ { 0 } e ^ { - \frac { t } { \tau } }
+41,0a6ab2d798a38331,c=r_{i}^{2}+r_{j}^{2}+Z_{j}^{2},c=r_{i}^{2}+r_{i}^{2}+z_{j}^{2},c = r _ { i } ^ { 2 } + r _ { i } ^ { 2 } + z _ { j } ^ { 2 }
+42,d44eeb25c0656901,1-4\pi r^{3}/3V,1-4\pi r^{3}/3V,1 - 4 \pi r ^ { 3 } / 3 V
+43,feb4b78ddf8e412a,b^{2}=p^{2}+2pq+q^{2},b^{2}=p^{2}+2pq+q^{2},b ^ { 2 } = p ^ { 2 } + 2 p q + q ^ { 2 }
+44,cb25184c8600f7a9,\frac{v_{0}^{2}}{gh_{0}}>1,\frac{v_{0}^{2}}{gh_{0}}>1,\frac { v _ { 0 } ^ { 2 } } { g h _ { 0 } } > 1
+45,3c301c781aaeef10,x=5+\frac{14}{x},x=5+\frac{14}{x},x = 5 + \frac { 1 4 } { x }
+46,2e8294b712bf8ef5,Stk=\frac{u_{0}V_{s}}{dg},Stk=\frac{u_{0}V_{s}}{dg},S t k = \frac { u _ { 0 } V _ { s } } { d g }
+47,78c1b1e9280d2312,\mu_{a}\cap(A^{T}\mu_{b}A),u_{\alpha}\cap(A^{T}u_{b}A),u _ { \alpha } \cap ( A ^ { T } u _ { b } A )
+48,723ea452f7c25d11,\frac{1}{2}+\frac{1}{10}\sqrt{15},\frac{1}{2}+\frac{1}{10}\sqrt{15},\frac { 1 } { 2 } + \frac { 1 } { 1 0 } \sqrt { 1 5 }
+49,15fd7769a97359b9,\frac{dL}{dt}=-k_{1}L+L_{b},\frac{\partial L}{\partial t}=-k_{1}L+L_{0},\frac { \partial L } { \partial t } = - k _ { 1 } L + L _ { 0 }
+50,97816e187258528a,Bm=\frac{\tau_{y}L}{\mu V},B_{m}=\frac{T_{y}L}{\mu V},B _ { m } = \frac { T _ { y } L } { \mu V }
+51,7a5ea83fb6481288,\tilde{C}^{+}\rightarrow\tilde{l}^{+}\nu,\tilde{C}+\rightarrow\tilde{I}+\nu,\tilde { C } + \rarr \tilde { I } + \nu
+52,47881fb9214b670c,"(E^{\dagger}(R),I-E^{\dagger}(R))","(E^{+}(R),I-E^{+}(R))","( E ^ { + } ( R ) , I - E ^ { + } ( R ) )"
+53,61ea3b14a08b1614,S^{2}=\sum_{j=1}^{n}X_{j}^{2},S^{2}=\sum_{j=1}^{n}X_{j}^{2},S ^ { 2 } = \sum _ { j = 1 } ^ { n } X _ { j } ^ { 2 }
+54,bd1b9708168f098b,q^{*}/\|q|^{2},q^{*}/||q|^{2},q ^ { * } / | | q | ^ { 2 }
+55,7d5b45b02a8a24da,e_{\lambda}(f_{ij})=\frac{f_{ij}}{\lambda}\frac{\partial\lambda}{\partial f_{ij}},e_{\lambda}(f_{ij})=\frac{f_{ij}}{\lambda}\frac{\partial\lambda}{\partial f_{ij}},e _ { \lambda } ( f _ { i j } ) = \frac { f _ { i j } } { \lambda } \frac { \partial \lambda } { \partial f _ { i j } }
+56,69be8b97c5c71b33,\dot{\rho}_{m}+3H\rho_{m}=0,\dot{p}_{m}+3H\rho_{m}=0,\dot { p } _ { m } + 3 H \rho _ { m } = 0
+57,9de97ac165d4d906,\sigma_{T}=T^{1/\alpha}\sigma,\sigma_{T}=T^{1/\alpha}\sigma,\sigma _ { T } = T ^ { 1 / \alpha } \sigma
+58,4c79d96d6fcf2e30,M_{v}=U_{1}\Sigma V^{*},M_{V}=U_{1}\sum V^{*},M _ { V } = U _ { 1 } \sum V ^ { * }
+59,cee40554c3627c5f,\{f_{X}(\cdot;\theta)|\theta\in\Theta\},\{f_{X}(\cdot;\theta)|\theta\in\Theta\},\{ f _ { X } ( \cdot ; \theta ) | \theta \in \Theta \}
+60,a24fe8f63add991d,u^{2}-u+k=0,u^{2}-U+K=0,u ^ { 2 } - U + K = 0
+61,21ffd4233a6d7da9,n=2^{8}-1=255,n=2^{8}-1=255,n = 2 ^ { 8 } - 1 = 2 5 5
+62,05ff9f336cb4000d,\dot{M}=\dot{B}=0,\dot{M}=\dot{B}=0,\dot { M } = \dot { B } = 0
+63,66e3532a861da272,|\beta N|<2^{2^{\aleph_{0}}},|\beta N|<2^{2^{v_{o}}},| \beta N | < 2 ^ { 2 ^ { v _ { o } } }
+64,e3bd84842904191b,A^{*}=-A,A^{*}=-A,A ^ { * } = - A
+65,c38cf5210357c14e,\omega=lim_{n\rightarrow\infty}\frac{\sum_{1}^{n}\theta_{n}}{n},\omega=\lim_{n\rightarrow\infty}\frac{\sum_{n}^{n}\theta_{n}}{n},\omega = \lim _ { n \rarr \infin } \frac { \sum _ { n } ^ { n } \theta _ { n } } { n }
+66,73f9b33e32b1d51a,\{x\}=\{X\}e^{i\omega t},\{X\}=\{X\}e^{i\omega\epsilon},\{ X \} = \{ X \} e ^ { i \omega \epsilon }
+67,e0daf9b1b997137f,ch(E)=\sum e^{\eta_{i}},ch(E)=\sum e^{\eta i},c h ( E ) = \sum e ^ { \eta i }
+68,7c9c9d1e98c1bfa1,A_{x}^{(12)},A_{x}^{(12)},A _ { x } ^ { ( 1 2 ) }
+69,4e6700c2f34bab06,f(y)=2+2y+y^{2},f(y)=2+2y+y^{2},f ( y ) = 2 + 2 y + y ^ { 2 }
+70,97489c02025ab4e9,(90^{\circ}-z),(90^{*}-2!),( 9 0 ^ { * } - 2 ! )
+71,1f712b9f6802e254,P_{i}(t=0)-,P_{i}(t=0),P _ { i } ( t = 0 )
+72,36099d3d19b6a05b,"\delta(v,v^{\prime})\ge0","\delta(v,v^{\prime})\geq0","\delta ( v , v ^ { \prime } ) \geq 0"
+73,4332aeadb2a05a15,J_{\hat{n}},J_{\hat{n}},J _ { \hat { n } }
+74,6b16fbfc21338cf3,\bigwedge^{n}T_{e}^{*}G,\hat{\wedge}T_{e}^{*}G,\hat { \wedge } T _ { e } ^ { * } G
+75,13fd5acee0c037d3,I_{K}(f)/H,I_{k}(f)/H,I _ { k } ( f ) / H
+76,a368237b485a9392,\Delta z=H(z)\Delta\chi,\Delta z=H(z)\Delta\chi,\Delta z = H ( z ) \Delta \chi
+77,1ca189b1b9fbbc14,\psi\le\frac{3}{\sqrt{3}+1},\psi\leq\frac{3}{\sqrt{3}+1},\psi \leq \frac { 3 } { \sqrt { 3 } + 1 }
+78,643d32927d0d25ba,f=a+bx+cp,f=a+bx+cp,f = a + b x + c p
+79,e4cdb860f443a85a,V_{out}=A_{OL}\cdot V_{in}^{\prime},V_{out}=A_{out}\cdot V_{in}^{\prime},V _ { o u t } = A _ { o u t } \cdot V _ { i n } ^ { \prime }
+80,6b50c9db67cc094b,\pi(0.99)\times v(1000),\pi(0.99)\times U(1000),\pi ( 0 . 9 9 ) \times U ( 1 0 0 0 )
+81,d1e71100f86ef17b,.d_{1}d_{2}...d_{n}0111...,\cdot d_{1}d_{2}...d_{n}O||...,\cdot d _ { 1 } d _ { 2 } . . . d _ { n } O | | . . .
+82,55f087d427c4190e,"\eta,w_{1}=0","n,\omega_{1}=0","n , \omega _ { 1 } = 0"
+83,3bf045b925d07821,|\gamma^{\prime}(t)|=|\gamma(t)|,|\gamma^{\prime}(t)|=|\gamma(t)|,| \gamma ^ { \prime } ( t ) | = | \gamma ( t ) |
+84,5299f7af7714622f,(x-a)^{2}H(x-a),(x-a)^{2}H(x-a),( x - a ) ^ { 2 } H ( x - a )
+85,f801a91a63145d4d,\sum_{n=1}^{\infty}\frac{1}{n}z^{n},\sum_{n=1}^{\infty}\frac{1}{n}z^{n},\sum _ { n = 1 } ^ { \infin } \frac { 1 } { n } z ^ { n }
+86,b2489557e1ff028c,1/2\sqrt{3},1/2\sqrt{3},1 / 2 \sqrt { 3 }
+87,a7626088950ed74f,D_{ii}=\frac{\sigma_{i}}{\sigma_{i}^{2}+\alpha^{2}},D_{ii}=\frac{\sigma_{i}}{\sigma_{i}^{2}+\alpha^{2}},D _ { i i } = \frac { \sigma _ { i } } { \sigma _ { i } ^ { 2 } + \alpha ^ { 2 } }
+88,a9334050ca10d27c,2^{\aleph_{0}+n},2^{\aleph_{0}+n},2 ^ { \aleph _ { 0 } + n }
+89,24db05195ad7dd10,Q\times U,Q\times U,Q \times U
+90,76edaf842d90b3bc,"(s,t)\mapsto f_{1}(s)f_{2}(t)","(s,t)\mapsto f_{1}(s)f_{2}(t)","( s , t ) \mapsto f _ { 1 } ( s ) f _ { 2 } ( t )"
+91,5352864f79e96913,[\begin{matrix}L&F&P\end{matrix}][\begin{matrix}y_{L}\\ y_{F}\\ y_{P}\end{matrix}],[LFP][\begin{matrix}Y_{L}\\Y_{F}\\Y_{P}\end{matrix}],[ L F P ] [ \begin{array} Y _ { L } \\ Y _ { F } \\ Y _ { P } \end{array} ]
+92,df5c73fbbef36adf,\lfloor(n+1)p\rfloor,L(n+1)p),L ( n + 1 ) p )
+93,24af11c48ee34cea,v\approx\hat{v}=\sum_{i=1}^{n}\theta_{n}\phi_{n},v\approx\hat{v}=\sum_{i=1}^{n}\theta_{i}\phi_{n},v \approx \hat { v } = \sum _ { i = 1 } ^ { n } \theta _ { i } \phi _ { n }
+94,fa6b5af76d7e3d49,\partial_{\mu}E_{n}=\langle n|\partial_{\mu}H|n\rangle,\partial_{\mu}E_{n}=\langle n|\partial_{u}H|n\rangle,\partial _ { \mu } E _ { n } = \langle n | \partial _ { u } H | n \rangle
+95,ad18e006c2d5f5e5,c_{1}|\psi_{1}\rangle+c_{2}|\psi_{2}\rangle,c_{1}|\psi_{1}\rangle+c_{2}|\psi_{2}\rangle,c _ { 1 } | \psi _ { 1 } \rangle + c _ { 2 } | \psi _ { 2 } \rangle
+96,1c64dc246085f27d,{t_{k}}_{(i)}=x_{(i)}\cdot w_{(k)},t_{k(i)}=X_{(i)}\circ W_{(k)},t _ { k ( i ) } = X _ { ( i ) } \circ W _ { ( k ) }
+97,cfc2e71c4f960eab,S=R(X)+\overline{R(X)},S=R(X)+\overline{R(X)},S = R ( X ) + \overline { R ( X ) }
+98,5885277746cf888a,2r_{-}=\sqrt{2}(r_{-}+r_{+}),2r=\sqrt{2}(r_{-}+r_{-}),2 r = \sqrt { 2 } ( r _ { - } + r _ { - } )
+99,6077832d61005260,"d,d_{0}>d_{c}","d,d_{0}>d_{c}","d , d _ { 0 } > d _ { c }"
