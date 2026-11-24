@@ -23,10 +23,12 @@ def parse_inkml(text: str):
     ann = {k: _unescape(v) for k, v in _ANN.findall(text)}
     strokes = []
     for tr in _TRACE.findall(text):
-        pts = [p.split() for p in tr.strip().split(",") if p.strip()]
-        a = np.array([[float(p[0]), float(p[1])] for p in pts], dtype=np.float32)
-        if len(a):
-            strokes.append(a)
+        tr = tr.strip().rstrip(",")
+        if not tr:
+            continue
+        ncol = len(tr.split(",", 1)[0].split())
+        a = np.array(tr.replace(",", " ").split(), dtype=np.float32).reshape(-1, ncol)[:, :2]
+        strokes.append(np.ascontiguousarray(a))
     return ann, strokes
 
 

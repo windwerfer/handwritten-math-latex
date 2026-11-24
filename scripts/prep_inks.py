@@ -58,6 +58,8 @@ def main():
         for m in tf:
             if not m.isfile() or not m.name.endswith(".inkml"):
                 continue
+            if a.limit and all(len(p.sid) >= a.limit for p in packs.values()):
+                break
             split = m.name.split("/")[-2]
             if split not in packs or (a.limit and len(packs[split].sid) >= a.limit):
                 continue

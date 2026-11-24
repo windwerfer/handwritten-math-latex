@@ -2,7 +2,7 @@
 # augmentation (single T4). Evaluates on the official human test set (deepcopy renders, as v1/v2).
 import glob, os, shutil, subprocess, sys, tarfile, time
 
-SMOKE = True  # True: short end-to-end check; False: full run
+SMOKE = False  # True: short end-to-end check only; False: built-in smoke gate, then full run
 
 def sh(c):
     print("+", c, flush=True); return subprocess.call(c, shell=True)
@@ -53,6 +53,11 @@ common = (f"{sys.executable} scripts/train.py --data {data} --model models/v2bes
 if SMOKE:
     cmd = common + "--train-limit 3000 --valid-limit 200 --test-limit 300 --epochs 2 --max-steps 120 --warmup 20 --beams 1 4"
 else:
+    # smoke gate (~3 min): same data/code path on a tiny budget; abort the session if it fails
+    g = sh(common.replace("/kaggle/working/run", "/kaggle/working/smoke") +
+           "--train-limit 2000 --valid-limit 100 --test-limit 100 --epochs 1 --max-steps 40 --warmup 10 --beams 1 2 --no-save")
+    assert g == 0, "smoke gate failed"
+    print(f"[t] smoke gate passed {time.time()-T0:.0f}s", flush=True)
     left_h = 11.2 - (time.time() - T0) / 3600 - 0.6   # 12 h Kaggle cap, keep ~35 min for final evals + ONNX
     budget = min(8.5, left_h)
     print(f"[t] training budget {budget:.2f} h", flush=True)
