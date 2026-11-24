@@ -112,3 +112,88 @@ def make_collate(tokenizer, max_len=256):
         }
 
     return collate
+
+
+class InkArrays:
+    """Read-only access to inks packed by scripts/prep_inks.py (np.load mmap, opened lazily
+    in each worker; file-backed pages are shared, so no copy-on-write growth)."""
+
+    def __init__(self, ink_dir, split):
+        self.dir, self.split = Path(ink_dir), split
+        meta = pd.read_parquet(self.dir / f"{split}_meta.parquet")
+        self.sample_id = meta["sample_id"].to_numpy().astype(str)
+        self.latex = meta["latex"].to_numpy().astype(str)
+        self.texo = np.array([to_texo(s) for s in self.latex])
+        self._m = None
+
+    def _open(self):
+        if self._m is None:
+            ld = lambda n: np.load(self.dir / f"{self.split}_{n}.npy", mmap_mode="r")  # noqa: E731
+            self._m = (ld("points"), ld("soff"), ld("ioff"))
+        return self._m
+
+    def __len__(self):
+        return len(self.latex)
+
+    def strokes(self, i):
+        pts, soff, ioff = self._open()
+        a, b = ioff[i], ioff[i + 1]
+        return [np.asarray(pts[soff[k]:soff[k + 1]]) for k in range(a, b)]
+
+    def __getstate__(self):  # never pickle open memmaps into workers
+        d = dict(self.__dict__); d["_m"] = None
+        return d
+
+
+class MixedTrain(torch.utils.data.Dataset):
+    """Index space: [0, n_human) = human samples, [n_human, n_human + n_synth) = synthetic inks.
+    Human sample: with prob human_image_prob the deepcopy-rendered image (as in v1/v2), otherwise
+    its ink re-rendered with stroke augmentation (if the ink is available). Synthetic samples are
+    always ink-rendered with stroke augmentation."""
+
+    def __init__(self, human: "MathWritingParquet", human_inks: InkArrays | None, synth: InkArrays | None,
+                 human_image_prob=0.5, aug_strength=1.0, size=384):
+        self.human, self.synth, self.hinks = human, synth, human_inks
+        self.n_h, self.n_s = len(human), (len(synth) if synth is not None else 0)
+        self.p_img, self.strength, self.size = human_image_prob, aug_strength, size
+        self.h2ink = np.full(self.n_h, -1, np.int64)
+        if human_inks is not None:
+            pos = {s: i for i, s in enumerate(human_inks.sample_id)}
+            self.h2ink = np.array([pos.get(str(s), -1) for s in human.sample_id], np.int64)
+            del pos
+
+    def __len__(self):
+        return self.n_h + self.n_s
+
+    def _ink_item(self, inks, j, i):
+        from .ink import augment_strokes, render
+        rng = np.random.default_rng()
+        img = render(augment_strokes(inks.strokes(j), rng, self.strength), rng)
+        return {"pixel_values": preprocess(img, self.size, train=True), "text": str(inks.texo[j]),
+                "latex": str(inks.latex[j]), "idx": i}
+
+    def __getitem__(self, i):
+        if i >= self.n_h:
+            return self._ink_item(self.synth, i - self.n_h, i)
+        j = self.h2ink[i]
+        if j >= 0 and np.random.random() >= self.p_img:
+            return self._ink_item(self.hinks, j, i)
+        return self.human[i]
+
+
+class MixSampler(torch.utils.data.Sampler):
+    """Each epoch: every human sample once + synth_ratio * n_human synthetic samples drawn
+    without replacement (fresh draw each epoch), shuffled together."""
+
+    def __init__(self, ds: MixedTrain, synth_ratio=1.0, seed=0):
+        self.ds, self.ratio, self.epoch, self.seed = ds, synth_ratio, 0, seed
+        self.n_syn = min(ds.n_s, int(round(ds.n_h * synth_ratio)))
+
+    def __len__(self):
+        return self.ds.n_h + self.n_syn
+
+    def __iter__(self):
+        rng = np.random.default_rng(self.seed + self.epoch); self.epoch += 1
+        syn = self.ds.n_h + rng.choice(self.ds.n_s, size=self.n_syn, replace=False) if self.n_syn else np.array([], int)
+        idx = np.concatenate([np.arange(self.ds.n_h), syn]); rng.shuffle(idx)
+        return iter(idx.tolist())

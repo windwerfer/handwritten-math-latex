@@ -24,7 +24,7 @@ import pandas as pd
 import torch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from hw.data import MathWritingParquet, make_collate  # noqa: E402
+from hw.data import InkArrays, MathWritingParquet, MixedTrain, MixSampler, make_collate  # noqa: E402
 from hw.latex_tok import from_texo, to_texo  # noqa: E402
 from hw.metrics import scores  # noqa: E402
 from hw.model import load, loss_fn, predict  # noqa: E402
@@ -109,6 +109,11 @@ def main():
                     help="update BatchNorm running stats (default: keep pretrained stats frozen)")
     ap.add_argument("--freeze-encoder", action="store_true")
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--ink-dir", help="packed inks (scripts/prep_inks.py); enables human-ink + synthetic mixing")
+    ap.add_argument("--synth-ratio", type=float, default=1.0, help="synthetic samples per human sample per epoch")
+    ap.add_argument("--human-image-prob", type=float, default=0.5,
+                    help="prob. a human sample uses the deepcopy image instead of its augmented ink render")
+    ap.add_argument("--aug-strength", type=float, default=1.0)
     args = ap.parse_args()
     random.seed(args.seed); np.random.seed(args.seed); torch.manual_seed(args.seed)
     torch.backends.cudnn.benchmark = True
@@ -136,7 +141,18 @@ def main():
         for p in model.encoder.parameters():
             p.requires_grad = False
     net = torch.nn.DataParallel(model) if args.data_parallel and torch.cuda.device_count() > 1 else model
-    dl = torch.utils.data.DataLoader(train, batch_size=args.batch_size, shuffle=True, drop_last=True,
+    sampler = None
+    if args.ink_dir:
+        hinks = InkArrays(args.ink_dir, "train") if Path(args.ink_dir, "train_meta.parquet").exists() else None
+        synth = InkArrays(args.ink_dir, "synthetic") if Path(args.ink_dir, "synthetic_meta.parquet").exists() else None
+        train = MixedTrain(train, hinks, synth, args.human_image_prob, args.aug_strength)
+        sampler = MixSampler(train, args.synth_ratio, args.seed)
+        print(f"mixed train: human {train.n_h} (with ink {(train.h2ink >= 0).sum()}), synthetic pool {train.n_s}, "
+              f"per epoch {len(sampler)} samples", flush=True)
+        metrics["mix"] = {"human": train.n_h, "human_with_ink": int((train.h2ink >= 0).sum()),
+                          "synthetic_pool": train.n_s, "per_epoch": len(sampler)}
+    dl = torch.utils.data.DataLoader(train, batch_size=args.batch_size, shuffle=sampler is None, sampler=sampler,
+                                     drop_last=True,
                                      num_workers=args.workers, collate_fn=make_collate(tok, args.max_len),
                                      persistent_workers=args.workers > 0, prefetch_factor=4 if args.workers else None)
     plan = {"epochs": args.epochs, "total": args.max_steps or args.epochs * len(dl)}
