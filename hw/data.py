@@ -22,9 +22,11 @@ def crop_margin(img: Image.Image) -> Image.Image:
     return img.crop((xs.min(), ys.min(), xs.max() + 1, ys.max() + 1))
 
 
-def preprocess(img: Image.Image, size: int = 384, train: bool = False) -> torch.Tensor:
+def preprocess(img: Image.Image, size: int = 384, train: bool = False, color: bool = False) -> torch.Tensor:
     """Texo eval preprocessing: crop white margin, fit into size x size keeping aspect,
-    pad with black (as Texo does), grayscale, normalise. Light jitter when train=True."""
+    pad with black (as Texo does), normalise. Light geometric jitter when train=True.
+    color=False (default, v1-v3): convert to greyscale and repeat to 3 channels.
+    color=True: keep RGB so stroke-time/direction channels survive (same MEAN/STD)."""
     img = img.convert("RGB")
     img = crop_margin(img)
     if train:
@@ -35,6 +37,10 @@ def preprocess(img: Image.Image, size: int = 384, train: bool = False) -> torch.
     img = img.resize((max(1, round(img.width * r)), max(1, round(img.height * r))), Image.BICUBIC)
     dw, dh = size - img.width, size - img.height
     img = ImageOps.expand(img, (dw // 2, dh // 2, dw - dw // 2, dh - dh // 2), fill=0)
+    if color:
+        a = np.asarray(img, dtype=np.float32) / 255.0  # H,W,3
+        a = (a - MEAN) / STD
+        return torch.from_numpy(np.ascontiguousarray(a.transpose(2, 0, 1)))
     a = np.asarray(img.convert("L"), dtype=np.float32) / 255.0
     a = (a - MEAN) / STD
     return torch.from_numpy(a).unsqueeze(0).repeat(3, 1, 1)
@@ -50,7 +56,7 @@ class MathWritingParquet(torch.utils.data.Dataset):
     don't gradually copy the dataset through refcount writes (copy-on-access), which is what
     OOM-killed the v2 Kaggle run after ~7 h with 230k samples held as pandas bytes objects."""
 
-    def __init__(self, paths, train=False, size=384, limit=None, seed=0):
+    def __init__(self, paths, train=False, size=384, limit=None, seed=0, color=False):
         import pyarrow.parquet as pq
         if isinstance(paths, (str, Path)):
             paths = [paths]
@@ -73,7 +79,7 @@ class MathWritingParquet(torch.utils.data.Dataset):
         self.latex = np.array([latex[i] for i in idx])          # fixed-width unicode, no objects
         self.texo = np.array([to_texo(latex[i]) for i in idx])  # precomputed training targets
         self.sample_id = np.array([sids[i] for i in idx])
-        self.train, self.size = train, size
+        self.train, self.size, self.color = train, size, color
 
     def __len__(self):
         return len(self.latex)
@@ -84,7 +90,7 @@ class MathWritingParquet(torch.utils.data.Dataset):
 
     def __getitem__(self, i):
         return {
-            "pixel_values": preprocess(self.image(i), self.size, self.train),
+            "pixel_values": preprocess(self.image(i), self.size, self.train, color=self.color),
             "text": str(self.texo[i]),
             "latex": str(self.latex[i]),
             "idx": i,
@@ -152,10 +158,12 @@ class MixedTrain(torch.utils.data.Dataset):
     always ink-rendered with stroke augmentation."""
 
     def __init__(self, human: "MathWritingParquet", human_inks: InkArrays | None, synth: InkArrays | None,
-                 human_image_prob=0.5, aug_strength=1.0, size=384):
+                 human_image_prob=0.5, aug_strength=1.0, size=384, color=False):
         self.human, self.synth, self.hinks = human, synth, human_inks
         self.n_h, self.n_s = len(human), (len(synth) if synth is not None else 0)
-        self.p_img, self.strength, self.size = human_image_prob, aug_strength, size
+        # colour channels need InkML strokes; deepcopy images have none, so always re-render
+        self.color = color
+        self.p_img, self.strength, self.size = (0.0 if color else human_image_prob), aug_strength, size
         self.h2ink = np.full(self.n_h, -1, np.int64)
         if human_inks is not None:
             pos = {s: i for i, s in enumerate(human_inks.sample_id)}
@@ -168,9 +176,9 @@ class MixedTrain(torch.utils.data.Dataset):
     def _ink_item(self, inks, j, i):
         from .ink import augment_strokes, render
         rng = np.random.default_rng()
-        img = render(augment_strokes(inks.strokes(j), rng, self.strength), rng)
-        return {"pixel_values": preprocess(img, self.size, train=True), "text": str(inks.texo[j]),
-                "latex": str(inks.latex[j]), "idx": i}
+        img = render(augment_strokes(inks.strokes(j), rng, self.strength), rng, color=self.color)
+        return {"pixel_values": preprocess(img, self.size, train=True, color=self.color),
+                "text": str(inks.texo[j]), "latex": str(inks.latex[j]), "idx": i}
 
     def __getitem__(self, i):
         if i >= self.n_h:
@@ -197,3 +205,36 @@ class MixSampler(torch.utils.data.Sampler):
         syn = self.ds.n_h + rng.choice(self.ds.n_s, size=self.n_syn, replace=False) if self.n_syn else np.array([], int)
         idx = np.concatenate([np.arange(self.ds.n_h), syn]); rng.shuffle(idx)
         return iter(idx.tolist())
+
+class InkEval(torch.utils.data.Dataset):
+    """Official valid/test rows (labels and sample_ids from the parquet split) rendered
+    from packed InkML strokes. Used when training a colour-stroke model so eval images
+    live in the same domain. Raises if coverage of the official split is incomplete."""
+
+    def __init__(self, parquet_paths, inks: InkArrays, color=True, size=384, limit=None, seed=0):
+        official = MathWritingParquet(parquet_paths, limit=limit, seed=seed)
+        pos = {str(s): i for i, s in enumerate(inks.sample_id)}
+        self.ink_i = np.array([pos.get(str(s), -1) for s in official.sample_id], np.int64)
+        missing = int((self.ink_i < 0).sum())
+        if missing:
+            raise RuntimeError(f"InkEval: {missing}/{len(official)} official samples have no ink "
+                               f"in {inks.split} (dir {inks.dir})")
+        self.official, self.inks = official, inks
+        self.color, self.size = color, size
+        self.latex = official.latex
+        self.sample_id = official.sample_id
+
+    def __len__(self):
+        return len(self.official)
+
+    def image(self, i) -> Image.Image:
+        from .ink import render_eval
+        return render_eval(self.inks.strokes(int(self.ink_i[i])), color=self.color)
+
+    def __getitem__(self, i):
+        return {
+            "pixel_values": preprocess(self.image(i), self.size, train=False, color=self.color),
+            "text": str(self.official.texo[i]),
+            "latex": str(self.official.latex[i]),
+            "idx": i,
+        }

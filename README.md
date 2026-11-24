@@ -52,6 +52,12 @@ As with v2, fp16 is the safe default (about 40 MB, identical to PyTorch on this 
 
 v2-best export, for reference (200 test samples, box CPU): ONNX fp16 40.2 MB, 8.74% CER, 58.5% exact; encoder fp16 + decoder int8 34.6 MB, 8.56% CER, 58.5% exact.
 
+## Status: v4 in progress
+
+A v4 training run continues from v3-best and encodes **stroke time, direction and ink** in the three RGB channels of InkML renders (R = normalised arc-length time along the ink, G = stroke direction, B = ink darkness). Texo's HGNetv2 stem is already 3-channel, so the first convolution is not widened; `preprocess` keeps RGB instead of flattening to greyscale. Human training images are always re-rendered from strokes (with the same 1:1 synthetic mix and stroke augmentation as v3); official valid and test images are also rendered from InkML (deterministic), so they match the training domain. Example colour / greyscale / per-channel images: `results/v4_stroke_colour_samples/`.
+
+No v4 test numbers yet. The kernel is `kaggle/v4_kernel` (`windwerfer/handwriter-texo-v4-stroke-colour`), with a 7 h training cap.
+
 ## Licence
 
 This repository uses more than one licence. Please read this section before you reuse the code or train a model.
@@ -99,9 +105,9 @@ python scripts/train.py --out runs/smoke --train-limit 48 --valid-limit 8 --test
   --epochs 1 --max-steps 12 --batch-size 4 --eval-batch-size 4 --warmup 2 --lr 2e-5 --workers 0 --no-save
 ```
 
-Full training is done on Kaggle (Tesla T4 GPUs). Kernel definitions live in `kaggle/kernel` (v2), `kaggle/eval_kernel` (v2 full-test eval), and `kaggle/v3_kernel` (v3). Those datasets and kernels are private. To run your own copy, point the `kaggle/*-metadata.json` files at your account, upload a dataset of code and data, and push the kernel with `kaggle kernels push -p kaggle/v3_kernel`.
+Full training is done on Kaggle (Tesla T4 GPUs). Kernel definitions live in `kaggle/kernel` (v2), `kaggle/eval_kernel` (v2 full-test eval), `kaggle/v3_kernel` (v3), and `kaggle/v4_kernel` (v4 stroke-colour). Those datasets and kernels are private. To run your own copy, point the `kaggle/*-metadata.json` files at your account, upload a dataset of code and data, and push the kernel with `kaggle kernels push -p kaggle/v4_kernel`.
 
-Useful `scripts/train.py` flags: `--time-budget-h`, `--beams 1 4`, `--final-full-valid`, `--ink-dir` and `--synth-ratio` for human+synthetic mixing, and `--data-parallel`. BatchNorm running statistics stay frozen during fine-tuning unless you pass `--bn-train` (small batches can wreck them).
+Useful `scripts/train.py` flags: `--time-budget-h`, `--beams 1 4`, `--final-full-valid`, `--ink-dir` and `--synth-ratio` for human+synthetic mixing, `--color-strokes` to encode stroke time/direction as RGB and render valid/test from InkML, and `--data-parallel`. BatchNorm running statistics stay frozen during fine-tuning unless you pass `--bn-train` (small batches can wreck them).
 
 The training loop computes the cross-entropy loss itself, so it is not tied to one `transformers` version (VisionEncoderDecoder label shifting differs across releases).
 
@@ -143,10 +149,10 @@ Examples: `lim` becomes `\lim`, `\infin` becomes `\infty`, `\left` and `\quad` a
 
 - `hw/` — model loading, data, metrics, label normalisation, ink packing and augmentation
 - `hw/texo_vendor/` — HGNetv2 encoder vendored from Texo (AGPL-3.0)
-- `scripts/prep_data.py`, `prep_inks.py`, `train.py`, `eval.py`, `eval_decode.py`, `average_checkpoints.py`, `export_onnx.py`
+- `scripts/prep_data.py`, `prep_inks.py`, `train.py`, `eval.py`, `eval_decode.py`, `average_checkpoints.py`, `export_onnx.py`, `render_stroke_colour_samples.py`
 - `kaggle/` — private Kaggle dataset and kernel definitions
 - `results/` — published metrics, predictions and sample images (no weights)
-- `tests/` — `pytest` (75 tests at the time of this writing)
+- `tests/` — `pytest` (78 tests at the time of this writing)
 
 ## Credits
 

@@ -24,7 +24,7 @@ import pandas as pd
 import torch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from hw.data import InkArrays, MathWritingParquet, MixedTrain, MixSampler, make_collate  # noqa: E402
+from hw.data import InkArrays, InkEval, MathWritingParquet, MixedTrain, MixSampler, make_collate  # noqa: E402
 from hw.latex_tok import from_texo, to_texo  # noqa: E402
 from hw.metrics import scores  # noqa: E402
 from hw.model import load, loss_fn, predict  # noqa: E402
@@ -116,6 +116,8 @@ def main():
     ap.add_argument("--human-image-prob", type=float, default=0.5,
                     help="prob. a human sample uses the deepcopy image instead of its augmented ink render")
     ap.add_argument("--aug-strength", type=float, default=1.0)
+    ap.add_argument("--color-strokes", action="store_true",
+                    help="encode stroke time/direction/ink as RGB; render official valid/test from InkML")
     args = ap.parse_args()
     random.seed(args.seed); np.random.seed(args.seed); torch.manual_seed(args.seed)
     torch.backends.cudnn.benchmark = True
@@ -130,8 +132,16 @@ def main():
     print("params (M)", sum(p.numel() for p in model.parameters()) / 1e6, flush=True)
     d = Path(args.data)
     train = MathWritingParquet(files(d, "train"), train=True, limit=args.train_limit)
-    valid = MathWritingParquet(files(d, "valid", "val-"), limit=args.valid_limit)
-    test = MathWritingParquet(files(d, "test"), limit=args.test_limit)
+    valid_files, test_files = files(d, "valid", "val-"), files(d, "test")
+    if args.color_strokes:
+        if not args.ink_dir:
+            raise SystemExit("--color-strokes requires --ink-dir with train/synthetic/valid/test packs")
+        valid = InkEval(valid_files, InkArrays(args.ink_dir, "valid"), color=True, limit=args.valid_limit, seed=args.seed)
+        test = InkEval(test_files, InkArrays(args.ink_dir, "test"), color=True, limit=args.test_limit, seed=args.seed)
+        print("color-strokes: valid/test rendered from InkML (deterministic)", flush=True)
+    else:
+        valid = MathWritingParquet(valid_files, limit=args.valid_limit)
+        test = MathWritingParquet(test_files, limit=args.test_limit)
     print("sizes", len(train), len(valid), len(test), flush=True)
 
     metrics = {"args": vars(args)}
@@ -147,10 +157,11 @@ def main():
     if args.ink_dir:
         hinks = InkArrays(args.ink_dir, "train") if Path(args.ink_dir, "train_meta.parquet").exists() else None
         synth = InkArrays(args.ink_dir, "synthetic") if Path(args.ink_dir, "synthetic_meta.parquet").exists() else None
-        train = MixedTrain(train, hinks, synth, args.human_image_prob, args.aug_strength)
+        train = MixedTrain(train, hinks, synth, args.human_image_prob, args.aug_strength,
+                           color=args.color_strokes)
         sampler = MixSampler(train, args.synth_ratio, args.seed)
         print(f"mixed train: human {train.n_h} (with ink {(train.h2ink >= 0).sum()}), synthetic pool {train.n_s}, "
-              f"per epoch {len(sampler)} samples", flush=True)
+              f"per epoch {len(sampler)} samples, color={args.color_strokes}", flush=True)
         metrics["mix"] = {"human": train.n_h, "human_with_ink": int((train.h2ink >= 0).sum()),
                           "synthetic_pool": train.n_s, "per_epoch": len(sampler)}
     dl = torch.utils.data.DataLoader(train, batch_size=args.batch_size, shuffle=sampler is None, sampler=sampler,
@@ -218,7 +229,10 @@ def main():
             metrics[f"test_{tag}"], preds[f"ft beam{nb}"] = evaluate(model, tok, test, args, device, tag, beams=nb)
             (out / "metrics.json").write_text(json.dumps(metrics, indent=2))
         if args.final_full_valid:
-            fv = MathWritingParquet(files(d, "valid", "val-"))
+            if args.color_strokes:
+                fv = InkEval(files(d, "valid", "val-"), InkArrays(args.ink_dir, "valid"), color=True)
+            else:
+                fv = MathWritingParquet(files(d, "valid", "val-"))
             metrics["valid_full_beam1"], _ = evaluate(model, tok, fv, args, device, "valid_full", save=False)
         save_samples(test, preds, out / "samples")
     except Exception as e:  # noqa: BLE001
