@@ -20,6 +20,14 @@ Official [MathWriting](https://arxiv.org/abs/2404.10690) **test set, 7,644 formu
 
 † TexTeller 3 was scored on a fixed 1,000-sample subset, not the full 7,644 (too slow on our CPU). Its handwritten training mix includes existing open-source test sets, so this score is likely inflated; we did not independently measure overlap with the MathWriting test. ink2latex figures are our re-score of r3 beam 5 on the same full 7,644 labels. Details: `results/competitors/RESULTS.md` and `results/kaggle_v5/compare/SUMMARY.md`.
 
+## The key idea: stroke order as colour
+
+A pen app records *how* a formula was written, not just the final ink. We put that into the image itself: each stroke is drawn with **red = time** (normalised arc length, so early strokes are dark and late strokes are bright), **green = stroke direction**, and **blue = ink**. Texo's encoder already takes RGB input, so the model architecture is unchanged; only the rendering changes. The app renders its recorded strokes the same way before inference.
+
+![colour render, then the R, G and B channels](results/v4_stroke_colour_samples/train_02229a0c174d8dbe_channels.png)
+
+On the same test inks this gave about **+1 exact-match point** over greyscale (v3 → v4). Training on a mix of colour strokes, grey strokes and plain raster images (v5) keeps one model robust for photos and scans as well.
+
 ## Results
 
 All figures below are on the official MathWriting **test set, all 7,644 human inks**, with our canonical label normalisation (`hw/normalize.py`) used both for training targets and for scoring.
