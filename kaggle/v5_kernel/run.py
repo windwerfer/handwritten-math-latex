@@ -68,8 +68,9 @@ else:
     assert g == 0, "smoke gate failed"
     print(f"[t] smoke gate passed {time.time()-T0:.0f}s", flush=True)
     elapsed_h = (time.time() - T0) / 3600
-    left_session = 11.2 - elapsed_h - 0.6  # 12 h cap, keep ~35 min for colour+grey+deepcopy evals
-    left_weekly = WEEKLY_LEFT_H - elapsed_h - MARGIN_H
+    eval_reserve_h = 0.35  # colour beam 1+4 + grey InkML + deepcopy + full valid
+    left_session = 11.2 - elapsed_h - eval_reserve_h  # 12 h session cap
+    left_weekly = WEEKLY_LEFT_H - elapsed_h - MARGIN_H - eval_reserve_h
     budget = max(0.5, min(left_session, left_weekly))
     print(f"[t] training budget {budget:.2f} h (weekly left at launch {WEEKLY_LEFT_H:.2f}h, "
           f"elapsed {elapsed_h:.2f}h, margin {MARGIN_H:.2f}h, color_mix {COLOR_MIX}, p_img {HUMAN_IMAGE_PROB})", flush=True)
