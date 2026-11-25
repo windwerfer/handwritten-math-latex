@@ -30,7 +30,7 @@ Each channel on its own, tinted in its colour (same shading as the model input: 
 
 ![R channel: time, dark = written first, bright = written last](docs/img/channel_red_time.png)
 
-Red shows writing order: `d ≈` was written first, then the root sign's hook, and the bar over `2·k·R·h` was drawn last, after the content under it.
+Red shows writing order: `d ≈` was written first, then `2·k·R·h`, and the root sign with its bar was drawn last, around the content that was already there.
 
 ![G channel: stroke direction around the compass](docs/img/channel_green_direction.png)
 
