@@ -26,6 +26,22 @@ A pen app records *how* a formula was written, not just the final ink. We put th
 
 ![colour render, then the R, G and B channels](results/v4_stroke_colour_samples/train_02229a0c174d8dbe_channels.png)
 
+Each channel on its own, tinted in its colour (same shading as the model input: dark = low value, bright = high value):
+
+![R channel: time, dark = written first, bright = written last](docs/img/channel_red_time.png)
+
+Red shows writing order: `d ≈` was written first, then the root sign's hook, and the bar over `2·k·R·h` was drawn last, after the content under it.
+
+![G channel: stroke direction around the compass](docs/img/channel_green_direction.png)
+
+Green shows the direction the pen was moving at each point (left, up, right, down, back to left), so a `2` and a `z`, or strokes that look the same but were drawn differently, get different shades.
+
+![B channel: ink, constant darkness](docs/img/channel_blue_ink.png)
+
+Blue is just the ink, the same for every stroke, so the image still reads as a normal drawing of the formula.
+
+Generated with `scripts/render_channel_explainers.py`.
+
 On the same test inks this gave about **+1 exact-match point** over greyscale (v3 → v4). Training on a mix of colour strokes, grey strokes and plain raster images (v5) keeps one model robust for photos and scans as well.
 
 ## Results
