@@ -1,0 +1,74 @@
+{
+  "args": {
+    "data": "/tmp/mathwriting",
+    "model": "models/v3best",
+    "out": "/kaggle/working/smoke",
+    "train_limit": 2000,
+    "valid_limit": 100,
+    "test_limit": 100,
+    "epochs": 1,
+    "max_steps": 40,
+    "time_budget_h": 0,
+    "batch_size": 32,
+    "eval_batch_size": 128,
+    "lr": 3e-05,
+    "warmup": 10,
+    "max_len": 256,
+    "beams": [
+      1,
+      2
+    ],
+    "length_penalty": 0.0,
+    "final_full_valid": false,
+    "workers": 3,
+    "skip_zeroshot": true,
+    "no_save": true,
+    "data_parallel": false,
+    "bn_train": false,
+    "freeze_encoder": false,
+    "seed": 0,
+    "ink_dir": "/tmp/inks",
+    "synth_ratio": 1.0,
+    "human_image_prob": 0.0,
+    "aug_strength": 1.0,
+    "color_strokes": true
+  },
+  "mix": {
+    "human": 2000,
+    "human_with_ink": 2000,
+    "synthetic_pool": 396013,
+    "per_epoch": 4000
+  },
+  "valid": [
+    {
+      "epoch": 0,
+      "step": 40,
+      "elapsed_min": 0.6,
+      "n": 100,
+      "cer": 0.07086330935251799,
+      "token_error_rate": 0.052258064516129035,
+      "exact_match": 0.64,
+      "beams": 1,
+      "seconds": 7.0
+    }
+  ],
+  "best_valid": null,
+  "train_seconds": 38.1,
+  "epochs_done": 1,
+  "test_finetuned_beam1": {
+    "n": 100,
+    "cer": 0.09336173233936812,
+    "token_error_rate": 0.07901907356948229,
+    "exact_match": 0.57,
+    "beams": 1,
+    "seconds": 2.6
+  },
+  "test_finetuned_beam2": {
+    "n": 100,
+    "cer": 0.08981185658501953,
+    "token_error_rate": 0.07247956403269755,
+    "exact_match": 0.58,
+    "beams": 2,
+    "seconds": 2.9
+  }
+}

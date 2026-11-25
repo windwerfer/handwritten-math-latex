@@ -1,0 +1,118 @@
+{
+  "args": {
+    "data": "/tmp/mathwriting",
+    "model": "models/v3best",
+    "out": "/kaggle/working/run",
+    "train_limit": null,
+    "valid_limit": 2000,
+    "test_limit": null,
+    "epochs": 10,
+    "max_steps": 0,
+    "time_budget_h": 7.0,
+    "batch_size": 32,
+    "eval_batch_size": 128,
+    "lr": 3e-05,
+    "warmup": 300,
+    "max_len": 256,
+    "beams": [
+      1,
+      4
+    ],
+    "length_penalty": 0.0,
+    "final_full_valid": true,
+    "workers": 3,
+    "skip_zeroshot": true,
+    "no_save": false,
+    "data_parallel": false,
+    "bn_train": false,
+    "freeze_encoder": false,
+    "seed": 0,
+    "ink_dir": "/tmp/inks",
+    "synth_ratio": 1.0,
+    "human_image_prob": 0.0,
+    "aug_strength": 1.0,
+    "color_strokes": true
+  },
+  "mix": {
+    "human": 229864,
+    "human_with_ink": 229864,
+    "synthetic_pool": 396013,
+    "per_epoch": 459728
+  },
+  "plan": {
+    "min_per_epoch": 113.7,
+    "steps_per_epoch": 14366,
+    "epochs": 3,
+    "total": 43098
+  },
+  "valid": [
+    {
+      "epoch": 0,
+      "step": 14366,
+      "elapsed_min": 104.5,
+      "n": 2000,
+      "cer": 0.06338556341596903,
+      "token_error_rate": 0.05677630206522495,
+      "exact_match": 0.6775,
+      "beams": 1,
+      "seconds": 26.2
+    },
+    {
+      "epoch": 1,
+      "step": 28732,
+      "elapsed_min": 209.7,
+      "n": 2000,
+      "cer": 0.054527395455374696,
+      "token_error_rate": 0.047423684027536335,
+      "exact_match": 0.7305,
+      "beams": 1,
+      "seconds": 20.4
+    },
+    {
+      "epoch": 2,
+      "step": 43098,
+      "elapsed_min": 315.1,
+      "n": 2000,
+      "cer": 0.04881114061581497,
+      "token_error_rate": 0.04259091857311731,
+      "exact_match": 0.751,
+      "beams": 1,
+      "seconds": 20.8
+    }
+  ],
+  "best_valid": {
+    "epoch": 2,
+    "n": 2000,
+    "cer": 0.04881114061581497,
+    "token_error_rate": 0.04259091857311731,
+    "exact_match": 0.751,
+    "beams": 1,
+    "seconds": 20.8
+  },
+  "train_seconds": 18906.5,
+  "epochs_done": 3,
+  "test_finetuned_beam1": {
+    "n": 7644,
+    "cer": 0.0726159186462318,
+    "token_error_rate": 0.054053646547954706,
+    "exact_match": 0.6329147043432758,
+    "beams": 1,
+    "seconds": 84.4
+  },
+  "test_finetuned_beam4": {
+    "n": 7644,
+    "cer": 0.06984294812649933,
+    "token_error_rate": 0.05151304977157246,
+    "exact_match": 0.6398482469911041,
+    "beams": 4,
+    "seconds": 88.5
+  },
+  "valid_full_beam1": {
+    "n": 15674,
+    "cer": 0.055079086300822415,
+    "token_error_rate": 0.04629121920122682,
+    "exact_match": 0.731274722470333,
+    "beams": 1,
+    "seconds": 152.7
+  }
+}

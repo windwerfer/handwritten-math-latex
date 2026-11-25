@@ -19,7 +19,9 @@ All figures below are on the official MathWriting **test set, all 7,644 human in
 | v2 best | beam 4, length_penalty=0.0 | 8.60% | 6.58% | 57.8% |
 | v3 best (human + synthetic + stroke aug, epoch 4) | greedy | 7.79% | 5.84% | 61.8% |
 | v3 best | beam 4, length_penalty=1.0 | 7.43% | 5.56% | **62.6%** |
-| v3 best | beam 4, length_penalty=0.0 (default) | **7.39%** | **5.49%** | 62.5% |
+| v3 best | beam 4, length_penalty=0.0 (default) | 7.39% | 5.49% | 62.5% |
+| v4 best (colour InkML strokes, 3 epochs, still improving) | greedy | 7.26% | 5.41% | 63.3% |
+| v4 best | beam 4, length_penalty=0.0 | **6.98%** | **5.15%** | **64.0%** |
 
 v2 was trained on all 229,864 official human training inks (Kaggle, 2× Tesla T4). The run hit a host-RAM out-of-memory error in epoch 3; the best checkpoint is epoch 2 (valid CER 6.51% on a 2,000-sample valid subset). That OOM is fixed in the current dataloader (one contiguous image buffer, at most two short-lived eval workers).
 
@@ -29,9 +31,13 @@ v3 continues from v2-best and mixes the official MathWriting **synthetic** inks 
 
 On v3, `length_penalty` 0.0 and 1.0 are a tie on exact match (4,781 vs 4,782 of 7,644); 0.0 is slightly better on CER and TER, so it stays the default. Averaging the best (epoch 4) and last (epoch 5) checkpoints gave no gain. Details: `results/decode_v3/SUMMARY.md`.
 
+v4 continues from v3-best and encodes **stroke time, direction and ink** in the three RGB channels of InkML renders (R = normalised arc-length time along the ink, G = stroke direction, B = ink darkness). Texo's HGNetv2 stem is already 3-channel, so the first convolution is not widened; `preprocess` keeps RGB instead of flattening to greyscale. Human training images are always re-rendered from strokes (same 1:1 synthetic mix and stroke augmentation as v3; `human_image_prob=0`). Official valid and test images are also rendered from InkML (deterministic). It trained for 3 of 10 planned epochs on one Kaggle Tesla T4 (5.25 h of training, ~7 h kernel time, 7 h cap) and was still improving; best valid subset exact match was epoch 2 (75.1% on 2,000 samples; full valid greedy 73.13%, n=15,674). Example colour / greyscale / per-channel images: `results/v4_stroke_colour_samples/`.
+
+On colour InkML, beam-4 exact match is 4,891 / 7,644 (63.98%), CER 6.98%, TER 5.15%. That meets the ink2latex 10% relative target (≥63.3% exact, TER ≤ 5.56%) on this protocol. A fair comparison against v3 on the **same greyscale InkML renders** (not the published deepcopy photos) is: v3 62.95% exact (4,812) / CER 7.25% / TER 5.44%, vs v4 colour **+1.03 exact points**. v4 is also robust to our own greyscale InkML (63.51%, 4,855). It is **not** robust to official pre-rendered deepcopy images (photos/scans): exact match falls to 25.30% (1,934), CER 46.44%. Do not use v4-best on photos; the mixed v5 run (from v4-best) trains on colour ink, grey ink, and official raster images together. Details: `results/kaggle_v4/compare/SUMMARY.md`.
+
 Typical remaining errors: letter case (`x`/`X`, `p`/`P`, …), `.` versus `\cdot`, look-alike symbols (`\omega`/`w`, `\nu`/`v`, `d`/`\partial`), and brace or subscript structure.
 
-Predictions, metrics and sample images: `results/kaggle_v2_eval/` (length_penalty=1.0), `results/decode_v2/` (decode tuning, including length_penalty=0.0), `results/kaggle_v3/` (v3 training log, per-epoch valid predictions, test predictions, ONNX parity) and `results/decode_v3/`.
+Predictions, metrics and sample images: `results/kaggle_v2_eval/` (length_penalty=1.0), `results/decode_v2/` (decode tuning, including length_penalty=0.0), `results/kaggle_v3/` (v3 training log, per-epoch valid predictions, test predictions, ONNX parity), `results/decode_v3/`, and `results/kaggle_v4/` (v4 training log, test predictions, fairness/robustness comparison, ONNX parity).
 
 For reference, a much larger TrOCR model trained on MathWriting (`tjoab/latex_finetuned`, 334M) reports 14.9% CER, under a different normalisation, so the number is not strictly comparable.
 
@@ -52,11 +58,24 @@ As with v2, fp16 is the safe default (about 40 MB, identical to PyTorch on this 
 
 v2-best export, for reference (200 test samples, box CPU): ONNX fp16 40.2 MB, 8.74% CER, 58.5% exact; encoder fp16 + decoder int8 34.6 MB, 8.56% CER, 58.5% exact.
 
-## Status: v4 in progress
+### ONNX export (v4 best)
 
-A v4 training run continues from v3-best and encodes **stroke time, direction and ink** in the three RGB channels of InkML renders (R = normalised arc-length time along the ink, G = stroke direction, B = ink darkness). Texo's HGNetv2 stem is already 3-channel, so the first convolution is not widened; `preprocess` keeps RGB instead of flattening to greyscale. Human training images are always re-rendered from strokes (with the same 1:1 synthetic mix and stroke augmentation as v3); official valid and test images are also rendered from InkML (deterministic), so they match the training domain. Example colour / greyscale / per-channel images: `results/v4_stroke_colour_samples/`.
+Exported with `scripts/export_onnx.py` on the box, on **200 random official-test colour InkML renders** (seed 0, greedy). The ONNX files themselves are not in git (`*.onnx` is gitignored). The CER column here is the 200-sample figure, not the full-test 7.26% greedy above. Details: `results/kaggle_v4/onnx_parity.json`.
 
-No v4 test numbers yet. The kernel is `kaggle/v4_kernel` (`windwerfer/handwriter-texo-v4-stroke-colour`), with a 7 h training cap.
+| variant | encoder + decoder size | CER | exact match | identical to PyTorch | s/img |
+|---|---|---|---|---|---|
+| PyTorch fp32 | – | 8.72% | 63.5% | – | 0.066 |
+| ONNX fp32 | 57.3 + 22.7 = 80.0 MB | 8.72% | 63.5% | 100% | 0.044 |
+| ONNX fp16 | 28.7 + 11.4 = 40.2 MB | 8.72% | 63.5% | 100% | 0.047 |
+| ONNX int8 (dynamic, both) | 14.6 + 5.9 = 20.5 MB | 8.78% | 64.5% | 90% | 0.244 |
+| encoder fp32 + decoder int8 | 63.2 MB | 8.72% | 63.5% | 97% | 0.035 |
+| **encoder fp16 + decoder int8** | **34.6 MB** | 8.21% | 63.5% | 97.5% | 0.034 |
+
+Same recommendation as v3: fp16 is the safe default (about 40 MB, identical to PyTorch on this sample) and the fp16 encoder + int8 decoder is the smaller option (about 35 MB, 97.5% identical).
+
+## Status: v5 mixed colour/grey training starting
+
+v4 is the current best **stroke** model (colour InkML, beam 4 lp0: 63.98% exact) but cannot be used for photos (deepcopy 25.30%). A v5 run continues from v4-best and mixes colour InkML, greyscale InkML (`--color-mix 0.70`) and official raster images (`--human-image-prob 0.40`), so one model should read both strokes and photos/scans. The kernel is `kaggle/v5_kernel` (`windwerfer/handwriter-texo-v5-mixed-colour-grey`), with a training cap sized to remaining weekly GPU quota minus a 30-minute margin; ONNX export is skipped in the kernel. Final evals include colour InkML, greyscale InkML, and deepcopy images.
 
 ## Licence
 
@@ -105,9 +124,9 @@ python scripts/train.py --out runs/smoke --train-limit 48 --valid-limit 8 --test
   --epochs 1 --max-steps 12 --batch-size 4 --eval-batch-size 4 --warmup 2 --lr 2e-5 --workers 0 --no-save
 ```
 
-Full training is done on Kaggle (Tesla T4 GPUs). Kernel definitions live in `kaggle/kernel` (v2), `kaggle/eval_kernel` (v2 full-test eval), `kaggle/v3_kernel` (v3), and `kaggle/v4_kernel` (v4 stroke-colour). Those datasets and kernels are private. To run your own copy, point the `kaggle/*-metadata.json` files at your account, upload a dataset of code and data, and push the kernel with `kaggle kernels push -p kaggle/v4_kernel`.
+Full training is done on Kaggle (Tesla T4 GPUs). Kernel definitions live in `kaggle/kernel` (v2), `kaggle/eval_kernel` (v2 full-test eval), `kaggle/v3_kernel` (v3), `kaggle/v4_kernel` (v4 stroke-colour), and `kaggle/v5_kernel` (v5 mixed colour/grey + raster images). Those datasets and kernels are private. To run your own copy, point the `kaggle/*-metadata.json` files at your account, upload a dataset of code and data, and push the kernel with `kaggle kernels push -p kaggle/v5_kernel`.
 
-Useful `scripts/train.py` flags: `--time-budget-h`, `--beams 1 4`, `--final-full-valid`, `--ink-dir` and `--synth-ratio` for human+synthetic mixing, `--color-strokes` to encode stroke time/direction as RGB and render valid/test from InkML, and `--data-parallel`. BatchNorm running statistics stay frozen during fine-tuning unless you pass `--bn-train` (small batches can wreck them).
+Useful `scripts/train.py` flags: `--time-budget-h`, `--beams 1 4`, `--final-full-valid`, `--ink-dir` and `--synth-ratio` for human+synthetic mixing, `--color-strokes` to encode stroke time/direction as RGB and render valid/test from InkML, `--color-mix` (fraction of ink renders that stay in colour; the rest are greyscale InkML), `--human-image-prob` (fraction of human samples that use official raster images), `--eval-plain-images` (final greyscale InkML + deepcopy evals), and `--data-parallel`. BatchNorm running statistics stay frozen during fine-tuning unless you pass `--bn-train` (small batches can wreck them).
 
 The training loop computes the cross-entropy loss itself, so it is not tied to one `transformers` version (VisionEncoderDecoder label shifting differs across releases).
 
@@ -116,6 +135,10 @@ The training loop computes the cross-entropy loss itself, so it is not tied to o
 ```bash
 python scripts/eval.py --test data/raw/test-*.parquet --out runs/eval \
     --model zeroshot=models/texo:1 --model v2=path/to/v2best:1,4
+
+# Official-test InkML renders (greyscale or colour):
+python scripts/eval.py --test data/raw/test-*.parquet --ink-dir data/inks --ink-split test \
+    --color-strokes --out runs/eval-colour --model v4=path/to/v4best:4
 ```
 
 Each `--model` is `NAME=PATH:BEAMS`. The script writes `metrics.json`, `predictions_*.csv`, and comparison sample PNGs. Metrics are character error rate (whitespace-insensitive), token error rate, and exact match, all after canonical normalisation. Beam search uses `--length-penalty 0.0` by default (recommended; see `results/decode_v2/`).

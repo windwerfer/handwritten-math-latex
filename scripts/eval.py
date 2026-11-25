@@ -16,7 +16,7 @@ import torch
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from train import evaluate, save_samples  # noqa: E402
-from hw.data import MathWritingParquet  # noqa: E402
+from hw.data import InkArrays, InkEval, MathWritingParquet  # noqa: E402
 from hw.model import load  # noqa: E402
 
 
@@ -31,11 +31,24 @@ def main():
     ap.add_argument("--length-penalty", type=float, default=0.0,
                     help="HF beam length_penalty (alpha). 0.0 is recommended (see results/decode_v2/)")
     ap.add_argument("--workers", type=int, default=2)
+    ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--ink-dir", help="packed InkML dir; render official test from strokes instead of parquet images")
+    ap.add_argument("--ink-split", default="test")
+    ap.add_argument("--color-strokes", action="store_true",
+                    help="keep RGB stroke-time/direction channels (requires --ink-dir)")
     args = ap.parse_args()
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    test = MathWritingParquet(args.test, limit=args.limit)
-    print("device", device, "test", len(test), flush=True)
+    if args.ink_dir:
+        test = InkEval(args.test, InkArrays(args.ink_dir, args.ink_split),
+                       color=args.color_strokes, limit=args.limit, seed=args.seed)
+        kind = "colour InkML" if args.color_strokes else "greyscale InkML"
+    else:
+        if args.color_strokes:
+            raise SystemExit("--color-strokes requires --ink-dir")
+        test = MathWritingParquet(args.test, limit=args.limit, seed=args.seed)
+        kind = "deepcopy parquet images"
+    print("device", device, "test", len(test), kind, flush=True)
     metrics, preds = {}, {}
     for spec in args.model:
         name, rest = spec.split("=", 1)

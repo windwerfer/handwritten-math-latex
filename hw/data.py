@@ -158,12 +158,16 @@ class MixedTrain(torch.utils.data.Dataset):
     always ink-rendered with stroke augmentation."""
 
     def __init__(self, human: "MathWritingParquet", human_inks: InkArrays | None, synth: InkArrays | None,
-                 human_image_prob=0.5, aug_strength=1.0, size=384, color=False):
+                 human_image_prob=0.5, aug_strength=1.0, size=384, color=False, color_mix=1.0):
         self.human, self.synth, self.hinks = human, synth, human_inks
         self.n_h, self.n_s = len(human), (len(synth) if synth is not None else 0)
-        # colour channels need InkML strokes; deepcopy images have none, so always re-render
+        # colour channels need InkML strokes. color_mix is the fraction of ink renders
+        # that keep RGB time/direction (the rest are greyscale InkML, like a scan).
+        # Pure colour (color_mix=1) never uses deepcopy images; a mix may, via human_image_prob.
         self.color = color
-        self.p_img, self.strength, self.size = (0.0 if color else human_image_prob), aug_strength, size
+        self.color_mix = float(color_mix) if color else 0.0
+        self.p_img = 0.0 if (color and self.color_mix >= 1.0) else human_image_prob
+        self.strength, self.size = aug_strength, size
         self.h2ink = np.full(self.n_h, -1, np.int64)
         if human_inks is not None:
             pos = {s: i for i, s in enumerate(human_inks.sample_id)}
@@ -176,8 +180,9 @@ class MixedTrain(torch.utils.data.Dataset):
     def _ink_item(self, inks, j, i):
         from .ink import augment_strokes, render
         rng = np.random.default_rng()
-        img = render(augment_strokes(inks.strokes(j), rng, self.strength), rng, color=self.color)
-        return {"pixel_values": preprocess(img, self.size, train=True, color=self.color),
+        use_color = self.color and (rng.random() < self.color_mix)
+        img = render(augment_strokes(inks.strokes(j), rng, self.strength), rng, color=use_color)
+        return {"pixel_values": preprocess(img, self.size, train=True, color=use_color),
                 "text": str(inks.texo[j]), "latex": str(inks.latex[j]), "idx": i}
 
     def __getitem__(self, i):

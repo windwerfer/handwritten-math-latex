@@ -20,7 +20,7 @@ import numpy as np
 import torch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from hw.data import MathWritingParquet  # noqa: E402
+from hw.data import InkArrays, InkEval, MathWritingParquet  # noqa: E402
 from hw.latex_tok import from_texo  # noqa: E402
 from hw.metrics import scores  # noqa: E402
 from hw.model import load, predict  # noqa: E402
@@ -101,11 +101,19 @@ def main():
     ap.add_argument("--test", nargs="+", default=["data/subset/test.parquet"])
     ap.add_argument("--n", type=int, default=200)
     ap.add_argument("--batch", type=int, default=8)
+    ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--ink-dir")
+    ap.add_argument("--ink-split", default="test")
+    ap.add_argument("--color-strokes", action="store_true")
     a = ap.parse_args()
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
     torch.set_num_threads(4)
     model, tok = load(a.model); model.eval()
-    ds = MathWritingParquet(a.test, limit=a.n)
+    if a.ink_dir:
+        ds = InkEval(a.test, InkArrays(a.ink_dir, a.ink_split),
+                     color=a.color_strokes, limit=a.n, seed=a.seed)
+    else:
+        ds = MathWritingParquet(a.test, limit=a.n, seed=a.seed)
     px = torch.stack([ds[i]["pixel_values"] for i in range(len(ds))])
     gts = [str(x) for x in ds.latex]
     res = {}

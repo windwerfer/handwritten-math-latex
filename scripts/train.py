@@ -118,6 +118,10 @@ def main():
     ap.add_argument("--aug-strength", type=float, default=1.0)
     ap.add_argument("--color-strokes", action="store_true",
                     help="encode stroke time/direction/ink as RGB; render official valid/test from InkML")
+    ap.add_argument("--color-mix", type=float, default=1.0,
+                    help="with --color-strokes, fraction of ink renders that keep colour (rest greyscale InkML)")
+    ap.add_argument("--eval-plain-images", action="store_true",
+                    help="also evaluate beam search on greyscale InkML and deepcopy parquet images")
     args = ap.parse_args()
     random.seed(args.seed); np.random.seed(args.seed); torch.manual_seed(args.seed)
     torch.backends.cudnn.benchmark = True
@@ -158,10 +162,11 @@ def main():
         hinks = InkArrays(args.ink_dir, "train") if Path(args.ink_dir, "train_meta.parquet").exists() else None
         synth = InkArrays(args.ink_dir, "synthetic") if Path(args.ink_dir, "synthetic_meta.parquet").exists() else None
         train = MixedTrain(train, hinks, synth, args.human_image_prob, args.aug_strength,
-                           color=args.color_strokes)
+                           color=args.color_strokes, color_mix=args.color_mix)
         sampler = MixSampler(train, args.synth_ratio, args.seed)
         print(f"mixed train: human {train.n_h} (with ink {(train.h2ink >= 0).sum()}), synthetic pool {train.n_s}, "
-              f"per epoch {len(sampler)} samples, color={args.color_strokes}", flush=True)
+              f"per epoch {len(sampler)} samples, color={args.color_strokes} mix={args.color_mix} "
+              f"p_img={train.p_img}", flush=True)
         metrics["mix"] = {"human": train.n_h, "human_with_ink": int((train.h2ink >= 0).sum()),
                           "synthetic_pool": train.n_s, "per_epoch": len(sampler)}
     dl = torch.utils.data.DataLoader(train, batch_size=args.batch_size, shuffle=sampler is None, sampler=sampler,
@@ -234,6 +239,19 @@ def main():
             else:
                 fv = MathWritingParquet(files(d, "valid", "val-"))
             metrics["valid_full_beam1"], _ = evaluate(model, tok, fv, args, device, "valid_full", save=False)
+        if args.eval_plain_images:
+            # robustness: the same official labels, greyscale InkML and deepcopy photos
+            if args.ink_dir and Path(args.ink_dir, "test_meta.parquet").exists():
+                grey = InkEval(files(d, "test"), InkArrays(args.ink_dir, "test"), color=False)
+                for nb in args.beams:
+                    tag = f"grey_ink_beam{nb}"
+                    metrics[f"test_{tag}"], _ = evaluate(model, tok, grey, args, device, tag, beams=nb)
+                    (out / "metrics.json").write_text(json.dumps(metrics, indent=2))
+            deep = MathWritingParquet(files(d, "test"))
+            for nb in args.beams:
+                tag = f"deepcopy_beam{nb}"
+                metrics[f"test_{tag}"], _ = evaluate(model, tok, deep, args, device, tag, beams=nb)
+                (out / "metrics.json").write_text(json.dumps(metrics, indent=2))
         save_samples(test, preds, out / "samples")
     except Exception as e:  # noqa: BLE001
         import traceback; traceback.print_exc()

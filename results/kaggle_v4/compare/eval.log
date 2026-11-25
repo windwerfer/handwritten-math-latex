@@ -1,0 +1,36 @@
+===== Wed Nov 25 07:11:07 CET 2026 grey InkML: v3 + v4 =====
+device cpu test 7644 greyscale InkML
+[v3best_beam4] {'n': 7644, 'cer': 0.07251118414818435, 'token_error_rate': 0.054385356512823606, 'exact_match': 0.6295133437990581, 'beams': 4, 'seconds': 995.1}
+[v4best_beam4] {'n': 7644, 'cer': 0.07186282773170014, 'token_error_rate': 0.053216832772944526, 'exact_match': 0.6351386708529566, 'beams': 4, 'seconds': 895.8}
+{
+  "v3best_beam4": {
+    "n": 7644,
+    "cer": 0.07251118414818435,
+    "token_error_rate": 0.054385356512823606,
+    "exact_match": 0.6295133437990581,
+    "beams": 4,
+    "seconds": 995.1
+  },
+  "v4best_beam4": {
+    "n": 7644,
+    "cer": 0.07186282773170014,
+    "token_error_rate": 0.053216832772944526,
+    "exact_match": 0.6351386708529566,
+    "beams": 4,
+    "seconds": 895.8
+  }
+}
+===== Wed Nov 25 07:42:48 CET 2026 deepcopy grey: v4 =====
+device cpu test 7644 deepcopy parquet images
+[v4best_beam4] {'n': 7644, 'cer': 0.4643578528430429, 'token_error_rate': 0.4394403148229121, 'exact_match': 0.2530088958660387, 'beams': 4, 'seconds': 1081.4}
+{
+  "v4best_beam4": {
+    "n": 7644,
+    "cer": 0.4643578528430429,
+    "token_error_rate": 0.4394403148229121,
+    "exact_match": 0.2530088958660387,
+    "beams": 4,
+    "seconds": 1081.4
+  }
+}
+===== Wed Nov 25 08:00:55 CET 2026 all evals done =====
