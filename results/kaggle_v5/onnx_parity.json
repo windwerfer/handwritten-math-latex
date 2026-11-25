@@ -1,0 +1,130 @@
+{
+  "colour_inkml": {
+    "pytorch_fp32": {
+      "n": 200,
+      "cer": 0.08997790721028319,
+      "token_error_rate": 0.06678539626001781,
+      "exact_match": 0.62,
+      "sec_per_img": 0.12310967206954956
+    },
+    "onnx_fp32": {
+      "n": 200,
+      "cer": 0.08997790721028319,
+      "token_error_rate": 0.06678539626001781,
+      "exact_match": 0.62,
+      "sec_per_img": 0.07691487073898315,
+      "identical_to_pytorch": 1.0,
+      "size_mb": 80.0
+    },
+    "onnx_fp16": {
+      "n": 200,
+      "cer": 0.08997790721028319,
+      "token_error_rate": 0.06678539626001781,
+      "exact_match": 0.62,
+      "sec_per_img": 0.07704857587814332,
+      "identical_to_pytorch": 1.0,
+      "size_mb": 40.2
+    },
+    "onnx_int8": {
+      "n": 200,
+      "cer": 0.08776862823860213,
+      "token_error_rate": 0.06292668447610567,
+      "exact_match": 0.63,
+      "sec_per_img": 0.3544369637966156,
+      "identical_to_pytorch": 0.88,
+      "size_mb": 20.5
+    },
+    "onnx_enc_fp32_dec_int8": {
+      "n": 200,
+      "cer": 0.08455513155252059,
+      "token_error_rate": 0.060255268625704954,
+      "exact_match": 0.625,
+      "sec_per_img": 0.056974198818206784,
+      "identical_to_pytorch": 0.955,
+      "size_mb": 63.2
+    },
+    "onnx_enc_fp16_dec_int8": {
+      "n": 200,
+      "cer": 0.08154247840931914,
+      "token_error_rate": 0.058474324725437815,
+      "exact_match": 0.63,
+      "sec_per_img": 0.0554241943359375,
+      "identical_to_pytorch": 0.955,
+      "size_mb": 34.6
+    },
+    "files_mb": {
+      "decoder.onnx": 22.7,
+      "decoder_fp16.onnx": 11.4,
+      "decoder_int8.onnx": 5.9,
+      "encoder.onnx": 57.3,
+      "encoder_fp16.onnx": 28.7,
+      "encoder_int8.onnx": 14.6
+    }
+  },
+  "deepcopy_plain": {
+    "pytorch_fp32": {
+      "n": 200,
+      "cer": 0.07142857142857142,
+      "token_error_rate": 0.05313736574335783,
+      "exact_match": 0.6,
+      "sec_per_img": 0.10441133141517639
+    },
+    "onnx_fp32": {
+      "n": 200,
+      "cer": 0.07142857142857142,
+      "token_error_rate": 0.05313736574335783,
+      "exact_match": 0.6,
+      "sec_per_img": 0.07256728887557984,
+      "identical_to_pytorch": 1.0,
+      "size_mb": 80.0
+    },
+    "onnx_fp16": {
+      "n": 200,
+      "cer": 0.07142857142857142,
+      "token_error_rate": 0.05313736574335783,
+      "exact_match": 0.6,
+      "sec_per_img": 0.07590546011924744,
+      "identical_to_pytorch": 1.0,
+      "size_mb": 40.2
+    },
+    "onnx_int8": {
+      "n": 200,
+      "cer": 0.0712401055408971,
+      "token_error_rate": 0.055115884680610516,
+      "exact_match": 0.59,
+      "sec_per_img": 0.3745643424987793,
+      "identical_to_pytorch": 0.885,
+      "size_mb": 20.5
+    },
+    "onnx_enc_fp32_dec_int8": {
+      "n": 200,
+      "cer": 0.06973237843950245,
+      "token_error_rate": 0.05200678349349915,
+      "exact_match": 0.595,
+      "sec_per_img": 0.06000022292137146,
+      "identical_to_pytorch": 0.975,
+      "size_mb": 63.2
+    },
+    "onnx_enc_fp16_dec_int8": {
+      "n": 200,
+      "cer": 0.07010931021485112,
+      "token_error_rate": 0.05257207461842849,
+      "exact_match": 0.595,
+      "sec_per_img": 0.05766864061355591,
+      "identical_to_pytorch": 0.97,
+      "size_mb": 34.6
+    },
+    "files_mb": {
+      "decoder.onnx": 22.7,
+      "decoder_fp16.onnx": 11.4,
+      "decoder_int8.onnx": 5.9,
+      "encoder.onnx": 57.3,
+      "encoder_fp16.onnx": 28.7,
+      "encoder_int8.onnx": 14.6
+    }
+  },
+  "n": 200,
+  "seed": 0,
+  "decode": "greedy",
+  "note": "Colour first, then deepcopy parquet. Same v5best graphs; fp16 is 100% identical to PyTorch on both domains."
+}

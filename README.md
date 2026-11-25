@@ -6,6 +6,20 @@ The recogniser is a fine-tune of [Texo](https://github.com/alephpi/Texo) / [Form
 
 **Weights are not stored in this repository.** They will be published separately on Hugging Face. Because they are fine-tuned from Texo (AGPL-3.0) on MathWriting (CC BY-NC-SA 4.0), the weights are for non-commercial use only. See [Licence](#licence).
 
+## Current metrics (v5, shipped default)
+
+Official [MathWriting](https://arxiv.org/abs/2404.10690) **test set, 7,644 formulas**, beam 4, `length_penalty=0.0`, scored with `hw/normalize.py`. One 20M-parameter model reads stroke input and plain images (photos/scans). Ship size: **40 MB** ONNX fp16, or **35 MB** fp16 encoder + int8 decoder.
+
+| model | input | exact | CER | TER | size | params |
+|---|---|---|---|---|---|---|
+| **ours v5** | strokes (colour) | **63.91%** | **6.95%** | **5.16%** | 40 MB / 35 MB | 20M |
+| **ours v5** | grey ink | 63.80% | 6.92% | 5.18% | 40 MB / 35 MB | 20M |
+| **ours v5** | plain images | 63.72% | 6.96% | 5.21% | 40 MB / 35 MB | 20M |
+| ink2latex r3 | strokes | 59.2% | 8.28% | 6.18% | 19–35 MB | 9.8M |
+| TexTeller 3 | images | 74.5%† | 7.25% | 4.75% | 318 MB | ~300M |
+
+† TexTeller 3 was scored on a fixed 1,000-sample subset, not the full 7,644 (too slow on our CPU). Its handwritten training mix includes existing open-source test sets, so this score is likely inflated; we did not independently measure overlap with the MathWriting test. ink2latex figures are our re-score of r3 beam 5 on the same full 7,644 labels. Details: `results/competitors/RESULTS.md` and `results/kaggle_v5/compare/SUMMARY.md`.
+
 ## Results
 
 All figures below are on the official MathWriting **test set, all 7,644 human inks**, with our canonical label normalisation (`hw/normalize.py`) used both for training targets and for scoring.
@@ -21,7 +35,10 @@ All figures below are on the official MathWriting **test set, all 7,644 human in
 | v3 best | beam 4, length_penalty=1.0 | 7.43% | 5.56% | **62.6%** |
 | v3 best | beam 4, length_penalty=0.0 (default) | 7.39% | 5.49% | 62.5% |
 | v4 best (colour InkML strokes, 3 epochs, still improving) | greedy | 7.26% | 5.41% | 63.3% |
-| v4 best | beam 4, length_penalty=0.0 | **6.98%** | **5.15%** | **64.0%** |
+| v4 best | beam 4, colour InkML | 6.98% | 5.15% | 64.0% |
+| v5 best (shipped default; mixed colour/grey/photo, 4 epochs, still improving) | beam 4, colour InkML | 6.95% | 5.16% | 63.9% |
+| v5 best | beam 4, greyscale InkML | **6.92%** | 5.18% | 63.8% |
+| v5 best | beam 4, deepcopy photos | 6.96% | 5.21% | 63.7% |
 
 v2 was trained on all 229,864 official human training inks (Kaggle, 2× Tesla T4). The run hit a host-RAM out-of-memory error in epoch 3; the best checkpoint is epoch 2 (valid CER 6.51% on a 2,000-sample valid subset). That OOM is fixed in the current dataloader (one contiguous image buffer, at most two short-lived eval workers).
 
@@ -33,11 +50,15 @@ On v3, `length_penalty` 0.0 and 1.0 are a tie on exact match (4,781 vs 4,782 of 
 
 v4 continues from v3-best and encodes **stroke time, direction and ink** in the three RGB channels of InkML renders (R = normalised arc-length time along the ink, G = stroke direction, B = ink darkness). Texo's HGNetv2 stem is already 3-channel, so the first convolution is not widened; `preprocess` keeps RGB instead of flattening to greyscale. Human training images are always re-rendered from strokes (same 1:1 synthetic mix and stroke augmentation as v3; `human_image_prob=0`). Official valid and test images are also rendered from InkML (deterministic). It trained for 3 of 10 planned epochs on one Kaggle Tesla T4 (5.25 h of training, ~7 h kernel time, 7 h cap) and was still improving; best valid subset exact match was epoch 2 (75.1% on 2,000 samples; full valid greedy 73.13%, n=15,674). Example colour / greyscale / per-channel images: `results/v4_stroke_colour_samples/`.
 
-On colour InkML, beam-4 exact match is 4,891 / 7,644 (63.98%), CER 6.98%, TER 5.15%. That meets the ink2latex 10% relative target (≥63.3% exact, TER ≤ 5.56%) on this protocol. A fair comparison against v3 on the **same greyscale InkML renders** (not the published deepcopy photos) is: v3 62.95% exact (4,812) / CER 7.25% / TER 5.44%, vs v4 colour **+1.03 exact points**. v4 is also robust to our own greyscale InkML (63.51%, 4,855). It is **not** robust to official pre-rendered deepcopy images (photos/scans): exact match falls to 25.30% (1,934), CER 46.44%. Do not use v4-best on photos; the mixed v5 run (from v4-best) trains on colour ink, grey ink, and official raster images together. Details: `results/kaggle_v4/compare/SUMMARY.md`.
+On colour InkML, beam-4 exact match is 4,891 / 7,644 (63.98%), CER 6.98%, TER 5.15%. That meets the ink2latex 10% relative target (≥63.3% exact, TER ≤ 5.56%) on this protocol. A fair comparison against v3 on the **same greyscale InkML renders** (not the published deepcopy photos) is: v3 62.95% exact (4,812) / CER 7.25% / TER 5.44%, vs v4 colour **+1.03 exact points**. v4 is also robust to our own greyscale InkML (63.51%, 4,855). It is **not** robust to official pre-rendered deepcopy images (photos/scans): exact match falls to 25.30% (1,934), CER 46.44%. Do not use v4-best on photos. Details: `results/kaggle_v4/compare/SUMMARY.md`.
+
+v5 continues from v4-best and mixes colour InkML, greyscale InkML (`--color-mix 0.70`) and official raster images (`--human-image-prob 0.40`) so **one model** reads both strokes and photos/scans (about 56% colour ink, 24% grey ink, 20% official images in a 1:1 human/synthetic epoch). It trained for 4 of 10 planned epochs on one Kaggle Tesla T4 (5.69 h of training, 7.01 h cap, 95.4 min/epoch) and was still improving; best valid subset exact match was epoch 3 (76.0% on 2,000 samples; full valid greedy 73.98%, n=15,674). Kernel: `kaggle/v5_kernel` (`windwerfer/handwriter-texo-v5-mixed-colour-grey` version 1).
+
+On the official test set with beam 4, v5 scores 63.91% exact (4,885 / 7,644) / CER 6.95% / TER 5.16% on colour InkML (a near-tie with v4: −6 exact, slightly better CER), 63.80% (4,877) / 6.92% / 5.18% on greyscale InkML (best so far, +0.29 vs v4), and 63.72% (4,871) / 6.96% / 5.21% on deepcopy photos (recovers from v4's 25.30% and beats v3 by +1.17 points). Greedy is about 0.3–0.5 points lower. All three v5 protocols meet the ink2latex target (≥63.3% exact, TER ≤ 5.56%). **v5 is the shipped default.** The next Kaggle run, after the weekly GPU reset on Saturday 28 Nov 2026 at 01:00 Europe/Berlin, should continue from v5-best for more epochs. Details: `results/kaggle_v5/compare/SUMMARY.md`.
 
 Typical remaining errors: letter case (`x`/`X`, `p`/`P`, …), `.` versus `\cdot`, look-alike symbols (`\omega`/`w`, `\nu`/`v`, `d`/`\partial`), and brace or subscript structure.
 
-Predictions, metrics and sample images: `results/kaggle_v2_eval/` (length_penalty=1.0), `results/decode_v2/` (decode tuning, including length_penalty=0.0), `results/kaggle_v3/` (v3 training log, per-epoch valid predictions, test predictions, ONNX parity), `results/decode_v3/`, and `results/kaggle_v4/` (v4 training log, test predictions, fairness/robustness comparison, ONNX parity).
+Predictions, metrics and sample images: `results/kaggle_v2_eval/` (length_penalty=1.0), `results/decode_v2/` (decode tuning, including length_penalty=0.0), `results/kaggle_v3/` (v3 training log, per-epoch valid predictions, test predictions, ONNX parity), `results/decode_v3/`, `results/kaggle_v4/` (v4 training log, test predictions, fairness/robustness comparison, ONNX parity), and `results/kaggle_v5/` (v5 mixed-training log, colour / grey-ink / deepcopy test predictions, ONNX parity).
 
 For reference, a much larger TrOCR model trained on MathWriting (`tjoab/latex_finetuned`, 334M) reports 14.9% CER, under a different normalisation, so the number is not strictly comparable.
 
@@ -73,9 +94,37 @@ Exported with `scripts/export_onnx.py` on the box, on **200 random official-test
 
 Same recommendation as v3: fp16 is the safe default (about 40 MB, identical to PyTorch on this sample) and the fp16 encoder + int8 decoder is the smaller option (about 35 MB, 97.5% identical).
 
-## Status: v5 mixed colour/grey training starting
+### ONNX export (v5 best)
 
-v4 is the current best **stroke** model (colour InkML, beam 4 lp0: 63.98% exact) but cannot be used for photos (deepcopy 25.30%). A v5 run continues from v4-best and mixes colour InkML, greyscale InkML (`--color-mix 0.70`) and official raster images (`--human-image-prob 0.40`), so one model should read both strokes and photos/scans. The kernel is `kaggle/v5_kernel` (`windwerfer/handwriter-texo-v5-mixed-colour-grey`), with a training cap sized to remaining weekly GPU quota minus a 30-minute margin; ONNX export is skipped in the kernel. Final evals include colour InkML, greyscale InkML, and deepcopy images.
+Exported with `scripts/export_onnx.py` on the box. Parity is measured on **200 random official-test samples** (seed 0, greedy) for both colour InkML and deepcopy photos. The ONNX files themselves are not in git (`*.onnx` is gitignored). The CER columns are 200-sample figures, not the full-test numbers above. Details: `results/kaggle_v5/onnx_parity.json`.
+
+Colour InkML:
+
+| variant | encoder + decoder size | CER | exact match | identical to PyTorch | s/img |
+|---|---|---|---|---|---|
+| PyTorch fp32 | – | 9.00% | 62.0% | – | 0.123 |
+| ONNX fp32 | 57.3 + 22.7 = 80.0 MB | 9.00% | 62.0% | 100% | 0.077 |
+| ONNX fp16 | 28.7 + 11.4 = 40.2 MB | 9.00% | 62.0% | 100% | 0.077 |
+| ONNX int8 (dynamic, both) | 14.6 + 5.9 = 20.5 MB | 8.78% | 63.0% | 88.0% | 0.354 |
+| encoder fp32 + decoder int8 | 63.2 MB | 8.46% | 62.5% | 95.5% | 0.057 |
+| **encoder fp16 + decoder int8** | **34.6 MB** | 8.15% | 63.0% | 95.5% | 0.055 |
+
+Deepcopy photos:
+
+| variant | encoder + decoder size | CER | exact match | identical to PyTorch | s/img |
+|---|---|---|---|---|---|
+| PyTorch fp32 | – | 7.14% | 60.0% | – | 0.104 |
+| ONNX fp32 | 57.3 + 22.7 = 80.0 MB | 7.14% | 60.0% | 100% | 0.073 |
+| ONNX fp16 | 28.7 + 11.4 = 40.2 MB | 7.14% | 60.0% | 100% | 0.076 |
+| ONNX int8 (dynamic, both) | 14.6 + 5.9 = 20.5 MB | 7.12% | 59.0% | 88.5% | 0.375 |
+| encoder fp32 + decoder int8 | 63.2 MB | 6.97% | 59.5% | 97.5% | 0.060 |
+| **encoder fp16 + decoder int8** | **34.6 MB** | 7.01% | 59.5% | 97.0% | 0.058 |
+
+fp16 is the safe default (about 40 MB, identical to PyTorch on both samples). The fp16 encoder + int8 decoder is the smaller option (about 35 MB; 95.5% identical on colour, 97.0% on photos). Full int8 is smaller but slower and less faithful on CPU. These CER columns are 200-sample figures, not the full-test numbers above. **v5 remains the shipped default**; ONNX parity is not an issue.
+
+## Status: v5 is the shipped default
+
+v5 is the current default model for both stroke input and photos/scans. Weekly Kaggle GPU quota is exhausted until Saturday 28 Nov 2026, 01:00 Europe/Berlin. The next run should continue from v5-best for more epochs (valid was still improving at epoch 3). After that, the roadmap is distillation from TexTeller 3 and hard-case oversampling.
 
 ## Licence
 

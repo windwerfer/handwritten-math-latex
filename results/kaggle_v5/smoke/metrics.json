@@ -1,0 +1,108 @@
+{
+  "args": {
+    "data": "/tmp/mathwriting",
+    "model": "models/v4best",
+    "out": "/kaggle/working/smoke",
+    "train_limit": 2000,
+    "valid_limit": 100,
+    "test_limit": 100,
+    "epochs": 1,
+    "max_steps": 40,
+    "time_budget_h": 0,
+    "batch_size": 32,
+    "eval_batch_size": 128,
+    "lr": 3e-05,
+    "warmup": 10,
+    "max_len": 256,
+    "beams": [
+      1,
+      2
+    ],
+    "length_penalty": 0.0,
+    "final_full_valid": false,
+    "workers": 3,
+    "skip_zeroshot": true,
+    "no_save": true,
+    "data_parallel": false,
+    "bn_train": false,
+    "freeze_encoder": false,
+    "seed": 0,
+    "ink_dir": "/tmp/inks",
+    "synth_ratio": 1.0,
+    "human_image_prob": 0.4,
+    "aug_strength": 1.0,
+    "color_strokes": true,
+    "color_mix": 0.7,
+    "eval_plain_images": true
+  },
+  "mix": {
+    "human": 2000,
+    "human_with_ink": 2000,
+    "synthetic_pool": 396013,
+    "per_epoch": 4000
+  },
+  "valid": [
+    {
+      "epoch": 0,
+      "step": 40,
+      "elapsed_min": 0.6,
+      "n": 100,
+      "cer": 0.06223021582733813,
+      "token_error_rate": 0.04129032258064516,
+      "exact_match": 0.69,
+      "beams": 1,
+      "seconds": 8.0
+    }
+  ],
+  "best_valid": null,
+  "train_seconds": 38.0,
+  "epochs_done": 1,
+  "test_finetuned_beam1": {
+    "n": 100,
+    "cer": 0.08519701810436635,
+    "token_error_rate": 0.06103542234332425,
+    "exact_match": 0.57,
+    "beams": 1,
+    "seconds": 2.6
+  },
+  "test_finetuned_beam2": {
+    "n": 100,
+    "cer": 0.08448704295349663,
+    "token_error_rate": 0.05994550408719346,
+    "exact_match": 0.58,
+    "beams": 2,
+    "seconds": 2.9
+  },
+  "test_grey_ink_beam1": {
+    "n": 7644,
+    "cer": 0.0838524340796082,
+    "token_error_rate": 0.061690514602777316,
+    "exact_match": 0.6023024594453166,
+    "beams": 1,
+    "seconds": 53.1
+  },
+  "test_grey_ink_beam2": {
+    "n": 7644,
+    "cer": 0.08096475434772851,
+    "token_error_rate": 0.05905945147233991,
+    "exact_match": 0.6089743589743589,
+    "beams": 2,
+    "seconds": 54.0
+  },
+  "test_deepcopy_beam1": {
+    "n": 7644,
+    "cer": 0.08978738896896368,
+    "token_error_rate": 0.06609321050012816,
+    "exact_match": 0.5883045525902669,
+    "beams": 1,
+    "seconds": 46.0
+  },
+  "test_deepcopy_beam2": {
+    "n": 7644,
+    "cer": 0.08678998738198666,
+    "token_error_rate": 0.06315305399333565,
+    "exact_match": 0.5949764521193093,
+    "beams": 2,
+    "seconds": 53.0
+  }
+}

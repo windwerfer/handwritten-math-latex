@@ -6,5 +6,5 @@
       "name": "other"
     }
   ],
-  "description": "Private: Texo (alephpi/FormulaNet, AGPL-3.0) base weights + handwriter fine-tuned checkpoints on MathWriting (CC BY-NC-SA 4.0): v1 (5k subset), v2 best (epoch 2, human train), v3 best (epoch 4, human + synthetic inks with stroke augmentation; deepcopy test beam4 lp0 62.55% exact), and v4 best (epoch 2 of a 3-epoch colour-InkML run; colour test beam4 lp0 63.98% exact; not for photos). Plus handwriter code (color_mix, human_image_prob, eval-plain-images)."
+  "description": "Private: Texo (alephpi/FormulaNet, AGPL-3.0) base weights + handwriter fine-tuned checkpoints on MathWriting (CC BY-NC-SA 4.0): v1 (5k subset), v2 best (epoch 2, human train), v3 best (epoch 4, human + synthetic inks with stroke augmentation; deepcopy test beam4 lp0 62.55% exact), v4 best (colour-InkML specialist, test beam4 lp0 63.98% exact; not for photos), and v5 best (shipped default; mixed colour/grey/photo, 4 epochs; colour 63.91%, grey InkML 63.80%, deepcopy 63.72% exact). Plus handwriter code."
 }

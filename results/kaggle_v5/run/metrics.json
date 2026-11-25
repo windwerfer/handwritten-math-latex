@@ -1,0 +1,163 @@
+{
+  "args": {
+    "data": "/tmp/mathwriting",
+    "model": "models/v4best",
+    "out": "/kaggle/working/run",
+    "train_limit": null,
+    "valid_limit": 2000,
+    "test_limit": null,
+    "epochs": 10,
+    "max_steps": 0,
+    "time_budget_h": 7.01,
+    "batch_size": 32,
+    "eval_batch_size": 128,
+    "lr": 3e-05,
+    "warmup": 200,
+    "max_len": 256,
+    "beams": [
+      1,
+      4
+    ],
+    "length_penalty": 0.0,
+    "final_full_valid": true,
+    "workers": 3,
+    "skip_zeroshot": true,
+    "no_save": false,
+    "data_parallel": false,
+    "bn_train": false,
+    "freeze_encoder": false,
+    "seed": 0,
+    "ink_dir": "/tmp/inks",
+    "synth_ratio": 1.0,
+    "human_image_prob": 0.4,
+    "aug_strength": 1.0,
+    "color_strokes": true,
+    "color_mix": 0.7,
+    "eval_plain_images": true
+  },
+  "mix": {
+    "human": 229864,
+    "human_with_ink": 229864,
+    "synthetic_pool": 396013,
+    "per_epoch": 459728
+  },
+  "plan": {
+    "min_per_epoch": 95.4,
+    "steps_per_epoch": 14366,
+    "epochs": 4,
+    "total": 57464
+  },
+  "valid": [
+    {
+      "epoch": 0,
+      "step": 14366,
+      "elapsed_min": 85.1,
+      "n": 2000,
+      "cer": 0.06555449698984453,
+      "token_error_rate": 0.05639385300048675,
+      "exact_match": 0.685,
+      "beams": 1,
+      "seconds": 25.4
+    },
+    {
+      "epoch": 1,
+      "step": 28732,
+      "elapsed_min": 170.2,
+      "n": 2000,
+      "cer": 0.057304441246224636,
+      "token_error_rate": 0.04895348028648912,
+      "exact_match": 0.723,
+      "beams": 1,
+      "seconds": 21.0
+    },
+    {
+      "epoch": 2,
+      "step": 43098,
+      "elapsed_min": 255.6,
+      "n": 2000,
+      "cer": 0.04755437536740113,
+      "token_error_rate": 0.04248661428273416,
+      "exact_match": 0.7495,
+      "beams": 1,
+      "seconds": 20.7
+    },
+    {
+      "epoch": 3,
+      "step": 57464,
+      "elapsed_min": 341.2,
+      "n": 2000,
+      "cer": 0.045730038716477815,
+      "token_error_rate": 0.04123496279813643,
+      "exact_match": 0.76,
+      "beams": 1,
+      "seconds": 21.6
+    }
+  ],
+  "best_valid": {
+    "epoch": 3,
+    "n": 2000,
+    "cer": 0.045730038716477815,
+    "token_error_rate": 0.04123496279813643,
+    "exact_match": 0.76,
+    "beams": 1,
+    "seconds": 21.6
+  },
+  "train_seconds": 20472.5,
+  "epochs_done": 4,
+  "test_finetuned_beam1": {
+    "n": 7644,
+    "cer": 0.07159849780805658,
+    "token_error_rate": 0.05338268775537898,
+    "exact_match": 0.6357927786499215,
+    "beams": 1,
+    "seconds": 87.4
+  },
+  "test_finetuned_beam4": {
+    "n": 7644,
+    "cer": 0.06945892163365867,
+    "token_error_rate": 0.0516261327141414,
+    "exact_match": 0.6390633176347462,
+    "beams": 4,
+    "seconds": 90.4
+  },
+  "valid_full_beam1": {
+    "n": 15674,
+    "cer": 0.05310718717792314,
+    "token_error_rate": 0.045698313562382145,
+    "exact_match": 0.7397601122878652,
+    "beams": 1,
+    "seconds": 157.8
+  },
+  "test_grey_ink_beam1": {
+    "n": 7644,
+    "cer": 0.07123442074341545,
+    "token_error_rate": 0.05338268775537898,
+    "exact_match": 0.6347462061747776,
+    "beams": 1,
+    "seconds": 47.2
+  },
+  "test_grey_ink_beam4": {
+    "n": 7644,
+    "cer": 0.06922451585231439,
+    "token_error_rate": 0.05177690997089999,
+    "exact_match": 0.6380167451596023,
+    "beams": 4,
+    "seconds": 73.4
+  },
+  "test_deepcopy_beam1": {
+    "n": 7644,
+    "cer": 0.07220196801109188,
+    "token_error_rate": 0.05418180721619951,
+    "exact_match": 0.6319989534275249,
+    "beams": 1,
+    "seconds": 46.2
+  },
+  "test_deepcopy_beam4": {
+    "n": 7644,
+    "cer": 0.06962350441630467,
+    "token_error_rate": 0.05207846448441717,
+    "exact_match": 0.6372318158032444,
+    "beams": 4,
+    "seconds": 73.1
+  }
+}

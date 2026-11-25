@@ -1,0 +1,229 @@
++ /workspace/handwriter/.venv/bin/python3 scripts/export_onnx.py --model models/v5best --out results/kaggle_v5/onnx_colour --ink-dir data/raw/packed_test --ink-split test --color-strokes --n 200 --seed 0
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:554: UserWarning: `num_beams` is set to 1. However, `length_penalty` is set to `0.0` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `length_penalty`.
+  warnings.warn(
+{'n': 200, 'cer': 0.08997790721028319, 'token_error_rate': 0.06678539626001781, 'exact_match': 0.62, 'sec_per_img': 0.12310967206954956}
+/workspace/handwriter/.venv/lib/python3.11/site-packages/torch/onnx/_internal/jit_utils.py:309: UserWarning: Constant folding - Only steps=1 can be constant folded for opset >= 10 onnx::Slice op. Constant folding not applied. (Triggered internally at /pytorch/torch/csrc/jit/passes/onnx/constant_fold.cpp:178.)
+  _C._jit_pass_onnx_node_shape_type_inference(node, params_dict, opset_version)
+/workspace/handwriter/.venv/lib/python3.11/site-packages/torch/onnx/utils.py:691: UserWarning: Constant folding - Only steps=1 can be constant folded for opset >= 10 onnx::Slice op. Constant folding not applied. (Triggered internally at /pytorch/torch/csrc/jit/passes/onnx/constant_fold.cpp:178.)
+  _C._jit_pass_onnx_graph_shape_type_inference(
+/workspace/handwriter/.venv/lib/python3.11/site-packages/torch/onnx/utils.py:1161: UserWarning: Constant folding - Only steps=1 can be constant folded for opset >= 10 onnx::Slice op. Constant folding not applied. (Triggered internally at /pytorch/torch/csrc/jit/passes/onnx/constant_fold.cpp:178.)
+  _C._jit_pass_onnx_graph_shape_type_inference(
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/modeling_attn_mask_utils.py:86: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if input_shape[-1] > 1 or self.sliding_window is not None:
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/modeling_attn_mask_utils.py:162: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if past_key_values_length > 0:
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/models/mbart/modeling_mbart.py:223: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if attn_weights.size() != (bsz * self.num_heads, tgt_len, src_len):
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/models/mbart/modeling_mbart.py:230: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if attention_mask.size() != (bsz, 1, tgt_len, src_len):
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/models/mbart/modeling_mbart.py:262: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if attn_output.size() != (bsz * self.num_heads, tgt_len, self.head_dim):
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+WARNING:root:Inference failed or unsupported type to quantize for tensor '/encoder/stem/Slice_output_0', type is tensor_type {
+  elem_type: 7
+  shape {
+    dim {
+      dim_value: 4
+    }
+    dim {
+      dim_value: 2
+    }
+  }
+}
+.
+WARNING:root:Inference failed or unsupported type to quantize for tensor '/encoder/stem/Slice_1_output_0', type is tensor_type {
+  elem_type: 7
+  shape {
+    dim {
+      dim_value: 4
+    }
+    dim {
+      dim_value: 2
+    }
+  }
+}
+.
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+onnx_fp32 {'n': 200, 'cer': 0.08997790721028319, 'token_error_rate': 0.06678539626001781, 'exact_match': 0.62, 'sec_per_img': 0.07691487073898315, 'identical_to_pytorch': 1.0, 'size_mb': 80.0}
+onnx_fp16 {'n': 200, 'cer': 0.08997790721028319, 'token_error_rate': 0.06678539626001781, 'exact_match': 0.62, 'sec_per_img': 0.07704857587814332, 'identical_to_pytorch': 1.0, 'size_mb': 40.2}
+onnx_int8 {'n': 200, 'cer': 0.08776862823860213, 'token_error_rate': 0.06292668447610567, 'exact_match': 0.63, 'sec_per_img': 0.3544369637966156, 'identical_to_pytorch': 0.88, 'size_mb': 20.5}
+onnx_enc_fp32_dec_int8 {'n': 200, 'cer': 0.08455513155252059, 'token_error_rate': 0.060255268625704954, 'exact_match': 0.625, 'sec_per_img': 0.056974198818206784, 'identical_to_pytorch': 0.955, 'size_mb': 63.2}
+onnx_enc_fp16_dec_int8 {'n': 200, 'cer': 0.08154247840931914, 'token_error_rate': 0.058474324725437815, 'exact_match': 0.63, 'sec_per_img': 0.0554241943359375, 'identical_to_pytorch': 0.955, 'size_mb': 34.6}
+{
+  "pytorch_fp32": {
+    "n": 200,
+    "cer": 0.08997790721028319,
+    "token_error_rate": 0.06678539626001781,
+    "exact_match": 0.62,
+    "sec_per_img": 0.12310967206954956
+  },
+  "onnx_fp32": {
+    "n": 200,
+    "cer": 0.08997790721028319,
+    "token_error_rate": 0.06678539626001781,
+    "exact_match": 0.62,
+    "sec_per_img": 0.07691487073898315,
+    "identical_to_pytorch": 1.0,
+    "size_mb": 80.0
+  },
+  "onnx_fp16": {
+    "n": 200,
+    "cer": 0.08997790721028319,
+    "token_error_rate": 0.06678539626001781,
+    "exact_match": 0.62,
+    "sec_per_img": 0.07704857587814332,
+    "identical_to_pytorch": 1.0,
+    "size_mb": 40.2
+  },
+  "onnx_int8": {
+    "n": 200,
+    "cer": 0.08776862823860213,
+    "token_error_rate": 0.06292668447610567,
+    "exact_match": 0.63,
+    "sec_per_img": 0.3544369637966156,
+    "identical_to_pytorch": 0.88,
+    "size_mb": 20.5
+  },
+  "onnx_enc_fp32_dec_int8": {
+    "n": 200,
+    "cer": 0.08455513155252059,
+    "token_error_rate": 0.060255268625704954,
+    "exact_match": 0.625,
+    "sec_per_img": 0.056974198818206784,
+    "identical_to_pytorch": 0.955,
+    "size_mb": 63.2
+  },
+  "onnx_enc_fp16_dec_int8": {
+    "n": 200,
+    "cer": 0.08154247840931914,
+    "token_error_rate": 0.058474324725437815,
+    "exact_match": 0.63,
+    "sec_per_img": 0.0554241943359375,
+    "identical_to_pytorch": 0.955,
+    "size_mb": 34.6
+  },
+  "files_mb": {
+    "decoder.onnx": 22.7,
+    "decoder_fp16.onnx": 11.4,
+    "decoder_int8.onnx": 5.9,
+    "encoder.onnx": 57.3,
+    "encoder_fp16.onnx": 28.7,
+    "encoder_int8.onnx": 14.6
+  }
+}
+exit 0
++ /workspace/handwriter/.venv/bin/python3 scripts/export_onnx.py --model models/v5best --out results/kaggle_v5/onnx_plain --test data/raw/test-00000-of-00001-694f317d8b634199.parquet --n 200 --seed 0
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:554: UserWarning: `num_beams` is set to 1. However, `length_penalty` is set to `0.0` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `length_penalty`.
+  warnings.warn(
+{'n': 200, 'cer': 0.07142857142857142, 'token_error_rate': 0.05313736574335783, 'exact_match': 0.6, 'sec_per_img': 0.10441133141517639}
+/workspace/handwriter/.venv/lib/python3.11/site-packages/torch/onnx/_internal/jit_utils.py:309: UserWarning: Constant folding - Only steps=1 can be constant folded for opset >= 10 onnx::Slice op. Constant folding not applied. (Triggered internally at /pytorch/torch/csrc/jit/passes/onnx/constant_fold.cpp:178.)
+  _C._jit_pass_onnx_node_shape_type_inference(node, params_dict, opset_version)
+/workspace/handwriter/.venv/lib/python3.11/site-packages/torch/onnx/utils.py:691: UserWarning: Constant folding - Only steps=1 can be constant folded for opset >= 10 onnx::Slice op. Constant folding not applied. (Triggered internally at /pytorch/torch/csrc/jit/passes/onnx/constant_fold.cpp:178.)
+  _C._jit_pass_onnx_graph_shape_type_inference(
+/workspace/handwriter/.venv/lib/python3.11/site-packages/torch/onnx/utils.py:1161: UserWarning: Constant folding - Only steps=1 can be constant folded for opset >= 10 onnx::Slice op. Constant folding not applied. (Triggered internally at /pytorch/torch/csrc/jit/passes/onnx/constant_fold.cpp:178.)
+  _C._jit_pass_onnx_graph_shape_type_inference(
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/modeling_attn_mask_utils.py:86: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if input_shape[-1] > 1 or self.sliding_window is not None:
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/modeling_attn_mask_utils.py:162: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if past_key_values_length > 0:
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/models/mbart/modeling_mbart.py:223: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if attn_weights.size() != (bsz * self.num_heads, tgt_len, src_len):
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/models/mbart/modeling_mbart.py:230: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if attention_mask.size() != (bsz, 1, tgt_len, src_len):
+/workspace/handwriter/.venv/lib/python3.11/site-packages/transformers/models/mbart/modeling_mbart.py:262: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if attn_output.size() != (bsz * self.num_heads, tgt_len, self.head_dim):
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+WARNING:root:Inference failed or unsupported type to quantize for tensor '/encoder/stem/Slice_output_0', type is tensor_type {
+  elem_type: 7
+  shape {
+    dim {
+      dim_value: 4
+    }
+    dim {
+      dim_value: 2
+    }
+  }
+}
+.
+WARNING:root:Inference failed or unsupported type to quantize for tensor '/encoder/stem/Slice_1_output_0', type is tensor_type {
+  elem_type: 7
+  shape {
+    dim {
+      dim_value: 4
+    }
+    dim {
+      dim_value: 2
+    }
+  }
+}
+.
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+onnx_fp32 {'n': 200, 'cer': 0.07142857142857142, 'token_error_rate': 0.05313736574335783, 'exact_match': 0.6, 'sec_per_img': 0.07256728887557984, 'identical_to_pytorch': 1.0, 'size_mb': 80.0}
+onnx_fp16 {'n': 200, 'cer': 0.07142857142857142, 'token_error_rate': 0.05313736574335783, 'exact_match': 0.6, 'sec_per_img': 0.07590546011924744, 'identical_to_pytorch': 1.0, 'size_mb': 40.2}
+onnx_int8 {'n': 200, 'cer': 0.0712401055408971, 'token_error_rate': 0.055115884680610516, 'exact_match': 0.59, 'sec_per_img': 0.3745643424987793, 'identical_to_pytorch': 0.885, 'size_mb': 20.5}
+onnx_enc_fp32_dec_int8 {'n': 200, 'cer': 0.06973237843950245, 'token_error_rate': 0.05200678349349915, 'exact_match': 0.595, 'sec_per_img': 0.06000022292137146, 'identical_to_pytorch': 0.975, 'size_mb': 63.2}
+onnx_enc_fp16_dec_int8 {'n': 200, 'cer': 0.07010931021485112, 'token_error_rate': 0.05257207461842849, 'exact_match': 0.595, 'sec_per_img': 0.05766864061355591, 'identical_to_pytorch': 0.97, 'size_mb': 34.6}
+{
+  "pytorch_fp32": {
+    "n": 200,
+    "cer": 0.07142857142857142,
+    "token_error_rate": 0.05313736574335783,
+    "exact_match": 0.6,
+    "sec_per_img": 0.10441133141517639
+  },
+  "onnx_fp32": {
+    "n": 200,
+    "cer": 0.07142857142857142,
+    "token_error_rate": 0.05313736574335783,
+    "exact_match": 0.6,
+    "sec_per_img": 0.07256728887557984,
+    "identical_to_pytorch": 1.0,
+    "size_mb": 80.0
+  },
+  "onnx_fp16": {
+    "n": 200,
+    "cer": 0.07142857142857142,
+    "token_error_rate": 0.05313736574335783,
+    "exact_match": 0.6,
+    "sec_per_img": 0.07590546011924744,
+    "identical_to_pytorch": 1.0,
+    "size_mb": 40.2
+  },
+  "onnx_int8": {
+    "n": 200,
+    "cer": 0.0712401055408971,
+    "token_error_rate": 0.055115884680610516,
+    "exact_match": 0.59,
+    "sec_per_img": 0.3745643424987793,
+    "identical_to_pytorch": 0.885,
+    "size_mb": 20.5
+  },
+  "onnx_enc_fp32_dec_int8": {
+    "n": 200,
+    "cer": 0.06973237843950245,
+    "token_error_rate": 0.05200678349349915,
+    "exact_match": 0.595,
+    "sec_per_img": 0.06000022292137146,
+    "identical_to_pytorch": 0.975,
+    "size_mb": 63.2
+  },
+  "onnx_enc_fp16_dec_int8": {
+    "n": 200,
+    "cer": 0.07010931021485112,
+    "token_error_rate": 0.05257207461842849,
+    "exact_match": 0.595,
+    "sec_per_img": 0.05766864061355591,
+    "identical_to_pytorch": 0.97,
+    "size_mb": 34.6
+  },
+  "files_mb": {
+    "decoder.onnx": 22.7,
+    "decoder_fp16.onnx": 11.4,
+    "decoder_int8.onnx": 5.9,
+    "encoder.onnx": 57.3,
+    "encoder_fp16.onnx": 28.7,
+    "encoder_int8.onnx": 14.6
+  }
+}
+exit 0
+BOTH ONNX EXPORTS DONE
