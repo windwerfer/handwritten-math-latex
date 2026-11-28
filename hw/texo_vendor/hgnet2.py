@@ -230,7 +230,7 @@ class HGNetv2(PreTrainedModel):
 
         if config.pretrained:
             logging.log(logging.INFO, f"load pretrained model from {config.pretrained}")
-            state_dict = torch.load(config.pretrained)
+            state_dict = torch.load(config.pretrained, weights_only=True)
             self.load_state_dict(state_dict)
 
         if config.freeze:
